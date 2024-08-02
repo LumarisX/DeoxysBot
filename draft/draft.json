@@ -1,0 +1,4322 @@
+[
+  {
+    "name": "Bulbasaur",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ivysaur",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Venusaur"
+  },
+  {
+    "name": "Charmander",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Charmeleon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Charizard"
+  },
+  {
+    "name": "Squirtle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Wartortle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Blastoise"
+  },
+  {
+    "name": "Caterpie",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Metapod",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Butterfree"
+  },
+  {
+    "name": "Weedle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Kakuna",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Beedrill"
+  },
+  {
+    "name": "Pidgey",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pidgeotto",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pidgeot"
+  },
+  {
+    "name": "Rattata",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Rattata-Alola",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Raticate"
+  },
+  {
+    "name": "Raticate-Alola"
+  },
+  {
+    "name": "Spearow",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Fearow"
+  },
+  {
+    "name": "Ekans",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Arbok"
+  },
+  {
+    "name": "Pikachu",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Raichu"
+  },
+  {
+    "name": "Raichu-Alola"
+  },
+  {
+    "name": "Sandshrew",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sandshrew-Alola",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sandslash"
+  },
+  {
+    "name": "Sandslash-Alola"
+  },
+  {
+    "name": "Nidoran-F",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Nidorina",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Nidoqueen"
+  },
+  {
+    "name": "Nidoran-M",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Nidorino",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Nidoking"
+  },
+  {
+    "name": "Clefairy",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Clefable"
+  },
+  {
+    "name": "Vulpix",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Vulpix-Alola",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ninetales"
+  },
+  {
+    "name": "Ninetales-Alola"
+  },
+  {
+    "name": "Jigglypuff",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Wigglytuff"
+  },
+  {
+    "name": "Zubat",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Golbat",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Oddish",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gloom",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Vileplume"
+  },
+  {
+    "name": "Paras",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Parasect"
+  },
+  {
+    "name": "Venonat",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Venomoth"
+  },
+  {
+    "name": "Diglett",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Diglett-Alola",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dugtrio"
+  },
+  {
+    "name": "Dugtrio-Alola"
+  },
+  {
+    "name": "Meowth",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Meowth-Alola",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Meowth-Galar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Persian"
+  },
+  {
+    "name": "Persian-Alola"
+  },
+  {
+    "name": "Psyduck",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Golduck"
+  },
+  {
+    "name": "Mankey",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Primeape",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Growlithe",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Growlithe-Hisui",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Arcanine"
+  },
+  {
+    "name": "Arcanine-Hisui"
+  },
+  {
+    "name": "Poliwag",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Poliwhirl",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Poliwrath"
+  },
+  {
+    "name": "Abra",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Kadabra",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Alakazam"
+  },
+  {
+    "name": "Machop",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Machoke",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Machamp"
+  },
+  {
+    "name": "Bellsprout",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Weepinbell",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Victreebel"
+  },
+  {
+    "name": "Tentacool",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Tentacruel"
+  },
+  {
+    "name": "Geodude",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Geodude-Alola",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Graveler",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Graveler-Alola",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Golem"
+  },
+  {
+    "name": "Golem-Alola"
+  },
+  {
+    "name": "Ponyta",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ponyta-Galar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Rapidash"
+  },
+  {
+    "name": "Rapidash-Galar"
+  },
+  {
+    "name": "Slowpoke",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Slowpoke-Galar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Slowbro"
+  },
+  {
+    "name": "Slowbro-Galar"
+  },
+  {
+    "name": "Magnemite",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Magneton",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Farfetch’d"
+  },
+  {
+    "name": "Farfetch’d-Galar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Doduo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dodrio"
+  },
+  {
+    "name": "Seel",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dewgong"
+  },
+  {
+    "name": "Grimer",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Grimer-Alola",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Muk"
+  },
+  {
+    "name": "Muk-Alola"
+  },
+  {
+    "name": "Shellder",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Cloyster"
+  },
+  {
+    "name": "Gastly",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Haunter",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gengar"
+  },
+  {
+    "name": "Onix",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Drowzee",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Hypno"
+  },
+  {
+    "name": "Krabby",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Kingler"
+  },
+  {
+    "name": "Voltorb",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Voltorb-Hisui",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Electrode"
+  },
+  {
+    "name": "Electrode-Hisui"
+  },
+  {
+    "name": "Exeggcute",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Exeggutor"
+  },
+  {
+    "name": "Exeggutor-Alola"
+  },
+  {
+    "name": "Cubone",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Marowak"
+  },
+  {
+    "name": "Marowak-Alola"
+  },
+  {
+    "name": "Hitmonlee"
+  },
+  {
+    "name": "Hitmonchan"
+  },
+  {
+    "name": "Lickitung",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Koffing",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Weezing"
+  },
+  {
+    "name": "Weezing-Galar"
+  },
+  {
+    "name": "Rhyhorn",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Rhydon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Chansey",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Tangela",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Kangaskhan"
+  },
+  {
+    "name": "Horsea",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Seadra",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Goldeen",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Seaking"
+  },
+  {
+    "name": "Staryu",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Starmie"
+  },
+  {
+    "name": "Mr. Mime"
+  },
+  {
+    "name": "Mr. Mime-Galar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Scyther",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Jynx"
+  },
+  {
+    "name": "Electabuzz",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Magmar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pinsir"
+  },
+  {
+    "name": "Tauros"
+  },
+  {
+    "name": "Tauros-Paldea-Combat"
+  },
+  {
+    "name": "Tauros-Paldea-Blaze"
+  },
+  {
+    "name": "Tauros-Paldea-Aqua"
+  },
+  {
+    "name": "Magikarp",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gyarados"
+  },
+  {
+    "name": "Lapras"
+  },
+  {
+    "name": "Ditto"
+  },
+  {
+    "name": "Eevee",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Vaporeon"
+  },
+  {
+    "name": "Jolteon"
+  },
+  {
+    "name": "Flareon"
+  },
+  {
+    "name": "Porygon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Omanyte",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Omastar"
+  },
+  {
+    "name": "Kabuto",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Kabutops"
+  },
+  {
+    "name": "Aerodactyl"
+  },
+  {
+    "name": "Snorlax"
+  },
+  {
+    "name": "Articuno"
+  },
+  {
+    "name": "Articuno-Galar"
+  },
+  {
+    "name": "Zapdos"
+  },
+  {
+    "name": "Zapdos-Galar"
+  },
+  {
+    "name": "Moltres"
+  },
+  {
+    "name": "Moltres-Galar"
+  },
+  {
+    "name": "Dratini",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dragonair",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dragonite"
+  },
+  {
+    "name": "Mewtwo"
+  },
+  {
+    "name": "Mew"
+  },
+  {
+    "name": "Chikorita",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Bayleef",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Meganium"
+  },
+  {
+    "name": "Cyndaquil",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Quilava",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Typhlosion"
+  },
+  {
+    "name": "Typhlosion-Hisui"
+  },
+  {
+    "name": "Totodile",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Croconaw",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Feraligatr"
+  },
+  {
+    "name": "Sentret",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Furret"
+  },
+  {
+    "name": "Hoothoot",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Noctowl"
+  },
+  {
+    "name": "Ledyba",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ledian"
+  },
+  {
+    "name": "Spinarak",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ariados"
+  },
+  {
+    "name": "Crobat"
+  },
+  {
+    "name": "Chinchou",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lanturn"
+  },
+  {
+    "name": "Pichu",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Cleffa",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Igglybuff",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Togepi",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Togetic",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Natu",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Xatu"
+  },
+  {
+    "name": "Mareep",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Flaaffy",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ampharos"
+  },
+  {
+    "name": "Bellossom"
+  },
+  {
+    "name": "Marill",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Azumarill"
+  },
+  {
+    "name": "Sudowoodo"
+  },
+  {
+    "name": "Politoed"
+  },
+  {
+    "name": "Hoppip",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Skiploom",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Jumpluff"
+  },
+  {
+    "name": "Aipom",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sunkern",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sunflora"
+  },
+  {
+    "name": "Yanma",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Wooper",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Wooper-Paldea",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Quagsire"
+  },
+  {
+    "name": "Espeon"
+  },
+  {
+    "name": "Umbreon"
+  },
+  {
+    "name": "Murkrow",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Slowking"
+  },
+  {
+    "name": "Slowking-Galar"
+  },
+  {
+    "name": "Misdreavus",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Unown"
+  },
+  {
+    "name": "Wobbuffet"
+  },
+  {
+    "name": "Girafarig",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pineco",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Forretress"
+  },
+  {
+    "name": "Dunsparce",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gligar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Steelix"
+  },
+  {
+    "name": "Snubbull",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Granbull"
+  },
+  {
+    "name": "Qwilfish"
+  },
+  {
+    "name": "Qwilfish-Hisui",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Scizor"
+  },
+  {
+    "name": "Shuckle"
+  },
+  {
+    "name": "Heracross"
+  },
+  {
+    "name": "Sneasel",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sneasel-Hisui",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Teddiursa",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ursaring",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Slugma",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Magcargo"
+  },
+  {
+    "name": "Swinub",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Piloswine",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Corsola"
+  },
+  {
+    "name": "Corsola-Galar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Remoraid",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Octillery"
+  },
+  {
+    "name": "Delibird"
+  },
+  {
+    "name": "Mantine"
+  },
+  {
+    "name": "Skarmory"
+  },
+  {
+    "name": "Houndour",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Houndoom"
+  },
+  {
+    "name": "Kingdra"
+  },
+  {
+    "name": "Phanpy",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Donphan"
+  },
+  {
+    "name": "Porygon2",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Stantler",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Smeargle"
+  },
+  {
+    "name": "Tyrogue",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Hitmontop"
+  },
+  {
+    "name": "Smoochum",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Elekid",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Magby",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Miltank"
+  },
+  {
+    "name": "Blissey"
+  },
+  {
+    "name": "Raikou"
+  },
+  {
+    "name": "Entei"
+  },
+  {
+    "name": "Suicune"
+  },
+  {
+    "name": "Larvitar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pupitar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Tyranitar"
+  },
+  {
+    "name": "Lugia"
+  },
+  {
+    "name": "Ho-Oh"
+  },
+  {
+    "name": "Celebi"
+  },
+  {
+    "name": "Treecko",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Grovyle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sceptile"
+  },
+  {
+    "name": "Torchic",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Combusken",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Blaziken"
+  },
+  {
+    "name": "Mudkip",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Marshtomp",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Swampert"
+  },
+  {
+    "name": "Poochyena",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Mightyena"
+  },
+  {
+    "name": "Zigzagoon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Zigzagoon-Galar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Linoone"
+  },
+  {
+    "name": "Linoone-Galar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Wurmple",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Silcoon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Beautifly"
+  },
+  {
+    "name": "Cascoon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dustox"
+  },
+  {
+    "name": "Lotad",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lombre",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ludicolo"
+  },
+  {
+    "name": "Seedot",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Nuzleaf",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Shiftry"
+  },
+  {
+    "name": "Taillow",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Swellow"
+  },
+  {
+    "name": "Wingull",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pelipper"
+  },
+  {
+    "name": "Ralts",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Kirlia",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gardevoir"
+  },
+  {
+    "name": "Surskit",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Masquerain"
+  },
+  {
+    "name": "Shroomish",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Breloom"
+  },
+  {
+    "name": "Slakoth",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Vigoroth",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Slaking"
+  },
+  {
+    "name": "Nincada",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ninjask"
+  },
+  {
+    "name": "Shedinja"
+  },
+  {
+    "name": "Whismur",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Loudred",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Exploud"
+  },
+  {
+    "name": "Makuhita",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Hariyama"
+  },
+  {
+    "name": "Azurill",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Nosepass",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Skitty",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Delcatty"
+  },
+  {
+    "name": "Sableye"
+  },
+  {
+    "name": "Mawile"
+  },
+  {
+    "name": "Aron",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lairon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Aggron"
+  },
+  {
+    "name": "Meditite",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Medicham"
+  },
+  {
+    "name": "Electrike",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Manectric"
+  },
+  {
+    "name": "Plusle"
+  },
+  {
+    "name": "Minun"
+  },
+  {
+    "name": "Volbeat"
+  },
+  {
+    "name": "Illumise"
+  },
+  {
+    "name": "Roselia",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gulpin",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Swalot"
+  },
+  {
+    "name": "Carvanha",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sharpedo"
+  },
+  {
+    "name": "Wailmer",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Wailord"
+  },
+  {
+    "name": "Numel",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Camerupt"
+  },
+  {
+    "name": "Torkoal"
+  },
+  {
+    "name": "Spoink",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Grumpig"
+  },
+  {
+    "name": "Spinda"
+  },
+  {
+    "name": "Trapinch",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Vibrava",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Flygon"
+  },
+  {
+    "name": "Cacnea",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Cacturne"
+  },
+  {
+    "name": "Swablu",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Altaria"
+  },
+  {
+    "name": "Zangoose"
+  },
+  {
+    "name": "Seviper"
+  },
+  {
+    "name": "Lunatone"
+  },
+  {
+    "name": "Solrock"
+  },
+  {
+    "name": "Barboach",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Whiscash"
+  },
+  {
+    "name": "Corphish",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Crawdaunt"
+  },
+  {
+    "name": "Baltoy",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Claydol"
+  },
+  {
+    "name": "Lileep",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Cradily"
+  },
+  {
+    "name": "Anorith",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Armaldo"
+  },
+  {
+    "name": "Feebas",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Milotic"
+  },
+  {
+    "name": "Castform"
+  },
+  {
+    "name": "Kecleon"
+  },
+  {
+    "name": "Shuppet",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Banette"
+  },
+  {
+    "name": "Duskull",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dusclops",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Tropius"
+  },
+  {
+    "name": "Chimecho"
+  },
+  {
+    "name": "Absol"
+  },
+  {
+    "name": "Wynaut",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Snorunt",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Glalie"
+  },
+  {
+    "name": "Spheal",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sealeo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Walrein"
+  },
+  {
+    "name": "Clamperl",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Huntail"
+  },
+  {
+    "name": "Gorebyss"
+  },
+  {
+    "name": "Relicanth"
+  },
+  {
+    "name": "Luvdisc"
+  },
+  {
+    "name": "Bagon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Shelgon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Salamence"
+  },
+  {
+    "name": "Beldum",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Metang",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Metagross"
+  },
+  {
+    "name": "Regirock"
+  },
+  {
+    "name": "Regice"
+  },
+  {
+    "name": "Registeel"
+  },
+  {
+    "name": "Latias"
+  },
+  {
+    "name": "Latios"
+  },
+  {
+    "name": "Kyogre"
+  },
+  {
+    "name": "Groudon"
+  },
+  {
+    "name": "Rayquaza"
+  },
+  {
+    "name": "Jirachi"
+  },
+  {
+    "name": "Deoxys"
+  },
+  {
+    "name": "Deoxys-Attack"
+  },
+  {
+    "name": "Deoxys-Defense"
+  },
+  {
+    "name": "Deoxys-Speed"
+  },
+  {
+    "name": "Turtwig",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Grotle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Torterra"
+  },
+  {
+    "name": "Chimchar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Monferno",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Infernape"
+  },
+  {
+    "name": "Piplup",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Prinplup",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Empoleon"
+  },
+  {
+    "name": "Starly",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Staravia",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Staraptor"
+  },
+  {
+    "name": "Bidoof",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Bibarel"
+  },
+  {
+    "name": "Kricketot",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Kricketune"
+  },
+  {
+    "name": "Shinx",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Luxio",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Luxray"
+  },
+  {
+    "name": "Budew",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Roserade"
+  },
+  {
+    "name": "Cranidos",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Rampardos"
+  },
+  {
+    "name": "Shieldon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Bastiodon"
+  },
+  {
+    "name": "Burmy",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Wormadam"
+  },
+  {
+    "name": "Wormadam-Sandy"
+  },
+  {
+    "name": "Wormadam-Trash"
+  },
+  {
+    "name": "Mothim"
+  },
+  {
+    "name": "Combee",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Vespiquen"
+  },
+  {
+    "name": "Pachirisu"
+  },
+  {
+    "name": "Buizel",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Floatzel"
+  },
+  {
+    "name": "Cherubi",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Cherrim"
+  },
+  {
+    "name": "Shellos",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gastrodon"
+  },
+  {
+    "name": "Ambipom"
+  },
+  {
+    "name": "Drifloon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Drifblim"
+  },
+  {
+    "name": "Buneary",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lopunny"
+  },
+  {
+    "name": "Mismagius"
+  },
+  {
+    "name": "Honchkrow"
+  },
+  {
+    "name": "Glameow",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Purugly"
+  },
+  {
+    "name": "Chingling",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Stunky",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Skuntank"
+  },
+  {
+    "name": "Bronzor",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Bronzong"
+  },
+  {
+    "name": "Bonsly",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Mime Jr.",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Happiny",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Chatot"
+  },
+  {
+    "name": "Spiritomb"
+  },
+  {
+    "name": "Gible",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gabite",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Garchomp"
+  },
+  {
+    "name": "Munchlax",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Riolu",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lucario"
+  },
+  {
+    "name": "Hippopotas",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Hippowdon"
+  },
+  {
+    "name": "Skorupi",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Drapion"
+  },
+  {
+    "name": "Croagunk",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Toxicroak"
+  },
+  {
+    "name": "Carnivine"
+  },
+  {
+    "name": "Finneon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lumineon"
+  },
+  {
+    "name": "Mantyke",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Snover",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Abomasnow"
+  },
+  {
+    "name": "Weavile"
+  },
+  {
+    "name": "Magnezone"
+  },
+  {
+    "name": "Lickilicky"
+  },
+  {
+    "name": "Rhyperior"
+  },
+  {
+    "name": "Tangrowth"
+  },
+  {
+    "name": "Electivire"
+  },
+  {
+    "name": "Magmortar"
+  },
+  {
+    "name": "Togekiss"
+  },
+  {
+    "name": "Yanmega"
+  },
+  {
+    "name": "Leafeon"
+  },
+  {
+    "name": "Glaceon"
+  },
+  {
+    "name": "Gliscor"
+  },
+  {
+    "name": "Mamoswine"
+  },
+  {
+    "name": "Porygon-Z"
+  },
+  {
+    "name": "Gallade"
+  },
+  {
+    "name": "Probopass"
+  },
+  {
+    "name": "Dusknoir"
+  },
+  {
+    "name": "Froslass"
+  },
+  {
+    "name": "Rotom"
+  },
+  {
+    "name": "Rotom-Heat"
+  },
+  {
+    "name": "Rotom-Wash"
+  },
+  {
+    "name": "Rotom-Frost"
+  },
+  {
+    "name": "Rotom-Fan"
+  },
+  {
+    "name": "Rotom-Mow"
+  },
+  {
+    "name": "Uxie"
+  },
+  {
+    "name": "Mesprit"
+  },
+  {
+    "name": "Azelf"
+  },
+  {
+    "name": "Dialga"
+  },
+  {
+    "name": "Dialga-Origin"
+  },
+  {
+    "name": "Palkia"
+  },
+  {
+    "name": "Palkia-Origin"
+  },
+  {
+    "name": "Heatran"
+  },
+  {
+    "name": "Regigigas"
+  },
+  {
+    "name": "Giratina"
+  },
+  {
+    "name": "Giratina-Origin"
+  },
+  {
+    "name": "Cresselia"
+  },
+  {
+    "name": "Phione"
+  },
+  {
+    "name": "Manaphy"
+  },
+  {
+    "name": "Darkrai"
+  },
+  {
+    "name": "Shaymin"
+  },
+  {
+    "name": "Shaymin-Sky"
+  },
+  {
+    "name": "Arceus"
+  },
+  {
+    "name": "Victini"
+  },
+  {
+    "name": "Snivy",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Servine",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Serperior"
+  },
+  {
+    "name": "Tepig",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pignite",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Emboar"
+  },
+  {
+    "name": "Oshawott",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dewott",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Samurott"
+  },
+  {
+    "name": "Samurott-Hisui"
+  },
+  {
+    "name": "Patrat",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Watchog"
+  },
+  {
+    "name": "Lillipup",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Herdier",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Stoutland"
+  },
+  {
+    "name": "Purrloin",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Liepard"
+  },
+  {
+    "name": "Pansage",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Simisage"
+  },
+  {
+    "name": "Pansear",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Simisear"
+  },
+  {
+    "name": "Panpour",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Simipour"
+  },
+  {
+    "name": "Munna",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Musharna"
+  },
+  {
+    "name": "Pidove",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Tranquill",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Unfezant"
+  },
+  {
+    "name": "Blitzle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Zebstrika"
+  },
+  {
+    "name": "Roggenrola",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Boldore",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gigalith"
+  },
+  {
+    "name": "Woobat",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Swoobat"
+  },
+  {
+    "name": "Drilbur",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Excadrill"
+  },
+  {
+    "name": "Audino"
+  },
+  {
+    "name": "Timburr",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gurdurr",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Conkeldurr"
+  },
+  {
+    "name": "Tympole",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Palpitoad",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Seismitoad"
+  },
+  {
+    "name": "Throh"
+  },
+  {
+    "name": "Sawk"
+  },
+  {
+    "name": "Sewaddle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Swadloon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Leavanny"
+  },
+  {
+    "name": "Venipede",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Whirlipede",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Scolipede"
+  },
+  {
+    "name": "Cottonee",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Whimsicott"
+  },
+  {
+    "name": "Petilil",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lilligant"
+  },
+  {
+    "name": "Lilligant-Hisui"
+  },
+  {
+    "name": "Basculin"
+  },
+  {
+    "name": "Basculin-White-Striped",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sandile",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Krokorok",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Krookodile"
+  },
+  {
+    "name": "Darumaka",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Darumaka-Galar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Darmanitan"
+  },
+  {
+    "name": "Darmanitan-Galar"
+  },
+  {
+    "name": "Maractus"
+  },
+  {
+    "name": "Dwebble",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Crustle"
+  },
+  {
+    "name": "Scraggy",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Scrafty"
+  },
+  {
+    "name": "Sigilyph"
+  },
+  {
+    "name": "Yamask",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Yamask-Galar",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Cofagrigus"
+  },
+  {
+    "name": "Tirtouga",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Carracosta"
+  },
+  {
+    "name": "Archen",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Archeops"
+  },
+  {
+    "name": "Trubbish",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Garbodor"
+  },
+  {
+    "name": "Zorua",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Zorua-Hisui",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Zoroark"
+  },
+  {
+    "name": "Zoroark-Hisui"
+  },
+  {
+    "name": "Minccino",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Cinccino"
+  },
+  {
+    "name": "Gothita",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gothorita",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gothitelle"
+  },
+  {
+    "name": "Solosis",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Duosion",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Reuniclus"
+  },
+  {
+    "name": "Ducklett",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Swanna"
+  },
+  {
+    "name": "Vanillite",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Vanillish",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Vanilluxe"
+  },
+  {
+    "name": "Deerling",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sawsbuck"
+  },
+  {
+    "name": "Emolga"
+  },
+  {
+    "name": "Karrablast",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Escavalier"
+  },
+  {
+    "name": "Foongus",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Amoonguss"
+  },
+  {
+    "name": "Frillish",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Jellicent"
+  },
+  {
+    "name": "Alomomola"
+  },
+  {
+    "name": "Joltik",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Galvantula"
+  },
+  {
+    "name": "Ferroseed",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ferrothorn"
+  },
+  {
+    "name": "Klink",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Klang",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Klinklang"
+  },
+  {
+    "name": "Tynamo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Eelektrik",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Eelektross"
+  },
+  {
+    "name": "Elgyem",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Beheeyem"
+  },
+  {
+    "name": "Litwick",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lampent",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Chandelure"
+  },
+  {
+    "name": "Axew",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Fraxure",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Haxorus"
+  },
+  {
+    "name": "Cubchoo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Beartic"
+  },
+  {
+    "name": "Cryogonal"
+  },
+  {
+    "name": "Shelmet",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Accelgor"
+  },
+  {
+    "name": "Stunfisk"
+  },
+  {
+    "name": "Stunfisk-Galar"
+  },
+  {
+    "name": "Mienfoo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Mienshao"
+  },
+  {
+    "name": "Druddigon"
+  },
+  {
+    "name": "Golett",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Golurk"
+  },
+  {
+    "name": "Pawniard",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Bisharp",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Bouffalant"
+  },
+  {
+    "name": "Rufflet",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Braviary"
+  },
+  {
+    "name": "Braviary-Hisui"
+  },
+  {
+    "name": "Vullaby",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Mandibuzz"
+  },
+  {
+    "name": "Heatmor"
+  },
+  {
+    "name": "Durant"
+  },
+  {
+    "name": "Deino",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Zweilous",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Hydreigon"
+  },
+  {
+    "name": "Larvesta",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Volcarona"
+  },
+  {
+    "name": "Cobalion"
+  },
+  {
+    "name": "Terrakion"
+  },
+  {
+    "name": "Virizion"
+  },
+  {
+    "name": "Tornadus"
+  },
+  {
+    "name": "Tornadus-Therian"
+  },
+  {
+    "name": "Thundurus"
+  },
+  {
+    "name": "Thundurus-Therian"
+  },
+  {
+    "name": "Reshiram"
+  },
+  {
+    "name": "Zekrom"
+  },
+  {
+    "name": "Landorus"
+  },
+  {
+    "name": "Landorus-Therian"
+  },
+  {
+    "name": "Kyurem"
+  },
+  {
+    "name": "Kyurem-Black"
+  },
+  {
+    "name": "Kyurem-White"
+  },
+  {
+    "name": "Keldeo"
+  },
+  {
+    "name": "Meloetta"
+  },
+  {
+    "name": "Genesect"
+  },
+  {
+    "name": "Chespin",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Quilladin",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Chesnaught"
+  },
+  {
+    "name": "Fennekin",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Braixen",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Delphox"
+  },
+  {
+    "name": "Froakie",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Frogadier",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Greninja"
+  },
+  {
+    "name": "Bunnelby",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Diggersby"
+  },
+  {
+    "name": "Fletchling",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Fletchinder",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Talonflame"
+  },
+  {
+    "name": "Scatterbug",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Spewpa",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Vivillon"
+  },
+  {
+    "name": "Litleo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pyroar"
+  },
+  {
+    "name": "Flabébé",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Floette",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Florges"
+  },
+  {
+    "name": "Skiddo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gogoat"
+  },
+  {
+    "name": "Pancham",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pangoro"
+  },
+  {
+    "name": "Furfrou"
+  },
+  {
+    "name": "Espurr",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Meowstic"
+  },
+  {
+    "name": "Meowstic-F"
+  },
+  {
+    "name": "Honedge",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Doublade",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Aegislash"
+  },
+  {
+    "name": "Spritzee",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Aromatisse"
+  },
+  {
+    "name": "Swirlix",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Slurpuff"
+  },
+  {
+    "name": "Inkay",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Malamar"
+  },
+  {
+    "name": "Binacle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Barbaracle"
+  },
+  {
+    "name": "Skrelp",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dragalge"
+  },
+  {
+    "name": "Clauncher",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Clawitzer"
+  },
+  {
+    "name": "Helioptile",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Heliolisk"
+  },
+  {
+    "name": "Tyrunt",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Tyrantrum"
+  },
+  {
+    "name": "Amaura",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Aurorus"
+  },
+  {
+    "name": "Sylveon"
+  },
+  {
+    "name": "Hawlucha"
+  },
+  {
+    "name": "Dedenne"
+  },
+  {
+    "name": "Carbink"
+  },
+  {
+    "name": "Goomy",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sliggoo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sliggoo-Hisui",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Goodra"
+  },
+  {
+    "name": "Goodra-Hisui"
+  },
+  {
+    "name": "Klefki"
+  },
+  {
+    "name": "Phantump",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Trevenant"
+  },
+  {
+    "name": "Pumpkaboo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gourgeist"
+  },
+  {
+    "name": "Bergmite",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Avalugg"
+  },
+  {
+    "name": "Avalugg-Hisui"
+  },
+  {
+    "name": "Noibat",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Noivern"
+  },
+  {
+    "name": "Xerneas"
+  },
+  {
+    "name": "Yveltal"
+  },
+  {
+    "name": "Zygarde"
+  },
+  {
+    "name": "Zygarde-10%"
+  },
+  {
+    "name": "Diancie"
+  },
+  {
+    "name": "Hoopa"
+  },
+  {
+    "name": "Hoopa-Unbound"
+  },
+  {
+    "name": "Volcanion"
+  },
+  {
+    "name": "Rowlet",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dartrix",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Decidueye"
+  },
+  {
+    "name": "Decidueye-Hisui"
+  },
+  {
+    "name": "Litten",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Torracat",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Incineroar"
+  },
+  {
+    "name": "Popplio",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Brionne",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Primarina"
+  },
+  {
+    "name": "Pikipek",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Trumbeak",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Toucannon"
+  },
+  {
+    "name": "Yungoos",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gumshoos"
+  },
+  {
+    "name": "Grubbin",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Charjabug",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Vikavolt"
+  },
+  {
+    "name": "Crabrawler",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Crabominable"
+  },
+  {
+    "name": "Oricorio"
+  },
+  {
+    "name": "Cutiefly",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Ribombee"
+  },
+  {
+    "name": "Rockruff",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lycanroc"
+  },
+  {
+    "name": "Lycanroc-Midnight"
+  },
+  {
+    "name": "Lycanroc-Dusk"
+  },
+  {
+    "name": "Wishiwashi"
+  },
+  {
+    "name": "Mareanie",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Toxapex"
+  },
+  {
+    "name": "Mudbray",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Mudsdale"
+  },
+  {
+    "name": "Dewpider",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Araquanid"
+  },
+  {
+    "name": "Fomantis",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lurantis"
+  },
+  {
+    "name": "Morelull",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Shiinotic"
+  },
+  {
+    "name": "Salandit",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Salazzle"
+  },
+  {
+    "name": "Stufful",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Bewear"
+  },
+  {
+    "name": "Bounsweet",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Steenee",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Tsareena"
+  },
+  {
+    "name": "Comfey"
+  },
+  {
+    "name": "Oranguru"
+  },
+  {
+    "name": "Passimian"
+  },
+  {
+    "name": "Wimpod",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Golisopod"
+  },
+  {
+    "name": "Sandygast",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Palossand"
+  },
+  {
+    "name": "Pyukumuku"
+  },
+  {
+    "name": "Type: Null",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Silvally"
+  },
+  {
+    "name": "Minior"
+  },
+  {
+    "name": "Komala"
+  },
+  {
+    "name": "Turtonator"
+  },
+  {
+    "name": "Togedemaru"
+  },
+  {
+    "name": "Mimikyu"
+  },
+  {
+    "name": "Bruxish"
+  },
+  {
+    "name": "Drampa"
+  },
+  {
+    "name": "Dhelmise"
+  },
+  {
+    "name": "Jangmo-o",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Hakamo-o",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Kommo-o"
+  },
+  {
+    "name": "Tapu Koko"
+  },
+  {
+    "name": "Tapu Lele"
+  },
+  {
+    "name": "Tapu Bulu"
+  },
+  {
+    "name": "Tapu Fini"
+  },
+  {
+    "name": "Cosmog",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Cosmoem",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Solgaleo"
+  },
+  {
+    "name": "Lunala"
+  },
+  {
+    "name": "Nihilego"
+  },
+  {
+    "name": "Buzzwole"
+  },
+  {
+    "name": "Pheromosa"
+  },
+  {
+    "name": "Xurkitree"
+  },
+  {
+    "name": "Celesteela"
+  },
+  {
+    "name": "Kartana"
+  },
+  {
+    "name": "Guzzlord"
+  },
+  {
+    "name": "Necrozma"
+  },
+  {
+    "name": "Necrozma-Dusk-Mane"
+  },
+  {
+    "name": "Necrozma-Dawn-Wings"
+  },
+  {
+    "name": "Magearna"
+  },
+  {
+    "name": "Marshadow"
+  },
+  {
+    "name": "Poipole",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Naganadel"
+  },
+  {
+    "name": "Stakataka"
+  },
+  {
+    "name": "Blacephalon"
+  },
+  {
+    "name": "Zeraora"
+  },
+  {
+    "name": "Meltan"
+  },
+  {
+    "name": "Melmetal"
+  },
+  {
+    "name": "Grookey",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Thwackey",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Rillaboom"
+  },
+  {
+    "name": "Scorbunny",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Raboot",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Cinderace"
+  },
+  {
+    "name": "Sobble",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Drizzile",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Inteleon"
+  },
+  {
+    "name": "Skwovet",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Greedent"
+  },
+  {
+    "name": "Rookidee",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Corvisquire",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Corviknight"
+  },
+  {
+    "name": "Blipbug",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dottler",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Orbeetle"
+  },
+  {
+    "name": "Nickit",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Thievul"
+  },
+  {
+    "name": "Gossifleur",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Eldegoss"
+  },
+  {
+    "name": "Wooloo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dubwool"
+  },
+  {
+    "name": "Chewtle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Drednaw"
+  },
+  {
+    "name": "Yamper",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Boltund"
+  },
+  {
+    "name": "Rolycoly",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Carkol",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Coalossal"
+  },
+  {
+    "name": "Applin",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Flapple"
+  },
+  {
+    "name": "Appletun"
+  },
+  {
+    "name": "Silicobra",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sandaconda"
+  },
+  {
+    "name": "Cramorant"
+  },
+  {
+    "name": "Arrokuda",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Barraskewda"
+  },
+  {
+    "name": "Toxel",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Toxtricity"
+  },
+  {
+    "name": "Sizzlipede",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Centiskorch"
+  },
+  {
+    "name": "Clobbopus",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Grapploct"
+  },
+  {
+    "name": "Sinistea",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Polteageist"
+  },
+  {
+    "name": "Hatenna",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Hattrem",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Hatterene"
+  },
+  {
+    "name": "Impidimp",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Morgrem",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Grimmsnarl"
+  },
+  {
+    "name": "Obstagoon"
+  },
+  {
+    "name": "Perrserker"
+  },
+  {
+    "name": "Cursola"
+  },
+  {
+    "name": "Sirfetch’d"
+  },
+  {
+    "name": "Mr. Rime"
+  },
+  {
+    "name": "Runerigus"
+  },
+  {
+    "name": "Milcery",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Alcremie"
+  },
+  {
+    "name": "Falinks"
+  },
+  {
+    "name": "Pincurchin"
+  },
+  {
+    "name": "Snom",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Frosmoth"
+  },
+  {
+    "name": "Stonjourner"
+  },
+  {
+    "name": "Eiscue"
+  },
+  {
+    "name": "Indeedee"
+  },
+  {
+    "name": "Indeedee-F"
+  },
+  {
+    "name": "Morpeko"
+  },
+  {
+    "name": "Cufant",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Copperajah"
+  },
+  {
+    "name": "Dracozolt"
+  },
+  {
+    "name": "Arctozolt"
+  },
+  {
+    "name": "Dracovish"
+  },
+  {
+    "name": "Arctovish"
+  },
+  {
+    "name": "Duraludon",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dreepy",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Drakloak",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dragapult"
+  },
+  {
+    "name": "Zacian"
+  },
+  {
+    "name": "Zamazenta"
+  },
+  {
+    "name": "Eternatus"
+  },
+  {
+    "name": "Kubfu",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Urshifu"
+  },
+  {
+    "name": "Urshifu-Rapid-Strike"
+  },
+  {
+    "name": "Zarude"
+  },
+  {
+    "name": "Zarude-Dada"
+  },
+  {
+    "name": "Regieleki"
+  },
+  {
+    "name": "Regidrago"
+  },
+  {
+    "name": "Glastrier"
+  },
+  {
+    "name": "Spectrier"
+  },
+  {
+    "name": "Calyrex"
+  },
+  {
+    "name": "Calyrex-Ice"
+  },
+  {
+    "name": "Calyrex-Shadow"
+  },
+  {
+    "name": "Wyrdeer"
+  },
+  {
+    "name": "Kleavor"
+  },
+  {
+    "name": "Ursaluna"
+  },
+  {
+    "name": "Ursaluna-Bloodmoon"
+  },
+  {
+    "name": "Basculegion"
+  },
+  {
+    "name": "Basculegion-F"
+  },
+  {
+    "name": "Sneasler"
+  },
+  {
+    "name": "Overqwil"
+  },
+  {
+    "name": "Enamorus"
+  },
+  {
+    "name": "Enamorus-Therian"
+  },
+  {
+    "name": "Sprigatito",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Floragato",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Meowscarada"
+  },
+  {
+    "name": "Fuecoco",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Crocalor",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Skeledirge"
+  },
+  {
+    "name": "Quaxly",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Quaxwell",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Quaquaval"
+  },
+  {
+    "name": "Lechonk",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Oinkologne"
+  },
+  {
+    "name": "Oinkologne-F"
+  },
+  {
+    "name": "Tarountula",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Spidops"
+  },
+  {
+    "name": "Nymble",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Lokix"
+  },
+  {
+    "name": "Pawmi",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pawmo",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Pawmot"
+  },
+  {
+    "name": "Tandemaus",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Maushold"
+  },
+  {
+    "name": "Fidough",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dachsbun"
+  },
+  {
+    "name": "Smoliv",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Dolliv",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Arboliva"
+  },
+  {
+    "name": "Squawkabilly"
+  },
+  {
+    "name": "Nacli",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Naclstack",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Garganacl"
+  },
+  {
+    "name": "Charcadet",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Armarouge"
+  },
+  {
+    "name": "Ceruledge"
+  },
+  {
+    "name": "Tadbulb",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Bellibolt"
+  },
+  {
+    "name": "Wattrel",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Kilowattrel"
+  },
+  {
+    "name": "Maschiff",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Mabosstiff"
+  },
+  {
+    "name": "Shroodle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Grafaiai"
+  },
+  {
+    "name": "Bramblin",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Brambleghast"
+  },
+  {
+    "name": "Toedscool",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Toedscruel"
+  },
+  {
+    "name": "Klawf"
+  },
+  {
+    "name": "Capsakid",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Scovillain"
+  },
+  {
+    "name": "Rellor",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Rabsca"
+  },
+  {
+    "name": "Flittle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Espathra"
+  },
+  {
+    "name": "Tinkatink",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Tinkatuff",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Tinkaton"
+  },
+  {
+    "name": "Wiglett",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Wugtrio"
+  },
+  {
+    "name": "Bombirdier"
+  },
+  {
+    "name": "Finizen",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Palafin"
+  },
+  {
+    "name": "Varoom",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Revavroom"
+  },
+  {
+    "name": "Cyclizar"
+  },
+  {
+    "name": "Orthworm"
+  },
+  {
+    "name": "Glimmet",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Glimmora"
+  },
+  {
+    "name": "Greavard",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Houndstone"
+  },
+  {
+    "name": "Flamigo"
+  },
+  {
+    "name": "Cetoddle",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Cetitan"
+  },
+  {
+    "name": "Veluza"
+  },
+  {
+    "name": "Dondozo"
+  },
+  {
+    "name": "Tatsugiri"
+  },
+  {
+    "name": "Annihilape"
+  },
+  {
+    "name": "Clodsire"
+  },
+  {
+    "name": "Farigiraf"
+  },
+  {
+    "name": "Dudunsparce"
+  },
+  {
+    "name": "Kingambit"
+  },
+  {
+    "name": "Great Tusk"
+  },
+  {
+    "name": "Scream Tail"
+  },
+  {
+    "name": "Brute Bonnet"
+  },
+  {
+    "name": "Flutter Mane"
+  },
+  {
+    "name": "Slither Wing"
+  },
+  {
+    "name": "Sandy Shocks"
+  },
+  {
+    "name": "Iron Treads"
+  },
+  {
+    "name": "Iron Bundle"
+  },
+  {
+    "name": "Iron Hands"
+  },
+  {
+    "name": "Iron Jugulis"
+  },
+  {
+    "name": "Iron Moth"
+  },
+  {
+    "name": "Iron Thorns"
+  },
+  {
+    "name": "Frigibax",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Arctibax",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Baxcalibur"
+  },
+  {
+    "name": "Gimmighoul",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gimmighoul-Roaming",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Gholdengo"
+  },
+  {
+    "name": "Wo-Chien"
+  },
+  {
+    "name": "Chien-Pao"
+  },
+  {
+    "name": "Ting-Lu"
+  },
+  {
+    "name": "Chi-Yu"
+  },
+  {
+    "name": "Roaring Moon"
+  },
+  {
+    "name": "Iron Valiant"
+  },
+  {
+    "name": "Koraidon"
+  },
+  {
+    "name": "Miraidon"
+  },
+  {
+    "name": "Walking Wake"
+  },
+  {
+    "name": "Iron Leaves"
+  },
+  {
+    "name": "Dipplin",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Poltchageist",
+    "tier": "d",
+    "category": "nfe"
+  },
+  {
+    "name": "Sinistcha"
+  },
+  {
+    "name": "Okidogi"
+  },
+  {
+    "name": "Munkidori"
+  },
+  {
+    "name": "Fezandipiti"
+  },
+  {
+    "name": "Ogerpon"
+  },
+  {
+    "name": "Ogerpon-Wellspring"
+  },
+  {
+    "name": "Ogerpon-Hearthflame"
+  },
+  {
+    "name": "Ogerpon-Cornerstone"
+  },
+  {
+    "name": "Archaludon"
+  },
+  {
+    "name": "Hydrapple"
+  },
+  {
+    "name": "Gouging Fire"
+  },
+  {
+    "name": "Raging Bolt"
+  },
+  {
+    "name": "Iron Boulder"
+  },
+  {
+    "name": "Iron Crown"
+  },
+  {
+    "name": "Terapagos"
+  },
+  {
+    "name": "Pecharunt"
+  }
+]
