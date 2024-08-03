@@ -19,7 +19,7 @@ export const tierChoices = ["S", "A", "B", "C", "D"];
 
 export type DraftData = {
   name: string;
-  pid: string;
+  png: string;
   tier: string;
   category: string;
   coach?: string;

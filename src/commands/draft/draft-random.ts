@@ -47,8 +47,8 @@ export const DraftRandomCommand: Command = {
           );
 
         const attachment = new AttachmentBuilder(
-          `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.pid}.png`,
-          { name: `${pokemon.pid}.png` }
+          `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.png}.png`,
+          { name: `${pokemon.png}.png` }
         );
         interaction.editReply({
           content: baseReply + `\nI have drafted you ${pokemon.name}!`,
