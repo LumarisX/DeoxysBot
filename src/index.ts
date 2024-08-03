@@ -11,12 +11,13 @@ client.once("ready", () => console.log("Ready!"));
 
 client.on("interactionCreate", async (interaction: Interaction) => {
   if (!interaction.isCommand()) return;
-  const command = commands.find(
-    (command) =>
-      command.data.name.toLowerCase() === interaction.commandName.toLowerCase()
+  const commandData = commands.find(
+    (commandData) =>
+      commandData.command.data.name.toLowerCase() ===
+      interaction.commandName.toLowerCase()
   );
-  if (command) {
-    command.execute(interaction);
+  if (commandData) {
+    commandData.command.execute(interaction);
   }
 });
 

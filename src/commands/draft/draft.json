@@ -882,7 +882,8 @@
   {
     "name": "Flaaffy",
     "tier": "d",
-    "category": "nfe"
+    "category": "nfe",
+    "coach": "lumaris"
   },
   {
     "name": "Ampharos"
@@ -3235,7 +3236,8 @@
   {
     "name": "Rockruff",
     "tier": "d",
-    "category": "nfe"
+    "category": "nfe",
+    "coach": "lumaris"
   },
   {
     "name": "Lycanroc"

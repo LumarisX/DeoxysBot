@@ -1,8 +1,8 @@
 import path from "path";
 import fs from "fs";
-import { DraftData } from "../src/commands";
+import { DraftData } from "..";
 
-const filePath = path.resolve(__dirname, "./draft.json");
+export const filePath = path.resolve(__dirname, "./draft.json");
 
 function resetDraft() {
   let draftData: DraftData = JSON.parse(fs.readFileSync(filePath, "utf-8"));

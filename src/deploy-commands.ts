@@ -4,8 +4,8 @@ import { commands } from "./commands";
 const rest = new REST({ version: "10" }).setToken(config.DISCORD_TOKEN);
 
 const commandData = commands
-  .filter((command) => command.enabled)
-  .map((command) => command.data);
+  .filter((commandData) => commandData.enabled)
+  .map((commandData) => commandData.command.data);
 
 type DeployCommandsProps = {
   guildId: string;
