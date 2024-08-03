@@ -23,9 +23,14 @@ export type DraftData = {
   tier: string;
   category: string;
   coach?: string;
+  order?: number;
 };
 
-export let transactions: { user: User; draft: DraftData }[] = [];
+let orderCount = getDraftData().reduce(
+  (max, pokemon) =>
+    (max = pokemon.order && pokemon.order > max ? pokemon.order : max),
+  0
+);
 
 export function draftPokemon(
   user: User,
@@ -38,6 +43,7 @@ export function draftPokemon(
       tier: string;
       category: string;
       coach?: string;
+      order?: number;
     }
   | undefined {
   const draftData: DraftData[] = getDraftData();
@@ -50,7 +56,7 @@ export function draftPokemon(
   if (undrafted.length > 0) {
     const randomMon = undrafted[Math.floor(Math.random() * undrafted.length)];
     randomMon.coach = user.username;
-    transactions.push({ user: user, draft: randomMon });
+    randomMon.order = ++orderCount;
     console.log(`${user.username} drafted ${randomMon.name}`);
     writeDraft(draftData);
     return randomMon;
@@ -60,11 +66,13 @@ export function draftPokemon(
 }
 
 export function draftUndo() {
-  const transaction = transactions.pop();
-  if (transaction) {
-    delete transaction.draft.coach;
-  }
-  return transaction;
+  const draftData = getDraftData();
+  let data = draftData.find((pokemon) => pokemon.order === orderCount);
+  if (!data) return;
+  delete data.coach;
+  delete data.order;
+  writeDraft(draftData);
+  return data;
 }
 
 export function getDraftData(): DraftData[] {
@@ -98,7 +106,7 @@ export function resetDraft() {
   writeDraft(draftData);
 }
 
-function writeDraft(draftData = getDraftData()) {
+function writeDraft(draftData: DraftData[]) {
   fs.writeFileSync(filePath, JSON.stringify(draftData, null, 2));
 }
 

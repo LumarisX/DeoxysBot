@@ -1387,7 +1387,8 @@
     "name": "Porygon2",
     "pid": "porygon2",
     "tier": "D",
-    "category": "NFE"
+    "category": "NFE",
+    "order": 1
   },
   {
     "name": "Stantler",

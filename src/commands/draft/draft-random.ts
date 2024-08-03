@@ -37,25 +37,24 @@ export const DraftRandomCommand: Command = {
     if (!category) {
       return interaction.reply("Category not selected");
     }
-    let replyString = `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon.`;
-    interaction.reply(replyString).then(() =>
-      new Promise((f) => setTimeout(f, 2000)).then(() => {
+    const baseReply = `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon.`;
+    interaction.reply(baseReply + `\nSearching...`).then(() =>
+      setTimeout(() => {
         let pokemon = draftPokemon(interaction.user, tier, category);
-        if (pokemon) {
-          const attachment = new AttachmentBuilder(
-            `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.pid}.png`,
-            { name: `${pokemon.pid}.png` }
+        if (!pokemon)
+          return interaction.editReply(
+            baseReply + "\nNo pokemon are left! Please choose again."
           );
-          interaction.editReply({
-            content: replyString + `\nI have drafted you ${pokemon.name}!`,
-            files: [attachment],
-          });
-        } else {
-          interaction.editReply(
-            replyString + "\nNo pokemon are left! Please choose again."
-          );
-        }
-      })
+
+        const attachment = new AttachmentBuilder(
+          `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.pid}.png`,
+          { name: `${pokemon.pid}.png` }
+        );
+        interaction.editReply({
+          content: baseReply + `\nI have drafted you ${pokemon.name}!`,
+          files: [attachment],
+        });
+      }, 2000)
     );
   },
 };
