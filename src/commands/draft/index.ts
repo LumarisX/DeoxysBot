@@ -102,6 +102,19 @@ function writeDraft(draftData: DraftData[]) {
   fs.writeFileSync(filePath, JSON.stringify(draftData, null, 2));
 }
 
+export function tradeRandom(oldpid: string, user: User): DraftData | undefined {
+  return;
+}
+
+export function trade(
+  oldpid: string,
+  newpid: string,
+  user: User
+): DraftData | undefined {
+  const oldPokemon = getDraftData().find((pokemon) => pokemon.pid === oldpid);
+  if (!oldPokemon || oldPokemon.coach != user.username) return;
+}
+
 function getDraftedMons() {
   let draftData: DraftData[] = getDraftData();
   let draftedMons = draftData.filter((mon) => mon.coach);
