@@ -5,6 +5,7 @@ import { DraftTeamCommand } from "./draft/draft-team";
 import { DraftResetCommand } from "./draft/draft-reset";
 import { DraftUndoCommand } from "./draft/draft-undo";
 import { DraftUndraftedCommand } from "./draft/draft-undrafted";
+import { DraftModPickCommand } from "./draft/draft-modpick";
 
 export type Command = {
   data: SharedSlashCommand;
@@ -18,4 +19,5 @@ export const commands: { command: Command; enabled: boolean }[] = [
   { command: DraftResetCommand, enabled: true },
   { command: DraftUndoCommand, enabled: true },
   { command: DraftUndraftedCommand, enabled: true },
+  { command: DraftModPickCommand, enabled: true },
 ];

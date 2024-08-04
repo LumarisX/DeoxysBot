@@ -20,6 +20,7 @@ export const tierChoices = ["S", "A", "B", "C", "D"];
 export type DraftData = {
   name: string;
   png: string;
+  pid: string;
   tier: string;
   category: string;
   coach?: string;
@@ -36,16 +37,7 @@ export function draftPokemon(
   user: User,
   tier: CommandInteractionOption,
   category: CommandInteractionOption
-):
-  | {
-      name: string;
-      pid: string;
-      tier: string;
-      category: string;
-      coach?: string;
-      order?: number;
-    }
-  | undefined {
+): DraftData | undefined {
   const draftData: DraftData[] = getDraftData();
   let undrafted = draftData.filter(
     (pokemon) =>
