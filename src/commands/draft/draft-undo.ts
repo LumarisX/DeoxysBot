@@ -3,13 +3,25 @@ import {
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
-import { draftUndo, notifyNext } from ".";
+import { draftData, draftUndo, getDivisionByName, notifyNext } from ".";
 import { Command } from "..";
 
 export const DraftUndoCommand: Command = {
   data: new SlashCommandBuilder()
     .setName("draft-undo")
-    .setDescription("Admin Only: Undo the previous draft pick."),
+    .setDescription("Admin Only: Undo the previous draft pick.")
+    .addStringOption((option) =>
+      option
+        .setName("division")
+        .setDescription("Division")
+        .setRequired(true)
+        .addChoices(
+          draftData.divisions.map((division) => ({
+            name: division.name,
+            value: division.name,
+          }))
+        )
+    ),
   execute: (interaction: CommandInteraction) => {
     if (
       !interaction.memberPermissions?.has(
@@ -20,7 +32,11 @@ export const DraftUndoCommand: Command = {
         "You do not have permission to use this command."
       );
     }
-    if (draftUndo()) {
+    let division = getDivisionByName(
+      interaction.options.get("division")?.value as string
+    );
+    if (!division) return interaction.reply("Division not selected.");
+    if (draftUndo(division)) {
       interaction.reply("Draft pick undone.");
       notifyNext(interaction);
     } else {

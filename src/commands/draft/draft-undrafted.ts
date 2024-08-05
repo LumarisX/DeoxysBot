@@ -6,13 +6,25 @@ import {
   ComponentType,
   SlashCommandBuilder,
 } from "discord.js";
-import { draftData, getUndrafted } from ".";
+import { draftData, getDivisionByName, getUndrafted } from ".";
 import { Command } from "..";
 
 export const DraftUndraftedCommand: Command = {
   data: new SlashCommandBuilder()
     .setName("draft-undrafted")
     .setDescription("View a list of undrafted pokemon.")
+    .addStringOption((option) =>
+      option
+        .setName("division")
+        .setDescription("Division")
+        .setRequired(true)
+        .addChoices(
+          draftData.divisions.map((division) => ({
+            name: division.name,
+            value: division.name,
+          }))
+        )
+    )
     .addStringOption((option) =>
       option
         .setName("tier")
@@ -36,9 +48,13 @@ export const DraftUndraftedCommand: Command = {
         )
     ),
   execute: async (interaction: CommandInteraction) => {
+    let division = getDivisionByName(
+      interaction.options.get("division")?.value as string
+    );
+    if (!division) return interaction.reply("Division not selected.");
     const tier = interaction.options.get("tier");
     const category = interaction.options.get("category");
-    let undraftedData = getUndrafted({
+    let undraftedData = getUndrafted(division, {
       tier: tier?.value as string | undefined,
       category: category?.value as string | undefined,
     });

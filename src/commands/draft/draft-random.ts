@@ -1,5 +1,11 @@
 import { CommandInteraction, SlashCommandBuilder } from "discord.js";
-import { canDraft, draftData, draftRandom, getNextUser, notifyNext } from ".";
+import {
+  canDraft,
+  draftData,
+  draftRandom,
+  getDivisionByChannel,
+  notifyNext,
+} from ".";
 import { Command } from "..";
 
 export const DraftRandomCommand: Command = {
@@ -28,9 +34,14 @@ export const DraftRandomCommand: Command = {
         )
     ),
   execute: (interaction: CommandInteraction) => {
+    let division = getDivisionByChannel(interaction.channelId);
+    if (!division)
+      return interaction.reply(
+        "Unknown channel. Please try again in your draft channel."
+      );
     if (draftData.state != "started")
       return interaction.reply("The draft has not started yet.");
-    if (!canDraft(interaction.user.id)) {
+    if (!canDraft(division, interaction.user.id)) {
       return interaction.reply("Not allowed to draft.");
     }
     const tier = interaction.options.get("tier");
@@ -50,7 +61,13 @@ export const DraftRandomCommand: Command = {
           setTimeout(() => {
             interaction.editReply(baseReply + `\nSearching...`);
             setTimeout(() => {
-              let pokemon = draftRandom(interaction.user, tier, category, true);
+              let pokemon = draftRandom(
+                division,
+                interaction.user,
+                tier,
+                category,
+                { validate: true }
+              );
               if (typeof pokemon === "string")
                 return interaction.editReply(baseReply + `\n${pokemon}`);
               // const attachment = new AttachmentBuilder(

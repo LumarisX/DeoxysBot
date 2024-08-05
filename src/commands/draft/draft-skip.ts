@@ -4,7 +4,13 @@ import {
   SlashCommandBuilder,
   User,
 } from "discord.js";
-import { notifyNext, skipUser } from ".";
+import {
+  draftData,
+  getDivisionByChannel,
+  getDivisionByName,
+  notifyNext,
+  skipUser,
+} from ".";
 import { Command } from "..";
 
 export const DraftSkipCommand: Command = {
@@ -16,6 +22,17 @@ export const DraftSkipCommand: Command = {
         .setName("user")
         .setDescription("The user to skip.")
         .setRequired(true)
+    )
+    .addStringOption((option) =>
+      option
+        .setName("division")
+        .setDescription("Division")
+        .addChoices(
+          draftData.divisions.map((division) => ({
+            name: division.name,
+            value: division.name,
+          }))
+        )
     ),
   execute: async (interaction: CommandInteraction) => {
     if (
@@ -27,9 +44,16 @@ export const DraftSkipCommand: Command = {
         "You do not have permission to use this command."
       );
     }
+    let division = getDivisionByName(
+      interaction.options.get("division")?.value as string
+    );
+    if (!division) {
+      division = getDivisionByChannel(interaction.channelId);
+      if (!division) return interaction.reply("Division not selected.");
+    }
     const user: User | undefined = interaction.options.get("user")?.user;
     if (!user) return interaction.reply("User not found");
-    skipUser(user);
+    skipUser(division, user);
     interaction.reply(`${user} was skipped!`);
     notifyNext(interaction);
   },

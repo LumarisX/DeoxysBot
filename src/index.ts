@@ -4,7 +4,11 @@ import { deployGuildCommands } from "./deploy-commands";
 import { commands } from "./commands";
 
 const client = new Client({
-  intents: [GatewayIntentBits.Guilds],
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildMessages,
+  ],
 });
 
 client.once("ready", () => console.log("Ready!"));
@@ -22,7 +26,12 @@ client.on("interactionCreate", async (interaction: Interaction) => {
 });
 
 client.on("messageCreate", async (message) => {
-  if (message.content.toLowerCase().includes("deoxys")) {
+  console.log(message.content);
+  if (message.author.bot) return;
+  if (
+    message.content.toLowerCase().includes("deoxys") ||
+    message.mentions.has(client.user!.id)
+  ) {
     try {
       message.reply(`Hello ${message.author}!`);
     } catch (error) {

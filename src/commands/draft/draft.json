@@ -10,7 +10,6 @@
     "NFE",
     "Restricted"
   ],
-  "state": "started",
   "tiers": [
     {
       "name": "R",
@@ -37,248 +36,415 @@
       "max": 2
     }
   ],
-  "timerMinutes": 15,
-  "draftOrder": [
+  "divisions": [
     {
-      "username": "lumaris",
-      "id": "206144110275461121"
+      "channels": [
+        "976230704767713282"
+      ],
+      "order": [
+        {
+          "username": "lumaris",
+          "id": "206144110275461121"
+        },
+        {
+          "username": "dicy",
+          "id": "319165539849076737"
+        },
+        {
+          "username": "h8oj",
+          "id": "529522646195634176"
+        },
+        {
+          "username": "DeoxysBot#5853",
+          "id": "1268950062629654708"
+        }
+      ],
+      "name": "Test",
+      "draftCount": 1
     },
     {
-      "username": "dicy",
-      "id": "319165539849076737"
+      "channels": [
+        "1270098076261945465"
+      ],
+      "order": [
+        {
+          "username": "mattmanectric",
+          "id": "198196087989731328"
+        },
+        {
+          "username": "mattstar",
+          "id": "217028876516327424"
+        },
+        {
+          "username": "omalight",
+          "id": "279369135102623754"
+        },
+        {
+          "username": "mrnealio",
+          "id": "137157466981924864"
+        },
+        {
+          "username": "crizzlex",
+          "id": "779499856296149002"
+        },
+        {
+          "username": "dr.daveh",
+          "id": "626186372838981642"
+        },
+        {
+          "username": "memebasedgod",
+          "id": "335826375770505216"
+        },
+        {
+          "username": "ted2best",
+          "id": "878624846681088072"
+        },
+        {
+          "username": "ciqarettan",
+          "id": "550026458626785290"
+        },
+        {
+          "username": "cammyrupt",
+          "id": "671732222776311820"
+        },
+        {
+          "username": "speedyzoid",
+          "id": "692128172929581179"
+        },
+        {
+          "username": "sirfishwastaken",
+          "id": "452848609076183040"
+        },
+        {
+          "username": "k3y5.",
+          "id": "188023567550513153"
+        }
+      ],
+      "name": "West",
+      "draftCount": 0
     },
     {
-      "username": "h8oj",
-      "id": "529522646195634176"
-    },
-    {
-      "username": "DeoxysBot#5853",
-      "id": "1268950062629654708"
+      "channels": [
+        "1267438975786942526"
+      ],
+      "order": [
+        {
+          "username": "ianb1002",
+          "id": "422843761765122071"
+        },
+        {
+          "username": "jabbalink",
+          "id": "599419097934987294"
+        },
+        {
+          "username": "lumaris",
+          "id": "206144110275461121"
+        },
+        {
+          "username": "aarontmarshall.",
+          "id": "746000101889015819"
+        },
+        {
+          "username": "sillywilly7528",
+          "id": "308687852257017856"
+        },
+        {
+          "username": "rainmaker7955",
+          "id": "444955703623417881"
+        },
+        {
+          "username": "jarshall",
+          "id": "991840326094438470"
+        },
+        {
+          "username": "dogzie",
+          "id": "561814232165777439"
+        },
+        {
+          "username": "onlyembers",
+          "id": "206864983227629568"
+        },
+        {
+          "username": "mawiiiii",
+          "id": "715278760806449213"
+        },
+        {
+          "username": "h8oj",
+          "id": "529522646195634176"
+        },
+        {
+          "username": "scottyw01",
+          "id": "693156825171886180"
+        },
+        {
+          "username": "rylekt",
+          "id": "332238496238534657"
+        }
+      ],
+      "name": "East",
+      "draftCount": 0
     }
   ],
-  "draftCount": 8,
+  "state": "started",
+  "timerMinutes": 60,
   "pokemon": [
     {
       "name": "Bulbasaur",
       "pid": "bulbasaur",
       "tier": "D",
       "category": "NFE",
-      "png": "bulbasaur"
+      "png": "bulbasaur",
+      "draft": {}
     },
     {
       "name": "Ivysaur",
       "pid": "ivysaur",
       "tier": "D",
       "category": "NFE",
-      "png": "ivysaur"
+      "png": "ivysaur",
+      "draft": {}
     },
     {
       "name": "Venusaur",
       "pid": "venusaur",
-      "png": "venusaur"
+      "png": "venusaur",
+      "draft": {}
     },
     {
       "name": "Charmander",
       "pid": "charmander",
       "tier": "D",
       "category": "NFE",
-      "png": "charmander"
+      "png": "charmander",
+      "draft": {}
     },
     {
       "name": "Charmeleon",
       "pid": "charmeleon",
       "tier": "D",
       "category": "NFE",
-      "png": "charmeleon"
+      "png": "charmeleon",
+      "draft": {}
     },
     {
       "name": "Charizard",
       "pid": "charizard",
-      "png": "charizard"
+      "png": "charizard",
+      "draft": {}
     },
     {
       "name": "Squirtle",
       "pid": "squirtle",
       "tier": "D",
       "category": "NFE",
-      "png": "squirtle"
+      "png": "squirtle",
+      "draft": {}
     },
     {
       "name": "Wartortle",
       "pid": "wartortle",
       "tier": "D",
       "category": "NFE",
-      "png": "wartortle"
+      "png": "wartortle",
+      "draft": {}
     },
     {
       "name": "Blastoise",
       "pid": "blastoise",
-      "png": "blastoise"
+      "png": "blastoise",
+      "draft": {}
     },
     {
       "name": "Caterpie",
       "pid": "caterpie",
       "tier": "D",
       "category": "NFE",
-      "png": "caterpie"
+      "png": "caterpie",
+      "draft": {}
     },
     {
       "name": "Metapod",
       "pid": "metapod",
       "tier": "D",
       "category": "NFE",
-      "png": "metapod"
+      "png": "metapod",
+      "draft": {}
     },
     {
       "name": "Butterfree",
       "pid": "butterfree",
-      "png": "butterfree"
+      "png": "butterfree",
+      "draft": {}
     },
     {
       "name": "Weedle",
       "pid": "weedle",
       "tier": "D",
       "category": "NFE",
-      "png": "weedle"
+      "png": "weedle",
+      "draft": {}
     },
     {
       "name": "Kakuna",
       "pid": "kakuna",
       "tier": "D",
       "category": "NFE",
-      "png": "kakuna"
+      "png": "kakuna",
+      "draft": {}
     },
     {
       "name": "Beedrill",
       "pid": "beedrill",
-      "png": "beedrill"
+      "png": "beedrill",
+      "draft": {}
     },
     {
       "name": "Pidgey",
       "pid": "pidgey",
       "tier": "D",
       "category": "NFE",
-      "png": "pidgey"
+      "png": "pidgey",
+      "draft": {}
     },
     {
       "name": "Pidgeotto",
       "pid": "pidgeotto",
       "tier": "D",
       "category": "NFE",
-      "png": "pidgeotto"
+      "png": "pidgeotto",
+      "draft": {}
     },
     {
       "name": "Pidgeot",
       "pid": "pidgeot",
-      "png": "pidgeot"
+      "png": "pidgeot",
+      "draft": {}
     },
     {
       "name": "Rattata",
       "pid": "rattata",
       "tier": "D",
       "category": "NFE",
-      "png": "rattata"
+      "png": "rattata",
+      "draft": {}
     },
     {
       "name": "Rattata-Alola",
       "pid": "rattataalola",
       "tier": "D",
       "category": "NFE",
-      "png": "rattata-alola"
+      "png": "rattata-alola",
+      "draft": {}
     },
     {
       "name": "Raticate",
       "pid": "raticate",
-      "png": "raticate"
+      "png": "raticate",
+      "draft": {}
     },
     {
       "name": "Raticate-Alola",
       "pid": "raticatealola",
-      "png": "raticate-alola"
+      "png": "raticate-alola",
+      "draft": {}
     },
     {
       "name": "Spearow",
       "pid": "spearow",
       "tier": "D",
       "category": "NFE",
-      "png": "spearow"
+      "png": "spearow",
+      "draft": {}
     },
     {
       "name": "Fearow",
       "pid": "fearow",
-      "png": "fearow"
+      "png": "fearow",
+      "draft": {}
     },
     {
       "name": "Ekans",
       "pid": "ekans",
       "tier": "D",
       "category": "NFE",
-      "png": "ekans"
+      "png": "ekans",
+      "draft": {}
     },
     {
       "name": "Arbok",
       "pid": "arbok",
-      "png": "arbok"
+      "png": "arbok",
+      "draft": {}
     },
     {
       "name": "Pikachu",
       "pid": "pikachu",
       "tier": "D",
       "category": "NFE",
-      "png": "pikachu"
+      "png": "pikachu",
+      "draft": {}
     },
     {
       "name": "Raichu",
       "pid": "raichu",
-      "png": "raichu"
+      "png": "raichu",
+      "draft": {}
     },
     {
       "name": "Raichu-Alola",
       "pid": "raichualola",
-      "png": "raichu-alola"
+      "png": "raichu-alola",
+      "draft": {}
     },
     {
       "name": "Sandshrew",
       "pid": "sandshrew",
       "tier": "D",
       "category": "NFE",
-      "png": "sandshrew"
+      "png": "sandshrew",
+      "draft": {}
     },
     {
       "name": "Sandshrew-Alola",
       "pid": "sandshrewalola",
       "tier": "D",
       "category": "NFE",
-      "png": "sandshrew-alola"
+      "png": "sandshrew-alola",
+      "draft": {}
     },
     {
       "name": "Sandslash",
       "pid": "sandslash",
-      "png": "sandslash"
+      "png": "sandslash",
+      "draft": {}
     },
     {
       "name": "Sandslash-Alola",
       "pid": "sandslashalola",
-      "png": "sandslash-alola"
+      "png": "sandslash-alola",
+      "draft": {}
     },
     {
       "name": "Nidoran-F",
       "pid": "nidoranf",
       "tier": "D",
       "category": "NFE",
-      "png": "nidoranf"
+      "png": "nidoranf",
+      "draft": {}
     },
     {
       "name": "Nidorina",
       "pid": "nidorina",
       "tier": "D",
       "category": "NFE",
-      "png": "nidorina"
+      "png": "nidorina",
+      "draft": {}
     },
     {
       "name": "Nidoqueen",
       "pid": "nidoqueen",
-      "png": "nidoqueen"
+      "png": "nidoqueen",
+      "draft": {}
     },
     {
       "name": "Nidoran-M",
@@ -286,179 +452,207 @@
       "tier": "D",
       "category": "NFE",
       "png": "nidoranm",
-      "order": 19
+      "draft": {}
     },
     {
       "name": "Nidorino",
       "pid": "nidorino",
       "tier": "D",
       "category": "NFE",
-      "png": "nidorino"
+      "png": "nidorino",
+      "draft": {}
     },
     {
       "name": "Nidoking",
       "pid": "nidoking",
-      "png": "nidoking"
+      "png": "nidoking",
+      "draft": {}
     },
     {
       "name": "Clefairy",
       "pid": "clefairy",
       "tier": "D",
       "category": "NFE",
-      "png": "clefairy"
+      "png": "clefairy",
+      "draft": {}
     },
     {
       "name": "Clefable",
       "pid": "clefable",
-      "png": "clefable"
+      "png": "clefable",
+      "draft": {}
     },
     {
       "name": "Vulpix",
       "pid": "vulpix",
       "tier": "D",
       "category": "NFE",
-      "png": "vulpix"
+      "png": "vulpix",
+      "draft": {}
     },
     {
       "name": "Vulpix-Alola",
       "pid": "vulpixalola",
       "tier": "D",
       "category": "NFE",
-      "png": "vulpix-alola"
+      "png": "vulpix-alola",
+      "draft": {}
     },
     {
       "name": "Ninetales",
       "pid": "ninetales",
-      "png": "ninetales"
+      "png": "ninetales",
+      "draft": {}
     },
     {
       "name": "Ninetales-Alola",
       "pid": "ninetalesalola",
-      "png": "ninetales-alola"
+      "png": "ninetales-alola",
+      "draft": {}
     },
     {
       "name": "Jigglypuff",
       "pid": "jigglypuff",
       "tier": "D",
       "category": "NFE",
-      "png": "jigglypuff"
+      "png": "jigglypuff",
+      "draft": {}
     },
     {
       "name": "Wigglytuff",
       "pid": "wigglytuff",
-      "png": "wigglytuff"
+      "png": "wigglytuff",
+      "draft": {}
     },
     {
       "name": "Zubat",
       "pid": "zubat",
       "tier": "D",
       "category": "NFE",
-      "png": "zubat"
+      "png": "zubat",
+      "draft": {}
     },
     {
       "name": "Golbat",
       "pid": "golbat",
       "tier": "D",
       "category": "NFE",
-      "png": "golbat"
+      "png": "golbat",
+      "draft": {}
     },
     {
       "name": "Oddish",
       "pid": "oddish",
       "tier": "D",
       "category": "NFE",
-      "png": "oddish"
+      "png": "oddish",
+      "draft": {}
     },
     {
       "name": "Gloom",
       "pid": "gloom",
       "tier": "D",
       "category": "NFE",
-      "png": "gloom"
+      "png": "gloom",
+      "draft": {}
     },
     {
       "name": "Vileplume",
       "pid": "vileplume",
-      "png": "vileplume"
+      "png": "vileplume",
+      "draft": {}
     },
     {
       "name": "Paras",
       "pid": "paras",
       "tier": "D",
       "category": "NFE",
-      "png": "paras"
+      "png": "paras",
+      "draft": {}
     },
     {
       "name": "Parasect",
       "pid": "parasect",
-      "png": "parasect"
+      "png": "parasect",
+      "draft": {}
     },
     {
       "name": "Venonat",
       "pid": "venonat",
       "tier": "D",
       "category": "NFE",
-      "png": "venonat"
+      "png": "venonat",
+      "draft": {}
     },
     {
       "name": "Venomoth",
       "pid": "venomoth",
-      "png": "venomoth"
+      "png": "venomoth",
+      "draft": {}
     },
     {
       "name": "Diglett",
       "pid": "diglett",
       "tier": "D",
       "category": "NFE",
-      "png": "diglett"
+      "png": "diglett",
+      "draft": {}
     },
     {
       "name": "Diglett-Alola",
       "pid": "diglettalola",
       "tier": "D",
       "category": "NFE",
-      "png": "diglett-alola"
+      "png": "diglett-alola",
+      "draft": {}
     },
     {
       "name": "Dugtrio",
       "pid": "dugtrio",
-      "png": "dugtrio"
+      "png": "dugtrio",
+      "draft": {}
     },
     {
       "name": "Dugtrio-Alola",
       "pid": "dugtrioalola",
-      "png": "dugtrio-alola"
+      "png": "dugtrio-alola",
+      "draft": {}
     },
     {
       "name": "Meowth",
       "pid": "meowth",
       "tier": "D",
       "category": "NFE",
-      "png": "meowth"
+      "png": "meowth",
+      "draft": {}
     },
     {
       "name": "Meowth-Alola",
       "pid": "meowthalola",
       "tier": "D",
       "category": "NFE",
-      "png": "meowth-alola"
+      "png": "meowth-alola",
+      "draft": {}
     },
     {
       "name": "Meowth-Galar",
       "pid": "meowthgalar",
       "tier": "D",
       "category": "NFE",
-      "png": "meowth-galar"
+      "png": "meowth-galar",
+      "draft": {}
     },
     {
       "name": "Persian",
       "pid": "persian",
-      "png": "persian"
+      "png": "persian",
+      "draft": {}
     },
     {
       "name": "Persian-Alola",
       "pid": "persianalola",
-      "png": "persian-alola"
+      "png": "persian-alola",
+      "draft": {}
     },
     {
       "name": "Psyduck",
@@ -466,26 +660,29 @@
       "tier": "D",
       "category": "NFE",
       "png": "psyduck",
-      "order": 7
+      "draft": {}
     },
     {
       "name": "Golduck",
       "pid": "golduck",
-      "png": "golduck"
+      "png": "golduck",
+      "draft": {}
     },
     {
       "name": "Mankey",
       "pid": "mankey",
       "tier": "D",
       "category": "NFE",
-      "png": "mankey"
+      "png": "mankey",
+      "draft": {}
     },
     {
       "name": "Primeape",
       "pid": "primeape",
       "tier": "D",
       "category": "NFE",
-      "png": "primeape"
+      "png": "primeape",
+      "draft": {}
     },
     {
       "name": "Growlithe",
@@ -493,88 +690,101 @@
       "tier": "D",
       "category": "NFE",
       "png": "growlithe",
-      "order": 20
+      "draft": {}
     },
     {
       "name": "Growlithe-Hisui",
       "pid": "growlithehisui",
       "tier": "D",
       "category": "NFE",
-      "png": "growlithe-hisui"
+      "png": "growlithe-hisui",
+      "draft": {}
     },
     {
       "name": "Arcanine",
       "pid": "arcanine",
-      "png": "arcanine"
+      "png": "arcanine",
+      "draft": {}
     },
     {
       "name": "Arcanine-Hisui",
       "pid": "arcaninehisui",
-      "png": "arcanine-hisui"
+      "png": "arcanine-hisui",
+      "draft": {}
     },
     {
       "name": "Poliwag",
       "pid": "poliwag",
       "tier": "D",
       "category": "NFE",
-      "png": "poliwag"
+      "png": "poliwag",
+      "draft": {}
     },
     {
       "name": "Poliwhirl",
       "pid": "poliwhirl",
       "tier": "D",
       "category": "NFE",
-      "png": "poliwhirl"
+      "png": "poliwhirl",
+      "draft": {}
     },
     {
       "name": "Poliwrath",
       "pid": "poliwrath",
-      "png": "poliwrath"
+      "png": "poliwrath",
+      "draft": {}
     },
     {
       "name": "Abra",
       "pid": "abra",
       "tier": "D",
       "category": "NFE",
-      "png": "abra"
+      "png": "abra",
+      "draft": {}
     },
     {
       "name": "Kadabra",
       "pid": "kadabra",
       "tier": "D",
       "category": "NFE",
-      "png": "kadabra"
+      "png": "kadabra",
+      "draft": {}
     },
     {
       "name": "Alakazam",
       "pid": "alakazam",
-      "png": "alakazam"
+      "png": "alakazam",
+      "draft": {}
     },
     {
       "name": "Machop",
       "pid": "machop",
       "tier": "D",
       "category": "NFE",
-      "png": "machop"
+      "png": "machop",
+      "draft": {}
     },
     {
       "name": "Machoke",
       "pid": "machoke",
       "tier": "D",
       "category": "NFE",
-      "png": "machoke"
+      "png": "machoke",
+      "draft": {}
     },
     {
       "name": "Machamp",
       "pid": "machamp",
-      "png": "machamp"
+      "png": "machamp",
+      "draft": {}
     },
     {
       "name": "Bellsprout",
       "pid": "bellsprout",
       "tier": "D",
       "category": "NFE",
-      "png": "bellsprout"
+      "png": "bellsprout",
+      "draft": {}
     },
     {
       "name": "Weepinbell",
@@ -582,24 +792,27 @@
       "tier": "D",
       "category": "NFE",
       "png": "weepinbell",
-      "order": 8
+      "draft": {}
     },
     {
       "name": "Victreebel",
       "pid": "victreebel",
-      "png": "victreebel"
+      "png": "victreebel",
+      "draft": {}
     },
     {
       "name": "Tentacool",
       "pid": "tentacool",
       "tier": "D",
       "category": "NFE",
-      "png": "tentacool"
+      "png": "tentacool",
+      "draft": {}
     },
     {
       "name": "Tentacruel",
       "pid": "tentacruel",
-      "png": "tentacruel"
+      "png": "tentacruel",
+      "draft": {}
     },
     {
       "name": "Geodude",
@@ -607,22 +820,23 @@
       "tier": "D",
       "category": "NFE",
       "png": "geodude",
-      "order": 6,
-      "coach": "h8oj"
+      "draft": {}
     },
     {
       "name": "Geodude-Alola",
       "pid": "geodudealola",
       "tier": "D",
       "category": "NFE",
-      "png": "geodude-alola"
+      "png": "geodude-alola",
+      "draft": {}
     },
     {
       "name": "Graveler",
       "pid": "graveler",
       "tier": "D",
       "category": "NFE",
-      "png": "graveler"
+      "png": "graveler",
+      "draft": {}
     },
     {
       "name": "Graveler-Alola",
@@ -630,225 +844,261 @@
       "tier": "D",
       "category": "NFE",
       "png": "graveler-alola",
-      "order": 17
+      "draft": {}
     },
     {
       "name": "Golem",
       "pid": "golem",
-      "png": "golem"
+      "png": "golem",
+      "draft": {}
     },
     {
       "name": "Golem-Alola",
       "pid": "golemalola",
-      "png": "golem-alola"
+      "png": "golem-alola",
+      "draft": {}
     },
     {
       "name": "Ponyta",
       "pid": "ponyta",
       "tier": "D",
       "category": "NFE",
-      "png": "ponyta"
+      "png": "ponyta",
+      "draft": {}
     },
     {
       "name": "Ponyta-Galar",
       "pid": "ponytagalar",
       "tier": "D",
       "category": "NFE",
-      "png": "ponyta-galar"
+      "png": "ponyta-galar",
+      "draft": {}
     },
     {
       "name": "Rapidash",
       "pid": "rapidash",
-      "png": "rapidash"
+      "png": "rapidash",
+      "draft": {}
     },
     {
       "name": "Rapidash-Galar",
       "pid": "rapidashgalar",
-      "png": "rapidash-galar"
+      "png": "rapidash-galar",
+      "draft": {}
     },
     {
       "name": "Slowpoke",
       "pid": "slowpoke",
       "tier": "D",
       "category": "NFE",
-      "png": "slowpoke"
+      "png": "slowpoke",
+      "draft": {}
     },
     {
       "name": "Slowpoke-Galar",
       "pid": "slowpokegalar",
       "tier": "D",
       "category": "NFE",
-      "png": "slowpoke-galar"
+      "png": "slowpoke-galar",
+      "draft": {}
     },
     {
       "name": "Slowbro",
       "pid": "slowbro",
-      "png": "slowbro"
+      "png": "slowbro",
+      "draft": {}
     },
     {
       "name": "Slowbro-Galar",
       "pid": "slowbrogalar",
-      "png": "slowbro-galar"
+      "png": "slowbro-galar",
+      "draft": {}
     },
     {
       "name": "Magnemite",
       "pid": "magnemite",
       "tier": "D",
       "category": "NFE",
-      "png": "magnemite"
+      "png": "magnemite",
+      "draft": {}
     },
     {
       "name": "Magneton",
       "pid": "magneton",
       "tier": "D",
       "category": "NFE",
-      "png": "magneton"
+      "png": "magneton",
+      "draft": {}
     },
     {
       "name": "Farfetch’d",
       "pid": "farfetchd",
-      "png": "farfetchd"
+      "png": "farfetchd",
+      "draft": {}
     },
     {
       "name": "Farfetch’d-Galar",
       "pid": "farfetchdgalar",
       "tier": "D",
       "category": "NFE",
-      "png": "farfetchd-galar"
+      "png": "farfetchd-galar",
+      "draft": {}
     },
     {
       "name": "Doduo",
       "pid": "doduo",
       "tier": "D",
       "category": "NFE",
-      "png": "doduo"
+      "png": "doduo",
+      "draft": {}
     },
     {
       "name": "Dodrio",
       "pid": "dodrio",
-      "png": "dodrio"
+      "png": "dodrio",
+      "draft": {}
     },
     {
       "name": "Seel",
       "pid": "seel",
       "tier": "D",
       "category": "NFE",
-      "png": "seel"
+      "png": "seel",
+      "draft": {}
     },
     {
       "name": "Dewgong",
       "pid": "dewgong",
-      "png": "dewgong"
+      "png": "dewgong",
+      "draft": {}
     },
     {
       "name": "Grimer",
       "pid": "grimer",
       "tier": "D",
       "category": "NFE",
-      "png": "grimer"
+      "png": "grimer",
+      "draft": {}
     },
     {
       "name": "Grimer-Alola",
       "pid": "grimeralola",
       "tier": "D",
       "category": "NFE",
-      "png": "grimer-alola"
+      "png": "grimer-alola",
+      "draft": {}
     },
     {
       "name": "Muk",
       "pid": "muk",
-      "png": "muk"
+      "png": "muk",
+      "draft": {}
     },
     {
       "name": "Muk-Alola",
       "pid": "mukalola",
-      "png": "muk-alola"
+      "png": "muk-alola",
+      "draft": {}
     },
     {
       "name": "Shellder",
       "pid": "shellder",
       "tier": "D",
       "category": "NFE",
-      "png": "shellder"
+      "png": "shellder",
+      "draft": {}
     },
     {
       "name": "Cloyster",
       "pid": "cloyster",
-      "png": "cloyster"
+      "png": "cloyster",
+      "draft": {}
     },
     {
       "name": "Gastly",
       "pid": "gastly",
       "tier": "D",
       "category": "NFE",
-      "png": "gastly"
+      "png": "gastly",
+      "draft": {}
     },
     {
       "name": "Haunter",
       "pid": "haunter",
       "tier": "D",
       "category": "NFE",
-      "png": "haunter"
+      "png": "haunter",
+      "draft": {}
     },
     {
       "name": "Gengar",
       "pid": "gengar",
-      "png": "gengar"
+      "png": "gengar",
+      "draft": {}
     },
     {
       "name": "Onix",
       "pid": "onix",
       "tier": "D",
       "category": "NFE",
-      "png": "onix"
+      "png": "onix",
+      "draft": {}
     },
     {
       "name": "Drowzee",
       "pid": "drowzee",
       "tier": "D",
       "category": "NFE",
-      "png": "drowzee"
+      "png": "drowzee",
+      "draft": {}
     },
     {
       "name": "Hypno",
       "pid": "hypno",
-      "png": "hypno"
+      "png": "hypno",
+      "draft": {}
     },
     {
       "name": "Krabby",
       "pid": "krabby",
       "tier": "D",
       "category": "NFE",
-      "png": "krabby"
+      "png": "krabby",
+      "draft": {}
     },
     {
       "name": "Kingler",
       "pid": "kingler",
-      "png": "kingler"
+      "png": "kingler",
+      "draft": {}
     },
     {
       "name": "Voltorb",
       "pid": "voltorb",
       "tier": "D",
       "category": "NFE",
-      "png": "voltorb"
+      "png": "voltorb",
+      "draft": {}
     },
     {
       "name": "Voltorb-Hisui",
       "pid": "voltorbhisui",
       "tier": "D",
       "category": "NFE",
-      "png": "voltorb-hisui"
+      "png": "voltorb-hisui",
+      "draft": {}
     },
     {
       "name": "Electrode",
       "pid": "electrode",
-      "png": "electrode"
+      "png": "electrode",
+      "draft": {}
     },
     {
       "name": "Electrode-Hisui",
       "pid": "electrodehisui",
-      "png": "electrode-hisui"
+      "png": "electrode-hisui",
+      "draft": {}
     },
     {
       "name": "Exeggcute",
@@ -856,68 +1106,79 @@
       "tier": "D",
       "category": "NFE",
       "png": "exeggcute",
-      "order": 2
+      "draft": {}
     },
     {
       "name": "Exeggutor",
       "pid": "exeggutor",
-      "png": "exeggutor"
+      "png": "exeggutor",
+      "draft": {}
     },
     {
       "name": "Exeggutor-Alola",
       "pid": "exeggutoralola",
-      "png": "exeggutor-alola"
+      "png": "exeggutor-alola",
+      "draft": {}
     },
     {
       "name": "Cubone",
       "pid": "cubone",
       "tier": "D",
       "category": "NFE",
-      "png": "cubone"
+      "png": "cubone",
+      "draft": {}
     },
     {
       "name": "Marowak",
       "pid": "marowak",
-      "png": "marowak"
+      "png": "marowak",
+      "draft": {}
     },
     {
       "name": "Marowak-Alola",
       "pid": "marowakalola",
-      "png": "marowak-alola"
+      "png": "marowak-alola",
+      "draft": {}
     },
     {
       "name": "Hitmonlee",
       "pid": "hitmonlee",
-      "png": "hitmonlee"
+      "png": "hitmonlee",
+      "draft": {}
     },
     {
       "name": "Hitmonchan",
       "pid": "hitmonchan",
-      "png": "hitmonchan"
+      "png": "hitmonchan",
+      "draft": {}
     },
     {
       "name": "Lickitung",
       "pid": "lickitung",
       "tier": "D",
       "category": "NFE",
-      "png": "lickitung"
+      "png": "lickitung",
+      "draft": {}
     },
     {
       "name": "Koffing",
       "pid": "koffing",
       "tier": "D",
       "category": "NFE",
-      "png": "koffing"
+      "png": "koffing",
+      "draft": {}
     },
     {
       "name": "Weezing",
       "pid": "weezing",
-      "png": "weezing"
+      "png": "weezing",
+      "draft": {}
     },
     {
       "name": "Weezing-Galar",
       "pid": "weezinggalar",
-      "png": "weezing-galar"
+      "png": "weezing-galar",
+      "draft": {}
     },
     {
       "name": "Rhyhorn",
@@ -925,83 +1186,95 @@
       "tier": "D",
       "category": "NFE",
       "png": "rhyhorn",
-      "order": 16
+      "draft": {}
     },
     {
       "name": "Rhydon",
       "pid": "rhydon",
       "tier": "D",
       "category": "NFE",
-      "png": "rhydon"
+      "png": "rhydon",
+      "draft": {}
     },
     {
       "name": "Chansey",
       "pid": "chansey",
       "tier": "D",
       "category": "NFE",
-      "png": "chansey"
+      "png": "chansey",
+      "draft": {}
     },
     {
       "name": "Tangela",
       "pid": "tangela",
       "tier": "D",
       "category": "NFE",
-      "png": "tangela"
+      "png": "tangela",
+      "draft": {}
     },
     {
       "name": "Kangaskhan",
       "pid": "kangaskhan",
-      "png": "kangaskhan"
+      "png": "kangaskhan",
+      "draft": {}
     },
     {
       "name": "Horsea",
       "pid": "horsea",
       "tier": "D",
       "category": "NFE",
-      "png": "horsea"
+      "png": "horsea",
+      "draft": {}
     },
     {
       "name": "Seadra",
       "pid": "seadra",
       "tier": "D",
       "category": "NFE",
-      "png": "seadra"
+      "png": "seadra",
+      "draft": {}
     },
     {
       "name": "Goldeen",
       "pid": "goldeen",
       "tier": "D",
       "category": "NFE",
-      "png": "goldeen"
+      "png": "goldeen",
+      "draft": {}
     },
     {
       "name": "Seaking",
       "pid": "seaking",
-      "png": "seaking"
+      "png": "seaking",
+      "draft": {}
     },
     {
       "name": "Staryu",
       "pid": "staryu",
       "tier": "D",
       "category": "NFE",
-      "png": "staryu"
+      "png": "staryu",
+      "draft": {}
     },
     {
       "name": "Starmie",
       "pid": "starmie",
-      "png": "starmie"
+      "png": "starmie",
+      "draft": {}
     },
     {
       "name": "Mr. Mime",
       "pid": "mrmime",
-      "png": "mrmime"
+      "png": "mrmime",
+      "draft": {}
     },
     {
       "name": "Mr. Mime-Galar",
       "pid": "mrmimegalar",
       "tier": "D",
       "category": "NFE",
-      "png": "mrmime-galar"
+      "png": "mrmime-galar",
+      "draft": {}
     },
     {
       "name": "Scyther",
@@ -1009,246 +1282,287 @@
       "tier": "D",
       "category": "NFE",
       "png": "scyther",
-      "order": 5,
-      "coach": "DeoxysBot"
+      "draft": {}
     },
     {
       "name": "Jynx",
       "pid": "jynx",
-      "png": "jynx"
+      "png": "jynx",
+      "draft": {}
     },
     {
       "name": "Electabuzz",
       "pid": "electabuzz",
       "tier": "D",
       "category": "NFE",
-      "png": "electabuzz"
+      "png": "electabuzz",
+      "draft": {}
     },
     {
       "name": "Magmar",
       "pid": "magmar",
       "tier": "D",
       "category": "NFE",
-      "png": "magmar"
+      "png": "magmar",
+      "draft": {}
     },
     {
       "name": "Pinsir",
       "pid": "pinsir",
-      "png": "pinsir"
+      "png": "pinsir",
+      "draft": {}
     },
     {
       "name": "Tauros",
       "pid": "tauros",
-      "png": "tauros"
+      "png": "tauros",
+      "draft": {}
     },
     {
       "name": "Tauros-Paldea-Combat",
       "pid": "taurospaldeacombat",
-      "png": "tauros-paldeacombat"
+      "png": "tauros-paldeacombat",
+      "draft": {}
     },
     {
       "name": "Tauros-Paldea-Blaze",
       "pid": "taurospaldeablaze",
-      "png": "tauros-paldeablaze"
+      "png": "tauros-paldeablaze",
+      "draft": {}
     },
     {
       "name": "Tauros-Paldea-Aqua",
       "pid": "taurospaldeaaqua",
-      "png": "tauros-paldeaaqua"
+      "png": "tauros-paldeaaqua",
+      "draft": {}
     },
     {
       "name": "Magikarp",
       "pid": "magikarp",
       "tier": "D",
       "category": "NFE",
-      "png": "magikarp"
+      "png": "magikarp",
+      "draft": {}
     },
     {
       "name": "Gyarados",
       "pid": "gyarados",
-      "png": "gyarados"
+      "png": "gyarados",
+      "draft": {}
     },
     {
       "name": "Lapras",
       "pid": "lapras",
-      "png": "lapras"
+      "png": "lapras",
+      "draft": {}
     },
     {
       "name": "Ditto",
       "pid": "ditto",
-      "png": "ditto"
+      "png": "ditto",
+      "draft": {}
     },
     {
       "name": "Eevee",
       "pid": "eevee",
       "tier": "D",
       "category": "NFE",
-      "png": "eevee"
+      "png": "eevee",
+      "draft": {}
     },
     {
       "name": "Vaporeon",
       "pid": "vaporeon",
-      "png": "vaporeon"
+      "png": "vaporeon",
+      "draft": {}
     },
     {
       "name": "Jolteon",
       "pid": "jolteon",
-      "png": "jolteon"
+      "png": "jolteon",
+      "draft": {}
     },
     {
       "name": "Flareon",
       "pid": "flareon",
-      "png": "flareon"
+      "png": "flareon",
+      "draft": {}
     },
     {
       "name": "Porygon",
       "pid": "porygon",
       "tier": "D",
       "category": "NFE",
-      "png": "porygon"
+      "png": "porygon",
+      "draft": {}
     },
     {
       "name": "Omanyte",
       "pid": "omanyte",
       "tier": "D",
       "category": "NFE",
-      "png": "omanyte"
+      "png": "omanyte",
+      "draft": {}
     },
     {
       "name": "Omastar",
       "pid": "omastar",
-      "png": "omastar"
+      "png": "omastar",
+      "draft": {}
     },
     {
       "name": "Kabuto",
       "pid": "kabuto",
       "tier": "D",
       "category": "NFE",
-      "png": "kabuto"
+      "png": "kabuto",
+      "draft": {}
     },
     {
       "name": "Kabutops",
       "pid": "kabutops",
-      "png": "kabutops"
+      "png": "kabutops",
+      "draft": {}
     },
     {
       "name": "Aerodactyl",
       "pid": "aerodactyl",
-      "png": "aerodactyl"
+      "png": "aerodactyl",
+      "draft": {}
     },
     {
       "name": "Snorlax",
       "pid": "snorlax",
-      "png": "snorlax"
+      "png": "snorlax",
+      "draft": {}
     },
     {
       "name": "Articuno",
       "pid": "articuno",
-      "png": "articuno"
+      "png": "articuno",
+      "draft": {}
     },
     {
       "name": "Articuno-Galar",
       "pid": "articunogalar",
-      "png": "articuno-galar"
+      "png": "articuno-galar",
+      "draft": {}
     },
     {
       "name": "Zapdos",
       "pid": "zapdos",
-      "png": "zapdos"
+      "png": "zapdos",
+      "draft": {}
     },
     {
       "name": "Zapdos-Galar",
       "pid": "zapdosgalar",
-      "png": "zapdos-galar"
+      "png": "zapdos-galar",
+      "draft": {}
     },
     {
       "name": "Moltres",
       "pid": "moltres",
-      "png": "moltres"
+      "png": "moltres",
+      "draft": {}
     },
     {
       "name": "Moltres-Galar",
       "pid": "moltresgalar",
-      "png": "moltres-galar"
+      "png": "moltres-galar",
+      "draft": {}
     },
     {
       "name": "Dratini",
       "pid": "dratini",
       "tier": "D",
       "category": "NFE",
-      "png": "dratini"
+      "png": "dratini",
+      "draft": {}
     },
     {
       "name": "Dragonair",
       "pid": "dragonair",
       "tier": "D",
       "category": "NFE",
-      "png": "dragonair"
+      "png": "dragonair",
+      "draft": {}
     },
     {
       "name": "Dragonite",
       "pid": "dragonite",
-      "png": "dragonite"
+      "png": "dragonite",
+      "draft": {}
     },
     {
       "name": "Mewtwo",
       "pid": "mewtwo",
-      "png": "mewtwo"
+      "png": "mewtwo",
+      "draft": {}
     },
     {
       "name": "Mew",
       "pid": "mew",
-      "png": "mew"
+      "png": "mew",
+      "draft": {}
     },
     {
       "name": "Chikorita",
       "pid": "chikorita",
       "tier": "D",
       "category": "NFE",
-      "png": "chikorita"
+      "png": "chikorita",
+      "draft": {}
     },
     {
       "name": "Bayleef",
       "pid": "bayleef",
       "tier": "D",
       "category": "NFE",
-      "png": "bayleef"
+      "png": "bayleef",
+      "draft": {}
     },
     {
       "name": "Meganium",
       "pid": "meganium",
-      "png": "meganium"
+      "png": "meganium",
+      "draft": {}
     },
     {
       "name": "Cyndaquil",
       "pid": "cyndaquil",
       "tier": "D",
       "category": "NFE",
-      "png": "cyndaquil"
+      "png": "cyndaquil",
+      "draft": {}
     },
     {
       "name": "Quilava",
       "pid": "quilava",
       "tier": "D",
       "category": "NFE",
-      "png": "quilava"
+      "png": "quilava",
+      "draft": {}
     },
     {
       "name": "Typhlosion",
       "pid": "typhlosion",
-      "png": "typhlosion"
+      "png": "typhlosion",
+      "draft": {}
     },
     {
       "name": "Typhlosion-Hisui",
       "pid": "typhlosionhisui",
-      "png": "typhlosion-hisui"
+      "png": "typhlosion-hisui",
+      "draft": {}
     },
     {
       "name": "Totodile",
       "pid": "totodile",
       "tier": "D",
       "category": "NFE",
-      "png": "totodile"
+      "png": "totodile",
+      "draft": {}
     },
     {
       "name": "Croconaw",
@@ -1256,208 +1570,246 @@
       "tier": "D",
       "category": "NFE",
       "png": "croconaw",
-      "order": 14
+      "draft": {}
     },
     {
       "name": "Feraligatr",
       "pid": "feraligatr",
-      "png": "feraligatr"
+      "png": "feraligatr",
+      "draft": {}
     },
     {
       "name": "Sentret",
       "pid": "sentret",
       "tier": "D",
       "category": "NFE",
-      "png": "sentret"
+      "png": "sentret",
+      "draft": {
+        "Test": {
+          "order": 1,
+          "coach": "lumaris"
+        }
+      }
     },
     {
       "name": "Furret",
       "pid": "furret",
-      "png": "furret"
+      "png": "furret",
+      "draft": {}
     },
     {
       "name": "Hoothoot",
       "pid": "hoothoot",
       "tier": "D",
       "category": "NFE",
-      "png": "hoothoot"
+      "png": "hoothoot",
+      "draft": {}
     },
     {
       "name": "Noctowl",
       "pid": "noctowl",
-      "png": "noctowl"
+      "png": "noctowl",
+      "draft": {}
     },
     {
       "name": "Ledyba",
       "pid": "ledyba",
       "tier": "D",
       "category": "NFE",
-      "png": "ledyba"
+      "png": "ledyba",
+      "draft": {}
     },
     {
       "name": "Ledian",
       "pid": "ledian",
-      "png": "ledian"
+      "png": "ledian",
+      "draft": {}
     },
     {
       "name": "Spinarak",
       "pid": "spinarak",
       "tier": "D",
       "category": "NFE",
-      "png": "spinarak"
+      "png": "spinarak",
+      "draft": {}
     },
     {
       "name": "Ariados",
       "pid": "ariados",
-      "png": "ariados"
+      "png": "ariados",
+      "draft": {}
     },
     {
       "name": "Crobat",
       "pid": "crobat",
-      "png": "crobat"
+      "png": "crobat",
+      "draft": {}
     },
     {
       "name": "Chinchou",
       "pid": "chinchou",
       "tier": "D",
       "category": "NFE",
-      "png": "chinchou"
+      "png": "chinchou",
+      "draft": {}
     },
     {
       "name": "Lanturn",
       "pid": "lanturn",
-      "png": "lanturn"
+      "png": "lanturn",
+      "draft": {}
     },
     {
       "name": "Pichu",
       "pid": "pichu",
       "tier": "D",
       "category": "NFE",
-      "png": "pichu"
+      "png": "pichu",
+      "draft": {}
     },
     {
       "name": "Cleffa",
       "pid": "cleffa",
       "tier": "D",
       "category": "NFE",
-      "png": "cleffa"
+      "png": "cleffa",
+      "draft": {}
     },
     {
       "name": "Igglybuff",
       "pid": "igglybuff",
       "tier": "D",
       "category": "NFE",
-      "png": "igglybuff"
+      "png": "igglybuff",
+      "draft": {}
     },
     {
       "name": "Togepi",
       "pid": "togepi",
       "tier": "D",
       "category": "NFE",
-      "png": "togepi"
+      "png": "togepi",
+      "draft": {}
     },
     {
       "name": "Togetic",
       "pid": "togetic",
       "tier": "D",
       "category": "NFE",
-      "png": "togetic"
+      "png": "togetic",
+      "draft": {}
     },
     {
       "name": "Natu",
       "pid": "natu",
       "tier": "D",
       "category": "NFE",
-      "png": "natu"
+      "png": "natu",
+      "draft": {}
     },
     {
       "name": "Xatu",
       "pid": "xatu",
-      "png": "xatu"
+      "png": "xatu",
+      "draft": {}
     },
     {
       "name": "Mareep",
       "pid": "mareep",
       "tier": "D",
       "category": "NFE",
-      "png": "mareep"
+      "png": "mareep",
+      "draft": {}
     },
     {
       "name": "Flaaffy",
       "pid": "flaaffy",
       "tier": "D",
       "category": "NFE",
-      "png": "flaaffy"
+      "png": "flaaffy",
+      "draft": {}
     },
     {
       "name": "Ampharos",
       "pid": "ampharos",
-      "png": "ampharos"
+      "png": "ampharos",
+      "draft": {}
     },
     {
       "name": "Bellossom",
       "pid": "bellossom",
-      "png": "bellossom"
+      "png": "bellossom",
+      "draft": {}
     },
     {
       "name": "Marill",
       "pid": "marill",
       "tier": "D",
       "category": "NFE",
-      "png": "marill"
+      "png": "marill",
+      "draft": {}
     },
     {
       "name": "Azumarill",
       "pid": "azumarill",
-      "png": "azumarill"
+      "png": "azumarill",
+      "draft": {}
     },
     {
       "name": "Sudowoodo",
       "pid": "sudowoodo",
-      "png": "sudowoodo"
+      "png": "sudowoodo",
+      "draft": {}
     },
     {
       "name": "Politoed",
       "pid": "politoed",
-      "png": "politoed"
+      "png": "politoed",
+      "draft": {}
     },
     {
       "name": "Hoppip",
       "pid": "hoppip",
       "tier": "D",
       "category": "NFE",
-      "png": "hoppip"
+      "png": "hoppip",
+      "draft": {}
     },
     {
       "name": "Skiploom",
       "pid": "skiploom",
       "tier": "D",
       "category": "NFE",
-      "png": "skiploom"
+      "png": "skiploom",
+      "draft": {}
     },
     {
       "name": "Jumpluff",
       "pid": "jumpluff",
-      "png": "jumpluff"
+      "png": "jumpluff",
+      "draft": {}
     },
     {
       "name": "Aipom",
       "pid": "aipom",
       "tier": "D",
       "category": "NFE",
-      "png": "aipom"
+      "png": "aipom",
+      "draft": {}
     },
     {
       "name": "Sunkern",
       "pid": "sunkern",
       "tier": "D",
       "category": "NFE",
-      "png": "sunkern"
+      "png": "sunkern",
+      "draft": {}
     },
     {
       "name": "Sunflora",
       "pid": "sunflora",
-      "png": "sunflora"
+      "png": "sunflora",
+      "draft": {}
     },
     {
       "name": "Yanma",
@@ -1465,70 +1817,81 @@
       "tier": "D",
       "category": "NFE",
       "png": "yanma",
-      "order": 6
+      "draft": {}
     },
     {
       "name": "Wooper",
       "pid": "wooper",
       "tier": "D",
       "category": "NFE",
-      "png": "wooper"
+      "png": "wooper",
+      "draft": {}
     },
     {
       "name": "Wooper-Paldea",
       "pid": "wooperpaldea",
       "tier": "D",
       "category": "NFE",
-      "png": "wooper-paldea"
+      "png": "wooper-paldea",
+      "draft": {}
     },
     {
       "name": "Quagsire",
       "pid": "quagsire",
-      "png": "quagsire"
+      "png": "quagsire",
+      "draft": {}
     },
     {
       "name": "Espeon",
       "pid": "espeon",
-      "png": "espeon"
+      "png": "espeon",
+      "draft": {}
     },
     {
       "name": "Umbreon",
       "pid": "umbreon",
-      "png": "umbreon"
+      "png": "umbreon",
+      "draft": {}
     },
     {
       "name": "Murkrow",
       "pid": "murkrow",
       "tier": "D",
       "category": "NFE",
-      "png": "murkrow"
+      "png": "murkrow",
+      "draft": {}
     },
     {
       "name": "Slowking",
       "pid": "slowking",
-      "png": "slowking"
+      "png": "slowking",
+      "draft": {}
     },
     {
       "name": "Slowking-Galar",
       "pid": "slowkinggalar",
-      "png": "slowking-galar"
+      "png": "slowking-galar",
+      "draft": {}
     },
     {
       "name": "Misdreavus",
       "pid": "misdreavus",
       "tier": "D",
       "category": "NFE",
-      "png": "misdreavus"
+      "png": "misdreavus",
+      "draft": {}
     },
     {
       "name": "Unown",
       "pid": "unown",
-      "png": "unown"
+      "png": "unown",
+      "draft": {}
     },
     {
       "name": "Wobbuffet",
       "pid": "wobbuffet",
-      "png": "wobbuffet"
+      "png": "wobbuffet",
+      "draft": {}
     },
     {
       "name": "Girafarig",
@@ -1536,84 +1899,97 @@
       "tier": "D",
       "category": "NFE",
       "png": "girafarig",
-      "order": 24
+      "draft": {}
     },
     {
       "name": "Pineco",
       "pid": "pineco",
       "tier": "D",
       "category": "NFE",
-      "png": "pineco"
+      "png": "pineco",
+      "draft": {}
     },
     {
       "name": "Forretress",
       "pid": "forretress",
-      "png": "forretress"
+      "png": "forretress",
+      "draft": {}
     },
     {
       "name": "Dunsparce",
       "pid": "dunsparce",
       "tier": "D",
       "category": "NFE",
-      "png": "dunsparce"
+      "png": "dunsparce",
+      "draft": {}
     },
     {
       "name": "Gligar",
       "pid": "gligar",
       "tier": "D",
       "category": "NFE",
-      "png": "gligar"
+      "png": "gligar",
+      "draft": {}
     },
     {
       "name": "Steelix",
       "pid": "steelix",
-      "png": "steelix"
+      "png": "steelix",
+      "draft": {}
     },
     {
       "name": "Snubbull",
       "pid": "snubbull",
       "tier": "D",
       "category": "NFE",
-      "png": "snubbull"
+      "png": "snubbull",
+      "draft": {}
     },
     {
       "name": "Granbull",
       "pid": "granbull",
-      "png": "granbull"
+      "png": "granbull",
+      "draft": {}
     },
     {
       "name": "Qwilfish",
       "pid": "qwilfish",
-      "png": "qwilfish"
+      "png": "qwilfish",
+      "draft": {}
     },
     {
       "name": "Qwilfish-Hisui",
       "pid": "qwilfishhisui",
       "tier": "D",
       "category": "NFE",
-      "png": "qwilfish-hisui"
+      "png": "qwilfish-hisui",
+      "draft": {}
     },
     {
       "name": "Scizor",
       "pid": "scizor",
-      "png": "scizor"
+      "png": "scizor",
+      "draft": {}
     },
     {
       "name": "Shuckle",
       "pid": "shuckle",
-      "png": "shuckle"
+      "png": "shuckle",
+      "draft": {}
     },
     {
       "name": "Heracross",
       "pid": "heracross",
-      "png": "heracross"
+      "png": "heracross",
+      "draft": {}
     },
     {
       "name": "Sneasel",
       "pid": "sneasel",
       "tier": "D",
       "category": "NFE",
-      "png": "sneasel"
+      "png": "sneasel",
+      "draft": {}
     },
     {
       "name": "Sneasel-Hisui",
@@ -1621,59 +1997,67 @@
       "tier": "D",
       "category": "NFE",
       "png": "sneasel-hisui",
-      "order": 3
+      "draft": {}
     },
     {
       "name": "Teddiursa",
       "pid": "teddiursa",
       "tier": "D",
       "category": "NFE",
-      "png": "teddiursa"
+      "png": "teddiursa",
+      "draft": {}
     },
     {
       "name": "Ursaring",
       "pid": "ursaring",
       "tier": "D",
       "category": "NFE",
-      "png": "ursaring"
+      "png": "ursaring",
+      "draft": {}
     },
     {
       "name": "Slugma",
       "pid": "slugma",
       "tier": "D",
       "category": "NFE",
-      "png": "slugma"
+      "png": "slugma",
+      "draft": {}
     },
     {
       "name": "Magcargo",
       "pid": "magcargo",
-      "png": "magcargo"
+      "png": "magcargo",
+      "draft": {}
     },
     {
       "name": "Swinub",
       "pid": "swinub",
       "tier": "D",
       "category": "NFE",
-      "png": "swinub"
+      "png": "swinub",
+      "draft": {}
     },
     {
       "name": "Piloswine",
       "pid": "piloswine",
       "tier": "D",
       "category": "NFE",
-      "png": "piloswine"
+      "png": "piloswine",
+      "draft": {}
     },
     {
       "name": "Corsola",
       "pid": "corsola",
-      "png": "corsola"
+      "png": "corsola",
+      "draft": {}
     },
     {
       "name": "Corsola-Galar",
       "pid": "corsolagalar",
       "tier": "D",
       "category": "NFE",
-      "png": "corsola-galar"
+      "png": "corsola-galar",
+      "draft": {}
     },
     {
       "name": "Remoraid",
@@ -1681,357 +2065,413 @@
       "tier": "D",
       "category": "NFE",
       "png": "remoraid",
-      "order": 3,
-      "coach": "h8oj"
+      "draft": {}
     },
     {
       "name": "Octillery",
       "pid": "octillery",
-      "png": "octillery"
+      "png": "octillery",
+      "draft": {}
     },
     {
       "name": "Delibird",
       "pid": "delibird",
-      "png": "delibird"
+      "png": "delibird",
+      "draft": {}
     },
     {
       "name": "Mantine",
       "pid": "mantine",
-      "png": "mantine"
+      "png": "mantine",
+      "draft": {}
     },
     {
       "name": "Skarmory",
       "pid": "skarmory",
-      "png": "skarmory"
+      "png": "skarmory",
+      "draft": {}
     },
     {
       "name": "Houndour",
       "pid": "houndour",
       "tier": "D",
       "category": "NFE",
-      "png": "houndour"
+      "png": "houndour",
+      "draft": {}
     },
     {
       "name": "Houndoom",
       "pid": "houndoom",
-      "png": "houndoom"
+      "png": "houndoom",
+      "draft": {}
     },
     {
       "name": "Kingdra",
       "pid": "kingdra",
-      "png": "kingdra"
+      "png": "kingdra",
+      "draft": {}
     },
     {
       "name": "Phanpy",
       "pid": "phanpy",
       "tier": "D",
       "category": "NFE",
-      "png": "phanpy"
+      "png": "phanpy",
+      "draft": {}
     },
     {
       "name": "Donphan",
       "pid": "donphan",
-      "png": "donphan"
+      "png": "donphan",
+      "draft": {}
     },
     {
       "name": "Porygon2",
       "pid": "porygon2",
       "tier": "D",
       "category": "NFE",
-      "order": 1,
-      "png": "porygon2"
+      "png": "porygon2",
+      "draft": {}
     },
     {
       "name": "Stantler",
       "pid": "stantler",
       "tier": "D",
       "category": "NFE",
-      "png": "stantler"
+      "png": "stantler",
+      "draft": {}
     },
     {
       "name": "Smeargle",
       "pid": "smeargle",
-      "png": "smeargle"
+      "png": "smeargle",
+      "draft": {}
     },
     {
       "name": "Tyrogue",
       "pid": "tyrogue",
       "tier": "D",
       "category": "NFE",
-      "png": "tyrogue"
+      "png": "tyrogue",
+      "draft": {}
     },
     {
       "name": "Hitmontop",
       "pid": "hitmontop",
-      "png": "hitmontop"
+      "png": "hitmontop",
+      "draft": {}
     },
     {
       "name": "Smoochum",
       "pid": "smoochum",
       "tier": "D",
       "category": "NFE",
-      "png": "smoochum"
+      "png": "smoochum",
+      "draft": {}
     },
     {
       "name": "Elekid",
       "pid": "elekid",
       "tier": "D",
       "category": "NFE",
-      "png": "elekid"
+      "png": "elekid",
+      "draft": {}
     },
     {
       "name": "Magby",
       "pid": "magby",
       "tier": "D",
       "category": "NFE",
-      "png": "magby"
+      "png": "magby",
+      "draft": {}
     },
     {
       "name": "Miltank",
       "pid": "miltank",
-      "png": "miltank"
+      "png": "miltank",
+      "draft": {}
     },
     {
       "name": "Blissey",
       "pid": "blissey",
-      "png": "blissey"
+      "png": "blissey",
+      "draft": {}
     },
     {
       "name": "Raikou",
       "pid": "raikou",
-      "png": "raikou"
+      "png": "raikou",
+      "draft": {}
     },
     {
       "name": "Entei",
       "pid": "entei",
-      "png": "entei"
+      "png": "entei",
+      "draft": {}
     },
     {
       "name": "Suicune",
       "pid": "suicune",
-      "png": "suicune"
+      "png": "suicune",
+      "draft": {}
     },
     {
       "name": "Larvitar",
       "pid": "larvitar",
       "tier": "D",
       "category": "NFE",
-      "png": "larvitar"
+      "png": "larvitar",
+      "draft": {}
     },
     {
       "name": "Pupitar",
       "pid": "pupitar",
       "tier": "D",
       "category": "NFE",
-      "png": "pupitar"
+      "png": "pupitar",
+      "draft": {}
     },
     {
       "name": "Tyranitar",
       "pid": "tyranitar",
-      "png": "tyranitar"
+      "png": "tyranitar",
+      "draft": {}
     },
     {
       "name": "Lugia",
       "pid": "lugia",
-      "png": "lugia"
+      "png": "lugia",
+      "draft": {}
     },
     {
       "name": "Ho-Oh",
       "pid": "hooh",
-      "png": "hooh"
+      "png": "hooh",
+      "draft": {}
     },
     {
       "name": "Celebi",
       "pid": "celebi",
-      "png": "celebi"
+      "png": "celebi",
+      "draft": {}
     },
     {
       "name": "Treecko",
       "pid": "treecko",
       "tier": "D",
       "category": "NFE",
-      "png": "treecko"
+      "png": "treecko",
+      "draft": {}
     },
     {
       "name": "Grovyle",
       "pid": "grovyle",
       "tier": "D",
       "category": "NFE",
-      "png": "grovyle"
+      "png": "grovyle",
+      "draft": {}
     },
     {
       "name": "Sceptile",
       "pid": "sceptile",
-      "png": "sceptile"
+      "png": "sceptile",
+      "draft": {}
     },
     {
       "name": "Torchic",
       "pid": "torchic",
       "tier": "D",
       "category": "NFE",
-      "png": "torchic"
+      "png": "torchic",
+      "draft": {}
     },
     {
       "name": "Combusken",
       "pid": "combusken",
       "tier": "D",
       "category": "NFE",
-      "png": "combusken"
+      "png": "combusken",
+      "draft": {}
     },
     {
       "name": "Blaziken",
       "pid": "blaziken",
-      "png": "blaziken"
+      "png": "blaziken",
+      "draft": {}
     },
     {
       "name": "Mudkip",
       "pid": "mudkip",
       "tier": "D",
       "category": "NFE",
-      "png": "mudkip"
+      "png": "mudkip",
+      "draft": {}
     },
     {
       "name": "Marshtomp",
       "pid": "marshtomp",
       "tier": "D",
       "category": "NFE",
-      "png": "marshtomp"
+      "png": "marshtomp",
+      "draft": {}
     },
     {
       "name": "Swampert",
       "pid": "swampert",
-      "png": "swampert"
+      "png": "swampert",
+      "draft": {}
     },
     {
       "name": "Poochyena",
       "pid": "poochyena",
       "tier": "D",
       "category": "NFE",
-      "png": "poochyena"
+      "png": "poochyena",
+      "draft": {}
     },
     {
       "name": "Mightyena",
       "pid": "mightyena",
-      "png": "mightyena"
+      "png": "mightyena",
+      "draft": {}
     },
     {
       "name": "Zigzagoon",
       "pid": "zigzagoon",
       "tier": "D",
       "category": "NFE",
-      "png": "zigzagoon"
+      "png": "zigzagoon",
+      "draft": {}
     },
     {
       "name": "Zigzagoon-Galar",
       "pid": "zigzagoongalar",
       "tier": "D",
       "category": "NFE",
-      "png": "zigzagoon-galar"
+      "png": "zigzagoon-galar",
+      "draft": {}
     },
     {
       "name": "Linoone",
       "pid": "linoone",
-      "png": "linoone"
+      "png": "linoone",
+      "draft": {}
     },
     {
       "name": "Linoone-Galar",
       "pid": "linoonegalar",
       "tier": "D",
       "category": "NFE",
-      "png": "linoone-galar"
+      "png": "linoone-galar",
+      "draft": {}
     },
     {
       "name": "Wurmple",
       "pid": "wurmple",
       "tier": "D",
       "category": "NFE",
-      "png": "wurmple"
+      "png": "wurmple",
+      "draft": {}
     },
     {
       "name": "Silcoon",
       "pid": "silcoon",
       "tier": "D",
       "category": "NFE",
-      "png": "silcoon"
+      "png": "silcoon",
+      "draft": {}
     },
     {
       "name": "Beautifly",
       "pid": "beautifly",
-      "png": "beautifly"
+      "png": "beautifly",
+      "draft": {}
     },
     {
       "name": "Cascoon",
       "pid": "cascoon",
       "tier": "D",
       "category": "NFE",
-      "png": "cascoon"
+      "png": "cascoon",
+      "draft": {}
     },
     {
       "name": "Dustox",
       "pid": "dustox",
-      "png": "dustox"
+      "png": "dustox",
+      "draft": {}
     },
     {
       "name": "Lotad",
       "pid": "lotad",
       "tier": "D",
       "category": "NFE",
-      "png": "lotad"
+      "png": "lotad",
+      "draft": {}
     },
     {
       "name": "Lombre",
       "pid": "lombre",
       "tier": "D",
       "category": "NFE",
-      "png": "lombre"
+      "png": "lombre",
+      "draft": {}
     },
     {
       "name": "Ludicolo",
       "pid": "ludicolo",
-      "png": "ludicolo"
+      "png": "ludicolo",
+      "draft": {}
     },
     {
       "name": "Seedot",
       "pid": "seedot",
       "tier": "D",
       "category": "NFE",
-      "png": "seedot"
+      "png": "seedot",
+      "draft": {}
     },
     {
       "name": "Nuzleaf",
       "pid": "nuzleaf",
       "tier": "D",
       "category": "NFE",
-      "png": "nuzleaf"
+      "png": "nuzleaf",
+      "draft": {}
     },
     {
       "name": "Shiftry",
       "pid": "shiftry",
-      "png": "shiftry"
+      "png": "shiftry",
+      "draft": {}
     },
     {
       "name": "Taillow",
       "pid": "taillow",
       "tier": "D",
       "category": "NFE",
-      "png": "taillow"
+      "png": "taillow",
+      "draft": {}
     },
     {
       "name": "Swellow",
       "pid": "swellow",
-      "png": "swellow"
+      "png": "swellow",
+      "draft": {}
     },
     {
       "name": "Wingull",
       "pid": "wingull",
       "tier": "D",
       "category": "NFE",
-      "png": "wingull"
+      "png": "wingull",
+      "draft": {}
     },
     {
       "name": "Pelipper",
       "pid": "pelipper",
-      "png": "pelipper"
+      "png": "pelipper",
+      "draft": {}
     },
     {
       "name": "Ralts",
@@ -2039,32 +2479,35 @@
       "tier": "D",
       "category": "NFE",
       "png": "ralts",
-      "order": 4,
-      "coach": "DeoxysBot"
+      "draft": {}
     },
     {
       "name": "Kirlia",
       "pid": "kirlia",
       "tier": "D",
       "category": "NFE",
-      "png": "kirlia"
+      "png": "kirlia",
+      "draft": {}
     },
     {
       "name": "Gardevoir",
       "pid": "gardevoir",
-      "png": "gardevoir"
+      "png": "gardevoir",
+      "draft": {}
     },
     {
       "name": "Surskit",
       "pid": "surskit",
       "tier": "D",
       "category": "NFE",
-      "png": "surskit"
+      "png": "surskit",
+      "draft": {}
     },
     {
       "name": "Masquerain",
       "pid": "masquerain",
-      "png": "masquerain"
+      "png": "masquerain",
+      "draft": {}
     },
     {
       "name": "Shroomish",
@@ -2072,209 +2515,243 @@
       "tier": "D",
       "category": "NFE",
       "png": "shroomish",
-      "order": 12
+      "draft": {}
     },
     {
       "name": "Breloom",
       "pid": "breloom",
-      "png": "breloom"
+      "png": "breloom",
+      "draft": {}
     },
     {
       "name": "Slakoth",
       "pid": "slakoth",
       "tier": "D",
       "category": "NFE",
-      "png": "slakoth"
+      "png": "slakoth",
+      "draft": {}
     },
     {
       "name": "Vigoroth",
       "pid": "vigoroth",
       "tier": "D",
       "category": "NFE",
-      "png": "vigoroth"
+      "png": "vigoroth",
+      "draft": {}
     },
     {
       "name": "Slaking",
       "pid": "slaking",
-      "png": "slaking"
+      "png": "slaking",
+      "draft": {}
     },
     {
       "name": "Nincada",
       "pid": "nincada",
       "tier": "D",
       "category": "NFE",
-      "png": "nincada"
+      "png": "nincada",
+      "draft": {}
     },
     {
       "name": "Ninjask",
       "pid": "ninjask",
-      "png": "ninjask"
+      "png": "ninjask",
+      "draft": {}
     },
     {
       "name": "Shedinja",
       "pid": "shedinja",
-      "png": "shedinja"
+      "png": "shedinja",
+      "draft": {}
     },
     {
       "name": "Whismur",
       "pid": "whismur",
       "tier": "D",
       "category": "NFE",
-      "png": "whismur"
+      "png": "whismur",
+      "draft": {}
     },
     {
       "name": "Loudred",
       "pid": "loudred",
       "tier": "D",
       "category": "NFE",
-      "png": "loudred"
+      "png": "loudred",
+      "draft": {}
     },
     {
       "name": "Exploud",
       "pid": "exploud",
-      "png": "exploud"
+      "png": "exploud",
+      "draft": {}
     },
     {
       "name": "Makuhita",
       "pid": "makuhita",
       "tier": "D",
       "category": "NFE",
-      "png": "makuhita"
+      "png": "makuhita",
+      "draft": {}
     },
     {
       "name": "Hariyama",
       "pid": "hariyama",
-      "png": "hariyama"
+      "png": "hariyama",
+      "draft": {}
     },
     {
       "name": "Azurill",
       "pid": "azurill",
       "tier": "D",
       "category": "NFE",
-      "png": "azurill"
+      "png": "azurill",
+      "draft": {}
     },
     {
       "name": "Nosepass",
       "pid": "nosepass",
       "tier": "D",
       "category": "NFE",
-      "png": "nosepass"
+      "png": "nosepass",
+      "draft": {}
     },
     {
       "name": "Skitty",
       "pid": "skitty",
       "tier": "D",
       "category": "NFE",
-      "png": "skitty"
+      "png": "skitty",
+      "draft": {}
     },
     {
       "name": "Delcatty",
       "pid": "delcatty",
-      "png": "delcatty"
+      "png": "delcatty",
+      "draft": {}
     },
     {
       "name": "Sableye",
       "pid": "sableye",
-      "png": "sableye"
+      "png": "sableye",
+      "draft": {}
     },
     {
       "name": "Mawile",
       "pid": "mawile",
-      "png": "mawile"
+      "png": "mawile",
+      "draft": {}
     },
     {
       "name": "Aron",
       "pid": "aron",
       "tier": "D",
       "category": "NFE",
-      "png": "aron"
+      "png": "aron",
+      "draft": {}
     },
     {
       "name": "Lairon",
       "pid": "lairon",
       "tier": "D",
       "category": "NFE",
-      "png": "lairon"
+      "png": "lairon",
+      "draft": {}
     },
     {
       "name": "Aggron",
       "pid": "aggron",
-      "png": "aggron"
+      "png": "aggron",
+      "draft": {}
     },
     {
       "name": "Meditite",
       "pid": "meditite",
       "tier": "D",
       "category": "NFE",
-      "png": "meditite"
+      "png": "meditite",
+      "draft": {}
     },
     {
       "name": "Medicham",
       "pid": "medicham",
-      "png": "medicham"
+      "png": "medicham",
+      "draft": {}
     },
     {
       "name": "Electrike",
       "pid": "electrike",
       "tier": "D",
       "category": "NFE",
-      "png": "electrike"
+      "png": "electrike",
+      "draft": {}
     },
     {
       "name": "Manectric",
       "pid": "manectric",
-      "png": "manectric"
+      "png": "manectric",
+      "draft": {}
     },
     {
       "name": "Plusle",
       "pid": "plusle",
-      "png": "plusle"
+      "png": "plusle",
+      "draft": {}
     },
     {
       "name": "Minun",
       "pid": "minun",
-      "png": "minun"
+      "png": "minun",
+      "draft": {}
     },
     {
       "name": "Volbeat",
       "pid": "volbeat",
-      "png": "volbeat"
+      "png": "volbeat",
+      "draft": {}
     },
     {
       "name": "Illumise",
       "pid": "illumise",
-      "png": "illumise"
+      "png": "illumise",
+      "draft": {}
     },
     {
       "name": "Roselia",
       "pid": "roselia",
       "tier": "D",
       "category": "NFE",
-      "png": "roselia"
+      "png": "roselia",
+      "draft": {}
     },
     {
       "name": "Gulpin",
       "pid": "gulpin",
       "tier": "D",
       "category": "NFE",
-      "png": "gulpin"
+      "png": "gulpin",
+      "draft": {}
     },
     {
       "name": "Swalot",
       "pid": "swalot",
-      "png": "swalot"
+      "png": "swalot",
+      "draft": {}
     },
     {
       "name": "Carvanha",
       "pid": "carvanha",
       "tier": "D",
       "category": "NFE",
-      "png": "carvanha"
+      "png": "carvanha",
+      "draft": {}
     },
     {
       "name": "Sharpedo",
       "pid": "sharpedo",
-      "png": "sharpedo"
+      "png": "sharpedo",
+      "draft": {}
     },
     {
       "name": "Wailmer",
@@ -2282,29 +2759,33 @@
       "tier": "D",
       "category": "NFE",
       "png": "wailmer",
-      "order": 3
+      "draft": {}
     },
     {
       "name": "Wailord",
       "pid": "wailord",
-      "png": "wailord"
+      "png": "wailord",
+      "draft": {}
     },
     {
       "name": "Numel",
       "pid": "numel",
       "tier": "D",
       "category": "NFE",
-      "png": "numel"
+      "png": "numel",
+      "draft": {}
     },
     {
       "name": "Camerupt",
       "pid": "camerupt",
-      "png": "camerupt"
+      "png": "camerupt",
+      "draft": {}
     },
     {
       "name": "Torkoal",
       "pid": "torkoal",
-      "png": "torkoal"
+      "png": "torkoal",
+      "draft": {}
     },
     {
       "name": "Spoink",
@@ -2312,36 +2793,41 @@
       "tier": "D",
       "category": "NFE",
       "png": "spoink",
-      "order": 4
+      "draft": {}
     },
     {
       "name": "Grumpig",
       "pid": "grumpig",
-      "png": "grumpig"
+      "png": "grumpig",
+      "draft": {}
     },
     {
       "name": "Spinda",
       "pid": "spinda",
-      "png": "spinda"
+      "png": "spinda",
+      "draft": {}
     },
     {
       "name": "Trapinch",
       "pid": "trapinch",
       "tier": "D",
       "category": "NFE",
-      "png": "trapinch"
+      "png": "trapinch",
+      "draft": {}
     },
     {
       "name": "Vibrava",
       "pid": "vibrava",
       "tier": "D",
       "category": "NFE",
-      "png": "vibrava"
+      "png": "vibrava",
+      "draft": {}
     },
     {
       "name": "Flygon",
       "pid": "flygon",
-      "png": "flygon"
+      "png": "flygon",
+      "draft": {}
     },
     {
       "name": "Cacnea",
@@ -2349,466 +2835,545 @@
       "tier": "D",
       "category": "NFE",
       "png": "cacnea",
-      "order": 2
+      "draft": {}
     },
     {
       "name": "Cacturne",
       "pid": "cacturne",
-      "png": "cacturne"
+      "png": "cacturne",
+      "draft": {}
     },
     {
       "name": "Swablu",
       "pid": "swablu",
       "tier": "D",
       "category": "NFE",
-      "png": "swablu"
+      "png": "swablu",
+      "draft": {}
     },
     {
       "name": "Altaria",
       "pid": "altaria",
-      "png": "altaria"
+      "png": "altaria",
+      "draft": {}
     },
     {
       "name": "Zangoose",
       "pid": "zangoose",
-      "png": "zangoose"
+      "png": "zangoose",
+      "draft": {}
     },
     {
       "name": "Seviper",
       "pid": "seviper",
-      "png": "seviper"
+      "png": "seviper",
+      "draft": {}
     },
     {
       "name": "Lunatone",
       "pid": "lunatone",
-      "png": "lunatone"
+      "png": "lunatone",
+      "draft": {}
     },
     {
       "name": "Solrock",
       "pid": "solrock",
-      "png": "solrock"
+      "png": "solrock",
+      "draft": {}
     },
     {
       "name": "Barboach",
       "pid": "barboach",
       "tier": "D",
       "category": "NFE",
-      "png": "barboach"
+      "png": "barboach",
+      "draft": {}
     },
     {
       "name": "Whiscash",
       "pid": "whiscash",
-      "png": "whiscash"
+      "png": "whiscash",
+      "draft": {}
     },
     {
       "name": "Corphish",
       "pid": "corphish",
       "tier": "D",
       "category": "NFE",
-      "png": "corphish"
+      "png": "corphish",
+      "draft": {}
     },
     {
       "name": "Crawdaunt",
       "pid": "crawdaunt",
-      "png": "crawdaunt"
+      "png": "crawdaunt",
+      "draft": {}
     },
     {
       "name": "Baltoy",
       "pid": "baltoy",
       "tier": "D",
       "category": "NFE",
-      "png": "baltoy"
+      "png": "baltoy",
+      "draft": {}
     },
     {
       "name": "Claydol",
       "pid": "claydol",
-      "png": "claydol"
+      "png": "claydol",
+      "draft": {}
     },
     {
       "name": "Lileep",
       "pid": "lileep",
       "tier": "D",
       "category": "NFE",
-      "png": "lileep"
+      "png": "lileep",
+      "draft": {}
     },
     {
       "name": "Cradily",
       "pid": "cradily",
-      "png": "cradily"
+      "png": "cradily",
+      "draft": {}
     },
     {
       "name": "Anorith",
       "pid": "anorith",
       "tier": "D",
       "category": "NFE",
-      "png": "anorith"
+      "png": "anorith",
+      "draft": {}
     },
     {
       "name": "Armaldo",
       "pid": "armaldo",
-      "png": "armaldo"
+      "png": "armaldo",
+      "draft": {}
     },
     {
       "name": "Feebas",
       "pid": "feebas",
       "tier": "D",
       "category": "NFE",
-      "png": "feebas"
+      "png": "feebas",
+      "draft": {}
     },
     {
       "name": "Milotic",
       "pid": "milotic",
-      "png": "milotic"
+      "png": "milotic",
+      "draft": {}
     },
     {
       "name": "Castform",
       "pid": "castform",
-      "png": "castform"
+      "png": "castform",
+      "draft": {}
     },
     {
       "name": "Kecleon",
       "pid": "kecleon",
-      "png": "kecleon"
+      "png": "kecleon",
+      "draft": {}
     },
     {
       "name": "Shuppet",
       "pid": "shuppet",
       "tier": "D",
       "category": "NFE",
-      "png": "shuppet"
+      "png": "shuppet",
+      "draft": {}
     },
     {
       "name": "Banette",
       "pid": "banette",
-      "png": "banette"
+      "png": "banette",
+      "draft": {}
     },
     {
       "name": "Duskull",
       "pid": "duskull",
       "tier": "D",
       "category": "NFE",
-      "png": "duskull"
+      "png": "duskull",
+      "draft": {}
     },
     {
       "name": "Dusclops",
       "pid": "dusclops",
       "tier": "D",
       "category": "NFE",
-      "png": "dusclops"
+      "png": "dusclops",
+      "draft": {}
     },
     {
       "name": "Tropius",
       "pid": "tropius",
-      "png": "tropius"
+      "png": "tropius",
+      "draft": {}
     },
     {
       "name": "Chimecho",
       "pid": "chimecho",
-      "png": "chimecho"
+      "png": "chimecho",
+      "draft": {}
     },
     {
       "name": "Absol",
       "pid": "absol",
-      "png": "absol"
+      "png": "absol",
+      "draft": {}
     },
     {
       "name": "Wynaut",
       "pid": "wynaut",
       "tier": "D",
       "category": "NFE",
-      "png": "wynaut"
+      "png": "wynaut",
+      "draft": {}
     },
     {
       "name": "Snorunt",
       "pid": "snorunt",
       "tier": "D",
       "category": "NFE",
-      "png": "snorunt"
+      "png": "snorunt",
+      "draft": {}
     },
     {
       "name": "Glalie",
       "pid": "glalie",
-      "png": "glalie"
+      "png": "glalie",
+      "draft": {}
     },
     {
       "name": "Spheal",
       "pid": "spheal",
       "tier": "D",
       "category": "NFE",
-      "png": "spheal"
+      "png": "spheal",
+      "draft": {}
     },
     {
       "name": "Sealeo",
       "pid": "sealeo",
       "tier": "D",
       "category": "NFE",
-      "png": "sealeo"
+      "png": "sealeo",
+      "draft": {}
     },
     {
       "name": "Walrein",
       "pid": "walrein",
-      "png": "walrein"
+      "png": "walrein",
+      "draft": {}
     },
     {
       "name": "Clamperl",
       "pid": "clamperl",
       "tier": "D",
       "category": "NFE",
-      "png": "clamperl"
+      "png": "clamperl",
+      "draft": {}
     },
     {
       "name": "Huntail",
       "pid": "huntail",
-      "png": "huntail"
+      "png": "huntail",
+      "draft": {}
     },
     {
       "name": "Gorebyss",
       "pid": "gorebyss",
-      "png": "gorebyss"
+      "png": "gorebyss",
+      "draft": {}
     },
     {
       "name": "Relicanth",
       "pid": "relicanth",
-      "png": "relicanth"
+      "png": "relicanth",
+      "draft": {}
     },
     {
       "name": "Luvdisc",
       "pid": "luvdisc",
-      "png": "luvdisc"
+      "png": "luvdisc",
+      "draft": {}
     },
     {
       "name": "Bagon",
       "pid": "bagon",
       "tier": "D",
       "category": "NFE",
-      "png": "bagon"
+      "png": "bagon",
+      "draft": {}
     },
     {
       "name": "Shelgon",
       "pid": "shelgon",
       "tier": "D",
       "category": "NFE",
-      "png": "shelgon"
+      "png": "shelgon",
+      "draft": {}
     },
     {
       "name": "Salamence",
       "pid": "salamence",
-      "png": "salamence"
+      "png": "salamence",
+      "draft": {}
     },
     {
       "name": "Beldum",
       "pid": "beldum",
       "tier": "D",
       "category": "NFE",
-      "png": "beldum"
+      "png": "beldum",
+      "draft": {}
     },
     {
       "name": "Metang",
       "pid": "metang",
       "tier": "D",
       "category": "NFE",
-      "png": "metang"
+      "png": "metang",
+      "draft": {}
     },
     {
       "name": "Metagross",
       "pid": "metagross",
-      "png": "metagross"
+      "png": "metagross",
+      "draft": {}
     },
     {
       "name": "Regirock",
       "pid": "regirock",
-      "png": "regirock"
+      "png": "regirock",
+      "draft": {}
     },
     {
       "name": "Regice",
       "pid": "regice",
-      "png": "regice"
+      "png": "regice",
+      "draft": {}
     },
     {
       "name": "Registeel",
       "pid": "registeel",
-      "png": "registeel"
+      "png": "registeel",
+      "draft": {}
     },
     {
       "name": "Latias",
       "pid": "latias",
-      "png": "latias"
+      "png": "latias",
+      "draft": {}
     },
     {
       "name": "Latios",
       "pid": "latios",
-      "png": "latios"
+      "png": "latios",
+      "draft": {}
     },
     {
       "name": "Kyogre",
       "pid": "kyogre",
-      "png": "kyogre"
+      "png": "kyogre",
+      "draft": {}
     },
     {
       "name": "Groudon",
       "pid": "groudon",
-      "png": "groudon"
+      "png": "groudon",
+      "draft": {}
     },
     {
       "name": "Rayquaza",
       "pid": "rayquaza",
-      "png": "rayquaza"
+      "png": "rayquaza",
+      "draft": {}
     },
     {
       "name": "Jirachi",
       "pid": "jirachi",
-      "png": "jirachi"
+      "png": "jirachi",
+      "draft": {}
     },
     {
       "name": "Deoxys",
       "pid": "deoxys",
-      "png": "deoxys"
+      "png": "deoxys",
+      "draft": {}
     },
     {
       "name": "Deoxys-Attack",
       "pid": "deoxysattack",
-      "png": "deoxys-attack"
+      "png": "deoxys-attack",
+      "draft": {}
     },
     {
       "name": "Deoxys-Defense",
       "pid": "deoxysdefense",
-      "png": "deoxys-defense"
+      "png": "deoxys-defense",
+      "draft": {}
     },
     {
       "name": "Deoxys-Speed",
       "pid": "deoxysspeed",
-      "png": "deoxys-speed"
+      "png": "deoxys-speed",
+      "draft": {}
     },
     {
       "name": "Turtwig",
       "pid": "turtwig",
       "tier": "D",
       "category": "NFE",
-      "png": "turtwig"
+      "png": "turtwig",
+      "draft": {}
     },
     {
       "name": "Grotle",
       "pid": "grotle",
       "tier": "D",
       "category": "NFE",
-      "png": "grotle"
+      "png": "grotle",
+      "draft": {}
     },
     {
       "name": "Torterra",
       "pid": "torterra",
-      "png": "torterra"
+      "png": "torterra",
+      "draft": {}
     },
     {
       "name": "Chimchar",
       "pid": "chimchar",
       "tier": "D",
       "category": "NFE",
-      "png": "chimchar"
+      "png": "chimchar",
+      "draft": {}
     },
     {
       "name": "Monferno",
       "pid": "monferno",
       "tier": "D",
       "category": "NFE",
-      "png": "monferno"
+      "png": "monferno",
+      "draft": {}
     },
     {
       "name": "Infernape",
       "pid": "infernape",
-      "png": "infernape"
+      "png": "infernape",
+      "draft": {}
     },
     {
       "name": "Piplup",
       "pid": "piplup",
       "tier": "D",
       "category": "NFE",
-      "png": "piplup"
+      "png": "piplup",
+      "draft": {}
     },
     {
       "name": "Prinplup",
       "pid": "prinplup",
       "tier": "D",
       "category": "NFE",
-      "png": "prinplup"
+      "png": "prinplup",
+      "draft": {}
     },
     {
       "name": "Empoleon",
       "pid": "empoleon",
-      "png": "empoleon"
+      "png": "empoleon",
+      "draft": {}
     },
     {
       "name": "Starly",
       "pid": "starly",
       "tier": "D",
       "category": "NFE",
-      "png": "starly"
+      "png": "starly",
+      "draft": {}
     },
     {
       "name": "Staravia",
       "pid": "staravia",
       "tier": "D",
       "category": "NFE",
-      "png": "staravia"
+      "png": "staravia",
+      "draft": {}
     },
     {
       "name": "Staraptor",
       "pid": "staraptor",
-      "png": "staraptor"
+      "png": "staraptor",
+      "draft": {}
     },
     {
       "name": "Bidoof",
       "pid": "bidoof",
       "tier": "D",
       "category": "NFE",
-      "png": "bidoof"
+      "png": "bidoof",
+      "draft": {}
     },
     {
       "name": "Bibarel",
       "pid": "bibarel",
-      "png": "bibarel"
+      "png": "bibarel",
+      "draft": {}
     },
     {
       "name": "Kricketot",
       "pid": "kricketot",
       "tier": "D",
       "category": "NFE",
-      "png": "kricketot"
+      "png": "kricketot",
+      "draft": {}
     },
     {
       "name": "Kricketune",
       "pid": "kricketune",
-      "png": "kricketune"
+      "png": "kricketune",
+      "draft": {}
     },
     {
       "name": "Shinx",
       "pid": "shinx",
       "tier": "D",
       "category": "NFE",
-      "png": "shinx"
+      "png": "shinx",
+      "draft": {}
     },
     {
       "name": "Luxio",
       "pid": "luxio",
       "tier": "D",
       "category": "NFE",
-      "png": "luxio"
+      "png": "luxio",
+      "draft": {}
     },
     {
       "name": "Luxray",
       "pid": "luxray",
-      "png": "luxray"
+      "png": "luxray",
+      "draft": {}
     },
     {
       "name": "Budew",
       "pid": "budew",
       "tier": "D",
       "category": "NFE",
-      "png": "budew"
+      "png": "budew",
+      "draft": {}
     },
     {
       "name": "Roserade",
       "pid": "roserade",
-      "png": "roserade"
+      "png": "roserade",
+      "draft": {}
     },
     {
       "name": "Cranidos",
@@ -2816,25 +3381,27 @@
       "tier": "D",
       "category": "NFE",
       "png": "cranidos",
-      "order": 8,
-      "coach": "lumaris"
+      "draft": {}
     },
     {
       "name": "Rampardos",
       "pid": "rampardos",
-      "png": "rampardos"
+      "png": "rampardos",
+      "draft": {}
     },
     {
       "name": "Shieldon",
       "pid": "shieldon",
       "tier": "D",
       "category": "NFE",
-      "png": "shieldon"
+      "png": "shieldon",
+      "draft": {}
     },
     {
       "name": "Bastiodon",
       "pid": "bastiodon",
-      "png": "bastiodon"
+      "png": "bastiodon",
+      "draft": {}
     },
     {
       "name": "Burmy",
@@ -2842,518 +3409,611 @@
       "tier": "D",
       "category": "NFE",
       "png": "burmy",
-      "order": 22
+      "draft": {}
     },
     {
       "name": "Wormadam",
       "pid": "wormadam",
-      "png": "wormadam"
+      "png": "wormadam",
+      "draft": {}
     },
     {
       "name": "Wormadam-Sandy",
       "pid": "wormadamsandy",
-      "png": "wormadam-sandy"
+      "png": "wormadam-sandy",
+      "draft": {}
     },
     {
       "name": "Wormadam-Trash",
       "pid": "wormadamtrash",
-      "png": "wormadam-trash"
+      "png": "wormadam-trash",
+      "draft": {}
     },
     {
       "name": "Mothim",
       "pid": "mothim",
-      "png": "mothim"
+      "png": "mothim",
+      "draft": {}
     },
     {
       "name": "Combee",
       "pid": "combee",
       "tier": "D",
       "category": "NFE",
-      "png": "combee"
+      "png": "combee",
+      "draft": {}
     },
     {
       "name": "Vespiquen",
       "pid": "vespiquen",
-      "png": "vespiquen"
+      "png": "vespiquen",
+      "draft": {}
     },
     {
       "name": "Pachirisu",
       "pid": "pachirisu",
-      "png": "pachirisu"
+      "png": "pachirisu",
+      "draft": {}
     },
     {
       "name": "Buizel",
       "pid": "buizel",
       "tier": "D",
       "category": "NFE",
-      "png": "buizel"
+      "png": "buizel",
+      "draft": {}
     },
     {
       "name": "Floatzel",
       "pid": "floatzel",
-      "png": "floatzel"
+      "png": "floatzel",
+      "draft": {}
     },
     {
       "name": "Cherubi",
       "pid": "cherubi",
       "tier": "D",
       "category": "NFE",
-      "png": "cherubi"
+      "png": "cherubi",
+      "draft": {}
     },
     {
       "name": "Cherrim",
       "pid": "cherrim",
-      "png": "cherrim"
+      "png": "cherrim",
+      "draft": {}
     },
     {
       "name": "Shellos",
       "pid": "shellos",
       "tier": "D",
       "category": "NFE",
-      "png": "shellos"
+      "png": "shellos",
+      "draft": {}
     },
     {
       "name": "Gastrodon",
       "pid": "gastrodon",
-      "png": "gastrodon"
+      "png": "gastrodon",
+      "draft": {}
     },
     {
       "name": "Ambipom",
       "pid": "ambipom",
-      "png": "ambipom"
+      "png": "ambipom",
+      "draft": {}
     },
     {
       "name": "Drifloon",
       "pid": "drifloon",
       "tier": "D",
       "category": "NFE",
-      "png": "drifloon"
+      "png": "drifloon",
+      "draft": {}
     },
     {
       "name": "Drifblim",
       "pid": "drifblim",
-      "png": "drifblim"
+      "png": "drifblim",
+      "draft": {}
     },
     {
       "name": "Buneary",
       "pid": "buneary",
       "tier": "D",
       "category": "NFE",
-      "png": "buneary"
+      "png": "buneary",
+      "draft": {}
     },
     {
       "name": "Lopunny",
       "pid": "lopunny",
-      "png": "lopunny"
+      "png": "lopunny",
+      "draft": {}
     },
     {
       "name": "Mismagius",
       "pid": "mismagius",
-      "png": "mismagius"
+      "png": "mismagius",
+      "draft": {}
     },
     {
       "name": "Honchkrow",
       "pid": "honchkrow",
-      "png": "honchkrow"
+      "png": "honchkrow",
+      "draft": {}
     },
     {
       "name": "Glameow",
       "pid": "glameow",
       "tier": "D",
       "category": "NFE",
-      "png": "glameow"
+      "png": "glameow",
+      "draft": {}
     },
     {
       "name": "Purugly",
       "pid": "purugly",
-      "png": "purugly"
+      "png": "purugly",
+      "draft": {}
     },
     {
       "name": "Chingling",
       "pid": "chingling",
       "tier": "D",
       "category": "NFE",
-      "png": "chingling"
+      "png": "chingling",
+      "draft": {}
     },
     {
       "name": "Stunky",
       "pid": "stunky",
       "tier": "D",
       "category": "NFE",
-      "png": "stunky"
+      "png": "stunky",
+      "draft": {}
     },
     {
       "name": "Skuntank",
       "pid": "skuntank",
-      "png": "skuntank"
+      "png": "skuntank",
+      "draft": {}
     },
     {
       "name": "Bronzor",
       "pid": "bronzor",
       "tier": "D",
       "category": "NFE",
-      "png": "bronzor"
+      "png": "bronzor",
+      "draft": {}
     },
     {
       "name": "Bronzong",
       "pid": "bronzong",
-      "png": "bronzong"
+      "png": "bronzong",
+      "draft": {}
     },
     {
       "name": "Bonsly",
       "pid": "bonsly",
       "tier": "D",
       "category": "NFE",
-      "png": "bonsly"
+      "png": "bonsly",
+      "draft": {}
     },
     {
       "name": "Mime Jr.",
       "pid": "mimejr",
       "tier": "D",
       "category": "NFE",
-      "png": "mimejr"
+      "png": "mimejr",
+      "draft": {}
     },
     {
       "name": "Happiny",
       "pid": "happiny",
       "tier": "D",
       "category": "NFE",
-      "png": "happiny"
+      "png": "happiny",
+      "draft": {}
     },
     {
       "name": "Chatot",
       "pid": "chatot",
-      "png": "chatot"
+      "png": "chatot",
+      "draft": {}
     },
     {
       "name": "Spiritomb",
       "pid": "spiritomb",
-      "png": "spiritomb"
+      "png": "spiritomb",
+      "draft": {}
     },
     {
       "name": "Gible",
       "pid": "gible",
       "tier": "D",
       "category": "NFE",
-      "png": "gible"
+      "png": "gible",
+      "draft": {}
     },
     {
       "name": "Gabite",
       "pid": "gabite",
       "tier": "D",
       "category": "NFE",
-      "png": "gabite"
+      "png": "gabite",
+      "draft": {}
     },
     {
       "name": "Garchomp",
       "pid": "garchomp",
-      "png": "garchomp"
+      "png": "garchomp",
+      "draft": {}
     },
     {
       "name": "Munchlax",
       "pid": "munchlax",
       "tier": "D",
       "category": "NFE",
-      "png": "munchlax"
+      "png": "munchlax",
+      "draft": {}
     },
     {
       "name": "Riolu",
       "pid": "riolu",
       "tier": "D",
       "category": "NFE",
-      "png": "riolu"
+      "png": "riolu",
+      "draft": {}
     },
     {
       "name": "Lucario",
       "pid": "lucario",
-      "png": "lucario"
+      "png": "lucario",
+      "draft": {}
     },
     {
       "name": "Hippopotas",
       "pid": "hippopotas",
       "tier": "D",
       "category": "NFE",
-      "png": "hippopotas"
+      "png": "hippopotas",
+      "draft": {}
     },
     {
       "name": "Hippowdon",
       "pid": "hippowdon",
-      "png": "hippowdon"
+      "png": "hippowdon",
+      "draft": {}
     },
     {
       "name": "Skorupi",
       "pid": "skorupi",
       "tier": "D",
       "category": "NFE",
-      "png": "skorupi"
+      "png": "skorupi",
+      "draft": {}
     },
     {
       "name": "Drapion",
       "pid": "drapion",
-      "png": "drapion"
+      "png": "drapion",
+      "draft": {}
     },
     {
       "name": "Croagunk",
       "pid": "croagunk",
       "tier": "D",
       "category": "NFE",
-      "png": "croagunk"
+      "png": "croagunk",
+      "draft": {}
     },
     {
       "name": "Toxicroak",
       "pid": "toxicroak",
-      "png": "toxicroak"
+      "png": "toxicroak",
+      "draft": {}
     },
     {
       "name": "Carnivine",
       "pid": "carnivine",
-      "png": "carnivine"
+      "png": "carnivine",
+      "draft": {}
     },
     {
       "name": "Finneon",
       "pid": "finneon",
       "tier": "D",
       "category": "NFE",
-      "png": "finneon"
+      "png": "finneon",
+      "draft": {}
     },
     {
       "name": "Lumineon",
       "pid": "lumineon",
-      "png": "lumineon"
+      "png": "lumineon",
+      "draft": {}
     },
     {
       "name": "Mantyke",
       "pid": "mantyke",
       "tier": "D",
       "category": "NFE",
-      "png": "mantyke"
+      "png": "mantyke",
+      "draft": {}
     },
     {
       "name": "Snover",
       "pid": "snover",
       "tier": "D",
       "category": "NFE",
-      "png": "snover"
+      "png": "snover",
+      "draft": {}
     },
     {
       "name": "Abomasnow",
       "pid": "abomasnow",
-      "png": "abomasnow"
+      "png": "abomasnow",
+      "draft": {}
     },
     {
       "name": "Weavile",
       "pid": "weavile",
-      "png": "weavile"
+      "png": "weavile",
+      "draft": {}
     },
     {
       "name": "Magnezone",
       "pid": "magnezone",
-      "png": "magnezone"
+      "png": "magnezone",
+      "draft": {}
     },
     {
       "name": "Lickilicky",
       "pid": "lickilicky",
-      "png": "lickilicky"
+      "png": "lickilicky",
+      "draft": {}
     },
     {
       "name": "Rhyperior",
       "pid": "rhyperior",
-      "png": "rhyperior"
+      "png": "rhyperior",
+      "draft": {}
     },
     {
       "name": "Tangrowth",
       "pid": "tangrowth",
-      "png": "tangrowth"
+      "png": "tangrowth",
+      "draft": {}
     },
     {
       "name": "Electivire",
       "pid": "electivire",
-      "png": "electivire"
+      "png": "electivire",
+      "draft": {}
     },
     {
       "name": "Magmortar",
       "pid": "magmortar",
-      "png": "magmortar"
+      "png": "magmortar",
+      "draft": {}
     },
     {
       "name": "Togekiss",
       "pid": "togekiss",
-      "png": "togekiss"
+      "png": "togekiss",
+      "draft": {}
     },
     {
       "name": "Yanmega",
       "pid": "yanmega",
-      "png": "yanmega"
+      "png": "yanmega",
+      "draft": {}
     },
     {
       "name": "Leafeon",
       "pid": "leafeon",
-      "png": "leafeon"
+      "png": "leafeon",
+      "draft": {}
     },
     {
       "name": "Glaceon",
       "pid": "glaceon",
-      "png": "glaceon"
+      "png": "glaceon",
+      "draft": {}
     },
     {
       "name": "Gliscor",
       "pid": "gliscor",
-      "png": "gliscor"
+      "png": "gliscor",
+      "draft": {}
     },
     {
       "name": "Mamoswine",
       "pid": "mamoswine",
-      "png": "mamoswine"
+      "png": "mamoswine",
+      "draft": {}
     },
     {
       "name": "Porygon-Z",
       "pid": "porygonz",
-      "png": "porygonz"
+      "png": "porygonz",
+      "draft": {}
     },
     {
       "name": "Gallade",
       "pid": "gallade",
-      "png": "gallade"
+      "png": "gallade",
+      "draft": {}
     },
     {
       "name": "Probopass",
       "pid": "probopass",
-      "png": "probopass"
+      "png": "probopass",
+      "draft": {}
     },
     {
       "name": "Dusknoir",
       "pid": "dusknoir",
-      "png": "dusknoir"
+      "png": "dusknoir",
+      "draft": {}
     },
     {
       "name": "Froslass",
       "pid": "froslass",
-      "png": "froslass"
+      "png": "froslass",
+      "draft": {}
     },
     {
       "name": "Rotom",
       "pid": "rotom",
-      "png": "rotom"
+      "png": "rotom",
+      "draft": {}
     },
     {
       "name": "Rotom-Heat",
       "pid": "rotomheat",
-      "png": "rotom-heat"
+      "png": "rotom-heat",
+      "draft": {}
     },
     {
       "name": "Rotom-Wash",
       "pid": "rotomwash",
-      "png": "rotom-wash"
+      "png": "rotom-wash",
+      "draft": {}
     },
     {
       "name": "Rotom-Frost",
       "pid": "rotomfrost",
-      "png": "rotom-frost"
+      "png": "rotom-frost",
+      "draft": {}
     },
     {
       "name": "Rotom-Fan",
       "pid": "rotomfan",
-      "png": "rotom-fan"
+      "png": "rotom-fan",
+      "draft": {}
     },
     {
       "name": "Rotom-Mow",
       "pid": "rotommow",
-      "png": "rotom-mow"
+      "png": "rotom-mow",
+      "draft": {}
     },
     {
       "name": "Uxie",
       "pid": "uxie",
-      "png": "uxie"
+      "png": "uxie",
+      "draft": {}
     },
     {
       "name": "Mesprit",
       "pid": "mesprit",
-      "png": "mesprit"
+      "png": "mesprit",
+      "draft": {}
     },
     {
       "name": "Azelf",
       "pid": "azelf",
-      "png": "azelf"
+      "png": "azelf",
+      "draft": {}
     },
     {
       "name": "Dialga",
       "pid": "dialga",
-      "png": "dialga"
+      "png": "dialga",
+      "draft": {}
     },
     {
       "name": "Dialga-Origin",
       "pid": "dialgaorigin",
-      "png": "dialga-origin"
+      "png": "dialga-origin",
+      "draft": {}
     },
     {
       "name": "Palkia",
       "pid": "palkia",
-      "png": "palkia"
+      "png": "palkia",
+      "draft": {}
     },
     {
       "name": "Palkia-Origin",
       "pid": "palkiaorigin",
-      "png": "palkia-origin"
+      "png": "palkia-origin",
+      "draft": {}
     },
     {
       "name": "Heatran",
       "pid": "heatran",
-      "png": "heatran"
+      "png": "heatran",
+      "draft": {}
     },
     {
       "name": "Regigigas",
       "pid": "regigigas",
-      "png": "regigigas"
+      "png": "regigigas",
+      "draft": {}
     },
     {
       "name": "Giratina",
       "pid": "giratina",
-      "png": "giratina"
+      "png": "giratina",
+      "draft": {}
     },
     {
       "name": "Giratina-Origin",
       "pid": "giratinaorigin",
-      "png": "giratina-origin"
+      "png": "giratina-origin",
+      "draft": {}
     },
     {
       "name": "Cresselia",
       "pid": "cresselia",
-      "png": "cresselia"
+      "png": "cresselia",
+      "draft": {}
     },
     {
       "name": "Phione",
       "pid": "phione",
-      "png": "phione"
+      "png": "phione",
+      "draft": {}
     },
     {
       "name": "Manaphy",
       "pid": "manaphy",
-      "png": "manaphy"
+      "png": "manaphy",
+      "draft": {}
     },
     {
       "name": "Darkrai",
       "pid": "darkrai",
-      "png": "darkrai"
+      "png": "darkrai",
+      "draft": {}
     },
     {
       "name": "Shaymin",
       "pid": "shaymin",
-      "png": "shaymin"
+      "png": "shaymin",
+      "draft": {}
     },
     {
       "name": "Shaymin-Sky",
       "pid": "shayminsky",
-      "png": "shaymin-sky"
+      "png": "shaymin-sky",
+      "draft": {}
     },
     {
       "name": "Arceus",
       "pid": "arceus",
-      "png": "arceus"
+      "png": "arceus",
+      "draft": {}
     },
     {
       "name": "Victini",
       "pid": "victini",
-      "png": "victini"
+      "png": "victini",
+      "draft": {}
     },
     {
       "name": "Snivy",
@@ -3361,27 +4021,29 @@
       "tier": "D",
       "category": "NFE",
       "png": "snivy",
-      "order": 1,
-      "coach": "lumaris"
+      "draft": {}
     },
     {
       "name": "Servine",
       "pid": "servine",
       "tier": "D",
       "category": "NFE",
-      "png": "servine"
+      "png": "servine",
+      "draft": {}
     },
     {
       "name": "Serperior",
       "pid": "serperior",
-      "png": "serperior"
+      "png": "serperior",
+      "draft": {}
     },
     {
       "name": "Tepig",
       "pid": "tepig",
       "tier": "D",
       "category": "NFE",
-      "png": "tepig"
+      "png": "tepig",
+      "draft": {}
     },
     {
       "name": "Pignite",
@@ -3389,729 +4051,847 @@
       "tier": "D",
       "category": "NFE",
       "png": "pignite",
-      "order": 7,
-      "coach": "dicy"
+      "draft": {}
     },
     {
       "name": "Emboar",
       "pid": "emboar",
-      "png": "emboar"
+      "png": "emboar",
+      "draft": {}
     },
     {
       "name": "Oshawott",
       "pid": "oshawott",
       "tier": "D",
       "category": "NFE",
-      "png": "oshawott"
+      "png": "oshawott",
+      "draft": {}
     },
     {
       "name": "Dewott",
       "pid": "dewott",
       "tier": "D",
       "category": "NFE",
-      "png": "dewott"
+      "png": "dewott",
+      "draft": {}
     },
     {
       "name": "Samurott",
       "pid": "samurott",
-      "png": "samurott"
+      "png": "samurott",
+      "draft": {}
     },
     {
       "name": "Samurott-Hisui",
       "pid": "samurotthisui",
-      "png": "samurott-hisui"
+      "png": "samurott-hisui",
+      "draft": {}
     },
     {
       "name": "Patrat",
       "pid": "patrat",
       "tier": "D",
       "category": "NFE",
-      "png": "patrat"
+      "png": "patrat",
+      "draft": {}
     },
     {
       "name": "Watchog",
       "pid": "watchog",
-      "png": "watchog"
+      "png": "watchog",
+      "draft": {}
     },
     {
       "name": "Lillipup",
       "pid": "lillipup",
       "tier": "D",
       "category": "NFE",
-      "png": "lillipup"
+      "png": "lillipup",
+      "draft": {}
     },
     {
       "name": "Herdier",
       "pid": "herdier",
       "tier": "D",
       "category": "NFE",
-      "png": "herdier"
+      "png": "herdier",
+      "draft": {}
     },
     {
       "name": "Stoutland",
       "pid": "stoutland",
-      "png": "stoutland"
+      "png": "stoutland",
+      "draft": {}
     },
     {
       "name": "Purrloin",
       "pid": "purrloin",
       "tier": "D",
       "category": "NFE",
-      "png": "purrloin"
+      "png": "purrloin",
+      "draft": {}
     },
     {
       "name": "Liepard",
       "pid": "liepard",
-      "png": "liepard"
+      "png": "liepard",
+      "draft": {}
     },
     {
       "name": "Pansage",
       "pid": "pansage",
       "tier": "D",
       "category": "NFE",
-      "png": "pansage"
+      "png": "pansage",
+      "draft": {}
     },
     {
       "name": "Simisage",
       "pid": "simisage",
-      "png": "simisage"
+      "png": "simisage",
+      "draft": {}
     },
     {
       "name": "Pansear",
       "pid": "pansear",
       "tier": "D",
       "category": "NFE",
-      "png": "pansear"
+      "png": "pansear",
+      "draft": {}
     },
     {
       "name": "Simisear",
       "pid": "simisear",
-      "png": "simisear"
+      "png": "simisear",
+      "draft": {}
     },
     {
       "name": "Panpour",
       "pid": "panpour",
       "tier": "D",
       "category": "NFE",
-      "png": "panpour"
+      "png": "panpour",
+      "draft": {}
     },
     {
       "name": "Simipour",
       "pid": "simipour",
-      "png": "simipour"
+      "png": "simipour",
+      "draft": {}
     },
     {
       "name": "Munna",
       "pid": "munna",
       "tier": "D",
       "category": "NFE",
-      "png": "munna"
+      "png": "munna",
+      "draft": {}
     },
     {
       "name": "Musharna",
       "pid": "musharna",
-      "png": "musharna"
+      "png": "musharna",
+      "draft": {}
     },
     {
       "name": "Pidove",
       "pid": "pidove",
       "tier": "D",
       "category": "NFE",
-      "png": "pidove"
+      "png": "pidove",
+      "draft": {}
     },
     {
       "name": "Tranquill",
       "pid": "tranquill",
       "tier": "D",
       "category": "NFE",
-      "png": "tranquill"
+      "png": "tranquill",
+      "draft": {}
     },
     {
       "name": "Unfezant",
       "pid": "unfezant",
-      "png": "unfezant"
+      "png": "unfezant",
+      "draft": {}
     },
     {
       "name": "Blitzle",
       "pid": "blitzle",
       "tier": "D",
       "category": "NFE",
-      "png": "blitzle"
+      "png": "blitzle",
+      "draft": {}
     },
     {
       "name": "Zebstrika",
       "pid": "zebstrika",
-      "png": "zebstrika"
+      "png": "zebstrika",
+      "draft": {}
     },
     {
       "name": "Roggenrola",
       "pid": "roggenrola",
       "tier": "D",
       "category": "NFE",
-      "png": "roggenrola"
+      "png": "roggenrola",
+      "draft": {}
     },
     {
       "name": "Boldore",
       "pid": "boldore",
       "tier": "D",
       "category": "NFE",
-      "png": "boldore"
+      "png": "boldore",
+      "draft": {}
     },
     {
       "name": "Gigalith",
       "pid": "gigalith",
-      "png": "gigalith"
+      "png": "gigalith",
+      "draft": {}
     },
     {
       "name": "Woobat",
       "pid": "woobat",
       "tier": "D",
       "category": "NFE",
-      "png": "woobat"
+      "png": "woobat",
+      "draft": {}
     },
     {
       "name": "Swoobat",
       "pid": "swoobat",
-      "png": "swoobat"
+      "png": "swoobat",
+      "draft": {}
     },
     {
       "name": "Drilbur",
       "pid": "drilbur",
       "tier": "D",
       "category": "NFE",
-      "png": "drilbur"
+      "png": "drilbur",
+      "draft": {}
     },
     {
       "name": "Excadrill",
       "pid": "excadrill",
-      "png": "excadrill"
+      "png": "excadrill",
+      "draft": {}
     },
     {
       "name": "Audino",
       "pid": "audino",
-      "png": "audino"
+      "png": "audino",
+      "draft": {}
     },
     {
       "name": "Timburr",
       "pid": "timburr",
       "tier": "D",
       "category": "NFE",
-      "png": "timburr"
+      "png": "timburr",
+      "draft": {}
     },
     {
       "name": "Gurdurr",
       "pid": "gurdurr",
       "tier": "D",
       "category": "NFE",
-      "png": "gurdurr"
+      "png": "gurdurr",
+      "draft": {}
     },
     {
       "name": "Conkeldurr",
       "pid": "conkeldurr",
-      "png": "conkeldurr"
+      "png": "conkeldurr",
+      "draft": {}
     },
     {
       "name": "Tympole",
       "pid": "tympole",
       "tier": "D",
       "category": "NFE",
-      "png": "tympole"
+      "png": "tympole",
+      "draft": {}
     },
     {
       "name": "Palpitoad",
       "pid": "palpitoad",
       "tier": "D",
       "category": "NFE",
-      "png": "palpitoad"
+      "png": "palpitoad",
+      "draft": {}
     },
     {
       "name": "Seismitoad",
       "pid": "seismitoad",
-      "png": "seismitoad"
+      "png": "seismitoad",
+      "draft": {}
     },
     {
       "name": "Throh",
       "pid": "throh",
-      "png": "throh"
+      "png": "throh",
+      "draft": {}
     },
     {
       "name": "Sawk",
       "pid": "sawk",
-      "png": "sawk"
+      "png": "sawk",
+      "draft": {}
     },
     {
       "name": "Sewaddle",
       "pid": "sewaddle",
       "tier": "D",
       "category": "NFE",
-      "png": "sewaddle"
+      "png": "sewaddle",
+      "draft": {}
     },
     {
       "name": "Swadloon",
       "pid": "swadloon",
       "tier": "D",
       "category": "NFE",
-      "png": "swadloon"
+      "png": "swadloon",
+      "draft": {}
     },
     {
       "name": "Leavanny",
       "pid": "leavanny",
-      "png": "leavanny"
+      "png": "leavanny",
+      "draft": {}
     },
     {
       "name": "Venipede",
       "pid": "venipede",
       "tier": "D",
       "category": "NFE",
-      "png": "venipede"
+      "png": "venipede",
+      "draft": {}
     },
     {
       "name": "Whirlipede",
       "pid": "whirlipede",
       "tier": "D",
       "category": "NFE",
-      "png": "whirlipede"
+      "png": "whirlipede",
+      "draft": {}
     },
     {
       "name": "Scolipede",
       "pid": "scolipede",
-      "png": "scolipede"
+      "png": "scolipede",
+      "draft": {}
     },
     {
       "name": "Cottonee",
       "pid": "cottonee",
       "tier": "D",
       "category": "NFE",
-      "png": "cottonee"
+      "png": "cottonee",
+      "draft": {}
     },
     {
       "name": "Whimsicott",
       "pid": "whimsicott",
-      "png": "whimsicott"
+      "png": "whimsicott",
+      "draft": {}
     },
     {
       "name": "Petilil",
       "pid": "petilil",
       "tier": "D",
       "category": "NFE",
-      "png": "petilil"
+      "png": "petilil",
+      "draft": {}
     },
     {
       "name": "Lilligant",
       "pid": "lilligant",
-      "png": "lilligant"
+      "png": "lilligant",
+      "draft": {}
     },
     {
       "name": "Lilligant-Hisui",
       "pid": "lilliganthisui",
-      "png": "lilligant-hisui"
+      "png": "lilligant-hisui",
+      "draft": {}
     },
     {
       "name": "Basculin",
       "pid": "basculin",
-      "png": "basculin"
+      "png": "basculin",
+      "draft": {}
     },
     {
       "name": "Basculin-White-Striped",
       "pid": "basculinwhitestriped",
       "tier": "D",
       "category": "NFE",
-      "png": "basculin-whitestriped"
+      "png": "basculin-whitestriped",
+      "draft": {}
     },
     {
       "name": "Sandile",
       "pid": "sandile",
       "tier": "D",
       "category": "NFE",
-      "png": "sandile"
+      "png": "sandile",
+      "draft": {}
     },
     {
       "name": "Krokorok",
       "pid": "krokorok",
       "tier": "D",
       "category": "NFE",
-      "png": "krokorok"
+      "png": "krokorok",
+      "draft": {}
     },
     {
       "name": "Krookodile",
       "pid": "krookodile",
-      "png": "krookodile"
+      "png": "krookodile",
+      "draft": {}
     },
     {
       "name": "Darumaka",
       "pid": "darumaka",
       "tier": "D",
       "category": "NFE",
-      "png": "darumaka"
+      "png": "darumaka",
+      "draft": {}
     },
     {
       "name": "Darumaka-Galar",
       "pid": "darumakagalar",
       "tier": "D",
       "category": "NFE",
-      "png": "darumaka-galar"
+      "png": "darumaka-galar",
+      "draft": {}
     },
     {
       "name": "Darmanitan",
       "pid": "darmanitan",
-      "png": "darmanitan"
+      "png": "darmanitan",
+      "draft": {}
     },
     {
       "name": "Darmanitan-Galar",
       "pid": "darmanitangalar",
-      "png": "darmanitan-galar"
+      "png": "darmanitan-galar",
+      "draft": {}
     },
     {
       "name": "Maractus",
       "pid": "maractus",
-      "png": "maractus"
+      "png": "maractus",
+      "draft": {}
     },
     {
       "name": "Dwebble",
       "pid": "dwebble",
       "tier": "D",
       "category": "NFE",
-      "png": "dwebble"
+      "png": "dwebble",
+      "draft": {}
     },
     {
       "name": "Crustle",
       "pid": "crustle",
-      "png": "crustle"
+      "png": "crustle",
+      "draft": {}
     },
     {
       "name": "Scraggy",
       "pid": "scraggy",
       "tier": "D",
       "category": "NFE",
-      "png": "scraggy"
+      "png": "scraggy",
+      "draft": {}
     },
     {
       "name": "Scrafty",
       "pid": "scrafty",
-      "png": "scrafty"
+      "png": "scrafty",
+      "draft": {}
     },
     {
       "name": "Sigilyph",
       "pid": "sigilyph",
-      "png": "sigilyph"
+      "png": "sigilyph",
+      "draft": {}
     },
     {
       "name": "Yamask",
       "pid": "yamask",
       "tier": "D",
       "category": "NFE",
-      "png": "yamask"
+      "png": "yamask",
+      "draft": {}
     },
     {
       "name": "Yamask-Galar",
       "pid": "yamaskgalar",
       "tier": "D",
       "category": "NFE",
-      "png": "yamask-galar"
+      "png": "yamask-galar",
+      "draft": {}
     },
     {
       "name": "Cofagrigus",
       "pid": "cofagrigus",
-      "png": "cofagrigus"
+      "png": "cofagrigus",
+      "draft": {}
     },
     {
       "name": "Tirtouga",
       "pid": "tirtouga",
       "tier": "D",
       "category": "NFE",
-      "png": "tirtouga"
+      "png": "tirtouga",
+      "draft": {}
     },
     {
       "name": "Carracosta",
       "pid": "carracosta",
-      "png": "carracosta"
+      "png": "carracosta",
+      "draft": {}
     },
     {
       "name": "Archen",
       "pid": "archen",
       "tier": "D",
       "category": "NFE",
-      "png": "archen"
+      "png": "archen",
+      "draft": {}
     },
     {
       "name": "Archeops",
       "pid": "archeops",
-      "png": "archeops"
+      "png": "archeops",
+      "draft": {}
     },
     {
       "name": "Trubbish",
       "pid": "trubbish",
       "tier": "D",
       "category": "NFE",
-      "png": "trubbish"
+      "png": "trubbish",
+      "draft": {}
     },
     {
       "name": "Garbodor",
       "pid": "garbodor",
-      "png": "garbodor"
+      "png": "garbodor",
+      "draft": {}
     },
     {
       "name": "Zorua",
       "pid": "zorua",
       "tier": "D",
       "category": "NFE",
-      "png": "zorua"
+      "png": "zorua",
+      "draft": {}
     },
     {
       "name": "Zorua-Hisui",
       "pid": "zoruahisui",
       "tier": "D",
       "category": "NFE",
-      "png": "zorua-hisui"
+      "png": "zorua-hisui",
+      "draft": {}
     },
     {
       "name": "Zoroark",
       "pid": "zoroark",
-      "png": "zoroark"
+      "png": "zoroark",
+      "draft": {}
     },
     {
       "name": "Zoroark-Hisui",
       "pid": "zoroarkhisui",
-      "png": "zoroark-hisui"
+      "png": "zoroark-hisui",
+      "draft": {}
     },
     {
       "name": "Minccino",
       "pid": "minccino",
       "tier": "D",
       "category": "NFE",
-      "png": "minccino"
+      "png": "minccino",
+      "draft": {}
     },
     {
       "name": "Cinccino",
       "pid": "cinccino",
-      "png": "cinccino"
+      "png": "cinccino",
+      "draft": {}
     },
     {
       "name": "Gothita",
       "pid": "gothita",
       "tier": "D",
       "category": "NFE",
-      "png": "gothita"
+      "png": "gothita",
+      "draft": {}
     },
     {
       "name": "Gothorita",
       "pid": "gothorita",
       "tier": "D",
       "category": "NFE",
-      "png": "gothorita"
+      "png": "gothorita",
+      "draft": {}
     },
     {
       "name": "Gothitelle",
       "pid": "gothitelle",
-      "png": "gothitelle"
+      "png": "gothitelle",
+      "draft": {}
     },
     {
       "name": "Solosis",
       "pid": "solosis",
       "tier": "D",
       "category": "NFE",
-      "png": "solosis"
+      "png": "solosis",
+      "draft": {}
     },
     {
       "name": "Duosion",
       "pid": "duosion",
       "tier": "D",
       "category": "NFE",
-      "png": "duosion"
+      "png": "duosion",
+      "draft": {}
     },
     {
       "name": "Reuniclus",
       "pid": "reuniclus",
-      "png": "reuniclus"
+      "png": "reuniclus",
+      "draft": {}
     },
     {
       "name": "Ducklett",
       "pid": "ducklett",
       "tier": "D",
       "category": "NFE",
-      "png": "ducklett"
+      "png": "ducklett",
+      "draft": {}
     },
     {
       "name": "Swanna",
       "pid": "swanna",
-      "png": "swanna"
+      "png": "swanna",
+      "draft": {}
     },
     {
       "name": "Vanillite",
       "pid": "vanillite",
       "tier": "D",
       "category": "NFE",
-      "png": "vanillite"
+      "png": "vanillite",
+      "draft": {}
     },
     {
       "name": "Vanillish",
       "pid": "vanillish",
       "tier": "D",
       "category": "NFE",
-      "png": "vanillish"
+      "png": "vanillish",
+      "draft": {}
     },
     {
       "name": "Vanilluxe",
       "pid": "vanilluxe",
-      "png": "vanilluxe"
+      "png": "vanilluxe",
+      "draft": {}
     },
     {
       "name": "Deerling",
       "pid": "deerling",
       "tier": "D",
       "category": "NFE",
-      "png": "deerling"
+      "png": "deerling",
+      "draft": {}
     },
     {
       "name": "Sawsbuck",
       "pid": "sawsbuck",
-      "png": "sawsbuck"
+      "png": "sawsbuck",
+      "draft": {}
     },
     {
       "name": "Emolga",
       "pid": "emolga",
-      "png": "emolga"
+      "png": "emolga",
+      "draft": {}
     },
     {
       "name": "Karrablast",
       "pid": "karrablast",
       "tier": "D",
       "category": "NFE",
-      "png": "karrablast"
+      "png": "karrablast",
+      "draft": {}
     },
     {
       "name": "Escavalier",
       "pid": "escavalier",
-      "png": "escavalier"
+      "png": "escavalier",
+      "draft": {}
     },
     {
       "name": "Foongus",
       "pid": "foongus",
       "tier": "D",
       "category": "NFE",
-      "png": "foongus"
+      "png": "foongus",
+      "draft": {}
     },
     {
       "name": "Amoonguss",
       "pid": "amoonguss",
-      "png": "amoonguss"
+      "png": "amoonguss",
+      "draft": {}
     },
     {
       "name": "Frillish",
       "pid": "frillish",
       "tier": "D",
       "category": "NFE",
-      "png": "frillish"
+      "png": "frillish",
+      "draft": {}
     },
     {
       "name": "Jellicent",
       "pid": "jellicent",
-      "png": "jellicent"
+      "png": "jellicent",
+      "draft": {}
     },
     {
       "name": "Alomomola",
       "pid": "alomomola",
-      "png": "alomomola"
+      "png": "alomomola",
+      "draft": {}
     },
     {
       "name": "Joltik",
       "pid": "joltik",
       "tier": "D",
       "category": "NFE",
-      "png": "joltik"
+      "png": "joltik",
+      "draft": {}
     },
     {
       "name": "Galvantula",
       "pid": "galvantula",
-      "png": "galvantula"
+      "png": "galvantula",
+      "draft": {}
     },
     {
       "name": "Ferroseed",
       "pid": "ferroseed",
       "tier": "D",
       "category": "NFE",
-      "png": "ferroseed"
+      "png": "ferroseed",
+      "draft": {}
     },
     {
       "name": "Ferrothorn",
       "pid": "ferrothorn",
-      "png": "ferrothorn"
+      "png": "ferrothorn",
+      "draft": {}
     },
     {
       "name": "Klink",
       "pid": "klink",
       "tier": "D",
       "category": "NFE",
-      "png": "klink"
+      "png": "klink",
+      "draft": {}
     },
     {
       "name": "Klang",
       "pid": "klang",
       "tier": "D",
       "category": "NFE",
-      "png": "klang"
+      "png": "klang",
+      "draft": {}
     },
     {
       "name": "Klinklang",
       "pid": "klinklang",
-      "png": "klinklang"
+      "png": "klinklang",
+      "draft": {}
     },
     {
       "name": "Tynamo",
       "pid": "tynamo",
       "tier": "D",
       "category": "NFE",
-      "png": "tynamo"
+      "png": "tynamo",
+      "draft": {}
     },
     {
       "name": "Eelektrik",
       "pid": "eelektrik",
       "tier": "D",
       "category": "NFE",
-      "png": "eelektrik"
+      "png": "eelektrik",
+      "draft": {}
     },
     {
       "name": "Eelektross",
       "pid": "eelektross",
-      "png": "eelektross"
+      "png": "eelektross",
+      "draft": {}
     },
     {
       "name": "Elgyem",
       "pid": "elgyem",
       "tier": "D",
       "category": "NFE",
-      "png": "elgyem"
+      "png": "elgyem",
+      "draft": {}
     },
     {
       "name": "Beheeyem",
       "pid": "beheeyem",
-      "png": "beheeyem"
+      "png": "beheeyem",
+      "draft": {}
     },
     {
       "name": "Litwick",
       "pid": "litwick",
       "tier": "D",
       "category": "NFE",
-      "png": "litwick"
+      "png": "litwick",
+      "draft": {}
     },
     {
       "name": "Lampent",
       "pid": "lampent",
       "tier": "D",
       "category": "NFE",
-      "png": "lampent"
+      "png": "lampent",
+      "draft": {}
     },
     {
       "name": "Chandelure",
       "pid": "chandelure",
-      "png": "chandelure"
+      "png": "chandelure",
+      "draft": {}
     },
     {
       "name": "Axew",
       "pid": "axew",
       "tier": "D",
       "category": "NFE",
-      "png": "axew"
+      "png": "axew",
+      "draft": {}
     },
     {
       "name": "Fraxure",
@@ -4119,311 +4899,365 @@
       "tier": "D",
       "category": "NFE",
       "png": "fraxure",
-      "order": 2
+      "draft": {}
     },
     {
       "name": "Haxorus",
       "pid": "haxorus",
-      "png": "haxorus"
+      "png": "haxorus",
+      "draft": {}
     },
     {
       "name": "Cubchoo",
       "pid": "cubchoo",
       "tier": "D",
       "category": "NFE",
-      "png": "cubchoo"
+      "png": "cubchoo",
+      "draft": {}
     },
     {
       "name": "Beartic",
       "pid": "beartic",
-      "png": "beartic"
+      "png": "beartic",
+      "draft": {}
     },
     {
       "name": "Cryogonal",
       "pid": "cryogonal",
-      "png": "cryogonal"
+      "png": "cryogonal",
+      "draft": {}
     },
     {
       "name": "Shelmet",
       "pid": "shelmet",
       "tier": "D",
       "category": "NFE",
-      "png": "shelmet"
+      "png": "shelmet",
+      "draft": {}
     },
     {
       "name": "Accelgor",
       "pid": "accelgor",
-      "png": "accelgor"
+      "png": "accelgor",
+      "draft": {}
     },
     {
       "name": "Stunfisk",
       "pid": "stunfisk",
-      "png": "stunfisk"
+      "png": "stunfisk",
+      "draft": {}
     },
     {
       "name": "Stunfisk-Galar",
       "pid": "stunfiskgalar",
-      "png": "stunfisk-galar"
+      "png": "stunfisk-galar",
+      "draft": {}
     },
     {
       "name": "Mienfoo",
       "pid": "mienfoo",
       "tier": "D",
       "category": "NFE",
-      "png": "mienfoo"
+      "png": "mienfoo",
+      "draft": {}
     },
     {
       "name": "Mienshao",
       "pid": "mienshao",
-      "png": "mienshao"
+      "png": "mienshao",
+      "draft": {}
     },
     {
       "name": "Druddigon",
       "pid": "druddigon",
-      "png": "druddigon"
+      "png": "druddigon",
+      "draft": {}
     },
     {
       "name": "Golett",
       "pid": "golett",
       "tier": "D",
       "category": "NFE",
-      "png": "golett"
+      "png": "golett",
+      "draft": {}
     },
     {
       "name": "Golurk",
       "pid": "golurk",
-      "png": "golurk"
+      "png": "golurk",
+      "draft": {}
     },
     {
       "name": "Pawniard",
       "pid": "pawniard",
       "tier": "D",
       "category": "NFE",
-      "png": "pawniard"
+      "png": "pawniard",
+      "draft": {}
     },
     {
       "name": "Bisharp",
       "pid": "bisharp",
       "tier": "D",
       "category": "NFE",
-      "png": "bisharp"
+      "png": "bisharp",
+      "draft": {}
     },
     {
       "name": "Bouffalant",
       "pid": "bouffalant",
-      "png": "bouffalant"
+      "png": "bouffalant",
+      "draft": {}
     },
     {
       "name": "Rufflet",
       "pid": "rufflet",
       "tier": "D",
       "category": "NFE",
-      "png": "rufflet"
+      "png": "rufflet",
+      "draft": {}
     },
     {
       "name": "Braviary",
       "pid": "braviary",
-      "png": "braviary"
+      "png": "braviary",
+      "draft": {}
     },
     {
       "name": "Braviary-Hisui",
       "pid": "braviaryhisui",
-      "png": "braviary-hisui"
+      "png": "braviary-hisui",
+      "draft": {}
     },
     {
       "name": "Vullaby",
       "pid": "vullaby",
       "tier": "D",
       "category": "NFE",
-      "png": "vullaby"
+      "png": "vullaby",
+      "draft": {}
     },
     {
       "name": "Mandibuzz",
       "pid": "mandibuzz",
-      "png": "mandibuzz"
+      "png": "mandibuzz",
+      "draft": {}
     },
     {
       "name": "Heatmor",
       "pid": "heatmor",
-      "png": "heatmor"
+      "png": "heatmor",
+      "draft": {}
     },
     {
       "name": "Durant",
       "pid": "durant",
-      "png": "durant"
+      "png": "durant",
+      "draft": {}
     },
     {
       "name": "Deino",
       "pid": "deino",
       "tier": "D",
       "category": "NFE",
-      "png": "deino"
+      "png": "deino",
+      "draft": {}
     },
     {
       "name": "Zweilous",
       "pid": "zweilous",
       "tier": "D",
       "category": "NFE",
-      "png": "zweilous"
+      "png": "zweilous",
+      "draft": {}
     },
     {
       "name": "Hydreigon",
       "pid": "hydreigon",
-      "png": "hydreigon"
+      "png": "hydreigon",
+      "draft": {}
     },
     {
       "name": "Larvesta",
       "pid": "larvesta",
       "tier": "D",
       "category": "NFE",
-      "png": "larvesta"
+      "png": "larvesta",
+      "draft": {}
     },
     {
       "name": "Volcarona",
       "pid": "volcarona",
-      "png": "volcarona"
+      "png": "volcarona",
+      "draft": {}
     },
     {
       "name": "Cobalion",
       "pid": "cobalion",
-      "png": "cobalion"
+      "png": "cobalion",
+      "draft": {}
     },
     {
       "name": "Terrakion",
       "pid": "terrakion",
-      "png": "terrakion"
+      "png": "terrakion",
+      "draft": {}
     },
     {
       "name": "Virizion",
       "pid": "virizion",
-      "png": "virizion"
+      "png": "virizion",
+      "draft": {}
     },
     {
       "name": "Tornadus",
       "pid": "tornadus",
-      "png": "tornadus"
+      "png": "tornadus",
+      "draft": {}
     },
     {
       "name": "Tornadus-Therian",
       "pid": "tornadustherian",
-      "png": "tornadus-therian"
+      "png": "tornadus-therian",
+      "draft": {}
     },
     {
       "name": "Thundurus",
       "pid": "thundurus",
-      "png": "thundurus"
+      "png": "thundurus",
+      "draft": {}
     },
     {
       "name": "Thundurus-Therian",
       "pid": "thundurustherian",
-      "png": "thundurus-therian"
+      "png": "thundurus-therian",
+      "draft": {}
     },
     {
       "name": "Reshiram",
       "pid": "reshiram",
-      "png": "reshiram"
+      "png": "reshiram",
+      "draft": {}
     },
     {
       "name": "Zekrom",
       "pid": "zekrom",
-      "png": "zekrom"
+      "png": "zekrom",
+      "draft": {}
     },
     {
       "name": "Landorus",
       "pid": "landorus",
-      "png": "landorus"
+      "png": "landorus",
+      "draft": {}
     },
     {
       "name": "Landorus-Therian",
       "pid": "landorustherian",
-      "png": "landorus-therian"
+      "png": "landorus-therian",
+      "draft": {}
     },
     {
       "name": "Kyurem",
       "pid": "kyurem",
-      "png": "kyurem"
+      "png": "kyurem",
+      "draft": {}
     },
     {
       "name": "Kyurem-Black",
       "pid": "kyuremblack",
-      "png": "kyurem-black"
+      "png": "kyurem-black",
+      "draft": {}
     },
     {
       "name": "Kyurem-White",
       "pid": "kyuremwhite",
-      "png": "kyurem-white"
+      "png": "kyurem-white",
+      "draft": {}
     },
     {
       "name": "Keldeo",
       "pid": "keldeo",
-      "png": "keldeo"
+      "png": "keldeo",
+      "draft": {}
     },
     {
       "name": "Meloetta",
       "pid": "meloetta",
-      "png": "meloetta"
+      "png": "meloetta",
+      "draft": {}
     },
     {
       "name": "Genesect",
       "pid": "genesect",
-      "png": "genesect"
+      "png": "genesect",
+      "draft": {}
     },
     {
       "name": "Chespin",
       "pid": "chespin",
       "tier": "D",
       "category": "NFE",
-      "png": "chespin"
+      "png": "chespin",
+      "draft": {}
     },
     {
       "name": "Quilladin",
       "pid": "quilladin",
       "tier": "D",
       "category": "NFE",
-      "png": "quilladin"
+      "png": "quilladin",
+      "draft": {}
     },
     {
       "name": "Chesnaught",
       "pid": "chesnaught",
-      "png": "chesnaught"
+      "png": "chesnaught",
+      "draft": {}
     },
     {
       "name": "Fennekin",
       "pid": "fennekin",
       "tier": "D",
       "category": "NFE",
-      "png": "fennekin"
+      "png": "fennekin",
+      "draft": {}
     },
     {
       "name": "Braixen",
       "pid": "braixen",
       "tier": "D",
       "category": "NFE",
-      "png": "braixen"
+      "png": "braixen",
+      "draft": {}
     },
     {
       "name": "Delphox",
       "pid": "delphox",
-      "png": "delphox"
+      "png": "delphox",
+      "draft": {}
     },
     {
       "name": "Froakie",
       "pid": "froakie",
       "tier": "D",
       "category": "NFE",
-      "png": "froakie"
+      "png": "froakie",
+      "draft": {}
     },
     {
       "name": "Frogadier",
       "pid": "frogadier",
       "tier": "D",
       "category": "NFE",
-      "png": "frogadier"
+      "png": "frogadier",
+      "draft": {}
     },
     {
       "name": "Greninja",
       "pid": "greninja",
-      "png": "greninja"
+      "png": "greninja",
+      "draft": {}
     },
     {
       "name": "Bunnelby",
@@ -4431,31 +5265,35 @@
       "tier": "D",
       "category": "NFE",
       "png": "bunnelby",
-      "order": 21
+      "draft": {}
     },
     {
       "name": "Diggersby",
       "pid": "diggersby",
-      "png": "diggersby"
+      "png": "diggersby",
+      "draft": {}
     },
     {
       "name": "Fletchling",
       "pid": "fletchling",
       "tier": "D",
       "category": "NFE",
-      "png": "fletchling"
+      "png": "fletchling",
+      "draft": {}
     },
     {
       "name": "Fletchinder",
       "pid": "fletchinder",
       "tier": "D",
       "category": "NFE",
-      "png": "fletchinder"
+      "png": "fletchinder",
+      "draft": {}
     },
     {
       "name": "Talonflame",
       "pid": "talonflame",
-      "png": "talonflame"
+      "png": "talonflame",
+      "draft": {}
     },
     {
       "name": "Scatterbug",
@@ -4463,79 +5301,91 @@
       "tier": "D",
       "category": "NFE",
       "png": "scatterbug",
-      "order": 23
+      "draft": {}
     },
     {
       "name": "Spewpa",
       "pid": "spewpa",
       "tier": "D",
       "category": "NFE",
-      "png": "spewpa"
+      "png": "spewpa",
+      "draft": {}
     },
     {
       "name": "Vivillon",
       "pid": "vivillon",
-      "png": "vivillon"
+      "png": "vivillon",
+      "draft": {}
     },
     {
       "name": "Litleo",
       "pid": "litleo",
       "tier": "D",
       "category": "NFE",
-      "png": "litleo"
+      "png": "litleo",
+      "draft": {}
     },
     {
       "name": "Pyroar",
       "pid": "pyroar",
-      "png": "pyroar"
+      "png": "pyroar",
+      "draft": {}
     },
     {
       "name": "Flabébé",
       "pid": "flabebe",
       "tier": "D",
       "category": "NFE",
-      "png": "flabebe"
+      "png": "flabebe",
+      "draft": {}
     },
     {
       "name": "Floette",
       "pid": "floette",
       "tier": "D",
       "category": "NFE",
-      "png": "floette"
+      "png": "floette",
+      "draft": {}
     },
     {
       "name": "Florges",
       "pid": "florges",
-      "png": "florges"
+      "png": "florges",
+      "draft": {}
     },
     {
       "name": "Skiddo",
       "pid": "skiddo",
       "tier": "D",
       "category": "NFE",
-      "png": "skiddo"
+      "png": "skiddo",
+      "draft": {}
     },
     {
       "name": "Gogoat",
       "pid": "gogoat",
-      "png": "gogoat"
+      "png": "gogoat",
+      "draft": {}
     },
     {
       "name": "Pancham",
       "pid": "pancham",
       "tier": "D",
       "category": "NFE",
-      "png": "pancham"
+      "png": "pancham",
+      "draft": {}
     },
     {
       "name": "Pangoro",
       "pid": "pangoro",
-      "png": "pangoro"
+      "png": "pangoro",
+      "draft": {}
     },
     {
       "name": "Furfrou",
       "pid": "furfrou",
-      "png": "furfrou"
+      "png": "furfrou",
+      "draft": {}
     },
     {
       "name": "Espurr",
@@ -4543,108 +5393,125 @@
       "tier": "D",
       "category": "NFE",
       "png": "espurr",
-      "order": 4
+      "draft": {}
     },
     {
       "name": "Meowstic",
       "pid": "meowstic",
-      "png": "meowstic"
+      "png": "meowstic",
+      "draft": {}
     },
     {
       "name": "Meowstic-F",
       "pid": "meowsticf",
-      "png": "meowstic-f"
+      "png": "meowstic-f",
+      "draft": {}
     },
     {
       "name": "Honedge",
       "pid": "honedge",
       "tier": "D",
       "category": "NFE",
-      "png": "honedge"
+      "png": "honedge",
+      "draft": {}
     },
     {
       "name": "Doublade",
       "pid": "doublade",
       "tier": "D",
       "category": "NFE",
-      "png": "doublade"
+      "png": "doublade",
+      "draft": {}
     },
     {
       "name": "Aegislash",
       "pid": "aegislash",
-      "png": "aegislash"
+      "png": "aegislash",
+      "draft": {}
     },
     {
       "name": "Spritzee",
       "pid": "spritzee",
       "tier": "D",
       "category": "NFE",
-      "png": "spritzee"
+      "png": "spritzee",
+      "draft": {}
     },
     {
       "name": "Aromatisse",
       "pid": "aromatisse",
-      "png": "aromatisse"
+      "png": "aromatisse",
+      "draft": {}
     },
     {
       "name": "Swirlix",
       "pid": "swirlix",
       "tier": "D",
       "category": "NFE",
-      "png": "swirlix"
+      "png": "swirlix",
+      "draft": {}
     },
     {
       "name": "Slurpuff",
       "pid": "slurpuff",
-      "png": "slurpuff"
+      "png": "slurpuff",
+      "draft": {}
     },
     {
       "name": "Inkay",
       "pid": "inkay",
       "tier": "D",
       "category": "NFE",
-      "png": "inkay"
+      "png": "inkay",
+      "draft": {}
     },
     {
       "name": "Malamar",
       "pid": "malamar",
-      "png": "malamar"
+      "png": "malamar",
+      "draft": {}
     },
     {
       "name": "Binacle",
       "pid": "binacle",
       "tier": "D",
       "category": "NFE",
-      "png": "binacle"
+      "png": "binacle",
+      "draft": {}
     },
     {
       "name": "Barbaracle",
       "pid": "barbaracle",
-      "png": "barbaracle"
+      "png": "barbaracle",
+      "draft": {}
     },
     {
       "name": "Skrelp",
       "pid": "skrelp",
       "tier": "D",
       "category": "NFE",
-      "png": "skrelp"
+      "png": "skrelp",
+      "draft": {}
     },
     {
       "name": "Dragalge",
       "pid": "dragalge",
-      "png": "dragalge"
+      "png": "dragalge",
+      "draft": {}
     },
     {
       "name": "Clauncher",
       "pid": "clauncher",
       "tier": "D",
       "category": "NFE",
-      "png": "clauncher"
+      "png": "clauncher",
+      "draft": {}
     },
     {
       "name": "Clawitzer",
       "pid": "clawitzer",
-      "png": "clawitzer"
+      "png": "clawitzer",
+      "draft": {}
     },
     {
       "name": "Helioptile",
@@ -4652,63 +5519,73 @@
       "tier": "D",
       "category": "NFE",
       "png": "helioptile",
-      "order": 3
+      "draft": {}
     },
     {
       "name": "Heliolisk",
       "pid": "heliolisk",
-      "png": "heliolisk"
+      "png": "heliolisk",
+      "draft": {}
     },
     {
       "name": "Tyrunt",
       "pid": "tyrunt",
       "tier": "D",
       "category": "NFE",
-      "png": "tyrunt"
+      "png": "tyrunt",
+      "draft": {}
     },
     {
       "name": "Tyrantrum",
       "pid": "tyrantrum",
-      "png": "tyrantrum"
+      "png": "tyrantrum",
+      "draft": {}
     },
     {
       "name": "Amaura",
       "pid": "amaura",
       "tier": "D",
       "category": "NFE",
-      "png": "amaura"
+      "png": "amaura",
+      "draft": {}
     },
     {
       "name": "Aurorus",
       "pid": "aurorus",
-      "png": "aurorus"
+      "png": "aurorus",
+      "draft": {}
     },
     {
       "name": "Sylveon",
       "pid": "sylveon",
-      "png": "sylveon"
+      "png": "sylveon",
+      "draft": {}
     },
     {
       "name": "Hawlucha",
       "pid": "hawlucha",
-      "png": "hawlucha"
+      "png": "hawlucha",
+      "draft": {}
     },
     {
       "name": "Dedenne",
       "pid": "dedenne",
-      "png": "dedenne"
+      "png": "dedenne",
+      "draft": {}
     },
     {
       "name": "Carbink",
       "pid": "carbink",
-      "png": "carbink"
+      "png": "carbink",
+      "draft": {}
     },
     {
       "name": "Goomy",
       "pid": "goomy",
       "tier": "D",
       "category": "NFE",
-      "png": "goomy"
+      "png": "goomy",
+      "draft": {}
     },
     {
       "name": "Sliggoo",
@@ -4716,302 +5593,353 @@
       "tier": "D",
       "category": "NFE",
       "png": "sliggoo",
-      "order": 3
+      "draft": {}
     },
     {
       "name": "Sliggoo-Hisui",
       "pid": "sliggoohisui",
       "tier": "D",
       "category": "NFE",
-      "png": "sliggoo-hisui"
+      "png": "sliggoo-hisui",
+      "draft": {}
     },
     {
       "name": "Goodra",
       "pid": "goodra",
-      "png": "goodra"
+      "png": "goodra",
+      "draft": {}
     },
     {
       "name": "Goodra-Hisui",
       "pid": "goodrahisui",
-      "png": "goodra-hisui"
+      "png": "goodra-hisui",
+      "draft": {}
     },
     {
       "name": "Klefki",
       "pid": "klefki",
-      "png": "klefki"
+      "png": "klefki",
+      "draft": {}
     },
     {
       "name": "Phantump",
       "pid": "phantump",
       "tier": "D",
       "category": "NFE",
-      "png": "phantump"
+      "png": "phantump",
+      "draft": {}
     },
     {
       "name": "Trevenant",
       "pid": "trevenant",
-      "png": "trevenant"
+      "png": "trevenant",
+      "draft": {}
     },
     {
       "name": "Pumpkaboo",
       "pid": "pumpkaboo",
       "tier": "D",
       "category": "NFE",
-      "png": "pumpkaboo"
+      "png": "pumpkaboo",
+      "draft": {}
     },
     {
       "name": "Gourgeist",
       "pid": "gourgeist",
-      "png": "gourgeist"
+      "png": "gourgeist",
+      "draft": {}
     },
     {
       "name": "Bergmite",
       "pid": "bergmite",
       "tier": "D",
       "category": "NFE",
-      "png": "bergmite"
+      "png": "bergmite",
+      "draft": {}
     },
     {
       "name": "Avalugg",
       "pid": "avalugg",
-      "png": "avalugg"
+      "png": "avalugg",
+      "draft": {}
     },
     {
       "name": "Avalugg-Hisui",
       "pid": "avalugghisui",
-      "png": "avalugg-hisui"
+      "png": "avalugg-hisui",
+      "draft": {}
     },
     {
       "name": "Noibat",
       "pid": "noibat",
       "tier": "D",
       "category": "NFE",
-      "png": "noibat"
+      "png": "noibat",
+      "draft": {}
     },
     {
       "name": "Noivern",
       "pid": "noivern",
-      "png": "noivern"
+      "png": "noivern",
+      "draft": {}
     },
     {
       "name": "Xerneas",
       "pid": "xerneas",
-      "png": "xerneas"
+      "png": "xerneas",
+      "draft": {}
     },
     {
       "name": "Yveltal",
       "pid": "yveltal",
-      "png": "yveltal"
+      "png": "yveltal",
+      "draft": {}
     },
     {
       "name": "Zygarde",
       "pid": "zygarde",
-      "png": "zygarde"
+      "png": "zygarde",
+      "draft": {}
     },
     {
       "name": "Zygarde-10%",
       "pid": "zygarde10",
-      "png": "zygarde-10"
+      "png": "zygarde-10",
+      "draft": {}
     },
     {
       "name": "Diancie",
       "pid": "diancie",
-      "png": "diancie"
+      "png": "diancie",
+      "draft": {}
     },
     {
       "name": "Hoopa",
       "pid": "hoopa",
-      "png": "hoopa"
+      "png": "hoopa",
+      "draft": {}
     },
     {
       "name": "Hoopa-Unbound",
       "pid": "hoopaunbound",
-      "png": "hoopa-unbound"
+      "png": "hoopa-unbound",
+      "draft": {}
     },
     {
       "name": "Volcanion",
       "pid": "volcanion",
-      "png": "volcanion"
+      "png": "volcanion",
+      "draft": {}
     },
     {
       "name": "Rowlet",
       "pid": "rowlet",
       "tier": "D",
       "category": "NFE",
-      "png": "rowlet"
+      "png": "rowlet",
+      "draft": {}
     },
     {
       "name": "Dartrix",
       "pid": "dartrix",
       "tier": "D",
       "category": "NFE",
-      "png": "dartrix"
+      "png": "dartrix",
+      "draft": {}
     },
     {
       "name": "Decidueye",
       "pid": "decidueye",
-      "png": "decidueye"
+      "png": "decidueye",
+      "draft": {}
     },
     {
       "name": "Decidueye-Hisui",
       "pid": "decidueyehisui",
-      "png": "decidueye-hisui"
+      "png": "decidueye-hisui",
+      "draft": {}
     },
     {
       "name": "Litten",
       "pid": "litten",
       "tier": "D",
       "category": "NFE",
-      "png": "litten"
+      "png": "litten",
+      "draft": {}
     },
     {
       "name": "Torracat",
       "pid": "torracat",
       "tier": "D",
       "category": "NFE",
-      "png": "torracat"
+      "png": "torracat",
+      "draft": {}
     },
     {
       "name": "Incineroar",
       "pid": "incineroar",
-      "png": "incineroar"
+      "png": "incineroar",
+      "draft": {}
     },
     {
       "name": "Popplio",
       "pid": "popplio",
       "tier": "D",
       "category": "NFE",
-      "png": "popplio"
+      "png": "popplio",
+      "draft": {}
     },
     {
       "name": "Brionne",
       "pid": "brionne",
       "tier": "D",
       "category": "NFE",
-      "png": "brionne"
+      "png": "brionne",
+      "draft": {}
     },
     {
       "name": "Primarina",
       "pid": "primarina",
-      "png": "primarina"
+      "png": "primarina",
+      "draft": {}
     },
     {
       "name": "Pikipek",
       "pid": "pikipek",
       "tier": "D",
       "category": "NFE",
-      "png": "pikipek"
+      "png": "pikipek",
+      "draft": {}
     },
     {
       "name": "Trumbeak",
       "pid": "trumbeak",
       "tier": "D",
       "category": "NFE",
-      "png": "trumbeak"
+      "png": "trumbeak",
+      "draft": {}
     },
     {
       "name": "Toucannon",
       "pid": "toucannon",
-      "png": "toucannon"
+      "png": "toucannon",
+      "draft": {}
     },
     {
       "name": "Yungoos",
       "pid": "yungoos",
       "tier": "D",
       "category": "NFE",
-      "png": "yungoos"
+      "png": "yungoos",
+      "draft": {}
     },
     {
       "name": "Gumshoos",
       "pid": "gumshoos",
-      "png": "gumshoos"
+      "png": "gumshoos",
+      "draft": {}
     },
     {
       "name": "Grubbin",
       "pid": "grubbin",
       "tier": "D",
       "category": "NFE",
-      "png": "grubbin"
+      "png": "grubbin",
+      "draft": {}
     },
     {
       "name": "Charjabug",
       "pid": "charjabug",
       "tier": "D",
       "category": "NFE",
-      "png": "charjabug"
+      "png": "charjabug",
+      "draft": {}
     },
     {
       "name": "Vikavolt",
       "pid": "vikavolt",
-      "png": "vikavolt"
+      "png": "vikavolt",
+      "draft": {}
     },
     {
       "name": "Crabrawler",
       "pid": "crabrawler",
       "tier": "D",
       "category": "NFE",
-      "png": "crabrawler"
+      "png": "crabrawler",
+      "draft": {}
     },
     {
       "name": "Crabominable",
       "pid": "crabominable",
-      "png": "crabominable"
+      "png": "crabominable",
+      "draft": {}
     },
     {
       "name": "Oricorio",
       "pid": "oricorio",
-      "png": "oricorio"
+      "png": "oricorio",
+      "draft": {}
     },
     {
       "name": "Cutiefly",
       "pid": "cutiefly",
       "tier": "D",
       "category": "NFE",
-      "png": "cutiefly"
+      "png": "cutiefly",
+      "draft": {}
     },
     {
       "name": "Ribombee",
       "pid": "ribombee",
-      "png": "ribombee"
+      "png": "ribombee",
+      "draft": {}
     },
     {
       "name": "Rockruff",
       "pid": "rockruff",
       "tier": "D",
       "category": "NFE",
-      "png": "rockruff"
+      "png": "rockruff",
+      "draft": {}
     },
     {
       "name": "Lycanroc",
       "pid": "lycanroc",
-      "png": "lycanroc"
+      "png": "lycanroc",
+      "draft": {}
     },
     {
       "name": "Lycanroc-Midnight",
       "pid": "lycanrocmidnight",
-      "png": "lycanroc-midnight"
+      "png": "lycanroc-midnight",
+      "draft": {}
     },
     {
       "name": "Lycanroc-Dusk",
       "pid": "lycanrocdusk",
-      "png": "lycanroc-dusk"
+      "png": "lycanroc-dusk",
+      "draft": {}
     },
     {
       "name": "Wishiwashi",
       "pid": "wishiwashi",
-      "png": "wishiwashi"
+      "png": "wishiwashi",
+      "draft": {}
     },
     {
       "name": "Mareanie",
       "pid": "mareanie",
       "tier": "D",
       "category": "NFE",
-      "png": "mareanie"
+      "png": "mareanie",
+      "draft": {}
     },
     {
       "name": "Toxapex",
       "pid": "toxapex",
-      "png": "toxapex"
+      "png": "toxapex",
+      "draft": {}
     },
     {
       "name": "Mudbray",
@@ -5019,48 +5947,55 @@
       "tier": "D",
       "category": "NFE",
       "png": "mudbray",
-      "order": 13
+      "draft": {}
     },
     {
       "name": "Mudsdale",
       "pid": "mudsdale",
-      "png": "mudsdale"
+      "png": "mudsdale",
+      "draft": {}
     },
     {
       "name": "Dewpider",
       "pid": "dewpider",
       "tier": "D",
       "category": "NFE",
-      "png": "dewpider"
+      "png": "dewpider",
+      "draft": {}
     },
     {
       "name": "Araquanid",
       "pid": "araquanid",
-      "png": "araquanid"
+      "png": "araquanid",
+      "draft": {}
     },
     {
       "name": "Fomantis",
       "pid": "fomantis",
       "tier": "D",
       "category": "NFE",
-      "png": "fomantis"
+      "png": "fomantis",
+      "draft": {}
     },
     {
       "name": "Lurantis",
       "pid": "lurantis",
-      "png": "lurantis"
+      "png": "lurantis",
+      "draft": {}
     },
     {
       "name": "Morelull",
       "pid": "morelull",
       "tier": "D",
       "category": "NFE",
-      "png": "morelull"
+      "png": "morelull",
+      "draft": {}
     },
     {
       "name": "Shiinotic",
       "pid": "shiinotic",
-      "png": "shiinotic"
+      "png": "shiinotic",
+      "draft": {}
     },
     {
       "name": "Salandit",
@@ -5068,12 +6003,13 @@
       "tier": "D",
       "category": "NFE",
       "png": "salandit",
-      "order": 11
+      "draft": {}
     },
     {
       "name": "Salazzle",
       "pid": "salazzle",
-      "png": "salazzle"
+      "png": "salazzle",
+      "draft": {}
     },
     {
       "name": "Stufful",
@@ -5081,46 +6017,53 @@
       "tier": "D",
       "category": "NFE",
       "png": "stufful",
-      "order": 5
+      "draft": {}
     },
     {
       "name": "Bewear",
       "pid": "bewear",
-      "png": "bewear"
+      "png": "bewear",
+      "draft": {}
     },
     {
       "name": "Bounsweet",
       "pid": "bounsweet",
       "tier": "D",
       "category": "NFE",
-      "png": "bounsweet"
+      "png": "bounsweet",
+      "draft": {}
     },
     {
       "name": "Steenee",
       "pid": "steenee",
       "tier": "D",
       "category": "NFE",
-      "png": "steenee"
+      "png": "steenee",
+      "draft": {}
     },
     {
       "name": "Tsareena",
       "pid": "tsareena",
-      "png": "tsareena"
+      "png": "tsareena",
+      "draft": {}
     },
     {
       "name": "Comfey",
       "pid": "comfey",
-      "png": "comfey"
+      "png": "comfey",
+      "draft": {}
     },
     {
       "name": "Oranguru",
       "pid": "oranguru",
-      "png": "oranguru"
+      "png": "oranguru",
+      "draft": {}
     },
     {
       "name": "Passimian",
       "pid": "passimian",
-      "png": "passimian"
+      "png": "passimian",
+      "draft": {}
     },
     {
       "name": "Wimpod",
@@ -5128,384 +6071,451 @@
       "tier": "D",
       "category": "NFE",
       "png": "wimpod",
-      "order": 9
+      "draft": {}
     },
     {
       "name": "Golisopod",
       "pid": "golisopod",
-      "png": "golisopod"
+      "png": "golisopod",
+      "draft": {}
     },
     {
       "name": "Sandygast",
       "pid": "sandygast",
       "tier": "D",
       "category": "NFE",
-      "png": "sandygast"
+      "png": "sandygast",
+      "draft": {}
     },
     {
       "name": "Palossand",
       "pid": "palossand",
-      "png": "palossand"
+      "png": "palossand",
+      "draft": {}
     },
     {
       "name": "Pyukumuku",
       "pid": "pyukumuku",
-      "png": "pyukumuku"
+      "png": "pyukumuku",
+      "draft": {}
     },
     {
       "name": "Type: Null",
       "pid": "typenull",
       "tier": "D",
       "category": "NFE",
-      "png": "typenull"
+      "png": "typenull",
+      "draft": {}
     },
     {
       "name": "Silvally",
       "pid": "silvally",
-      "png": "silvally"
+      "png": "silvally",
+      "draft": {}
     },
     {
       "name": "Minior",
       "pid": "minior",
-      "png": "minior"
+      "png": "minior",
+      "draft": {}
     },
     {
       "name": "Komala",
       "pid": "komala",
-      "png": "komala"
+      "png": "komala",
+      "draft": {}
     },
     {
       "name": "Turtonator",
       "pid": "turtonator",
-      "png": "turtonator"
+      "png": "turtonator",
+      "draft": {}
     },
     {
       "name": "Togedemaru",
       "pid": "togedemaru",
-      "png": "togedemaru"
+      "png": "togedemaru",
+      "draft": {}
     },
     {
       "name": "Mimikyu",
       "pid": "mimikyu",
-      "png": "mimikyu"
+      "png": "mimikyu",
+      "draft": {}
     },
     {
       "name": "Bruxish",
       "pid": "bruxish",
-      "png": "bruxish"
+      "png": "bruxish",
+      "draft": {}
     },
     {
       "name": "Drampa",
       "pid": "drampa",
-      "png": "drampa"
+      "png": "drampa",
+      "draft": {}
     },
     {
       "name": "Dhelmise",
       "pid": "dhelmise",
-      "png": "dhelmise"
+      "png": "dhelmise",
+      "draft": {}
     },
     {
       "name": "Jangmo-o",
       "pid": "jangmoo",
       "tier": "D",
       "category": "NFE",
-      "png": "jangmoo"
+      "png": "jangmoo",
+      "draft": {}
     },
     {
       "name": "Hakamo-o",
       "pid": "hakamoo",
       "tier": "D",
       "category": "NFE",
-      "png": "hakamoo"
+      "png": "hakamoo",
+      "draft": {}
     },
     {
       "name": "Kommo-o",
       "pid": "kommoo",
-      "png": "kommoo"
+      "png": "kommoo",
+      "draft": {}
     },
     {
       "name": "Tapu Koko",
       "pid": "tapukoko",
-      "png": "tapukoko"
+      "png": "tapukoko",
+      "draft": {}
     },
     {
       "name": "Tapu Lele",
       "pid": "tapulele",
-      "png": "tapulele"
+      "png": "tapulele",
+      "draft": {}
     },
     {
       "name": "Tapu Bulu",
       "pid": "tapubulu",
-      "png": "tapubulu"
+      "png": "tapubulu",
+      "draft": {}
     },
     {
       "name": "Tapu Fini",
       "pid": "tapufini",
-      "png": "tapufini"
+      "png": "tapufini",
+      "draft": {}
     },
     {
       "name": "Cosmog",
       "pid": "cosmog",
       "tier": "D",
       "category": "NFE",
-      "png": "cosmog"
+      "png": "cosmog",
+      "draft": {}
     },
     {
       "name": "Cosmoem",
       "pid": "cosmoem",
       "tier": "D",
       "category": "NFE",
-      "png": "cosmoem"
+      "png": "cosmoem",
+      "draft": {}
     },
     {
       "name": "Solgaleo",
       "pid": "solgaleo",
-      "png": "solgaleo"
+      "png": "solgaleo",
+      "draft": {}
     },
     {
       "name": "Lunala",
       "pid": "lunala",
-      "png": "lunala"
+      "png": "lunala",
+      "draft": {}
     },
     {
       "name": "Nihilego",
       "pid": "nihilego",
-      "png": "nihilego"
+      "png": "nihilego",
+      "draft": {}
     },
     {
       "name": "Buzzwole",
       "pid": "buzzwole",
-      "png": "buzzwole"
+      "png": "buzzwole",
+      "draft": {}
     },
     {
       "name": "Pheromosa",
       "pid": "pheromosa",
-      "png": "pheromosa"
+      "png": "pheromosa",
+      "draft": {}
     },
     {
       "name": "Xurkitree",
       "pid": "xurkitree",
-      "png": "xurkitree"
+      "png": "xurkitree",
+      "draft": {}
     },
     {
       "name": "Celesteela",
       "pid": "celesteela",
-      "png": "celesteela"
+      "png": "celesteela",
+      "draft": {}
     },
     {
       "name": "Kartana",
       "pid": "kartana",
-      "png": "kartana"
+      "png": "kartana",
+      "draft": {}
     },
     {
       "name": "Guzzlord",
       "pid": "guzzlord",
-      "png": "guzzlord"
+      "png": "guzzlord",
+      "draft": {}
     },
     {
       "name": "Necrozma",
       "pid": "necrozma",
-      "png": "necrozma"
+      "png": "necrozma",
+      "draft": {}
     },
     {
       "name": "Necrozma-Dusk-Mane",
       "pid": "necrozmaduskmane",
-      "png": "necrozma-duskmane"
+      "png": "necrozma-duskmane",
+      "draft": {}
     },
     {
       "name": "Necrozma-Dawn-Wings",
       "pid": "necrozmadawnwings",
-      "png": "necrozma-dawnwings"
+      "png": "necrozma-dawnwings",
+      "draft": {}
     },
     {
       "name": "Magearna",
       "pid": "magearna",
-      "png": "magearna"
+      "png": "magearna",
+      "draft": {}
     },
     {
       "name": "Marshadow",
       "pid": "marshadow",
-      "png": "marshadow"
+      "png": "marshadow",
+      "draft": {}
     },
     {
       "name": "Poipole",
       "pid": "poipole",
       "tier": "D",
       "category": "NFE",
-      "png": "poipole"
+      "png": "poipole",
+      "draft": {}
     },
     {
       "name": "Naganadel",
       "pid": "naganadel",
-      "png": "naganadel"
+      "png": "naganadel",
+      "draft": {}
     },
     {
       "name": "Stakataka",
       "pid": "stakataka",
-      "png": "stakataka"
+      "png": "stakataka",
+      "draft": {}
     },
     {
       "name": "Blacephalon",
       "pid": "blacephalon",
-      "png": "blacephalon"
+      "png": "blacephalon",
+      "draft": {}
     },
     {
       "name": "Zeraora",
       "pid": "zeraora",
-      "png": "zeraora"
+      "png": "zeraora",
+      "draft": {}
     },
     {
       "name": "Meltan",
       "pid": "meltan",
-      "png": "meltan"
+      "png": "meltan",
+      "draft": {}
     },
     {
       "name": "Melmetal",
       "pid": "melmetal",
-      "png": "melmetal"
+      "png": "melmetal",
+      "draft": {}
     },
     {
       "name": "Grookey",
       "pid": "grookey",
       "tier": "D",
       "category": "NFE",
-      "png": "grookey"
+      "png": "grookey",
+      "draft": {}
     },
     {
       "name": "Thwackey",
       "pid": "thwackey",
       "tier": "D",
       "category": "NFE",
-      "png": "thwackey"
+      "png": "thwackey",
+      "draft": {}
     },
     {
       "name": "Rillaboom",
       "pid": "rillaboom",
-      "png": "rillaboom"
+      "png": "rillaboom",
+      "draft": {}
     },
     {
       "name": "Scorbunny",
       "pid": "scorbunny",
       "tier": "D",
       "category": "NFE",
-      "png": "scorbunny"
+      "png": "scorbunny",
+      "draft": {}
     },
     {
       "name": "Raboot",
       "pid": "raboot",
       "tier": "D",
       "category": "NFE",
-      "png": "raboot"
+      "png": "raboot",
+      "draft": {}
     },
     {
       "name": "Cinderace",
       "pid": "cinderace",
-      "png": "cinderace"
+      "png": "cinderace",
+      "draft": {}
     },
     {
       "name": "Sobble",
       "pid": "sobble",
       "tier": "D",
       "category": "NFE",
-      "png": "sobble"
+      "png": "sobble",
+      "draft": {}
     },
     {
       "name": "Drizzile",
       "pid": "drizzile",
       "tier": "D",
       "category": "NFE",
-      "png": "drizzile"
+      "png": "drizzile",
+      "draft": {}
     },
     {
       "name": "Inteleon",
       "pid": "inteleon",
-      "png": "inteleon"
+      "png": "inteleon",
+      "draft": {}
     },
     {
       "name": "Skwovet",
       "pid": "skwovet",
       "tier": "D",
       "category": "NFE",
-      "png": "skwovet"
+      "png": "skwovet",
+      "draft": {}
     },
     {
       "name": "Greedent",
       "pid": "greedent",
-      "png": "greedent"
+      "png": "greedent",
+      "draft": {}
     },
     {
       "name": "Rookidee",
       "pid": "rookidee",
       "tier": "D",
       "category": "NFE",
-      "png": "rookidee"
+      "png": "rookidee",
+      "draft": {}
     },
     {
       "name": "Corvisquire",
       "pid": "corvisquire",
       "tier": "D",
       "category": "NFE",
-      "png": "corvisquire"
+      "png": "corvisquire",
+      "draft": {}
     },
     {
       "name": "Corviknight",
       "pid": "corviknight",
-      "png": "corviknight"
+      "png": "corviknight",
+      "draft": {}
     },
     {
       "name": "Blipbug",
       "pid": "blipbug",
       "tier": "D",
       "category": "NFE",
-      "png": "blipbug"
+      "png": "blipbug",
+      "draft": {}
     },
     {
       "name": "Dottler",
       "pid": "dottler",
       "tier": "D",
       "category": "NFE",
-      "png": "dottler"
+      "png": "dottler",
+      "draft": {}
     },
     {
       "name": "Orbeetle",
       "pid": "orbeetle",
-      "png": "orbeetle"
+      "png": "orbeetle",
+      "draft": {}
     },
     {
       "name": "Nickit",
       "pid": "nickit",
       "tier": "D",
       "category": "NFE",
-      "png": "nickit"
+      "png": "nickit",
+      "draft": {}
     },
     {
       "name": "Thievul",
       "pid": "thievul",
-      "png": "thievul"
+      "png": "thievul",
+      "draft": {}
     },
     {
       "name": "Gossifleur",
       "pid": "gossifleur",
       "tier": "D",
       "category": "NFE",
-      "png": "gossifleur"
+      "png": "gossifleur",
+      "draft": {}
     },
     {
       "name": "Eldegoss",
       "pid": "eldegoss",
-      "png": "eldegoss"
+      "png": "eldegoss",
+      "draft": {}
     },
     {
       "name": "Wooloo",
       "pid": "wooloo",
       "tier": "D",
       "category": "NFE",
-      "png": "wooloo"
+      "png": "wooloo",
+      "draft": {}
     },
     {
       "name": "Dubwool",
       "pid": "dubwool",
-      "png": "dubwool"
+      "png": "dubwool",
+      "draft": {}
     },
     {
       "name": "Chewtle",
@@ -5513,125 +6523,145 @@
       "tier": "D",
       "category": "NFE",
       "png": "chewtle",
-      "order": 15
+      "draft": {}
     },
     {
       "name": "Drednaw",
       "pid": "drednaw",
-      "png": "drednaw"
+      "png": "drednaw",
+      "draft": {}
     },
     {
       "name": "Yamper",
       "pid": "yamper",
       "tier": "D",
       "category": "NFE",
-      "png": "yamper"
+      "png": "yamper",
+      "draft": {}
     },
     {
       "name": "Boltund",
       "pid": "boltund",
-      "png": "boltund"
+      "png": "boltund",
+      "draft": {}
     },
     {
       "name": "Rolycoly",
       "pid": "rolycoly",
       "tier": "D",
       "category": "NFE",
-      "png": "rolycoly"
+      "png": "rolycoly",
+      "draft": {}
     },
     {
       "name": "Carkol",
       "pid": "carkol",
       "tier": "D",
       "category": "NFE",
-      "png": "carkol"
+      "png": "carkol",
+      "draft": {}
     },
     {
       "name": "Coalossal",
       "pid": "coalossal",
-      "png": "coalossal"
+      "png": "coalossal",
+      "draft": {}
     },
     {
       "name": "Applin",
       "pid": "applin",
       "tier": "D",
       "category": "NFE",
-      "png": "applin"
+      "png": "applin",
+      "draft": {}
     },
     {
       "name": "Flapple",
       "pid": "flapple",
-      "png": "flapple"
+      "png": "flapple",
+      "draft": {}
     },
     {
       "name": "Appletun",
       "pid": "appletun",
-      "png": "appletun"
+      "png": "appletun",
+      "draft": {}
     },
     {
       "name": "Silicobra",
       "pid": "silicobra",
       "tier": "D",
       "category": "NFE",
-      "png": "silicobra"
+      "png": "silicobra",
+      "draft": {}
     },
     {
       "name": "Sandaconda",
       "pid": "sandaconda",
-      "png": "sandaconda"
+      "png": "sandaconda",
+      "draft": {}
     },
     {
       "name": "Cramorant",
       "pid": "cramorant",
-      "png": "cramorant"
+      "png": "cramorant",
+      "draft": {}
     },
     {
       "name": "Arrokuda",
       "pid": "arrokuda",
       "tier": "D",
       "category": "NFE",
-      "png": "arrokuda"
+      "png": "arrokuda",
+      "draft": {}
     },
     {
       "name": "Barraskewda",
       "pid": "barraskewda",
-      "png": "barraskewda"
+      "png": "barraskewda",
+      "draft": {}
     },
     {
       "name": "Toxel",
       "pid": "toxel",
       "tier": "D",
       "category": "NFE",
-      "png": "toxel"
+      "png": "toxel",
+      "draft": {}
     },
     {
       "name": "Toxtricity",
       "pid": "toxtricity",
-      "png": "toxtricity"
+      "png": "toxtricity",
+      "draft": {}
     },
     {
       "name": "Sizzlipede",
       "pid": "sizzlipede",
       "tier": "D",
       "category": "NFE",
-      "png": "sizzlipede"
+      "png": "sizzlipede",
+      "draft": {}
     },
     {
       "name": "Centiskorch",
       "pid": "centiskorch",
-      "png": "centiskorch"
+      "png": "centiskorch",
+      "draft": {}
     },
     {
       "name": "Clobbopus",
       "pid": "clobbopus",
       "tier": "D",
       "category": "NFE",
-      "png": "clobbopus"
+      "png": "clobbopus",
+      "draft": {}
     },
     {
       "name": "Grapploct",
       "pid": "grapploct",
-      "png": "grapploct"
+      "png": "grapploct",
+      "draft": {}
     },
     {
       "name": "Sinistea",
@@ -5639,139 +6669,163 @@
       "tier": "D",
       "category": "NFE",
       "png": "sinistea",
-      "order": 2
+      "draft": {}
     },
     {
       "name": "Polteageist",
       "pid": "polteageist",
-      "png": "polteageist"
+      "png": "polteageist",
+      "draft": {}
     },
     {
       "name": "Hatenna",
       "pid": "hatenna",
       "tier": "D",
       "category": "NFE",
-      "png": "hatenna"
+      "png": "hatenna",
+      "draft": {}
     },
     {
       "name": "Hattrem",
       "pid": "hattrem",
       "tier": "D",
       "category": "NFE",
-      "png": "hattrem"
+      "png": "hattrem",
+      "draft": {}
     },
     {
       "name": "Hatterene",
       "pid": "hatterene",
-      "png": "hatterene"
+      "png": "hatterene",
+      "draft": {}
     },
     {
       "name": "Impidimp",
       "pid": "impidimp",
       "tier": "D",
       "category": "NFE",
-      "png": "impidimp"
+      "png": "impidimp",
+      "draft": {}
     },
     {
       "name": "Morgrem",
       "pid": "morgrem",
       "tier": "D",
       "category": "NFE",
-      "png": "morgrem"
+      "png": "morgrem",
+      "draft": {}
     },
     {
       "name": "Grimmsnarl",
       "pid": "grimmsnarl",
-      "png": "grimmsnarl"
+      "png": "grimmsnarl",
+      "draft": {}
     },
     {
       "name": "Obstagoon",
       "pid": "obstagoon",
-      "png": "obstagoon"
+      "png": "obstagoon",
+      "draft": {}
     },
     {
       "name": "Perrserker",
       "pid": "perrserker",
-      "png": "perrserker"
+      "png": "perrserker",
+      "draft": {}
     },
     {
       "name": "Cursola",
       "pid": "cursola",
-      "png": "cursola"
+      "png": "cursola",
+      "draft": {}
     },
     {
       "name": "Sirfetch’d",
       "pid": "sirfetchd",
-      "png": "sirfetchd"
+      "png": "sirfetchd",
+      "draft": {}
     },
     {
       "name": "Mr. Rime",
       "pid": "mrrime",
-      "png": "mrrime"
+      "png": "mrrime",
+      "draft": {}
     },
     {
       "name": "Runerigus",
       "pid": "runerigus",
-      "png": "runerigus"
+      "png": "runerigus",
+      "draft": {}
     },
     {
       "name": "Milcery",
       "pid": "milcery",
       "tier": "D",
       "category": "NFE",
-      "png": "milcery"
+      "png": "milcery",
+      "draft": {}
     },
     {
       "name": "Alcremie",
       "pid": "alcremie",
-      "png": "alcremie"
+      "png": "alcremie",
+      "draft": {}
     },
     {
       "name": "Falinks",
       "pid": "falinks",
-      "png": "falinks"
+      "png": "falinks",
+      "draft": {}
     },
     {
       "name": "Pincurchin",
       "pid": "pincurchin",
-      "png": "pincurchin"
+      "png": "pincurchin",
+      "draft": {}
     },
     {
       "name": "Snom",
       "pid": "snom",
       "tier": "D",
       "category": "NFE",
-      "png": "snom"
+      "png": "snom",
+      "draft": {}
     },
     {
       "name": "Frosmoth",
       "pid": "frosmoth",
-      "png": "frosmoth"
+      "png": "frosmoth",
+      "draft": {}
     },
     {
       "name": "Stonjourner",
       "pid": "stonjourner",
-      "png": "stonjourner"
+      "png": "stonjourner",
+      "draft": {}
     },
     {
       "name": "Eiscue",
       "pid": "eiscue",
-      "png": "eiscue"
+      "png": "eiscue",
+      "draft": {}
     },
     {
       "name": "Indeedee",
       "pid": "indeedee",
-      "png": "indeedee"
+      "png": "indeedee",
+      "draft": {}
     },
     {
       "name": "Indeedee-F",
       "pid": "indeedeef",
-      "png": "indeedee-f"
+      "png": "indeedee-f",
+      "draft": {}
     },
     {
       "name": "Morpeko",
       "pid": "morpeko",
-      "png": "morpeko"
+      "png": "morpeko",
+      "draft": {}
     },
     {
       "name": "Cufant",
@@ -5779,214 +6833,253 @@
       "tier": "D",
       "category": "NFE",
       "png": "cufant",
-      "order": 4
+      "draft": {}
     },
     {
       "name": "Copperajah",
       "pid": "copperajah",
-      "png": "copperajah"
+      "png": "copperajah",
+      "draft": {}
     },
     {
       "name": "Dracozolt",
       "pid": "dracozolt",
-      "png": "dracozolt"
+      "png": "dracozolt",
+      "draft": {}
     },
     {
       "name": "Arctozolt",
       "pid": "arctozolt",
-      "png": "arctozolt"
+      "png": "arctozolt",
+      "draft": {}
     },
     {
       "name": "Dracovish",
       "pid": "dracovish",
-      "png": "dracovish"
+      "png": "dracovish",
+      "draft": {}
     },
     {
       "name": "Arctovish",
       "pid": "arctovish",
-      "png": "arctovish"
+      "png": "arctovish",
+      "draft": {}
     },
     {
       "name": "Duraludon",
       "pid": "duraludon",
       "tier": "D",
       "category": "NFE",
-      "png": "duraludon"
+      "png": "duraludon",
+      "draft": {}
     },
     {
       "name": "Dreepy",
       "pid": "dreepy",
       "tier": "D",
       "category": "NFE",
-      "png": "dreepy"
+      "png": "dreepy",
+      "draft": {}
     },
     {
       "name": "Drakloak",
       "pid": "drakloak",
       "tier": "D",
       "category": "NFE",
-      "png": "drakloak"
+      "png": "drakloak",
+      "draft": {}
     },
     {
       "name": "Dragapult",
       "pid": "dragapult",
-      "png": "dragapult"
+      "png": "dragapult",
+      "draft": {}
     },
     {
       "name": "Zacian",
       "pid": "zacian",
-      "png": "zacian"
+      "png": "zacian",
+      "draft": {}
     },
     {
       "name": "Zacian-Crowned",
       "pid": "zaciancrowned",
-      "png": "zacian-crowned"
+      "png": "zacian-crowned",
+      "draft": {}
     },
     {
       "name": "Zamazenta",
       "pid": "zamazenta",
-      "png": "zamazenta"
+      "png": "zamazenta",
+      "draft": {}
     },
     {
       "name": "Zamazenta-Crowned",
       "pid": "zamazentacrowned",
-      "png": "zamazenta-crowned"
+      "png": "zamazenta-crowned",
+      "draft": {}
     },
     {
       "name": "Eternatus",
       "pid": "eternatus",
-      "png": "eternatus"
+      "png": "eternatus",
+      "draft": {}
     },
     {
       "name": "Kubfu",
       "pid": "kubfu",
       "tier": "D",
       "category": "NFE",
-      "png": "kubfu"
+      "png": "kubfu",
+      "draft": {}
     },
     {
       "name": "Urshifu",
       "pid": "urshifu",
-      "png": "urshifu"
+      "png": "urshifu",
+      "draft": {}
     },
     {
       "name": "Urshifu-Rapid-Strike",
       "pid": "urshifurapidstrike",
-      "png": "urshifu-rapidstrike"
+      "png": "urshifu-rapidstrike",
+      "draft": {}
     },
     {
       "name": "Zarude",
       "pid": "zarude",
-      "png": "zarude"
+      "png": "zarude",
+      "draft": {}
     },
     {
       "name": "Zarude-Dada",
       "pid": "zarudedada",
-      "png": "zarude-dada"
+      "png": "zarude-dada",
+      "draft": {}
     },
     {
       "name": "Regieleki",
       "pid": "regieleki",
-      "png": "regieleki"
+      "png": "regieleki",
+      "draft": {}
     },
     {
       "name": "Regidrago",
       "pid": "regidrago",
-      "png": "regidrago"
+      "png": "regidrago",
+      "draft": {}
     },
     {
       "name": "Glastrier",
       "pid": "glastrier",
-      "png": "glastrier"
+      "png": "glastrier",
+      "draft": {}
     },
     {
       "name": "Spectrier",
       "pid": "spectrier",
-      "png": "spectrier"
+      "png": "spectrier",
+      "draft": {}
     },
     {
       "name": "Calyrex",
       "pid": "calyrex",
-      "png": "calyrex"
+      "png": "calyrex",
+      "draft": {}
     },
     {
       "name": "Calyrex-Ice",
       "pid": "calyrexice",
-      "png": "calyrex-ice"
+      "png": "calyrex-ice",
+      "draft": {}
     },
     {
       "name": "Calyrex-Shadow",
       "pid": "calyrexshadow",
-      "png": "calyrex-shadow"
+      "png": "calyrex-shadow",
+      "draft": {}
     },
     {
       "name": "Wyrdeer",
       "pid": "wyrdeer",
-      "png": "wyrdeer"
+      "png": "wyrdeer",
+      "draft": {}
     },
     {
       "name": "Kleavor",
       "pid": "kleavor",
-      "png": "kleavor"
+      "png": "kleavor",
+      "draft": {}
     },
     {
       "name": "Ursaluna",
       "pid": "ursaluna",
-      "png": "ursaluna"
+      "png": "ursaluna",
+      "draft": {}
     },
     {
       "name": "Ursaluna-Bloodmoon",
       "pid": "ursalunabloodmoon",
-      "png": "ursaluna-bloodmoon"
+      "png": "ursaluna-bloodmoon",
+      "draft": {}
     },
     {
       "name": "Basculegion",
       "pid": "basculegion",
-      "png": "basculegion"
+      "png": "basculegion",
+      "draft": {}
     },
     {
       "name": "Basculegion-F",
       "pid": "basculegionf",
-      "png": "basculegion-f"
+      "png": "basculegion-f",
+      "draft": {}
     },
     {
       "name": "Sneasler",
       "pid": "sneasler",
-      "png": "sneasler"
+      "png": "sneasler",
+      "draft": {}
     },
     {
       "name": "Overqwil",
       "pid": "overqwil",
-      "png": "overqwil"
+      "png": "overqwil",
+      "draft": {}
     },
     {
       "name": "Enamorus",
       "pid": "enamorus",
-      "png": "enamorus"
+      "png": "enamorus",
+      "draft": {}
     },
     {
       "name": "Enamorus-Therian",
       "pid": "enamorustherian",
-      "png": "enamorus-therian"
+      "png": "enamorus-therian",
+      "draft": {}
     },
     {
       "name": "Sprigatito",
       "pid": "sprigatito",
       "tier": "D",
       "category": "NFE",
-      "png": "sprigatito"
+      "png": "sprigatito",
+      "draft": {}
     },
     {
       "name": "Floragato",
       "pid": "floragato",
       "tier": "D",
       "category": "NFE",
-      "png": "floragato"
+      "png": "floragato",
+      "draft": {}
     },
     {
       "name": "Meowscarada",
       "pid": "meowscarada",
-      "png": "meowscarada"
+      "png": "meowscarada",
+      "draft": {}
     },
     {
       "name": "Fuecoco",
@@ -5994,689 +7087,809 @@
       "tier": "D",
       "category": "NFE",
       "png": "fuecoco",
-      "order": 2,
-      "coach": "dicy"
+      "draft": {}
     },
     {
       "name": "Crocalor",
       "pid": "crocalor",
       "tier": "D",
       "category": "NFE",
-      "png": "crocalor"
+      "png": "crocalor",
+      "draft": {}
     },
     {
       "name": "Skeledirge",
       "pid": "skeledirge",
-      "png": "skeledirge"
+      "png": "skeledirge",
+      "draft": {}
     },
     {
       "name": "Quaxly",
       "pid": "quaxly",
       "tier": "D",
       "category": "NFE",
-      "png": "quaxly"
+      "png": "quaxly",
+      "draft": {}
     },
     {
       "name": "Quaxwell",
       "pid": "quaxwell",
       "tier": "D",
       "category": "NFE",
-      "png": "quaxwell"
+      "png": "quaxwell",
+      "draft": {}
     },
     {
       "name": "Quaquaval",
       "pid": "quaquaval",
-      "png": "quaquaval"
+      "png": "quaquaval",
+      "draft": {}
     },
     {
       "name": "Lechonk",
       "pid": "lechonk",
       "tier": "D",
       "category": "NFE",
-      "png": "lechonk"
+      "png": "lechonk",
+      "draft": {}
     },
     {
       "name": "Oinkologne",
       "pid": "oinkologne",
-      "png": "oinkologne"
+      "png": "oinkologne",
+      "draft": {}
     },
     {
       "name": "Oinkologne-F",
       "pid": "oinkolognef",
-      "png": "oinkologne-f"
+      "png": "oinkologne-f",
+      "draft": {}
     },
     {
       "name": "Tarountula",
       "pid": "tarountula",
       "tier": "D",
       "category": "NFE",
-      "png": "tarountula"
+      "png": "tarountula",
+      "draft": {}
     },
     {
       "name": "Spidops",
       "pid": "spidops",
-      "png": "spidops"
+      "png": "spidops",
+      "draft": {}
     },
     {
       "name": "Nymble",
       "pid": "nymble",
       "tier": "D",
       "category": "NFE",
-      "png": "nymble"
+      "png": "nymble",
+      "draft": {}
     },
     {
       "name": "Lokix",
       "pid": "lokix",
-      "png": "lokix"
+      "png": "lokix",
+      "draft": {}
     },
     {
       "name": "Pawmi",
       "pid": "pawmi",
       "tier": "D",
       "category": "NFE",
-      "png": "pawmi"
+      "png": "pawmi",
+      "draft": {}
     },
     {
       "name": "Pawmo",
       "pid": "pawmo",
       "tier": "D",
       "category": "NFE",
-      "png": "pawmo"
+      "png": "pawmo",
+      "draft": {}
     },
     {
       "name": "Pawmot",
       "pid": "pawmot",
-      "png": "pawmot"
+      "png": "pawmot",
+      "draft": {}
     },
     {
       "name": "Tandemaus",
       "pid": "tandemaus",
       "tier": "D",
       "category": "NFE",
-      "png": "tandemaus"
+      "png": "tandemaus",
+      "draft": {}
     },
     {
       "name": "Maushold",
       "pid": "maushold",
-      "png": "maushold"
+      "png": "maushold",
+      "draft": {}
     },
     {
       "name": "Fidough",
       "pid": "fidough",
       "tier": "D",
       "category": "NFE",
-      "png": "fidough"
+      "png": "fidough",
+      "draft": {}
     },
     {
       "name": "Dachsbun",
       "pid": "dachsbun",
-      "png": "dachsbun"
+      "png": "dachsbun",
+      "draft": {}
     },
     {
       "name": "Smoliv",
       "pid": "smoliv",
       "tier": "D",
       "category": "NFE",
-      "png": "smoliv"
+      "png": "smoliv",
+      "draft": {}
     },
     {
       "name": "Dolliv",
       "pid": "dolliv",
       "tier": "D",
       "category": "NFE",
-      "png": "dolliv"
+      "png": "dolliv",
+      "draft": {}
     },
     {
       "name": "Arboliva",
       "pid": "arboliva",
-      "png": "arboliva"
+      "png": "arboliva",
+      "draft": {}
     },
     {
       "name": "Squawkabilly",
       "pid": "squawkabilly",
-      "png": "squawkabilly"
+      "png": "squawkabilly",
+      "draft": {}
     },
     {
       "name": "Nacli",
       "pid": "nacli",
       "tier": "D",
       "category": "NFE",
-      "png": "nacli"
+      "png": "nacli",
+      "draft": {}
     },
     {
       "name": "Naclstack",
       "pid": "naclstack",
       "tier": "D",
       "category": "NFE",
-      "png": "naclstack"
+      "png": "naclstack",
+      "draft": {}
     },
     {
       "name": "Garganacl",
       "pid": "garganacl",
-      "png": "garganacl"
+      "png": "garganacl",
+      "draft": {}
     },
     {
       "name": "Charcadet",
       "pid": "charcadet",
       "tier": "D",
       "category": "NFE",
-      "png": "charcadet"
+      "png": "charcadet",
+      "draft": {}
     },
     {
       "name": "Armarouge",
       "pid": "armarouge",
-      "png": "armarouge"
+      "png": "armarouge",
+      "draft": {}
     },
     {
       "name": "Ceruledge",
       "pid": "ceruledge",
-      "png": "ceruledge"
+      "png": "ceruledge",
+      "draft": {}
     },
     {
       "name": "Tadbulb",
       "pid": "tadbulb",
       "tier": "D",
       "category": "NFE",
-      "png": "tadbulb"
+      "png": "tadbulb",
+      "draft": {}
     },
     {
       "name": "Bellibolt",
       "pid": "bellibolt",
-      "png": "bellibolt"
+      "png": "bellibolt",
+      "draft": {}
     },
     {
       "name": "Wattrel",
       "pid": "wattrel",
       "tier": "D",
       "category": "NFE",
-      "png": "wattrel"
+      "png": "wattrel",
+      "draft": {}
     },
     {
       "name": "Kilowattrel",
       "pid": "kilowattrel",
-      "png": "kilowattrel"
+      "png": "kilowattrel",
+      "draft": {}
     },
     {
       "name": "Maschiff",
       "pid": "maschiff",
       "tier": "D",
       "category": "NFE",
-      "png": "maschiff"
+      "png": "maschiff",
+      "draft": {}
     },
     {
       "name": "Mabosstiff",
       "pid": "mabosstiff",
-      "png": "mabosstiff"
+      "png": "mabosstiff",
+      "draft": {}
     },
     {
       "name": "Shroodle",
       "pid": "shroodle",
       "tier": "D",
       "category": "NFE",
-      "png": "shroodle"
+      "png": "shroodle",
+      "draft": {}
     },
     {
       "name": "Grafaiai",
       "pid": "grafaiai",
-      "png": "grafaiai"
+      "png": "grafaiai",
+      "draft": {}
     },
     {
       "name": "Bramblin",
       "pid": "bramblin",
       "tier": "D",
       "category": "NFE",
-      "png": "bramblin"
+      "png": "bramblin",
+      "draft": {}
     },
     {
       "name": "Brambleghast",
       "pid": "brambleghast",
-      "png": "brambleghast"
+      "png": "brambleghast",
+      "draft": {}
     },
     {
       "name": "Toedscool",
       "pid": "toedscool",
       "tier": "D",
       "category": "NFE",
-      "png": "toedscool"
+      "png": "toedscool",
+      "draft": {}
     },
     {
       "name": "Toedscruel",
       "pid": "toedscruel",
-      "png": "toedscruel"
+      "png": "toedscruel",
+      "draft": {}
     },
     {
       "name": "Klawf",
       "pid": "klawf",
-      "png": "klawf"
+      "png": "klawf",
+      "draft": {}
     },
     {
       "name": "Capsakid",
       "pid": "capsakid",
       "tier": "D",
       "category": "NFE",
-      "png": "capsakid"
+      "png": "capsakid",
+      "draft": {}
     },
     {
       "name": "Scovillain",
       "pid": "scovillain",
-      "png": "scovillain"
+      "png": "scovillain",
+      "draft": {}
     },
     {
       "name": "Rellor",
       "pid": "rellor",
       "tier": "D",
       "category": "NFE",
-      "png": "rellor"
+      "png": "rellor",
+      "draft": {}
     },
     {
       "name": "Rabsca",
       "pid": "rabsca",
-      "png": "rabsca"
+      "png": "rabsca",
+      "draft": {}
     },
     {
       "name": "Flittle",
       "pid": "flittle",
       "tier": "D",
       "category": "NFE",
-      "png": "flittle"
+      "png": "flittle",
+      "draft": {}
     },
     {
       "name": "Espathra",
       "pid": "espathra",
-      "png": "espathra"
+      "png": "espathra",
+      "draft": {}
     },
     {
       "name": "Tinkatink",
       "pid": "tinkatink",
       "tier": "D",
       "category": "NFE",
-      "png": "tinkatink"
+      "png": "tinkatink",
+      "draft": {}
     },
     {
       "name": "Tinkatuff",
       "pid": "tinkatuff",
       "tier": "D",
       "category": "NFE",
-      "png": "tinkatuff"
+      "png": "tinkatuff",
+      "draft": {}
     },
     {
       "name": "Tinkaton",
       "pid": "tinkaton",
-      "png": "tinkaton"
+      "png": "tinkaton",
+      "draft": {}
     },
     {
       "name": "Wiglett",
       "pid": "wiglett",
       "tier": "D",
       "category": "NFE",
-      "png": "wiglett"
+      "png": "wiglett",
+      "draft": {}
     },
     {
       "name": "Wugtrio",
       "pid": "wugtrio",
-      "png": "wugtrio"
+      "png": "wugtrio",
+      "draft": {}
     },
     {
       "name": "Bombirdier",
       "pid": "bombirdier",
-      "png": "bombirdier"
+      "png": "bombirdier",
+      "draft": {}
     },
     {
       "name": "Finizen",
       "pid": "finizen",
       "tier": "D",
       "category": "NFE",
-      "png": "finizen"
+      "png": "finizen",
+      "draft": {}
     },
     {
       "name": "Palafin",
       "pid": "palafin",
-      "png": "palafin"
+      "png": "palafin",
+      "draft": {}
     },
     {
       "name": "Varoom",
       "pid": "varoom",
       "tier": "D",
       "category": "NFE",
-      "png": "varoom"
+      "png": "varoom",
+      "draft": {}
     },
     {
       "name": "Revavroom",
       "pid": "revavroom",
-      "png": "revavroom"
+      "png": "revavroom",
+      "draft": {}
     },
     {
       "name": "Cyclizar",
       "pid": "cyclizar",
-      "png": "cyclizar"
+      "png": "cyclizar",
+      "draft": {}
     },
     {
       "name": "Orthworm",
       "pid": "orthworm",
-      "png": "orthworm"
+      "png": "orthworm",
+      "draft": {}
     },
     {
       "name": "Glimmet",
       "pid": "glimmet",
       "tier": "D",
       "category": "NFE",
-      "png": "glimmet"
+      "png": "glimmet",
+      "draft": {}
     },
     {
       "name": "Glimmora",
       "pid": "glimmora",
-      "png": "glimmora"
+      "png": "glimmora",
+      "draft": {}
     },
     {
       "name": "Greavard",
       "pid": "greavard",
       "tier": "D",
       "category": "NFE",
-      "png": "greavard"
+      "png": "greavard",
+      "draft": {}
     },
     {
       "name": "Houndstone",
       "pid": "houndstone",
-      "png": "houndstone"
+      "png": "houndstone",
+      "draft": {}
     },
     {
       "name": "Flamigo",
       "pid": "flamigo",
-      "png": "flamigo"
+      "png": "flamigo",
+      "draft": {}
     },
     {
       "name": "Cetoddle",
       "pid": "cetoddle",
       "tier": "D",
       "category": "NFE",
-      "png": "cetoddle"
+      "png": "cetoddle",
+      "draft": {}
     },
     {
       "name": "Cetitan",
       "pid": "cetitan",
-      "png": "cetitan"
+      "png": "cetitan",
+      "draft": {}
     },
     {
       "name": "Veluza",
       "pid": "veluza",
-      "png": "veluza"
+      "png": "veluza",
+      "draft": {}
     },
     {
       "name": "Dondozo",
       "pid": "dondozo",
-      "png": "dondozo"
+      "png": "dondozo",
+      "draft": {}
     },
     {
       "name": "Tatsugiri",
       "pid": "tatsugiri",
-      "png": "tatsugiri"
+      "png": "tatsugiri",
+      "draft": {}
     },
     {
       "name": "Annihilape",
       "pid": "annihilape",
-      "png": "annihilape"
+      "png": "annihilape",
+      "draft": {}
     },
     {
       "name": "Clodsire",
       "pid": "clodsire",
-      "png": "clodsire"
+      "png": "clodsire",
+      "draft": {}
     },
     {
       "name": "Farigiraf",
       "pid": "farigiraf",
-      "png": "farigiraf"
+      "png": "farigiraf",
+      "draft": {}
     },
     {
       "name": "Dudunsparce",
       "pid": "dudunsparce",
-      "png": "dudunsparce"
+      "png": "dudunsparce",
+      "draft": {}
     },
     {
       "name": "Kingambit",
       "pid": "kingambit",
-      "png": "kingambit"
+      "png": "kingambit",
+      "draft": {}
     },
     {
       "name": "Great Tusk",
       "pid": "greattusk",
-      "png": "greattusk"
+      "png": "greattusk",
+      "draft": {}
     },
     {
       "name": "Scream Tail",
       "pid": "screamtail",
-      "png": "screamtail"
+      "png": "screamtail",
+      "draft": {}
     },
     {
       "name": "Brute Bonnet",
       "pid": "brutebonnet",
-      "png": "brutebonnet"
+      "png": "brutebonnet",
+      "draft": {}
     },
     {
       "name": "Flutter Mane",
       "pid": "fluttermane",
-      "png": "fluttermane"
+      "png": "fluttermane",
+      "draft": {}
     },
     {
       "name": "Slither Wing",
       "pid": "slitherwing",
-      "png": "slitherwing"
+      "png": "slitherwing",
+      "draft": {}
     },
     {
       "name": "Sandy Shocks",
       "pid": "sandyshocks",
-      "png": "sandyshocks"
+      "png": "sandyshocks",
+      "draft": {}
     },
     {
       "name": "Iron Treads",
       "pid": "irontreads",
-      "png": "irontreads"
+      "png": "irontreads",
+      "draft": {}
     },
     {
       "name": "Iron Bundle",
       "pid": "ironbundle",
-      "png": "ironbundle"
+      "png": "ironbundle",
+      "draft": {}
     },
     {
       "name": "Iron Hands",
       "pid": "ironhands",
-      "png": "ironhands"
+      "png": "ironhands",
+      "draft": {}
     },
     {
       "name": "Iron Jugulis",
       "pid": "ironjugulis",
-      "png": "ironjugulis"
+      "png": "ironjugulis",
+      "draft": {}
     },
     {
       "name": "Iron Moth",
       "pid": "ironmoth",
-      "png": "ironmoth"
+      "png": "ironmoth",
+      "draft": {}
     },
     {
       "name": "Iron Thorns",
       "pid": "ironthorns",
-      "png": "ironthorns"
+      "png": "ironthorns",
+      "draft": {}
     },
     {
       "name": "Frigibax",
       "pid": "frigibax",
       "tier": "D",
       "category": "NFE",
-      "png": "frigibax"
+      "png": "frigibax",
+      "draft": {}
     },
     {
       "name": "Arctibax",
       "pid": "arctibax",
       "tier": "D",
       "category": "NFE",
-      "png": "arctibax"
+      "png": "arctibax",
+      "draft": {}
     },
     {
       "name": "Baxcalibur",
       "pid": "baxcalibur",
-      "png": "baxcalibur"
+      "png": "baxcalibur",
+      "draft": {}
     },
     {
       "name": "Gimmighoul",
       "pid": "gimmighoul",
       "tier": "D",
       "category": "NFE",
-      "png": "gimmighoul"
+      "png": "gimmighoul",
+      "draft": {}
     },
     {
       "name": "Gimmighoul-Roaming",
       "pid": "gimmighoulroaming",
       "tier": "D",
       "category": "NFE",
-      "png": "gimmighoul-roaming"
+      "png": "gimmighoul-roaming",
+      "draft": {}
     },
     {
       "name": "Gholdengo",
       "pid": "gholdengo",
-      "png": "gholdengo"
+      "png": "gholdengo",
+      "draft": {}
     },
     {
       "name": "Wo-Chien",
       "pid": "wochien",
-      "png": "wochien"
+      "png": "wochien",
+      "draft": {}
     },
     {
       "name": "Chien-Pao",
       "pid": "chienpao",
-      "png": "chienpao"
+      "png": "chienpao",
+      "draft": {}
     },
     {
       "name": "Ting-Lu",
       "pid": "tinglu",
-      "png": "tinglu"
+      "png": "tinglu",
+      "draft": {}
     },
     {
       "name": "Chi-Yu",
       "pid": "chiyu",
-      "png": "chiyu"
+      "png": "chiyu",
+      "draft": {}
     },
     {
       "name": "Roaring Moon",
       "pid": "roaringmoon",
-      "png": "roaringmoon"
+      "png": "roaringmoon",
+      "draft": {}
     },
     {
       "name": "Iron Valiant",
       "pid": "ironvaliant",
-      "png": "ironvaliant"
+      "png": "ironvaliant",
+      "draft": {}
     },
     {
       "name": "Koraidon",
       "pid": "koraidon",
-      "png": "koraidon"
+      "png": "koraidon",
+      "draft": {}
     },
     {
       "name": "Miraidon",
       "pid": "miraidon",
-      "png": "miraidon"
+      "png": "miraidon",
+      "draft": {}
     },
     {
       "name": "Walking Wake",
       "pid": "walkingwake",
-      "png": "walkingwake"
+      "png": "walkingwake",
+      "draft": {}
     },
     {
       "name": "Iron Leaves",
       "pid": "ironleaves",
-      "png": "ironleaves"
+      "png": "ironleaves",
+      "draft": {}
     },
     {
       "name": "Dipplin",
       "pid": "dipplin",
       "tier": "D",
       "category": "NFE",
-      "png": "dipplin"
+      "png": "dipplin",
+      "draft": {}
     },
     {
       "name": "Poltchageist",
       "pid": "poltchageist",
       "tier": "D",
       "category": "NFE",
-      "png": "poltchageist"
+      "png": "poltchageist",
+      "draft": {}
     },
     {
       "name": "Sinistcha",
       "pid": "sinistcha",
-      "png": "sinistcha"
+      "png": "sinistcha",
+      "draft": {}
     },
     {
       "name": "Okidogi",
       "pid": "okidogi",
-      "png": "okidogi"
+      "png": "okidogi",
+      "draft": {}
     },
     {
       "name": "Munkidori",
       "pid": "munkidori",
-      "png": "munkidori"
+      "png": "munkidori",
+      "draft": {}
     },
     {
       "name": "Fezandipiti",
       "pid": "fezandipiti",
-      "png": "fezandipiti"
+      "png": "fezandipiti",
+      "draft": {}
     },
     {
       "name": "Ogerpon",
       "pid": "ogerpon",
-      "png": "ogerpon"
+      "png": "ogerpon",
+      "draft": {}
     },
     {
       "name": "Ogerpon-Wellspring",
       "pid": "ogerponwellspring",
-      "png": "ogerpon-wellspring"
+      "png": "ogerpon-wellspring",
+      "draft": {}
     },
     {
       "name": "Ogerpon-Hearthflame",
       "pid": "ogerponhearthflame",
-      "png": "ogerpon-hearthflame"
+      "png": "ogerpon-hearthflame",
+      "draft": {}
     },
     {
       "name": "Ogerpon-Cornerstone",
       "pid": "ogerponcornerstone",
-      "png": "ogerpon-cornerstone"
+      "png": "ogerpon-cornerstone",
+      "draft": {}
     },
     {
       "name": "Archaludon",
       "pid": "archaludon",
-      "png": "archaludon"
+      "png": "archaludon",
+      "draft": {}
     },
     {
       "name": "Hydrapple",
       "pid": "hydrapple",
-      "png": "hydrapple"
+      "png": "hydrapple",
+      "draft": {}
     },
     {
       "name": "Gouging Fire",
       "pid": "gougingfire",
-      "png": "gougingfire"
+      "png": "gougingfire",
+      "draft": {}
     },
     {
       "name": "Raging Bolt",
       "pid": "ragingbolt",
-      "png": "ragingbolt"
+      "png": "ragingbolt",
+      "draft": {}
     },
     {
       "name": "Iron Boulder",
       "pid": "ironboulder",
-      "png": "ironboulder"
+      "png": "ironboulder",
+      "draft": {}
     },
     {
       "name": "Iron Crown",
       "pid": "ironcrown",
-      "png": "ironcrown"
+      "png": "ironcrown",
+      "draft": {}
     },
     {
       "name": "Terapagos",
       "pid": "terapagos",
-      "png": "terapagos"
+      "png": "terapagos",
+      "draft": {}
     },
     {
       "name": "Pecharunt",
       "pid": "pecharunt",
-      "png": "pecharunt"
+      "png": "pecharunt",
+      "draft": {}
     }
   ]
 }
