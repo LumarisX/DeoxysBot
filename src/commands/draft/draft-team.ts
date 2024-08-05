@@ -14,7 +14,7 @@ export const DraftTeamCommand: Command = {
   execute: (interaction: CommandInteraction) => {
     const user: User =
       interaction.options.get("user")?.user || interaction.user;
-    const draftedList = getDrafted({ user: user })
+    const draftedList = getDrafted({ user: user.username })
       .splice(0, 25)
       .map(
         (pokemon) =>

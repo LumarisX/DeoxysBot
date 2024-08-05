@@ -1,11 +1,12 @@
 import {
-  CommandInteraction,
-  PermissionsBitField,
-  SlashCommandBuilder,
   ActionRowBuilder,
   ButtonBuilder,
+  ButtonInteraction,
   ButtonStyle,
+  CommandInteraction,
   ComponentType,
+  PermissionsBitField,
+  SlashCommandBuilder,
 } from "discord.js";
 import { resetDraft } from ".";
 import { Command } from "..";
@@ -23,8 +24,6 @@ export const DraftResetCommand: Command = {
       return interaction.reply(
         "You do not have permission to use this command."
       );
-
-    // Create the confirmation buttons
     const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
       new ButtonBuilder()
         .setCustomId("confirm-reset")
@@ -35,31 +34,28 @@ export const DraftResetCommand: Command = {
         .setLabel("No")
         .setStyle(ButtonStyle.Secondary)
     );
-
-    // Send the confirmation message
     const reply = await interaction.reply({
       content: "Are you sure you want to reset the draft?",
       components: [row],
       fetchReply: true,
     });
-
-    // Create a collector to handle button interactions
-    const filter = (i: any) => i.user.id === interaction.user.id;
+    const filter = (interaction: ButtonInteraction) =>
+      interaction.user.id === interaction.user.id;
     const collector = reply.createMessageComponentCollector({
       filter,
       componentType: ComponentType.Button,
-      time: 15000, // 15 seconds timeout
+      time: 15000,
     });
 
-    collector.on("collect", async (i: any) => {
-      if (i.customId === "confirm-reset") {
+    collector.on("collect", async (interaction: ButtonInteraction) => {
+      if (interaction.customId === "confirm-reset") {
         resetDraft();
-        await i.update({
+        await interaction.update({
           content: "**The draft was reset successfully.**",
           components: [],
         });
-      } else if (i.customId === "cancel-reset") {
-        await i.update({
+      } else if (interaction.customId === "cancel-reset") {
+        await interaction.update({
           content: "**Draft reset cancelled.**",
           components: [],
         });

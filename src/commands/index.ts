@@ -7,6 +7,8 @@ import { DraftUndoCommand } from "./draft/draft-undo";
 import { DraftUndraftedCommand } from "./draft/draft-undrafted";
 import { DraftModPickCommand } from "./draft/draft-modpick";
 import { DraftTradeRandomCommand } from "./draft/trade/trade-random";
+import { DraftStateCommand } from "./draft/draft-state";
+import { DraftSkipCommand } from "./draft/draft-skip";
 
 export type Command = {
   data: SharedSlashCommand;
@@ -22,4 +24,6 @@ export const commands: { command: Command; enabled: boolean }[] = [
   { command: DraftUndraftedCommand, enabled: true },
   { command: DraftModPickCommand, enabled: true },
   { command: DraftTradeRandomCommand, enabled: true },
+  { command: DraftStateCommand, enabled: true },
+  { command: DraftSkipCommand, enabled: true },
 ];

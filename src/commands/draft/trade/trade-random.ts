@@ -5,7 +5,7 @@ import {
   SlashCommandBuilder,
   User,
 } from "discord.js";
-import { getDraftData, tradeRandom } from "..";
+import { draftData, getDraftData, tradeRandom } from "..";
 import { Command } from "../..";
 
 export const DraftTradeRandomCommand: Command = {
@@ -14,6 +14,18 @@ export const DraftTradeRandomCommand: Command = {
     .setDescription("Admin only: Trade for a new random pokemon.")
     .addStringOption((option) =>
       option.setName("pokemon").setDescription("pokemon").setRequired(true)
+    )
+    .addStringOption((option) =>
+      option
+        .setName("category")
+        .setDescription("Category")
+        .setRequired(true)
+        .addChoices(
+          draftData.categories.map((choice) => ({
+            name: choice,
+            value: choice,
+          }))
+        )
     )
     .addUserOption((option) =>
       option
@@ -32,25 +44,19 @@ export const DraftTradeRandomCommand: Command = {
       );
     }
     const user: User | undefined = interaction.options.get("user")?.user;
-    if (!user) {
-      return interaction.reply("User not found");
-    }
-    const oldPokemonString = interaction.options.get("pokemon");
-    if (!oldPokemonString?.value) {
-      return interaction.reply("Pokemon not selected.");
-    }
-    const oldPokemon = getDraftData(oldPokemonString.value as string);
-    if (!oldPokemon) {
-      return interaction.reply("Pokemon does not exist.");
-    }
-    const baseReply = `${interaction.user}'s ${oldPokemon.name} has been traded away.`;
-    let pokemon = tradeRandom(oldPokemon, user);
-    console.log(pokemon);
+    if (!user) return interaction.reply("User not found.");
 
-    if (!pokemon)
-      return interaction.reply(
-        baseReply + "\nNo pokemon are left! Please choose again."
-      );
+    const category = interaction.options.get("category")?.value;
+    if (!category) return interaction.reply("Category not found.");
+    const oldPokemonString = interaction.options.get("pokemon");
+    if (!oldPokemonString?.value)
+      return interaction.reply("Pokemon not selected.");
+    const oldPokemon = getDraftData(oldPokemonString.value as string);
+    if (!oldPokemon) return interaction.reply("Pokemon does not exist.");
+    const baseReply = `${interaction.user}'s ${oldPokemon.name} has been traded away.`;
+    let pokemon = tradeRandom(oldPokemon, user, true);
+    if (typeof pokemon === "string")
+      return interaction.reply(baseReply + `\n${pokemon}`);
     const attachment = new AttachmentBuilder(
       `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.png}.png`,
       { name: `${pokemon.png}.png` }

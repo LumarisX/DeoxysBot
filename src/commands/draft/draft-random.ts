@@ -1,10 +1,6 @@
-import {
-  AttachmentBuilder,
-  CommandInteraction,
-  SlashCommandBuilder,
-} from "discord.js";
+import { CommandInteraction, SlashCommandBuilder } from "discord.js";
+import { canDraft, draftData, draftRandom, getNextUser, notifyNext } from ".";
 import { Command } from "..";
-import { categoryChoices, draftPokemon, draftRandom, tierChoices } from ".";
 
 export const DraftRandomCommand: Command = {
   data: new SlashCommandBuilder()
@@ -16,7 +12,7 @@ export const DraftRandomCommand: Command = {
         .setDescription("Tier")
         .setRequired(true)
         .addChoices(
-          tierChoices.map((choice) => ({ name: choice, value: choice }))
+          draftData.tiers.map((tier) => ({ name: tier.name, value: tier.name }))
         )
     )
     .addStringOption((option) =>
@@ -25,10 +21,18 @@ export const DraftRandomCommand: Command = {
         .setDescription("Category")
         .setRequired(true)
         .addChoices(
-          categoryChoices.map((choice) => ({ name: choice, value: choice }))
+          draftData.categories.map((category) => ({
+            name: category,
+            value: category,
+          }))
         )
     ),
   execute: (interaction: CommandInteraction) => {
+    if (draftData.state != "started")
+      return interaction.reply("The draft has not started yet.");
+    if (!canDraft(interaction.user.id)) {
+      return interaction.reply("Not allowed to draft.");
+    }
     const tier = interaction.options.get("tier");
     const category = interaction.options.get("category");
     if (!tier) {
@@ -38,23 +42,31 @@ export const DraftRandomCommand: Command = {
       return interaction.reply("Category not selected");
     }
     const baseReply = `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon.`;
-    interaction.reply(baseReply + `\nSearching...`).then(() =>
+    interaction.reply(baseReply + `\nSearching`).then(() =>
       setTimeout(() => {
-        let pokemon = draftRandom(interaction.user, tier, category);
-        if (!pokemon)
-          return interaction.editReply(
-            baseReply + "\nNo pokemon are left! Please choose again."
-          );
+        interaction.editReply(baseReply + `\nSearching.`);
+        setTimeout(() => {
+          interaction.editReply(baseReply + `\nSearching..`);
+          setTimeout(() => {
+            interaction.editReply(baseReply + `\nSearching...`);
+            setTimeout(() => {
+              let pokemon = draftRandom(interaction.user, tier, category, true);
+              if (typeof pokemon === "string")
+                return interaction.editReply(baseReply + `\n${pokemon}`);
+              // const attachment = new AttachmentBuilder(
+              //   `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.png}.png`,
+              //   { name: `${pokemon.png}.png` }
+              // );
 
-        const attachment = new AttachmentBuilder(
-          `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.png}.png`,
-          { name: `${pokemon.png}.png` }
-        );
-        interaction.editReply({
-          content: baseReply + `\nI have drafted you ${pokemon.name}!`,
-          files: [attachment],
-        });
-      }, 2000)
+              interaction.editReply({
+                content: baseReply + `\nI have drafted you ${pokemon.name}!`,
+                // files: [attachment],
+              });
+              notifyNext(interaction);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 1000)
     );
   },
 };

@@ -21,6 +21,16 @@ client.on("interactionCreate", async (interaction: Interaction) => {
   }
 });
 
+client.on("messageCreate", async (message) => {
+  if (message.content.toLowerCase().includes("deoxys")) {
+    try {
+      message.reply(`Hello ${message.author}!`);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+});
+
 client.on("guildCreate", async (guild) => {
   await deployGuildCommands({ guildId: guild.id });
 });

@@ -6,7 +6,7 @@ import {
   ComponentType,
   SlashCommandBuilder,
 } from "discord.js";
-import { categoryChoices, getUndrafted, tierChoices } from ".";
+import { draftData, getUndrafted } from ".";
 import { Command } from "..";
 
 export const DraftUndraftedCommand: Command = {
@@ -18,7 +18,10 @@ export const DraftUndraftedCommand: Command = {
         .setName("tier")
         .setDescription("Tier")
         .addChoices(
-          tierChoices.map((choice) => ({ name: choice, value: choice }))
+          draftData.tiers.map((choice) => ({
+            name: choice.name,
+            value: choice.name,
+          }))
         )
     )
     .addStringOption((option) =>
@@ -26,7 +29,10 @@ export const DraftUndraftedCommand: Command = {
         .setName("category")
         .setDescription("Category")
         .addChoices(
-          categoryChoices.map((choice) => ({ name: choice, value: choice }))
+          draftData.categories.map((choice) => ({
+            name: choice,
+            value: choice,
+          }))
         )
     ),
   execute: async (interaction: CommandInteraction) => {

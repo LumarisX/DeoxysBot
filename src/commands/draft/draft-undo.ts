@@ -3,7 +3,7 @@ import {
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
-import { draftUndo } from ".";
+import { draftUndo, notifyNext } from ".";
 import { Command } from "..";
 
 export const DraftUndoCommand: Command = {
@@ -21,7 +21,8 @@ export const DraftUndoCommand: Command = {
       );
     }
     if (draftUndo()) {
-      return interaction.reply("Draft pick undone.");
+      interaction.reply("Draft pick undone.");
+      notifyNext(interaction);
     } else {
       return interaction.reply("No draft picks to be undone.");
     }
