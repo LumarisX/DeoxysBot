@@ -1,5 +1,5 @@
 import { CommandInteraction, SlashCommandBuilder, User } from "discord.js";
-import { DraftData, getDraftData } from ".";
+import { getDrafted } from ".";
 import { Command } from "..";
 
 export const DraftTeamCommand: Command = {
@@ -12,11 +12,9 @@ export const DraftTeamCommand: Command = {
         .setDescription("The user's team. Yours by default.")
     ),
   execute: (interaction: CommandInteraction) => {
-    const draftData: DraftData[] = getDraftData();
     const user: User =
       interaction.options.get("user")?.user || interaction.user;
-    const draftedList = draftData
-      .filter((pokemon) => pokemon.coach === user.username)
+    const draftedList = getDrafted({ user: user })
       .splice(0, 25)
       .map(
         (pokemon) =>

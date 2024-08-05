@@ -521,7 +521,9 @@
     "pid": "weepinbell",
     "tier": "D",
     "category": "NFE",
-    "png": "weepinbell"
+    "png": "weepinbell",
+    "order": 8,
+    "coach": "lumaris"
   },
   {
     "name": "Victreebel",
@@ -717,9 +719,7 @@
     "pid": "gastly",
     "tier": "D",
     "category": "NFE",
-    "png": "gastly",
-    "coach": "lumaris",
-    "order": 10
+    "png": "gastly"
   },
   {
     "name": "Haunter",
@@ -2184,9 +2184,7 @@
     "pid": "gulpin",
     "tier": "D",
     "category": "NFE",
-    "png": "gulpin",
-    "coach": "lumaris",
-    "order": 8
+    "png": "gulpin"
   },
   {
     "name": "Swalot",
@@ -4983,7 +4981,9 @@
     "pid": "salandit",
     "tier": "D",
     "category": "NFE",
-    "png": "salandit"
+    "png": "salandit",
+    "order": 11,
+    "coach": "lumaris"
   },
   {
     "name": "Salazzle",

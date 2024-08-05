@@ -27,24 +27,39 @@ export type DraftData = {
   order?: number;
 };
 
-let orderCount = getDraftData().reduce(
+export let draftData: DraftData[] = readDraftData();
+
+let orderCount = draftData.reduce(
   (max, pokemon) =>
     (max = pokemon.order && pokemon.order > max ? pokemon.order : max),
   0
 );
 
-function getRandomPokemon(tier, category){
-  return
+function getRandomPokemon(
+  tier: string,
+  category: string
+): DraftData | undefined {
+  let undrafted = getUndrafted({
+    tier: tier,
+    category: category,
+  });
+  if (undrafted.length > 0) {
+    return undrafted[Math.floor(Math.random() * undrafted.length)];
+  }
+  return;
 }
 
-let draftData: DraftData[] = readDraftData()
-
-export function draftPokemon(user: User, pokemon: DraftData): DraftData | undefined {
-  if(!pokemon.coach) return
-  pokemon.order = ++orderCount;
-    console.log(`${user.username} drafted ${pokemon.name}`);
-    writeDraft(draftData);
-    return pokemon;
+export function draftPokemon(
+  user: User,
+  pokemon: DraftData,
+  order = ++orderCount
+): DraftData | undefined {
+  if (pokemon.coach) return;
+  pokemon.order = order;
+  pokemon.coach = user.username;
+  console.log(`${user.username} drafted ${pokemon.name}`);
+  writeDraft();
+  return pokemon;
 }
 
 export function draftRandom(
@@ -52,19 +67,12 @@ export function draftRandom(
   tier: CommandInteractionOption,
   category: CommandInteractionOption
 ): DraftData | undefined {
-  let undrafted = draftData.filter(
-    (pokemon) =>
-      pokemon.category === category.value &&
-      pokemon.tier === tier.value &&
-      !pokemon.coach
+  const randomMon = getRandomPokemon(
+    tier.value as string,
+    category.value as string
   );
-  if (undrafted.length > 0) {
-    const randomMon = undrafted[Math.floor(Math.random() * undrafted.length)];
-    randomMon.coach = user.username;
-    draftPokemon(user,randomMon)
-  } else {
-    return;
-  }
+  if (!randomMon) return;
+  return draftPokemon(user, randomMon);
 }
 
 export function draftUndo() {
@@ -72,7 +80,7 @@ export function draftUndo() {
   if (!data) return;
   delete data.coach;
   delete data.order;
-  writeDraft(draftData);
+  writeDraft();
   return data;
 }
 
@@ -83,7 +91,7 @@ export function readDraftData(): DraftData[] {
 export function getUndrafted(
   options: { tier?: string; category?: string } = {}
 ) {
-  let undraftedData = getDraftData().filter(
+  let undraftedData = draftData.filter(
     (pokemon) => pokemon.coach === undefined
   );
   if (options.tier) {
@@ -99,40 +107,67 @@ export function getUndrafted(
   return undraftedData;
 }
 
+export function getDrafted(
+  options: { tier?: string; category?: string; user?: User } = {}
+) {
+  let draftedData = draftData.filter(
+    (pokemon) =>
+      (!options.user || pokemon.coach === options.user.username) &&
+      pokemon.coach !== undefined
+  );
+  if (options.tier) {
+    draftedData = draftedData.filter(
+      (pokemon) => pokemon.tier === options.tier
+    );
+  }
+  if (options.category) {
+    draftedData = draftedData.filter(
+      (pokemon) => pokemon.category === options.category
+    );
+  }
+  return draftedData;
+}
+
 export function resetDraft() {
   for (let pokemon of draftData) {
     delete pokemon.coach;
   }
-  writeDraft(draftData);
+  writeDraft();
 }
 
-function writeDraft(draftData: DraftData[]) {
+function writeDraft() {
   fs.writeFileSync(filePath, JSON.stringify(draftData, null, 2));
 }
 
-export function tradeRandom(oldpid: string, user: User): DraftData | undefined {
-  
-  
-  return;
+export function getDraftData(
+  query: string,
+  search: "pid" | "name" = "pid"
+): DraftData | undefined {
+  return draftData.find(
+    (pokemon) => pokemon[search].toLowerCase() === query.toLowerCase()
+  );
+}
+
+export function tradeRandom(
+  oldPokemon: DraftData,
+  user: User
+): DraftData | undefined {
+  let newPokemon = getRandomPokemon(oldPokemon.tier, oldPokemon.category);
+  if (!newPokemon) return;
+  return trade(oldPokemon, newPokemon, user);
 }
 
 export function trade(
-  oldpid: string,
-  newpid: string,
+  oldPokemon: DraftData,
+  newPokemon: DraftData,
   user: User
 ): DraftData | undefined {
-  const oldPokemon = draftData.find((pokemon) => pokemon.pid === oldpid);
-  let newPokemon = drdraftData.find((pokemon) => pokemon.pid === newpid)
   if (!oldPokemon || oldPokemon.coach != user.username || !newPokemon) return;
-  if(draftPokemon(user, newPokemon)){
-    delete oldPokemon.coach
-  delete oldPokemon.order
-  return newPokemon
+  if (draftPokemon(user, newPokemon, oldPokemon.order)) {
+    delete oldPokemon.coach;
+    delete oldPokemon.order;
+    writeDraft();
+    return newPokemon;
   }
-  return
-}
-
-function getDraftedMons() {
-  let draftedMons = draftData.filter((mon) => mon.coach);
-  return draftedMons;
+  return;
 }

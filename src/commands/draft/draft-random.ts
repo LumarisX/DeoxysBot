@@ -4,7 +4,7 @@ import {
   SlashCommandBuilder,
 } from "discord.js";
 import { Command } from "..";
-import { categoryChoices, draftPokemon, tierChoices } from ".";
+import { categoryChoices, draftPokemon, draftRandom, tierChoices } from ".";
 
 export const DraftRandomCommand: Command = {
   data: new SlashCommandBuilder()
@@ -40,7 +40,7 @@ export const DraftRandomCommand: Command = {
     const baseReply = `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon.`;
     interaction.reply(baseReply + `\nSearching...`).then(() =>
       setTimeout(() => {
-        let pokemon = draftPokemon(interaction.user, tier, category);
+        let pokemon = draftRandom(interaction.user, tier, category);
         if (!pokemon)
           return interaction.editReply(
             baseReply + "\nNo pokemon are left! Please choose again."

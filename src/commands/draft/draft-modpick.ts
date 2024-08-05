@@ -5,7 +5,7 @@ import {
   SlashCommandBuilder,
   User,
 } from "discord.js";
-import { categoryChoices, draftPokemon, tierChoices } from ".";
+import { categoryChoices, draftPokemon, draftRandom, tierChoices } from ".";
 import { Command } from "..";
 
 export const DraftModPickCommand: Command = {
@@ -62,7 +62,7 @@ export const DraftModPickCommand: Command = {
 
     const baseReply = `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon for ${user}`;
 
-    let pokemon = draftPokemon(user, tier, category);
+    let pokemon = draftRandom(user, tier, category);
     if (!pokemon)
       return interaction.reply(
         baseReply + "\nNo pokemon are left! Please choose again."
