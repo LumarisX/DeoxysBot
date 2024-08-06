@@ -10,6 +10,7 @@ export const DraftUndoCommand: Command = {
   data: new SlashCommandBuilder()
     .setName("draft-undo")
     .setDescription("Admin Only: Undo the previous draft pick.")
+    .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator)
     .addStringOption((option) =>
       option
         .setName("division")
@@ -23,15 +24,6 @@ export const DraftUndoCommand: Command = {
         )
     ),
   execute: (interaction: CommandInteraction) => {
-    if (
-      !interaction.memberPermissions?.has(
-        PermissionsBitField.Flags.Administrator
-      )
-    ) {
-      return interaction.reply(
-        "You do not have permission to use this command."
-      );
-    }
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );

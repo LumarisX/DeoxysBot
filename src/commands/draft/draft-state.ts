@@ -10,6 +10,7 @@ export const DraftStateCommand: Command = {
   data: new SlashCommandBuilder()
     .setName("draft-state")
     .setDescription("Admin only: Start, pause, or end the draft.")
+    .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator)
     .addStringOption((option) =>
       option
         .setName("state")
@@ -22,15 +23,6 @@ export const DraftStateCommand: Command = {
         )
     ),
   execute: async (interaction: CommandInteraction) => {
-    if (
-      !interaction.memberPermissions?.has(
-        PermissionsBitField.Flags.Administrator
-      )
-    ) {
-      return interaction.reply(
-        "You do not have permission to use this command."
-      );
-    }
     const state = interaction.options.get("state")?.value;
     if (state === "start" || state === "end" || state === "pause") {
       updateState(state);

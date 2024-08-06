@@ -14,16 +14,9 @@ import { Command } from "..";
 export const DraftResetCommand: Command = {
   data: new SlashCommandBuilder()
     .setName("draft-reset")
-    .setDescription("Admin Only: Reset the draft."),
+    .setDescription("Admin Only: Reset the draft.")
+    .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
   execute: async (interaction: CommandInteraction) => {
-    if (
-      !interaction.memberPermissions?.has(
-        PermissionsBitField.Flags.Administrator
-      )
-    )
-      return interaction.reply(
-        "You do not have permission to use this command."
-      );
     const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
       new ButtonBuilder()
         .setCustomId("confirm-reset")

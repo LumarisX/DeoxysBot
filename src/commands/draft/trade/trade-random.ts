@@ -18,6 +18,7 @@ export const DraftTradeRandomCommand: Command = {
   data: new SlashCommandBuilder()
     .setName("trade-random")
     .setDescription("Admin only: Trade for a new random pokemon.")
+    .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator)
     .addStringOption((option) =>
       option.setName("pokemon").setDescription("pokemon").setRequired(true)
     )
@@ -52,15 +53,6 @@ export const DraftTradeRandomCommand: Command = {
         )
     ),
   execute: async (interaction: CommandInteraction) => {
-    if (
-      !interaction.memberPermissions?.has(
-        PermissionsBitField.Flags.Administrator
-      )
-    ) {
-      return interaction.reply(
-        "You do not have permission to use this command."
-      );
-    }
     const division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );

@@ -17,6 +17,7 @@ export const DraftSkipCommand: Command = {
   data: new SlashCommandBuilder()
     .setName("draft-skip")
     .setDescription("Admin only: Skip a user.")
+    .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator)
     .addUserOption((option) =>
       option
         .setName("user")
@@ -35,15 +36,6 @@ export const DraftSkipCommand: Command = {
         )
     ),
   execute: async (interaction: CommandInteraction) => {
-    if (
-      !interaction.memberPermissions?.has(
-        PermissionsBitField.Flags.Administrator
-      )
-    ) {
-      return interaction.reply(
-        "You do not have permission to use this command."
-      );
-    }
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
