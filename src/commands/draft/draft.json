@@ -60,7 +60,7 @@
         }
       ],
       "name": "Test",
-      "draftCount": 1
+      "draftCount": 3
     },
     {
       "channels": [
@@ -334,7 +334,12 @@
       "tier": "D",
       "category": "NFE",
       "png": "rattata-alola",
-      "draft": {}
+      "draft": {
+        "Test": {
+          "order": 2,
+          "coach": "dicy"
+        }
+      }
     },
     {
       "name": "Raticate",
@@ -640,7 +645,12 @@
       "tier": "D",
       "category": "NFE",
       "png": "meowth-galar",
-      "draft": {}
+      "draft": {
+        "Test": {
+          "order": 3,
+          "coach": "lumaris"
+        }
+      }
     },
     {
       "name": "Persian",
@@ -1584,12 +1594,7 @@
       "tier": "D",
       "category": "NFE",
       "png": "sentret",
-      "draft": {
-        "Test": {
-          "order": 1,
-          "coach": "lumaris"
-        }
-      }
+      "draft": {}
     },
     {
       "name": "Furret",

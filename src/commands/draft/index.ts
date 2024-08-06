@@ -1,6 +1,12 @@
-import { BaseInteraction, CommandInteractionOption, User } from "discord.js";
+import {
+  BaseInteraction,
+  CommandInteraction,
+  CommandInteractionOption,
+  User,
+} from "discord.js";
 import fs from "fs";
 import path from "path";
+import { Timer } from "../../timer";
 
 export const filePath = path.resolve(__dirname, "./draft.json");
 
@@ -12,7 +18,6 @@ export type PokemonData = {
   category: string;
   draft: { [key: string]: { coach: string; order: number } };
 };
-
 export type UserData = { username: string; id: string };
 export type DivisionData = {
   channels: string[];
@@ -28,6 +33,8 @@ export type DraftData = {
   timerMinutes: number;
   pokemon: PokemonData[];
 };
+
+export let timer: Timer | undefined;
 export let draftData: DraftData = readDraftData();
 
 function getRandomPokemon(
@@ -55,6 +62,7 @@ export function draftPokemon(
   if (options.validate && !validDraftPick(division, user, pokemon))
     return "Illegal pick. Please choose again.";
   division.draftCount++;
+  timer = undefined;
   pokemon.draft[division.name] = {
     order: options.order ? options.order : division.draftCount,
     coach: user.username,
@@ -90,6 +98,7 @@ export function draftUndo(division: DivisionData) {
   if (!data) return;
   delete data.draft[division.name];
   division.draftCount--;
+  timer = undefined;
   writeDraft();
   return data;
 }
@@ -210,20 +219,36 @@ export function trade(
   return newPokemon;
 }
 
-export function updateState(state: "start" | "end" | "pause") {
-  let replyString = "";
+export function updateState(
+  state: "start" | "end" | "pause" | "resume",
+  interaction: CommandInteraction
+) {
   if (state === "start") {
-    draftData.state = "started";
-    replyString = "Draft has been started";
+    if (draftData.state === "") {
+      draftData.state = "started";
+      interaction.reply("Draft has been started.");
+      notifyNext(interaction);
+    } else {
+      interaction.reply("Draft has already been started.");
+    }
   } else if (state === "end") {
     draftData.state = "ended";
-    replyString = "Draft has ended";
+    interaction.reply("Draft has ended.");
   } else if (state === "pause") {
     draftData.state = "paused";
-    replyString = "Draft has been paused";
+    timer?.pause();
+    interaction.reply("Draft has been paused.");
+  } else if (state === "resume") {
+    if (draftData.state === "paused") {
+      draftData.state = "started";
+      interaction.reply("Draft has been resumed.");
+      notifyNext(interaction);
+      timer?.start();
+    } else {
+      interaction.reply("Draft has already been resumed.");
+    }
   }
   writeDraft();
-  return replyString;
 }
 
 export function validateUser(division: DivisionData, userId: string): boolean {
@@ -271,12 +296,37 @@ export function notifyNext(interaction: BaseInteraction) {
     let nextUser = await interaction.client.users.fetch(
       getNextUser(division).id
     );
-    interaction.channel?.send(`${nextUser} you're up next!`);
+    if (!timer) {
+      timer = new Timer(
+        draftData.timerMinutes,
+        [2, 1],
+        (remainingMinutes: number) => {
+          interaction.channel?.send(
+            `${nextUser} ${remainingMinutes} minutes left!`
+          );
+        },
+        () => {
+          skipUser(interaction);
+        }
+      );
+      timer.start();
+    }
+    interaction.channel?.send(
+      `${nextUser} you're up next! You have ${timer.remainingMinutes} minutes to make your pick.`
+    );
   }, 1000);
 }
 
-export function skipUser(division: DivisionData, user: User) {
+export async function skipUser(interaction: BaseInteraction) {
+  let division = getDivisionByChannel(interaction.channelId);
+  if (!division) return;
+  let skippedUser = await interaction.client.users.fetch(
+    getNextUser(division).id
+  );
+  interaction.channel?.send(`${skippedUser} was skipped.`);
+  timer = undefined;
   division.draftCount++;
+  notifyNext(interaction);
 }
 
 export function getDivisionByChannel(

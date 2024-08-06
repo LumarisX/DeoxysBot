@@ -17,7 +17,7 @@ const client = new Client({
   ],
 });
 
-client.once("ready", () => console.log("Ready!"));
+client.once("ready", () => console.log("Deoxys has been summoned!"));
 
 client.on("interactionCreate", async (interaction: Interaction) => {
   if (!interaction.isCommand()) return;

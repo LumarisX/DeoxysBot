@@ -9,7 +9,7 @@ import { updateState } from ".";
 export const DraftStateCommand: Command = {
   data: new SlashCommandBuilder()
     .setName("draft-state")
-    .setDescription("Admin only: Start, pause, or end the draft.")
+    .setDescription("Admin only: Start, pause, resume, or end the draft.")
     .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator)
     .addStringOption((option) =>
       option
@@ -19,14 +19,19 @@ export const DraftStateCommand: Command = {
         .addChoices(
           { name: "Start", value: "start" },
           { name: "Pause", value: "pause" },
+          { name: "Resume", value: "resume" },
           { name: "End", value: "end" }
         )
     ),
   execute: async (interaction: CommandInteraction) => {
     const state = interaction.options.get("state")?.value;
-    if (state === "start" || state === "end" || state === "pause") {
-      updateState(state);
-      return interaction.reply(updateState(state));
+    if (
+      state === "start" ||
+      state === "end" ||
+      state === "pause" ||
+      state === "resume"
+    ) {
+      return updateState(state, interaction);
     } else {
       return interaction.reply("Unknown state.");
     }
