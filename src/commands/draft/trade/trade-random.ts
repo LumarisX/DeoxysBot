@@ -13,6 +13,7 @@ import {
   validateUser,
 } from "..";
 import { Command } from "../..";
+import { getDexData } from "../data/draftdex";
 
 export const DraftTradeRandomCommand: Command = {
   data: new SlashCommandBuilder()
@@ -66,18 +67,21 @@ export const DraftTradeRandomCommand: Command = {
     const oldPokemonString = interaction.options.get("pokemon");
     if (!oldPokemonString?.value)
       return interaction.reply("Pokemon not selected.");
-    const oldPokemon = getDraftData(oldPokemonString.value as string);
-    if (!oldPokemon) return interaction.reply("Pokemon does not exist.");
-    const baseReply = `${interaction.user}'s ${oldPokemon.name} has been traded away.`;
-    let pokemon = tradeRandom(division, oldPokemon, user, { validate: true });
-    if (typeof pokemon === "string")
-      return interaction.reply(baseReply + `\n${pokemon}`);
+    const oldPokemonDex = getDexData(oldPokemonString.value as string);
+    if (!oldPokemonDex) return interaction.reply("Pokemon does not exist.");
+    const baseReply = `${interaction.user}'s ${oldPokemonDex.name} has been traded away.`;
+    let newPokemonDex = tradeRandom(division, oldPokemonDex, user, {
+      validate: true,
+    });
+
+    if (typeof newPokemonDex === "string")
+      return interaction.reply(baseReply + `\n${newPokemonDex}`);
     const attachment = new AttachmentBuilder(
-      `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.png}.png`,
-      { name: `${pokemon.png}.png` }
+      `https://play.pokemonshowdown.com/sprites/gen5/${newPokemonDex.png}.png`,
+      { name: `${newPokemonDex.png}.png` }
     );
     interaction.reply({
-      content: baseReply + `\nI have drafted you ${pokemon.name}!`,
+      content: baseReply + `\nI have drafted you ${newPokemonDex.name}!`,
       files: [attachment],
     });
   },

@@ -6,22 +6,26 @@ import {
 } from "discord.js";
 import fs from "fs";
 import path from "path";
-import { Timer } from "../../timer";
+import { Timer } from "./timer";
+import { DexData, getDexData } from "./data/draftdex";
 
 export const filePath = path.resolve(__dirname, "./draft.json");
 
 export type PokemonData = {
-  name: string;
-  png: string;
   pid: string;
   tier: string;
   category: string;
-  draft: { [key: string]: { coach: string; order: number } };
+  note?: string;
 };
-export type UserData = { username: string; id: string };
+export type CoachData = {
+  username: string;
+  id: string;
+  order: number;
+  team: ({ pokemon: PokemonData; order: number } | null)[];
+};
 export type DivisionData = {
   channels: string[];
-  order: UserData[];
+  coaches: CoachData[];
   name: string;
   draftCount: number;
   timer: undefined | Timer;
@@ -52,22 +56,38 @@ function getRandomPokemon(
   return `No pokemon are left! Please choose again.`;
 }
 
+function isDrafted(pokemon: PokemonData, division: DivisionData) {
+  return division.coaches.find((coach) =>
+    coach.team.some((pick) => pick && pick.pokemon.pid === pokemon.pid)
+  );
+}
+
 export function draftPokemon(
   division: DivisionData,
   user: User,
   pokemon: PokemonData,
   options: { validate?: true; order?: number } = {}
-): PokemonData | string {
-  if (pokemon.draft[division.name]) return "Already drafted.";
+): (DexData & PokemonData) | string {
+  if (isDrafted(pokemon, division)) return "Already drafted.";
   if (options.validate && !validDraftPick(division, user, pokemon))
     return "Illegal pick. Please choose again.";
+  let coach = division.coaches.find((coach) => coach.id === user.id);
+  if (!coach) return "You are not a coach in this division.";
   division.timer = undefined;
-  pokemon.draft[division.name] = {
+  coach.team.push({
     order: options.order ? options.order : division.draftCount,
-    coach: user.username,
-  };
+    pokemon: pokemon,
+  });
+  let dex = getDexData(pokemon.pid);
   writeDraft();
-  return pokemon;
+  return {
+    pid: pokemon.pid,
+    png: dex.png,
+    note: pokemon.note,
+    name: dex.name,
+    tier: pokemon.tier,
+    category: pokemon.category,
+  };
 }
 
 export function draftRandom(
@@ -76,7 +96,7 @@ export function draftRandom(
   tier: CommandInteractionOption,
   category: CommandInteractionOption,
   options: { validate?: true }
-): PokemonData | string {
+): (DexData & PokemonData) | string {
   const randomMon = getRandomPokemon(
     division,
     tier.value as string,
@@ -88,28 +108,32 @@ export function draftRandom(
   });
 }
 
-export function draftUndo(division: DivisionData) {
-  let data = draftData.pokemon.find(
-    (pokemon) =>
-      pokemon.draft[division.name] &&
-      pokemon.draft[division.name].order === division.draftCount
+export function undoDraft(division: DivisionData) {
+  let coach = division.coaches.find((coach) =>
+    coach.team.some((pick) => pick?.order === division.draftCount)
   );
-  if (!data) return;
-  delete data.draft[division.name];
+  if (!coach) return;
+  for (let i in coach.team) {
+    if (coach.team[i] && coach.team[i].order === division.draftCount) {
+      coach.team[i] = null;
+    }
+  }
   division.draftCount--;
   division.timer = undefined;
   writeDraft();
-  return data;
+  return coach;
 }
 
-export function getNextUser(division: DivisionData): UserData {
-  let reverse = Math.floor(division.draftCount / division.order.length) % 2;
+export function getNextCoach(division: DivisionData): CoachData {
+  let reverse = Math.floor(division.draftCount / division.coaches.length) % 2;
   if (reverse) {
-    return division.order[
-      division.order.length - (division.draftCount % division.order.length) - 1
+    return division.coaches[
+      division.coaches.length -
+        (division.draftCount % division.coaches.length) -
+        1
     ];
   }
-  return division.order[division.draftCount % division.order.length];
+  return division.coaches[division.draftCount % division.coaches.length];
 }
 
 export function readDraftData(): Draft {
@@ -122,12 +146,10 @@ export function getUndrafted(
 ) {
   let undraftedData = draftData.pokemon.filter(
     (pokemon) =>
-      pokemon.draft[division.name] === undefined &&
+      !isDrafted(pokemon, division) &&
       options.tier &&
-      pokemon.tier &&
       pokemon.tier.toLowerCase() === options.tier.toLowerCase() &&
       options.category &&
-      pokemon.category &&
       pokemon.category.toLowerCase() === options.category.toLowerCase()
   );
   return undraftedData;
@@ -136,14 +158,13 @@ export function getUndrafted(
 export function getDrafted(
   division: DivisionData,
   options: { tier?: string; category?: string; user?: string } = {}
-) {
-  let draftedData = draftData.pokemon.filter(
-    (pokemon) =>
-      !options.user ||
-      (pokemon.draft[division.name] &&
-        pokemon.draft[division.name].coach === options.user &&
-        pokemon.draft[division.name].coach !== undefined)
-  );
+): (DexData & PokemonData)[] {
+  let draftedData = division.coaches
+    .filter((coach) => !options.user || options.user === coach.username)
+    .flatMap((coach) => coach.team)
+    .filter((pick) => pick != null)
+    .map((pick) => pick.pokemon);
+
   if (options.tier) {
     draftedData = draftedData.filter(
       (pokemon) => pokemon.tier === options.tier
@@ -154,16 +175,25 @@ export function getDrafted(
       (pokemon) => pokemon.category === options.category
     );
   }
-  return draftedData;
+
+  return draftedData.map((pokemon) => {
+    let dex = getDexData(pokemon.pid);
+    return {
+      pid: pokemon.pid,
+      png: dex.png,
+      note: pokemon.note,
+      name: dex.name,
+      tier: pokemon.tier,
+      category: pokemon.category,
+    };
+  });
 }
 
 export function resetDraft() {
-  for (let pokemon of draftData.pokemon) {
-    pokemon.draft = {};
-  }
-  for (let divison of draftData.divisions) {
-    divison.draftCount = 0;
-  }
+  draftData.divisions.forEach((division) => {
+    division.draftCount = 0;
+    division.coaches.forEach((coach) => (coach.team = []));
+  });
   draftData.state = "";
   writeDraft();
 }
@@ -172,25 +202,22 @@ function writeDraft() {
   fs.writeFileSync(filePath, JSON.stringify(draftData, null, 2));
 }
 
-export function getDraftData(
-  query: string,
-  search: "pid" | "name" = "pid"
-): PokemonData | undefined {
-  return draftData.pokemon.find(
-    (pokemon) => pokemon[search].toLowerCase() === query.toLowerCase()
-  );
+export function getDraftData(query: string): PokemonData | undefined {
+  return draftData.pokemon.find((pokemon) => pokemon.pid === query);
 }
 
 export function tradeRandom(
   division: DivisionData,
-  oldPokemon: PokemonData,
+  oldPokemon: DexData,
   user: User,
   options: { validate?: true }
-): PokemonData | string {
+): DexData | string {
+  let oldPokemonDraft = getDraftData(oldPokemon.pid);
+  if (!oldPokemonDraft) return `Unknown pokemon ${oldPokemon.pid}.`;
   let newPokemon = getRandomPokemon(
     division,
-    oldPokemon.tier,
-    oldPokemon.category
+    oldPokemonDraft.tier,
+    oldPokemonDraft.category
   );
   if (typeof newPokemon === "string") return newPokemon;
   return trade(division, oldPokemon, newPokemon, user, {
@@ -200,22 +227,28 @@ export function tradeRandom(
 
 export function trade(
   division: DivisionData,
-  oldPokemon: PokemonData,
+  oldPokemonDex: DexData,
   newPokemon: PokemonData,
   user: User,
   options: { validate?: true }
-): PokemonData | string {
-  if (!oldPokemon || !newPokemon) return `Invalid Pokemon.`;
-  if (oldPokemon.draft[division.name].coach != user.username)
-    return `Coach does not have ${oldPokemon} drafted.`;
-  let pokemon = draftPokemon(division, user, newPokemon, {
-    validate: options.validate,
-    order: oldPokemon.draft[division.name].order,
-  });
-  if (typeof pokemon === "string") return pokemon;
-  delete oldPokemon.draft[division.name];
+): DexData | string {
+  if (!oldPokemonDex || !newPokemon) return `Invalid Pokemon.`;
+  let coach = division.coaches.find((coach) => coach.id === user.id);
+  if (!coach) return `${user.username} is not a coach in this division.`;
+  let tradeIndex = coach.team.findIndex(
+    (pick) => pick && pick.pokemon.pid === oldPokemonDex.pid
+  );
+  if (tradeIndex < 0)
+    return `${user.username} does not have ${oldPokemonDex.name} drafted.`;
+  if (isDrafted(newPokemon, division)) return `Already drafted.`;
+  if (
+    options.validate &&
+    newPokemon.tier !== coach.team[tradeIndex]!.pokemon.tier
+  )
+    return `Trades must be the same tier.`;
+  coach.team[tradeIndex]!.pokemon = newPokemon;
   writeDraft();
-  return newPokemon;
+  return getDexData(newPokemon.pid);
 }
 
 export function updateState(
@@ -251,15 +284,15 @@ export function updateState(
 }
 
 export function validateUser(division: DivisionData, userId: string): boolean {
-  let user = division.order.find((user) => user.id === userId);
+  let user = division.coaches.find((user) => user.id === userId);
   return user ? true : false;
 }
 
 export function canDraft(division: DivisionData, userId: string): boolean {
-  let user = division.order.find((user) => user.id === userId);
+  let user = division.coaches.find((user) => user.id === userId);
   if (!user) return false;
-  let userIndex = division.order.indexOf(user);
-  let orderLength = division.order.length;
+  let userIndex = division.coaches.indexOf(user);
+  let orderLength = division.coaches.length;
   if (userIndex < 0) return false;
   let draftTotal = Math.floor(division.draftCount / orderLength);
   let reverse = draftTotal % 2;
@@ -293,7 +326,7 @@ export function notifyNext(interaction: BaseInteraction) {
     let division = getDivisionByChannel(interaction.channelId);
     if (!division) return;
     let nextUser = await interaction.client.users.fetch(
-      getNextUser(division).id
+      getNextCoach(division).id
     );
     if (!division.timer) {
       division.timer = new Timer(
@@ -316,11 +349,14 @@ export function notifyNext(interaction: BaseInteraction) {
   }, 1000);
 }
 
-export async function skipUser(interaction: BaseInteraction) {
-  let division = getDivisionByChannel(interaction.channelId);
+export async function skipUser(
+  interaction: BaseInteraction,
+  division?: DivisionData
+) {
+  if (!division) division = getDivisionByChannel(interaction.channelId);
   if (!division) return;
   let skippedUser = await interaction.client.users.fetch(
-    getNextUser(division).id
+    getNextCoach(division).id
   );
   interaction.channel?.send(`${skippedUser} was skipped.`);
   advanceDraft(interaction);
@@ -345,9 +381,11 @@ export function getDivisionByName(
 }
 
 export function isNextPick(user: User, division: DivisionData): boolean {
-  if (user.username !== getNextUser(division).username) return false;
+  if (user.username !== getNextCoach(division).username) return false;
   let drafted = getDrafted(division, { user: user.username });
-  if (Math.floor(division.draftCount / division.order.length) > drafted.length)
+  if (
+    Math.floor(division.draftCount / division.coaches.length) > drafted.length
+  )
     return false;
   return true;
 }

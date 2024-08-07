@@ -8,14 +8,25 @@ import {
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
-import { resetDraft } from ".";
+import { draftData, resetDraft } from ".";
 import { Command } from "..";
 
 export const DraftResetCommand: Command = {
   data: new SlashCommandBuilder()
     .setName("draft-reset")
     .setDescription("Admin Only: Reset the draft.")
-    .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+    .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator)
+    .addStringOption((option) =>
+      option
+        .setName("division")
+        .setDescription("Division")
+        .addChoices(
+          draftData.divisions.map((division) => ({
+            name: division.name,
+            value: division.name,
+          }))
+        )
+    ),
   execute: async (interaction: CommandInteraction) => {
     const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
       new ButtonBuilder()
@@ -39,7 +50,6 @@ export const DraftResetCommand: Command = {
       componentType: ComponentType.Button,
       time: 15000,
     });
-
     collector.on("collect", async (interaction: ButtonInteraction) => {
       if (interaction.customId === "confirm-reset") {
         resetDraft();

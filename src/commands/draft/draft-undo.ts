@@ -3,7 +3,7 @@ import {
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
-import { draftData, draftUndo, getDivisionByName, notifyNext } from ".";
+import { draftData, undoDraft, getDivisionByName, notifyNext } from ".";
 import { Command } from "..";
 
 export const DraftUndoCommand: Command = {
@@ -28,7 +28,7 @@ export const DraftUndoCommand: Command = {
       interaction.options.get("division")?.value as string
     );
     if (!division) return interaction.reply("Division not selected.");
-    if (draftUndo(division)) {
+    if (undoDraft(division)) {
       interaction.reply("Draft pick undone.");
       notifyNext(interaction);
     } else {

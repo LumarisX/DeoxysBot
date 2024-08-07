@@ -10,7 +10,6 @@ import {
   draftRandom,
   getDivisionByChannel,
   isNextPick,
-  notifyNext,
 } from ".";
 import { Command } from "..";
 
@@ -76,13 +75,16 @@ export const DraftRandomCommand: Command = {
               );
               if (typeof pokemon === "string")
                 return interaction.editReply(baseReply + `\n${pokemon}`);
-
               const attachment = new AttachmentBuilder(
                 `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.png}.png`,
                 { name: `${pokemon.png}.png` }
               );
               interaction.editReply({
-                content: baseReply + `\nI have drafted you ${pokemon.name}!`,
+                content:
+                  baseReply +
+                  `\nI have drafted you ${pokemon.name}${
+                    pokemon.note ? ` (${pokemon.note})` : ""
+                  }`,
                 files: [attachment],
               });
               if (isNextPick(interaction.user, division))

@@ -3,7 +3,7 @@ import {
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
-import { draftData, skipUser } from ".";
+import { draftData, getDivisionByName, skipUser } from ".";
 import { Command } from "..";
 
 export const DraftSkipCommand: Command = {
@@ -23,6 +23,9 @@ export const DraftSkipCommand: Command = {
         )
     ),
   execute: async (interaction: CommandInteraction) => {
-    skipUser(interaction);
+    let division = getDivisionByName(
+      interaction.options.get("division")?.value as string
+    );
+    skipUser(interaction, division);
   },
 };

@@ -3,8 +3,8 @@ import {
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
-import { Command } from "..";
 import { updateState } from ".";
+import { Command } from "..";
 
 export const DraftStateCommand: Command = {
   data: new SlashCommandBuilder()
