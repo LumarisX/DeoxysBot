@@ -1,17 +1,19 @@
 import { REST, Routes } from "discord.js";
+import { routes } from "./commands";
 import { config } from "./config";
-import { commands } from "./commands";
 
 const rest = new REST({ version: "10" }).setToken(config.DISCORD_TOKEN);
 
-const commandData = commands
+const commandData = routes
+  .filter((route) => route.enabled)
+  .flatMap((routes) => routes.commands)
   .filter((commandData) => commandData.enabled)
   .map((commandData) => commandData.command.data);
 
 async function deployCommands() {
   try {
     console.log("Starting refreshing application (/) commands.");
-    console.log(commands.map((commandData) => commandData.command.data.name));
+    console.log(commandData.map((commandData) => commandData.name));
     await rest.put(Routes.applicationCommands(config.APPLICATION_ID), {
       body: commandData,
     });

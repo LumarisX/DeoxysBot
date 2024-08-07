@@ -1,5 +1,5 @@
 import { CommandInteraction, SlashCommandBuilder, User } from "discord.js";
-import { draftData, getDivisionByName, getDrafted } from ".";
+import { draftData, getDivisionByName, getDrafted, guildCheck } from ".";
 import { Command } from "..";
 
 export const DraftTeamCommand: Command = {
@@ -25,6 +25,8 @@ export const DraftTeamCommand: Command = {
     ),
 
   execute: (interaction: CommandInteraction) => {
+    if (!guildCheck(interaction.guildId))
+      return interaction.reply("Server does not have a registered draft.");
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );

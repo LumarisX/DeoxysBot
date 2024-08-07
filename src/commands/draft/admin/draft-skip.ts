@@ -3,8 +3,8 @@ import {
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
-import { draftData, getDivisionByName, skipUser } from ".";
-import { Command } from "..";
+import { draftData, getDivisionByName, guildCheck, skipUser } from "..";
+import { Command } from "../..";
 
 export const DraftSkipCommand: Command = {
   data: new SlashCommandBuilder()
@@ -23,6 +23,8 @@ export const DraftSkipCommand: Command = {
         )
     ),
   execute: async (interaction: CommandInteraction) => {
+    if (!guildCheck(interaction.guildId))
+      return interaction.reply("Server does not have a registered draft.");
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );

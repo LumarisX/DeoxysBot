@@ -9,6 +9,7 @@ import {
   draftData,
   draftRandom,
   getDivisionByChannel,
+  guildCheck,
   isNextPick,
 } from ".";
 import { Command } from "..";
@@ -39,6 +40,8 @@ export const DraftRandomCommand: Command = {
         )
     ),
   execute: (interaction: CommandInteraction) => {
+    if (!guildCheck(interaction.guildId))
+      return interaction.reply("Server does not have a registered draft.");
     let division = getDivisionByChannel(interaction.channelId);
     if (!division)
       return interaction.reply(

@@ -9,11 +9,12 @@ import {
   draftData,
   getDivisionByName,
   getDraftData,
+  guildCheck,
   tradeRandom,
   validateUser,
-} from "..";
-import { Command } from "../..";
-import { getDexData } from "../data/draftdex";
+} from ".";
+import { Command } from "..";
+import { getDexData } from "./data/draftdex";
 
 export const DraftTradeRandomCommand: Command = {
   data: new SlashCommandBuilder()
@@ -54,6 +55,8 @@ export const DraftTradeRandomCommand: Command = {
         )
     ),
   execute: async (interaction: CommandInteraction) => {
+    if (!guildCheck(interaction.guildId))
+      return interaction.reply("Server does not have a registered draft.");
     const division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );

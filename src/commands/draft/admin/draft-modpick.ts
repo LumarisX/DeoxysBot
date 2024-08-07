@@ -9,9 +9,10 @@ import {
   draftRandom,
   getDivisionByChannel,
   getDivisionByName,
+  guildCheck,
   notifyNext,
-} from ".";
-import { Command } from "..";
+} from "..";
+import { Command } from "../..";
 
 export const DraftModPickCommand: Command = {
   data: new SlashCommandBuilder()
@@ -57,6 +58,8 @@ export const DraftModPickCommand: Command = {
         )
     ),
   execute: async (interaction: CommandInteraction) => {
+    if (!guildCheck(interaction.guildId))
+      return interaction.reply("Server does not have a registered draft.");
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );

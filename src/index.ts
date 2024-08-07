@@ -5,10 +5,10 @@ import {
   Interaction,
 } from "discord.js";
 import { deployGuildCommands } from "./deploy-commands";
-import { commands } from "./commands";
 import OpenAi from "openai";
 import { config } from "./config";
 import { ChatCompletionMessageParam } from "openai/resources/chat/completions";
+import { routes } from "./commands";
 
 const openai = new OpenAi({
   apiKey: config.OPENAI_API_KEY,
@@ -26,11 +26,16 @@ client.once("ready", () => console.log("Deoxys has been summoned!"));
 
 client.on("interactionCreate", async (interaction: Interaction) => {
   if (!interaction.isCommand()) return;
-  const commandData = commands.find(
-    (commandData) =>
-      commandData.command.data.name.toLowerCase() ===
-      interaction.commandName.toLowerCase()
-  );
+
+  const commandData = routes
+    .filter((route) => route.enabled)
+    .flatMap((routes) => routes.commands)
+    .filter((commandData) => commandData.enabled)
+    .find(
+      (commandData) =>
+        commandData.command.data.name.toLowerCase() ===
+        interaction.commandName.toLowerCase()
+    );
   if (commandData) {
     commandData.command.execute(interaction);
   }

@@ -3,8 +3,8 @@ import {
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
-import { updateState } from ".";
-import { Command } from "..";
+import { guildCheck, updateState } from "..";
+import { Command } from "../..";
 
 export const DraftStateCommand: Command = {
   data: new SlashCommandBuilder()
@@ -24,6 +24,8 @@ export const DraftStateCommand: Command = {
         )
     ),
   execute: async (interaction: CommandInteraction) => {
+    if (!guildCheck(interaction.guildId))
+      return interaction.reply("Server does not have a registered draft.");
     const state = interaction.options.get("state")?.value;
     if (
       state === "start" ||

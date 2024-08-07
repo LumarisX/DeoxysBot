@@ -237,7 +237,8 @@
     }
   ],
   "state": "started",
-  "timerMinutes": 60,
+  "timerMinutes": 120,
+  "reminders": [60, 30, 10],
   "pokemon": [
     { "pid": "abomasnow", "tier": "B", "category": "Field Manipulation" },
     { "pid": "absol", "tier": "C", "category": "Sweeper" },
