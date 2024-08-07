@@ -24,8 +24,9 @@ export type DivisionData = {
   order: UserData[];
   name: string;
   draftCount: number;
+  timer: undefined | Timer;
 };
-export type DraftData = {
+export type Draft = {
   categories: string[];
   tiers: { name: string; max: number }[];
   divisions: DivisionData[];
@@ -34,8 +35,7 @@ export type DraftData = {
   pokemon: PokemonData[];
 };
 
-export let timer: Timer | undefined;
-export let draftData: DraftData = readDraftData();
+export let draftData: Draft = readDraftData();
 
 function getRandomPokemon(
   division: DivisionData,
@@ -61,8 +61,7 @@ export function draftPokemon(
   if (pokemon.draft[division.name]) return "Already drafted.";
   if (options.validate && !validDraftPick(division, user, pokemon))
     return "Illegal pick. Please choose again.";
-  division.draftCount++;
-  timer = undefined;
+  division.timer = undefined;
   pokemon.draft[division.name] = {
     order: options.order ? options.order : division.draftCount,
     coach: user.username,
@@ -98,7 +97,7 @@ export function draftUndo(division: DivisionData) {
   if (!data) return;
   delete data.draft[division.name];
   division.draftCount--;
-  timer = undefined;
+  division.timer = undefined;
   writeDraft();
   return data;
 }
@@ -113,7 +112,7 @@ export function getNextUser(division: DivisionData): UserData {
   return division.order[division.draftCount % division.order.length];
 }
 
-export function readDraftData(): DraftData {
+export function readDraftData(): Draft {
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
 }
 
@@ -236,14 +235,14 @@ export function updateState(
     interaction.reply("Draft has ended.");
   } else if (state === "pause") {
     draftData.state = "paused";
-    timer?.pause();
+    draftData.divisions.forEach((division) => division.timer?.pause());
     interaction.reply("Draft has been paused.");
   } else if (state === "resume") {
     if (draftData.state === "paused") {
       draftData.state = "started";
       interaction.reply("Draft has been resumed.");
       notifyNext(interaction);
-      timer?.start();
+      draftData.divisions.forEach((division) => division.timer?.start());
     } else {
       interaction.reply("Draft has already been resumed.");
     }
@@ -296,8 +295,8 @@ export function notifyNext(interaction: BaseInteraction) {
     let nextUser = await interaction.client.users.fetch(
       getNextUser(division).id
     );
-    if (!timer) {
-      timer = new Timer(
+    if (!division.timer) {
+      division.timer = new Timer(
         draftData.timerMinutes,
         [2, 1],
         (remainingMinutes: number) => {
@@ -309,10 +308,10 @@ export function notifyNext(interaction: BaseInteraction) {
           skipUser(interaction);
         }
       );
-      timer.start();
+      division.timer.start();
     }
     interaction.channel?.send(
-      `${nextUser} you're up next! You have ${timer.remainingMinutes} minutes to make your pick.`
+      `${nextUser} you're up next! You have ${division.timer.remainingMinutes} minutes to make your pick.`
     );
   }, 1000);
 }
@@ -324,9 +323,7 @@ export async function skipUser(interaction: BaseInteraction) {
     getNextUser(division).id
   );
   interaction.channel?.send(`${skippedUser} was skipped.`);
-  timer = undefined;
-  division.draftCount++;
-  notifyNext(interaction);
+  advanceDraft(interaction);
 }
 
 export function getDivisionByChannel(
@@ -345,4 +342,20 @@ export function getDivisionByName(
   if (!name) return;
   let division = draftData.divisions.find((division) => division.name === name);
   return division;
+}
+
+export function isNextPick(user: User, division: DivisionData): boolean {
+  if (user.username !== getNextUser(division).username) return false;
+  let drafted = getDrafted(division, { user: user.username });
+  if (Math.floor(division.draftCount / division.order.length) > drafted.length)
+    return false;
+  return true;
+}
+
+export function advanceDraft(interaction: BaseInteraction) {
+  let division = getDivisionByChannel(interaction.channelId);
+  if (!division) return;
+  division.timer = undefined;
+  division.draftCount++;
+  notifyNext(interaction);
 }

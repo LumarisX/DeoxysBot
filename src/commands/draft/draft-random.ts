@@ -1,9 +1,15 @@
-import { CommandInteraction, SlashCommandBuilder } from "discord.js";
 import {
+  AttachmentBuilder,
+  CommandInteraction,
+  SlashCommandBuilder,
+} from "discord.js";
+import {
+  advanceDraft,
   canDraft,
   draftData,
   draftRandom,
   getDivisionByChannel,
+  isNextPick,
   notifyNext,
 } from ".";
 import { Command } from "..";
@@ -70,16 +76,17 @@ export const DraftRandomCommand: Command = {
               );
               if (typeof pokemon === "string")
                 return interaction.editReply(baseReply + `\n${pokemon}`);
-              // const attachment = new AttachmentBuilder(
-              //   `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.png}.png`,
-              //   { name: `${pokemon.png}.png` }
-              // );
 
+              const attachment = new AttachmentBuilder(
+                `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.png}.png`,
+                { name: `${pokemon.png}.png` }
+              );
               interaction.editReply({
                 content: baseReply + `\nI have drafted you ${pokemon.name}!`,
-                // files: [attachment],
+                files: [attachment],
               });
-              notifyNext(interaction);
+              if (isNextPick(interaction.user, division))
+                advanceDraft(interaction);
             }, 1000);
           }, 1000);
         }, 1000);
