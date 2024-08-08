@@ -15,7 +15,7 @@ export const AnalyzeReplayCommand: Command = {
   execute: async (interaction: CommandInteraction) => {
     const replayUrl: string = interaction.options.get("relay-url")
       ?.value as string;
-    if (!replayUrl) return interaction.reply("Url is not a valid replay.");
+    if (!replayUrl) return interaction.reply({content: "Url is not a valid replay.");
     let replayData = await analyzeReplay(replayUrl);
     console.log(replayData.stats.forEach((user) => user.username));
   },

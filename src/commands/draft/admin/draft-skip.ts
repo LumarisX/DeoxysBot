@@ -24,7 +24,10 @@ export const DraftSkipCommand: Command = {
     ),
   execute: async (interaction: CommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply("Server does not have a registered draft.");
+      return interaction.reply({
+        content: "Server does not have a registered draft.",
+        ephemeral: true,
+      });
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );

@@ -26,11 +26,18 @@ export const DraftTeamCommand: Command = {
 
   execute: (interaction: CommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply("Server does not have a registered draft.");
+      return interaction.reply({
+        content: "Server does not have a registered draft.",
+        ephemeral: true,
+      });
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
-    if (!division) return interaction.reply("Division is invalid.");
+    if (!division)
+      return interaction.reply({
+        content: "Division is invalid.",
+        ephemeral: true,
+      });
     const user: User =
       interaction.options.get("user")?.user || interaction.user;
     const draftedList = getDrafted(division, { user: user.username })

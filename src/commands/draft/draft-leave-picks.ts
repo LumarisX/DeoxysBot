@@ -46,19 +46,32 @@ export const DraftStateCommand: Command = {
     ),
   execute: async (interaction: CommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply("Server does not have a registered draft.");
+      return interaction.reply({
+        content: "Server does not have a registered draft.",
+        ephemeral: true,
+      });
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
-    if (!division) return interaction.reply("Division is invalid.");
+    if (!division)
+      return interaction.reply({
+        content: "Division is invalid.",
+        ephemeral: true,
+      });
     let coach = getCoach(division, interaction.user.id);
     if (!coach)
-      return interaction.reply(`You is not a coach in this division.`);
+      return interaction.reply({
+        content: `You are not a coach in this division.`,
+        ephemeral: true,
+      });
     let picks: string[] = [];
     let checkChoice = (choiceString: string) => {
       let pokemonDex = getDexData(choiceString);
       if (!pokemonDex)
-        return interaction.reply(`${choiceString} is an unknown pokemon.`);
+        return interaction.reply({
+          content: `${choiceString} is an unknown pokemon.`,
+          ephemeral: true,
+        });
       if (isDrafted(pokemonDex.pid, division))
         return interaction.reply(
           `${pokemonDex.name} has already been drafted.`

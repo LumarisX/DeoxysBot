@@ -55,37 +55,51 @@ export const DraftTradeRandomCommand: Command = {
     ),
   execute: async (interaction: CommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply("Server does not have a registered draft.");
+      return interaction.reply({
+        content: "Server does not have a registered draft.",
+        ephemeral: true,
+      });
     const division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
-    if (!division) return interaction.reply("Division not found.");
+    if (!division)
+      return interaction.reply({
+        content: "Division not found.",
+        ephemeral: true,
+      });
     const user: User | undefined = interaction.options.get("user")?.user;
-    if (!user) return interaction.reply("User not found.");
+    if (!user)
+      return interaction.reply({ content: "User not found.", ephemeral: true });
     let coach = getCoach(division, user.id);
     if (!coach)
-      return interaction.reply(`${user} is not a coach in this division.`);
+      return interaction.reply({
+        content: `${user} is not a coach in this division.`,
+        ephemeral: true,
+      });
     const category = interaction.options.get("category")?.value;
-    if (!category) return interaction.reply("Category not found.");
+    if (!category)
+      return interaction.reply({
+        content: "Category not found.",
+        ephemeral: true,
+      });
     const oldPokemonString = interaction.options.get("pokemon");
     if (!oldPokemonString?.value)
-      return interaction.reply("Pokemon not selected.");
+      return interaction.reply({
+        content: "Pokemon not selected.",
+        ephemeral: true,
+      });
     const oldPokemonDex = getDexData(oldPokemonString.value as string);
-    if (!oldPokemonDex) return interaction.reply("Pokemon does not exist.");
-    const baseReply = `${interaction.user}'s ${oldPokemonDex.name} has been traded away.`;
-    let newPokemonDex = tradeRandom(division, oldPokemonDex, coach, {
+    if (!oldPokemonDex)
+      return interaction.reply({
+        content: "Pokemon does not exist.",
+        ephemeral: true,
+      });
+    tradeRandom(division, oldPokemonDex, coach, interaction, {
       validate: true,
     });
-
-    if (typeof newPokemonDex === "string")
-      return interaction.reply(baseReply + `\n${newPokemonDex}`);
-    const attachment = new AttachmentBuilder(
-      `https://play.pokemonshowdown.com/sprites/gen5/${newPokemonDex.png}.png`,
-      { name: `${newPokemonDex.png}.png` }
-    );
     interaction.reply({
-      content: baseReply + `\nI have drafted you ${newPokemonDex.name}!`,
-      files: [attachment],
+      content: `${interaction.user}'s ${oldPokemonDex.name} has been traded away.`,
+      ephemeral: true,
     });
   },
 };

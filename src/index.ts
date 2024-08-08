@@ -40,7 +40,11 @@ client.on("interactionCreate", async (interaction: Interaction) => {
         interaction.commandName.toLowerCase()
     );
   if (commandData) {
-    commandData.command.execute(interaction);
+    try {
+      commandData.command.execute(interaction);
+    } catch (error) {
+      interaction.reply({ content: `There was an error.` });
+    }
   }
 });
 

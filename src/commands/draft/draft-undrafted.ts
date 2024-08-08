@@ -56,11 +56,18 @@ export const DraftUndraftedCommand: Command = {
     ),
   execute: async (interaction: CommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply("Server does not have a registered draft.");
+      return interaction.reply({
+        content: "Server does not have a registered draft.",
+        ephemeral: true,
+      });
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
-    if (!division) return interaction.reply("Division is invalid.");
+    if (!division)
+      return interaction.reply({
+        content: "Division is invalid.",
+        ephemeral: true,
+      });
     const tier = interaction.options.get("tier");
     const category = interaction.options.get("category");
     let undraftedData = getUndrafted(division, {

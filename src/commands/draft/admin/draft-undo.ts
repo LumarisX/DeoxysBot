@@ -31,16 +31,26 @@ export const DraftUndoCommand: Command = {
     ),
   execute: (interaction: CommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply("Server does not have a registered draft.");
+      return interaction.reply({
+        content: "Server does not have a registered draft.",
+        ephemeral: true,
+      });
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
-    if (!division) return interaction.reply("Division is invalid.");
+    if (!division)
+      return interaction.reply({
+        content: "Division is invalid.",
+        ephemeral: true,
+      });
     if (undoDraft(division)) {
-      interaction.reply("Draft pick undone.");
-      notifyNext(interaction);
+      interaction.reply({ content: "Draft pick undone.", ephemeral: true });
+      notifyNext(interaction.channel);
     } else {
-      return interaction.reply("No draft picks to be undone.");
+      return interaction.reply({
+        content: "No draft picks to be undone.",
+        ephemeral: true,
+      });
     }
   },
 };

@@ -29,7 +29,10 @@ export const DraftResetCommand: Command = {
     ),
   execute: async (interaction: CommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply("Server does not have a registered draft.");
+      return interaction.reply({
+        content: "Server does not have a registered draft.",
+        ephemeral: true,
+      });
     const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
       new ButtonBuilder()
         .setCustomId("confirm-reset")
@@ -44,6 +47,7 @@ export const DraftResetCommand: Command = {
       content: "Are you sure you want to reset the draft?",
       components: [row],
       fetchReply: true,
+      ephemeral: true,
     });
     const filter = (interaction: ButtonInteraction) =>
       interaction.user.id === interaction.user.id;
@@ -66,7 +70,6 @@ export const DraftResetCommand: Command = {
         });
       }
     });
-
     collector.on("end", (collected) => {
       if (collected.size === 0) {
         interaction.editReply({

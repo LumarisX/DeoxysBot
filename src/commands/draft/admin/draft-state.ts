@@ -25,7 +25,10 @@ export const DraftStateCommand: Command = {
     ),
   execute: async (interaction: CommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply("Server does not have a registered draft.");
+      return interaction.reply({
+        content: "Server does not have a registered draft.",
+        ephemeral: true,
+      });
     const state = interaction.options.get("state")?.value;
     if (
       state === "start" ||
@@ -33,9 +36,15 @@ export const DraftStateCommand: Command = {
       state === "pause" ||
       state === "resume"
     ) {
-      return updateState(state, interaction);
+      updateState(state, interaction);
+      if (!interaction.replied) {
+        interaction.reply({
+          content: `Draft state was changed to ${state}.`,
+          ephemeral: true,
+        });
+      }
     } else {
-      return interaction.reply("Unknown state.");
+      return interaction.reply({ content: "Unknown state.", ephemeral: true });
     }
   },
 };

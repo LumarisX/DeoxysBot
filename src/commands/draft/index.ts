@@ -1,7 +1,11 @@
 import {
+  AttachmentBuilder,
   BaseInteraction,
   CommandInteraction,
   CommandInteractionOption,
+  Interaction,
+  InteractionResponse,
+  TextBasedChannel,
   User,
 } from "discord.js";
 import fs from "fs";
@@ -46,8 +50,9 @@ export let draftData: Draft = readDraftData();
 function getRandomPokemon(
   division: DivisionData,
   tier: string,
-  category: string
-): PokemonData | string {
+  category: string,
+  interaction: CommandInteraction
+) {
   let undrafted = getUndrafted(division, {
     tier: tier,
     category: category,
@@ -55,7 +60,11 @@ function getRandomPokemon(
   if (undrafted.length > 0) {
     return undrafted[Math.floor(Math.random() * undrafted.length)];
   }
-  return `No pokemon are left! Please choose again.`;
+  interaction.reply({
+    content: `No pokemon are left! Please choose again.`,
+    ephemeral: true,
+  });
+  return null;
 }
 
 export function isDrafted(pid: string, division: DivisionData) {
@@ -64,32 +73,50 @@ export function isDrafted(pid: string, division: DivisionData) {
   );
 }
 
-export function draftPokemon(
+export async function draftPokemon(
   division: DivisionData,
   user: User,
   pokemon: PokemonData,
+  interaction: CommandInteraction,
   options: { validate?: true; order?: number } = {}
-): (DexData & PokemonData) | string {
-  if (isDrafted(pokemon.pid, division)) return "Already drafted.";
-  if (options.validate && !validDraftPick(division, user, pokemon))
-    return "Illegal pick. Please choose again.";
+) {
+  if (isDrafted(pokemon.pid, division)) {
+    interaction.reply({ content: "Already drafted.", ephemeral: true });
+    return null;
+  }
+  if (options.validate && !validDraftPick(division, user, pokemon)) {
+    interaction.reply({
+      content: "Illegal pick. Please choose again.",
+      ephemeral: true,
+    });
+    return null;
+  }
   let coach = division.coaches.find((coach) => coach.id === user.id);
-  if (!coach) return "You are not a coach in this division.";
+  if (!coach) {
+    interaction.reply({
+      content: "You are not a coach in this division.",
+      ephemeral: true,
+    });
+    return null;
+  }
   division.timer = undefined;
   coach.team.push({
     order: options.order ? options.order : division.draftCount,
     pokemon: pokemon,
   });
-  let dex = getDexData(pokemon.pid)!;
   writeDraft();
-  return {
-    pid: pokemon.pid,
-    png: dex.png,
-    note: pokemon.note,
-    name: dex.name,
-    tier: pokemon.tier,
-    category: pokemon.category,
-  };
+  let channel = await interaction.client.channels.fetch(division.channels[0]);
+  if (!channel?.isTextBased()) return null;
+  let dex = getDexData(pokemon.pid)!;
+  const attachment = new AttachmentBuilder(
+    `https://play.pokemonshowdown.com/sprites/gen5/${dex.png}.png`,
+    { name: `${dex.png}.png` }
+  );
+  channel.send({
+    content: `${dex.name} was drafted!`,
+    files: [attachment],
+  });
+  advanceDraft(channel);
 }
 
 export function draftRandom(
@@ -97,30 +124,32 @@ export function draftRandom(
   user: User,
   tier: CommandInteractionOption,
   category: CommandInteractionOption,
+  interaction: CommandInteraction,
   options: { validate?: true }
-): (DexData & PokemonData) | string {
+) {
   const randomMon = getRandomPokemon(
     division,
     tier.value as string,
-    category.value as string
+    category.value as string,
+    interaction
   );
-  if (typeof randomMon === "string") return randomMon;
-  return draftPokemon(division, user, randomMon, {
+  if (!randomMon) return null;
+  return draftPokemon(division, user, randomMon, interaction, {
     validate: options.validate,
   });
 }
 
 export function undoDraft(division: DivisionData) {
   let coach = division.coaches.find((coach) =>
-    coach.team.some((pick) => pick?.order === division.draftCount)
+    coach.team.some((pick) => pick?.order === division.draftCount - 1)
   );
   if (!coach) return;
-  division.draftCount--;
   for (let i in coach.team) {
-    if (coach.team[i] && coach.team[i].order === division.draftCount) {
+    if (coach.team[i] && coach.team[i].order === division.draftCount - 1) {
       coach.team[i] = null;
     }
   }
+  division.draftCount--;
   division.timer = undefined;
   writeDraft();
   return coach;
@@ -212,16 +241,24 @@ export function tradeRandom(
   division: DivisionData,
   oldPokemon: DexData,
   coach: CoachData,
+  interaction: CommandInteraction,
   options: { validate?: true }
-): DexData | string {
+) {
   let oldPokemonDraft = getDraftData(oldPokemon.pid);
-  if (!oldPokemonDraft) return `Unknown pokemon ${oldPokemon.pid}.`;
+  if (!oldPokemonDraft) {
+    interaction.reply({
+      content: `Unknown pokemon ${oldPokemon.pid}.`,
+      ephemeral: true,
+    });
+    return null;
+  }
   let newPokemon = getRandomPokemon(
     division,
     oldPokemonDraft.tier,
-    oldPokemonDraft.category
+    oldPokemonDraft.category,
+    interaction
   );
-  if (typeof newPokemon === "string") return newPokemon;
+  if (!newPokemon) return null;
   return trade(division, oldPokemon, newPokemon, coach, {
     validate: options.validate,
   });
@@ -251,33 +288,49 @@ export function trade(
   return getDexData(newPokemon.pid)!;
 }
 
-export function updateState(
+export async function updateState(
   state: "start" | "end" | "pause" | "resume",
   interaction: CommandInteraction
 ) {
-  if (state === "start") {
-    if (draftData.state === "") {
-      draftData.state = "started";
-      interaction.reply("The draft has been started!");
-      notifyNext(interaction);
-    } else {
-      interaction.reply("Draft has already been started.");
-    }
-  } else if (state === "end") {
-    draftData.state = "ended";
-    interaction.reply("Draft has ended.");
-  } else if (state === "pause") {
-    draftData.state = "paused";
-    draftData.divisions.forEach((division) => division.timer?.pause());
-    interaction.reply("Draft has been paused.");
-  } else if (state === "resume") {
-    if (draftData.state === "paused") {
-      draftData.state = "started";
-      interaction.reply("Draft has been resumed.");
-      notifyNext(interaction);
-      draftData.divisions.forEach((division) => division.timer?.start());
-    } else {
-      interaction.reply("Draft has already been resumed.");
+  for (let division of draftData.divisions) {
+    let channel = await interaction.client.channels.fetch(division.channels[0]);
+    if (!channel?.isTextBased()) return;
+    if (state === "start") {
+      try {
+        if (draftData.state === "") {
+          draftData.state = "started";
+          channel.send("The draft has been started!");
+          notifyNext(channel);
+        } else {
+          interaction.reply({
+            content: "Draft has already been started.",
+            ephemeral: true,
+          });
+          return;
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    } else if (state === "end") {
+      draftData.state = "ended";
+      channel.send("Draft has ended.");
+    } else if (state === "pause") {
+      draftData.state = "paused";
+      division.timer?.pause();
+      channel.send("Draft has been paused.");
+    } else if (state === "resume") {
+      if (draftData.state === "paused") {
+        draftData.state = "started";
+        channel.send("Draft has been resumed.");
+        notifyNext(channel);
+        division.timer?.start();
+      } else {
+        interaction.reply({
+          content: "Draft has already been resumed.",
+          ephemeral: true,
+        });
+        return;
+      }
     }
   }
   writeDraft();
@@ -320,15 +373,15 @@ export function validDraftPick(
   );
 }
 
-export function notifyNext(interaction: BaseInteraction) {
+export function notifyNext(channel: TextBasedChannel | null) {
+  if (!channel) return;
   setTimeout(async () => {
-    let division = getDivisionByChannel(interaction.channelId);
+    console.log("ere");
+    let division = getDivisionByChannel(channel.id);
     if (!division) return;
-    let nextUser = await interaction.client.users.fetch(
-      getNextCoach(division).id
-    );
-
-    interaction.channel?.send(
+    let nextUser = await channel.client.users.fetch(getNextCoach(division).id);
+    console.log("here");
+    channel.send(
       `${nextUser} you're up next! You have ~ minutes to make your pick.`
     );
     // if (!division.timer) {
@@ -374,7 +427,8 @@ export async function skipUser(
     getNextCoach(division).id
   );
   interaction.channel?.send(`${skippedUser} was skipped.`);
-  advanceDraft(interaction);
+  if (!interaction.channel) return;
+  advanceDraft(interaction.channel);
 }
 
 export function getDivisionByChannel(
@@ -405,12 +459,12 @@ export function isNextPick(user: User, division: DivisionData): boolean {
   return true;
 }
 
-export function advanceDraft(interaction: BaseInteraction) {
-  let division = getDivisionByChannel(interaction.channelId);
+export function advanceDraft(channel: TextBasedChannel) {
+  let division = getDivisionByChannel(channel.id);
   if (!division) return;
   division.timer = undefined;
   division.draftCount++;
-  notifyNext(interaction);
+  notifyNext(channel);
 }
 
 export function guildCheck(guildId: string | null) {

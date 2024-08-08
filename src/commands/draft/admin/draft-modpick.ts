@@ -1,15 +1,18 @@
 import {
+  AttachmentBuilder,
   CommandInteraction,
   PermissionsBitField,
   SlashCommandBuilder,
   User,
 } from "discord.js";
 import {
+  advanceDraft,
   draftData,
   draftRandom,
   getDivisionByChannel,
   getDivisionByName,
   guildCheck,
+  isNextPick,
   notifyNext,
 } from "..";
 import { Command } from "../..";
@@ -59,35 +62,48 @@ export const DraftModPickCommand: Command = {
     ),
   execute: async (interaction: CommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply("Server does not have a registered draft.");
+      return interaction.reply({
+        content: "Server does not have a registered draft.",
+        ephemeral: true,
+      });
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
     if (!division) {
       division = getDivisionByChannel(interaction.channelId);
       if (!division)
-        return interaction.reply("Division not selected and unknown channel.");
+        return interaction.reply({
+          content: "Division not selected and unknown channel.",
+          ephemeral: true,
+        });
     }
     const user: User | undefined = interaction.options.get("user")?.user;
-    if (!user) return interaction.reply("User not found");
+    if (!user)
+      return interaction.reply({
+        content: "User not found",
+        ephemeral: true,
+      });
     const tier = interaction.options.get("tier");
-    if (!tier) return interaction.reply("Tier not selected");
+    if (!tier)
+      return interaction.reply({
+        content: "Tier not selected",
+        ephemeral: true,
+      });
     const category = interaction.options.get("category");
-    if (!category) return interaction.reply("Category not selected");
-    const baseReply = `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon for ${user}`;
-    let pokemon = draftRandom(division, user, tier, category, {
+    if (!category)
+      return interaction.reply({
+        content: "Category not selected",
+        ephemeral: true,
+      });
+
+    draftRandom(division, user, tier, category, interaction, {
       validate: true,
     });
-    if (typeof pokemon === "string")
-      return interaction.reply(baseReply + `\n${pokemon}`);
-    // const attachment = new AttachmentBuilder(
-    //   `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.png}.png`,
-    //   { name: `${pokemon.png}.png` }
-    // );
-    interaction.reply({
-      content: baseReply + `\nI have drafted you ${pokemon.name}!`,
-      // files: [attachment],
-    });
-    notifyNext(interaction);
+    if (!interaction.replied) {
+      interaction.reply({
+        content: `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon for ${user}`,
+        ephemeral: true,
+      });
+    }
   },
 };

@@ -7,6 +7,7 @@ import {
   advanceDraft,
   canDraft,
   draftData,
+  draftPokemon,
   draftRandom,
   getDivisionByChannel,
   guildCheck,
@@ -41,61 +42,49 @@ export const DraftRandomCommand: Command = {
     ),
   execute: (interaction: CommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply("Server does not have a registered draft.");
+      return interaction.reply({
+        content: "Server does not have a registered draft.",
+        ephemeral: true,
+      });
     let division = getDivisionByChannel(interaction.channelId);
     if (!division)
-      return interaction.reply(
-        "Unknown channel. Please try again in your draft channel."
-      );
+      return interaction.reply({
+        content: "Unknown channel. Please try again in your draft channel.",
+        ephemeral: true,
+      });
     if (draftData.state != "started")
-      return interaction.reply("The draft has not started yet.");
+      return interaction.reply({
+        content: "The draft has not started yet.",
+        ephemeral: true,
+      });
     if (!canDraft(division, interaction.user.id)) {
-      return interaction.reply("Not allowed to draft.");
+      return interaction.reply({
+        content: "Not allowed to draft.",
+        ephemeral: true,
+      });
     }
     const tier = interaction.options.get("tier");
     const category = interaction.options.get("category");
     if (!tier) {
-      return interaction.reply("Tier not selected");
+      return interaction.reply({
+        content: "Tier not selected",
+        ephemeral: true,
+      });
     }
     if (!category) {
-      return interaction.reply("Category not selected");
+      return interaction.reply({
+        content: "Category not selected",
+        ephemeral: true,
+      });
     }
-    const baseReply = `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon.`;
-    interaction.reply(baseReply + `\nSearching`).then(() =>
-      setTimeout(() => {
-        interaction.editReply(baseReply + `\nSearching.`);
-        setTimeout(() => {
-          interaction.editReply(baseReply + `\nSearching..`);
-          setTimeout(() => {
-            interaction.editReply(baseReply + `\nSearching...`);
-            setTimeout(() => {
-              let pokemon = draftRandom(
-                division,
-                interaction.user,
-                tier,
-                category,
-                { validate: true }
-              );
-              if (typeof pokemon === "string")
-                return interaction.editReply(baseReply + `\n${pokemon}`);
-              const attachment = new AttachmentBuilder(
-                `https://play.pokemonshowdown.com/sprites/gen5/${pokemon.png}.png`,
-                { name: `${pokemon.png}.png` }
-              );
-              interaction.editReply({
-                content:
-                  baseReply +
-                  `\nI have drafted you ${pokemon.name}${
-                    pokemon.note ? ` (${pokemon.note})` : ""
-                  }`,
-                files: [attachment],
-              });
-              if (isNextPick(interaction.user, division))
-                advanceDraft(interaction);
-            }, 1000);
-          }, 1000);
-        }, 1000);
-      }, 1000)
-    );
+    draftRandom(division, interaction.user, tier, category, interaction, {
+      validate: true,
+    });
+    if (!interaction.replied) {
+      interaction.reply({
+        content: `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon.`,
+        ephemeral: true,
+      });
+    }
   },
 };
