@@ -91,49 +91,46 @@ async function gptRespond(message: Message) {
     });
 
     let replyString = completion.choices[0].message.content;
-    console.log(replyString);
     let attachemnt: AttachmentBuilder | undefined = undefined;
     if (replyString) {
       let replySplit = replyString.split(": ");
-      for (let i = 0; i < replySplit.length - 1; i++) {
-        let emotion: string | undefined;
-        let lower = replySplit[i].toLowerCase();
-        switch (lower) {
-          case "angry":
-          case "crying":
-          case "determined":
-          case "dizzy":
-          case "happy":
-          case "inspire":
-          case "joyous":
-          case "normal":
-          case "pain":
-          case "sad":
-          case "shouting":
-          case "sigh":
-          case "stunned":
-          case "surprised":
-            emotion = lower.charAt(0).toUpperCase() + lower.substring(1);
-            break;
-          case "teary-eyed":
-            emotion = "Teary-Eyed";
-            break;
-          case "power-up":
-            emotion = "Special1";
-            break;
-        }
-        replyString = replySplit[replySplit.length - 1];
-        if (emotion) {
-          attachemnt = new AttachmentBuilder(
-            `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0386/0001/${emotion}.png`,
-            { name: `${emotion}.png` }
-          );
-        } else {
-          attachemnt = new AttachmentBuilder(
-            `	https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0386/0001/Normal.png`,
-            { name: `Normal.png` }
-          );
-        }
+      let emotion: string | undefined;
+      let lower = replySplit[0].toLowerCase().replace(/\W/, "");
+      switch (lower) {
+        case "angry":
+        case "crying":
+        case "determined":
+        case "dizzy":
+        case "happy":
+        case "inspire":
+        case "joyous":
+        case "normal":
+        case "pain":
+        case "sad":
+        case "shouting":
+        case "sigh":
+        case "stunned":
+        case "surprised":
+          emotion = lower.charAt(0).toUpperCase() + lower.substring(1);
+          break;
+        case "tearyeyed":
+          emotion = "Teary-Eyed";
+          break;
+        case "powerup":
+          emotion = "Special1";
+          break;
+      }
+      replyString = replySplit.splice(1).join(": ");
+      if (emotion) {
+        attachemnt = new AttachmentBuilder(
+          `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0386/0001/${emotion}.png`,
+          { name: `${emotion}.png` }
+        );
+      } else {
+        attachemnt = new AttachmentBuilder(
+          `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0386/0001/Normal.png`,
+          { name: `Normal.png` }
+        );
       }
     } else replyString = `Hello ${message.author}!`;
     if (attachemnt) {
