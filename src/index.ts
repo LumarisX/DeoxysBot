@@ -1,15 +1,15 @@
 import {
-  AttachmentBuilder,
   Client,
+  EmbedBuilder,
   GatewayIntentBits,
   Interaction,
   Message,
 } from "discord.js";
-import { deployGuildCommands } from "./deploy-commands";
 import OpenAi from "openai";
-import { config } from "./config";
 import { ChatCompletionMessageParam } from "openai/resources/chat/completions";
 import { routes } from "./commands";
+import { config } from "./config";
+import { deployGuildCommands } from "./deploy-commands";
 
 const openai = new OpenAi({
   apiKey: config.OPENAI_API_KEY,
@@ -48,6 +48,12 @@ client.on("messageCreate", async (message) => {
     message.content.toLowerCase().includes("deoxys") ||
     message.mentions.has(client.user!.id)
   ) {
+    console.log(
+      "DeoxysGPT |",
+      message.author.displayName,
+      "|",
+      message.content
+    );
     gptRespond(message);
   }
 });
@@ -84,18 +90,21 @@ async function gptRespond(message: Message) {
         i = 0;
       }
     }
-    console.log(conversationHistory);
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [basePrompt, ...conversationHistory],
     });
 
     let replyString = completion.choices[0].message.content;
-    let attachemnt: AttachmentBuilder | undefined = undefined;
+    console.log("DeoxysGPT | DeoxysBot |", replyString);
+
+    let emotionUrl: string = `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0386/0001/Normal.png`;
+    replyString = `{Determined}: Ready for your final test, Lumaris! What do you need help with?`;
+
     if (replyString) {
       let replySplit = replyString.split(": ");
       let emotion: string | undefined;
-      let lower = replySplit[0].toLowerCase().replace(/\W/, "");
+      let lower = replySplit[0].toLowerCase().replace(/\W/g, "");
       switch (lower) {
         case "angry":
         case "crying":
@@ -122,29 +131,18 @@ async function gptRespond(message: Message) {
       }
       replyString = replySplit.splice(1).join(": ");
       if (emotion) {
-        attachemnt = new AttachmentBuilder(
-          `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0386/0001/${emotion}.png`,
-          { name: `${emotion}.png` }
-        );
-      } else {
-        attachemnt = new AttachmentBuilder(
-          `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0386/0001/Normal.png`,
-          { name: `Normal.png` }
-        );
+        emotionUrl = `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0386/0001/${emotion}.png`;
       }
     } else replyString = `Hello ${message.author}!`;
-    if (attachemnt) {
-      message.reply({
-        content: replyString,
-        files: [attachemnt],
-        allowedMentions: { repliedUser: false },
-      });
-    } else {
-      message.reply({
-        content: replyString,
-        allowedMentions: { repliedUser: false },
-      });
-    }
+
+    const exampleEmbed = new EmbedBuilder()
+      .setThumbnail(emotionUrl)
+      .setDescription(replyString);
+
+    message.reply({
+      allowedMentions: { repliedUser: false },
+      embeds: [exampleEmbed],
+    });
   } catch (error) {
     console.error(error);
   }

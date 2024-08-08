@@ -7,11 +7,10 @@ import {
 } from "discord.js";
 import {
   draftData,
+  getCoach,
   getDivisionByName,
-  getDraftData,
   guildCheck,
   tradeRandom,
-  getCoach,
 } from ".";
 import { Command } from "..";
 import { getDexData } from "./data/draftdex";
