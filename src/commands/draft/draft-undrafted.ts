@@ -53,7 +53,7 @@ export const DraftUndraftedCommand: Command = {
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
-    if (!division) return interaction.reply("Division not selected.");
+    if (!division) return interaction.reply("Division is invalid.");
     const tier = interaction.options.get("tier");
     const category = interaction.options.get("category");
     let undraftedData = getUndrafted(division, {

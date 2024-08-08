@@ -35,7 +35,7 @@ export const DraftUndoCommand: Command = {
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
-    if (!division) return interaction.reply("Division not selected.");
+    if (!division) return interaction.reply("Division is invalid.");
     if (undoDraft(division)) {
       interaction.reply("Draft pick undone.");
       notifyNext(interaction);

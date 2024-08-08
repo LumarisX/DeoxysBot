@@ -21,6 +21,7 @@ export type CoachData = {
   username: string;
   id: string;
   order: number;
+  leftPicks: PokemonData[];
   team: ({ pokemon: PokemonData; order: number } | null)[];
 };
 export type DivisionData = {
@@ -57,9 +58,9 @@ function getRandomPokemon(
   return `No pokemon are left! Please choose again.`;
 }
 
-function isDrafted(pokemon: PokemonData, division: DivisionData) {
+export function isDrafted(pid: string, division: DivisionData) {
   return division.coaches.find((coach) =>
-    coach.team.some((pick) => pick && pick.pokemon.pid === pokemon.pid)
+    coach.team.some((pick) => pick && pick.pokemon.pid === pid)
   );
 }
 
@@ -69,7 +70,7 @@ export function draftPokemon(
   pokemon: PokemonData,
   options: { validate?: true; order?: number } = {}
 ): (DexData & PokemonData) | string {
-  if (isDrafted(pokemon, division)) return "Already drafted.";
+  if (isDrafted(pokemon.pid, division)) return "Already drafted.";
   if (options.validate && !validDraftPick(division, user, pokemon))
     return "Illegal pick. Please choose again.";
   let coach = division.coaches.find((coach) => coach.id === user.id);
@@ -79,7 +80,7 @@ export function draftPokemon(
     order: options.order ? options.order : division.draftCount,
     pokemon: pokemon,
   });
-  let dex = getDexData(pokemon.pid);
+  let dex = getDexData(pokemon.pid)!;
   writeDraft();
   return {
     pid: pokemon.pid,
@@ -147,7 +148,7 @@ export function getUndrafted(
 ) {
   let undraftedData = draftData.pokemon.filter(
     (pokemon) =>
-      !isDrafted(pokemon, division) &&
+      !isDrafted(pokemon.pid, division) &&
       options.tier &&
       pokemon.tier.toLowerCase() === options.tier.toLowerCase() &&
       options.category &&
@@ -178,7 +179,7 @@ export function getDrafted(
   }
 
   return draftedData.map((pokemon) => {
-    let dex = getDexData(pokemon.pid);
+    let dex = getDexData(pokemon.pid)!;
     return {
       pid: pokemon.pid,
       png: dex.png,
@@ -210,7 +211,7 @@ export function getDraftData(query: string): PokemonData | undefined {
 export function tradeRandom(
   division: DivisionData,
   oldPokemon: DexData,
-  user: User,
+  coach: CoachData,
   options: { validate?: true }
 ): DexData | string {
   let oldPokemonDraft = getDraftData(oldPokemon.pid);
@@ -221,7 +222,7 @@ export function tradeRandom(
     oldPokemonDraft.category
   );
   if (typeof newPokemon === "string") return newPokemon;
-  return trade(division, oldPokemon, newPokemon, user, {
+  return trade(division, oldPokemon, newPokemon, coach, {
     validate: options.validate,
   });
 }
@@ -230,18 +231,16 @@ export function trade(
   division: DivisionData,
   oldPokemonDex: DexData,
   newPokemon: PokemonData,
-  user: User,
+  coach: CoachData,
   options: { validate?: true }
 ): DexData | string {
   if (!oldPokemonDex || !newPokemon) return `Invalid Pokemon.`;
-  let coach = division.coaches.find((coach) => coach.id === user.id);
-  if (!coach) return `${user.username} is not a coach in this division.`;
   let tradeIndex = coach.team.findIndex(
     (pick) => pick && pick.pokemon.pid === oldPokemonDex.pid
   );
   if (tradeIndex < 0)
-    return `${user.username} does not have ${oldPokemonDex.name} drafted.`;
-  if (isDrafted(newPokemon, division)) return `Already drafted.`;
+    return `${coach.username} does not have ${oldPokemonDex.name} drafted.`;
+  if (isDrafted(newPokemon.pid, division)) return `Already drafted.`;
   if (
     options.validate &&
     newPokemon.tier !== coach.team[tradeIndex]!.pokemon.tier
@@ -249,7 +248,7 @@ export function trade(
     return `Trades must be the same tier.`;
   coach.team[tradeIndex]!.pokemon = newPokemon;
   writeDraft();
-  return getDexData(newPokemon.pid);
+  return getDexData(newPokemon.pid)!;
 }
 
 export function updateState(
@@ -259,7 +258,7 @@ export function updateState(
   if (state === "start") {
     if (draftData.state === "") {
       draftData.state = "started";
-      interaction.reply("Draft has been started.");
+      interaction.reply("TheDraft has been started!");
       notifyNext(interaction);
     } else {
       interaction.reply("Draft has already been started.");
@@ -284,9 +283,8 @@ export function updateState(
   writeDraft();
 }
 
-export function validateUser(division: DivisionData, userId: string): boolean {
-  let user = division.coaches.find((user) => user.id === userId);
-  return user ? true : false;
+export function getCoach(division: DivisionData, userId: string) {
+  return division.coaches.find((user) => user.id === userId);
 }
 
 export function canDraft(division: DivisionData, userId: string): boolean {
@@ -413,4 +411,12 @@ export function advanceDraft(interaction: BaseInteraction) {
 
 export function guildCheck(guildId: string | null) {
   return guildId === `917801941034229800` || guildId === `963884409252118609`;
+}
+
+export function addPicks(coach: CoachData, picks: string[]) {
+  coach.leftPicks = picks
+    .map((pid) => getDraftData(pid))
+    .filter((pid) => pid != undefined);
+  writeDraft();
+  return;
 }

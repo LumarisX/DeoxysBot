@@ -1,10 +1,6 @@
 export function getDexData(query: string) {
-  return (
-    DraftDex.find((e) => e.pid === query || e.name === query) || {
-      name: "Unknown",
-      pid: query,
-      png: "unknown",
-    }
+  return DraftDex.find(
+    (e) => e.pid === query || e.name.toLowerCase() === query.toLowerCase()
   );
 }
 

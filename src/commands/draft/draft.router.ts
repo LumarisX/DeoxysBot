@@ -1,5 +1,3 @@
-import { CommandInteraction } from "discord.js";
-import { guildCheck } from ".";
 import { CommandRoute } from "..";
 import { DraftModPickCommand } from "./admin/draft-modpick";
 import { DraftResetCommand } from "./admin/draft-reset";

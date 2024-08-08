@@ -11,7 +11,7 @@ import {
   getDraftData,
   guildCheck,
   tradeRandom,
-  validateUser,
+  getCoach,
 } from ".";
 import { Command } from "..";
 import { getDexData } from "./data/draftdex";
@@ -63,8 +63,9 @@ export const DraftTradeRandomCommand: Command = {
     if (!division) return interaction.reply("Division not found.");
     const user: User | undefined = interaction.options.get("user")?.user;
     if (!user) return interaction.reply("User not found.");
-    if (!validateUser(division, user.id))
-      return interaction.reply("User is not in the chosen divison.");
+    let coach = getCoach(division, user.id);
+    if (!coach)
+      return interaction.reply(`${user} is not a coach in this division.`);
     const category = interaction.options.get("category")?.value;
     if (!category) return interaction.reply("Category not found.");
     const oldPokemonString = interaction.options.get("pokemon");
@@ -73,7 +74,7 @@ export const DraftTradeRandomCommand: Command = {
     const oldPokemonDex = getDexData(oldPokemonString.value as string);
     if (!oldPokemonDex) return interaction.reply("Pokemon does not exist.");
     const baseReply = `${interaction.user}'s ${oldPokemonDex.name} has been traded away.`;
-    let newPokemonDex = tradeRandom(division, oldPokemonDex, user, {
+    let newPokemonDex = tradeRandom(division, oldPokemonDex, coach, {
       validate: true,
     });
 

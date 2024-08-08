@@ -30,7 +30,7 @@ export const DraftTeamCommand: Command = {
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
-    if (!division) return interaction.reply("Division not selected.");
+    if (!division) return interaction.reply("Division is invalid.");
     const user: User =
       interaction.options.get("user")?.user || interaction.user;
     const draftedList = getDrafted(division, { user: user.username })
