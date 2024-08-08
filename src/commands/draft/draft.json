@@ -38,7 +38,7 @@
   ],
   "divisions": [
     {
-      "channels": ["976230704767713282"],
+      "channels": ["917804709409091654","976230704767713282"],
       "coaches": [
         {
           "username": "lumaris",
@@ -48,29 +48,22 @@
 					"leftPicks": []
         },
         {
-          "username": "dicy",
-          "id": "319165539849076737",
+          "username": "aarontmarshall.",
+          "id": "746000101889015819",
           "order": 1,
           "team": [],
 					"leftPicks": []
           
         },
         {
-          "username": "h8oj",
-          "id": "529522646195634176",
+          "username": "mattstar",
+          "id": "217028876516327424",
           "order": 2,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "DeoxysBot#5853",
-          "id": "1268950062629654708",
-          "order": 3,
           "team": [],
 					"leftPicks": []
         }
       ],
-      "name": "Test"
+      "name": "DryRun"
     },
     {
       "channels": ["1270098076261945465"],

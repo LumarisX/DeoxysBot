@@ -137,10 +137,12 @@ async function gptRespond(message: Message) {
       message.reply({
         content: replyString,
         files: [attachemnt],
+        allowedMentions: { repliedUser: false },
       });
     } else {
       message.reply({
         content: replyString,
+        allowedMentions: { repliedUser: false },
       });
     }
   } catch (error) {

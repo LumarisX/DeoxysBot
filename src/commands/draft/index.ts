@@ -258,8 +258,7 @@ export function updateState(
   if (state === "start") {
     if (draftData.state === "") {
       draftData.state = "started";
-      interaction.reply("TheDraft has been started!");
-      notifyNext(interaction);
+      interaction.reply("The draft has been started!");
     } else {
       interaction.reply("Draft has already been started.");
     }
