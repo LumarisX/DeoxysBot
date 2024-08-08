@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npx ts-node src/index.ts",
     "dev": "nodemon src/index.ts",
-    "monitor": "nodemon src/index.ts",
-    "deploy-commands": "ts-node src/redeploy-commands.ts",
+    "monitor": "nodemon src/index.ts --ignore src/commands/draft/draft.json",
+    "deploy-global-commands": "ts-node src/redeploy-commands.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

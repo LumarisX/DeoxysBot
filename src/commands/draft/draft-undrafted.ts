@@ -6,8 +6,15 @@ import {
   ComponentType,
   SlashCommandBuilder,
 } from "discord.js";
-import { draftData, getDivisionByName, getUndrafted, guildCheck } from ".";
+import {
+  draftData,
+  getDivisionByName,
+  getUndrafted,
+  guildCheck,
+  PokemonData,
+} from ".";
 import { Command } from "..";
+import { getDexData } from "./data/draftdex";
 
 export const DraftUndraftedCommand: Command = {
   data: new SlashCommandBuilder()
@@ -60,18 +67,19 @@ export const DraftUndraftedCommand: Command = {
       tier: tier?.value as string | undefined,
       category: category?.value as string | undefined,
     });
-
     let currentPage = 0;
     const pageSize = 25;
 
-    const generateReplyString = (data: any[], page: number) => {
+    const generateReplyString = (data: PokemonData[], page: number) => {
       const start = page * pageSize;
       const end = start + pageSize;
       const undraftedList = data
         .slice(start, end)
         .map(
           (pokemon) =>
-            `**${pokemon.name}**: ${pokemon.tier}-tier ${pokemon.category}`
+            `**${getDexData(pokemon.pid)!.name}**: ${pokemon.tier}-tier ${
+              pokemon.category
+            }`
         );
       if (undraftedList.length > 0) {
         return `Remaining undrafted pokemon are:\n> ${undraftedList.join(

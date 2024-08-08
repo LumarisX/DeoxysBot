@@ -3,10 +3,11 @@
     "Utility",
     "Sweeper",
     "Stall",
-    "Wall",
     "Field Manipulation",
+    "Fast Offense",
     "Bulky Defense",
     "Bulky Offense",
+    "TR Sweeper",
     "NFE",
     "Restricted"
   ],
@@ -38,917 +39,3513 @@
   ],
   "divisions": [
     {
-      "channels": ["917804709409091654","976230704767713282"],
+      "name": "DryRun",
+      "channels": [
+        "917804709409091654",
+        "976230704767713282"
+      ],
       "coaches": [
         {
           "username": "lumaris",
           "id": "206144110275461121",
           "order": 0,
           "team": [],
-					"leftPicks": []
+          "leftPicks": []
         },
         {
           "username": "aarontmarshall.",
           "id": "746000101889015819",
           "order": 1,
           "team": [],
-					"leftPicks": []
-          
+          "leftPicks": []
         },
         {
           "username": "mattstar",
           "id": "217028876516327424",
           "order": 2,
           "team": [],
-					"leftPicks": []
-        }
-      ],
-      "name": "DryRun"
-    },
-    {
-      "channels": ["1270098076261945465"],
-      "coaches": [
-        {
-          "username": "mattmanectric",
-          "id": "198196087989731328",
-          "order": 0,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "mattstar",
-          "id": "217028876516327424",
-          "order": 1,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "omalight",
-          "id": "279369135102623754",
-          "order": 2,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "mrnealio",
-          "id": "137157466981924864",
-          "order": 3,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "crizzlex",
-          "id": "779499856296149002",
-          "order": 4,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "dr.daveh",
-          "id": "626186372838981642",
-          "order": 5,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "memebasedgod",
-          "id": "335826375770505216",
-          "order": 6,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "ted2best",
-          "id": "878624846681088072",
-          "order": 7,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "ciqarettan",
-          "id": "550026458626785290",
-          "order": 8,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "cammyrupt",
-          "id": "671732222776311820",
-          "order": 9,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "speedyzoid",
-          "id": "692128172929581179",
-          "order": 10,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "sirfishwastaken",
-          "id": "452848609076183040",
-          "order": 11,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "k3y5.",
-          "id": "188023567550513153",
-          "order": 12,
-          "team": [],
-					"leftPicks": []
-        }
-      ],
-      "name": "West"
-    },
-    {
-      "channels": ["1267438975786942526"],
-      "coaches": [
-        {
-          "username": "ianb1002",
-          "id": "422843761765122071",
-          "order": 0,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "jabbalink",
-          "id": "599419097934987294",
-          "order": 1,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "lumaris",
-          "id": "206144110275461121",
-          "order": 2,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "aarontmarshall.",
-          "id": "746000101889015819",
-          "order": 3,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "sillywilly7528",
-          "id": "308687852257017856",
-          "order": 4,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "rainmaker7955",
-          "id": "444955703623417881",
-          "order": 5,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "jarshall",
-          "id": "991840326094438470",
-          "order": 6,
-          "team": [],
-					"leftPicks": []
+          "leftPicks": []
         },
         {
           "username": "dogzie",
           "id": "561814232165777439",
-          "order": 7,
+          "order": 3,
           "team": [],
-					"leftPicks": []
+          "leftPicks": []
+        }
+      ],
+      "draftCount": 0
+    },{
+      "name": "Test",
+      "channels": [
+        "976230704767713282"
+      ],
+      "coaches": [
+        {
+          "username": "lumaris",
+          "id": "206144110275461121",
+          "order": 0,
+          "team": [],
+          "leftPicks": []
         },
         {
-          "username": "onlyembers",
-          "id": "206864983227629568",
-          "order": 8,
+          "username": "DeoxysBot#5853.",
+          "id": "1268950062629654708",
+          "order": 1,
           "team": [],
-					"leftPicks": []
+          "leftPicks": []
         },
         {
-          "username": "mawiiiii",
-          "id": "715278760806449213",
-          "order": 9,
+          "username": "dicy",
+          "id": "319165539849076737",
+          "order": 2,
           "team": [],
-					"leftPicks": []
+          "leftPicks": []
         },
         {
           "username": "h8oj",
           "id": "529522646195634176",
-          "order": 10,
+          "order": 3,
           "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "scottyw01",
-          "id": "693156825171886180",
-          "order": 11,
-          "team": [],
-					"leftPicks": []
-        },
-        {
-          "username": "rylekt",
-          "id": "332238496238534657",
-          "order": 12,
-          "team": [],
-					"leftPicks": []
+          "leftPicks": []
         }
       ],
-      "name": "East"
+      "draftCount": 0
     }
   ],
   "state": "started",
-  "timerMinutes": 120,
-  "reminders": [60, 30, 10],
+  "timerMinutes": 5,
+  "reminders": [],
   "pokemon": [
-    { "pid": "abomasnow", "tier": "B", "category": "Field Manipulation" },
-    { "pid": "absol", "tier": "C", "category": "Sweeper" },
-    { "pid": "accelgor", "tier": "B", "category": "Sweeper" },
-    { "pid": "aegislash", "tier": "C", "category": "TR Sweeper" },
-    { "pid": "aerodactyl", "tier": "A", "category": "Fast Offense" },
-    { "pid": "aggron", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "alakazam", "tier": "S", "category": "Fast Offense" },
-    { "pid": "alcremie", "tier": "B", "category": "Utility" },
-    { "pid": "alomomola", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "altaria", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "ambipom", "tier": "B", "category": "Fast Offense" },
-    { "pid": "amoonguss", "tier": "A", "category": "Stall" },
-    { "pid": "ampharos", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "annihilape", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "appletun", "tier": "B", "category": "Stall" },
-    { "pid": "araquanid", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "arbok", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "arboliva", "tier": "B", "category": "Field Manipulation" },
-    { "pid": "arcanine", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "arcaninehisui", "tier": "A", "category": "Fast Offense" },
-    { "pid": "archaludon", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "archeops", "tier": "D", "category": "Fast Offense" },
-    { "pid": "arctovish", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "arctozolt", "tier": "B", "category": "Fast Offense" },
-    { "pid": "ariados", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "armaldo", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "armarouge", "tier": "B", "category": "Sweeper" },
-    { "pid": "aromatisse", "tier": "C", "category": "Utility" },
-    { "pid": "articuno", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "articunogalar", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "audino", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "aurorus", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "avalugg", "tier": "C", "category": "TR Sweeper" },
-    { "pid": "avalugghisui", "tier": "C", "category": "TR Sweeper" },
-    { "pid": "azelf", "tier": "A", "category": "Fast Offense" },
-    { "pid": "azumarill", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "banette", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "barbaracle", "tier": "D", "category": "Fast Offense" },
-    { "pid": "barraskewda", "tier": "A", "category": "Fast Offense" },
-    { "pid": "basculegion", "tier": "B", "category": "Fast Offense" },
-    { "pid": "basculegionf", "tier": "B", "category": "Fast Offense" },
-    { "pid": "basculin", "tier": "D", "category": "Sweeper" },
-    { "pid": "bastiodon", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "baxcalibur", "tier": "A", "category": "Sweeper" },
-    { "pid": "beartic", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "beautifly", "tier": "D", "category": "Stall" },
-    { "pid": "beedrill", "tier": "C", "category": "Fast Offense" },
-    { "pid": "beheeyem", "tier": "D", "category": "TR Sweeper" },
-    { "pid": "bellibolt", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "bellossom", "tier": "D", "category": "Stall" },
-    { "pid": "bewear", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "bibarel", "tier": "D", "category": "Sweeper" },
-    { "pid": "blacephalon", "tier": "A", "category": "Sweeper" },
-    { "pid": "blastoise", "tier": "S", "category": "Sweeper" },
-    { "pid": "blaziken", "tier": "S", "category": "Sweeper" },
-    { "pid": "blissey", "tier": "B", "category": "Stall" },
-    { "pid": "boltund", "tier": "C", "category": "Fast Offense" },
-    { "pid": "bombirdier", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "bouffalant", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "brambleghast", "tier": "B", "category": "Sweeper" },
-    { "pid": "braviary", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "braviaryhisui", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "breloom", "tier": "B", "category": "Stall" },
-    { "pid": "bronzong", "tier": "A", "category": "Utility" },
-    { "pid": "bronzor", "tier": "D", "category": "Utility" },
-    { "pid": "brutebonnet", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "bruxish", "tier": "C", "category": "Sweeper" },
-    { "pid": "butterfree", "tier": "B", "category": "Utility" },
-    { "pid": "buzzwole", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "cacturne", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "calyrex", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "calyrexice", "tier": "R", "category": "Restricted" },
-    { "pid": "calyrexshadow", "tier": "R", "category": "Restricted" },
-    { "pid": "camerupt", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "carbink", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "carnivine", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "carracosta", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "castform", "tier": "C", "category": "Sweeper" },
-    { "pid": "celebi", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "celesteela", "tier": "A", "category": "Stall" },
-    { "pid": "centiskorch", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "ceruledge", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "cetitan", "tier": "C", "category": "Sweeper" },
-    { "pid": "chandelure", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "chansey", "tier": "C", "category": "Stall" },
-    { "pid": "charizard", "tier": "S", "category": "Sweeper" },
-    { "pid": "charjabug", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "chatot", "tier": "D", "category": "Fast Offense" },
-    { "pid": "cherrim", "tier": "D", "category": "Utility" },
-    { "pid": "chesnaught", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "chienpao", "tier": "S", "category": "Sweeper" },
-    { "pid": "chimecho", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "chiyu", "tier": "S", "category": "Fast Offense" },
-    { "pid": "cinccino", "tier": "C", "category": "Fast Offense" },
-    { "pid": "cinderace", "tier": "A", "category": "Fast Offense" },
-    { "pid": "clawitzer", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "claydol", "tier": "D", "category": "Utility" },
-    { "pid": "clefable", "tier": "A", "category": "Utility" },
-    { "pid": "clefairy", "tier": "A", "category": "Utility" },
-    { "pid": "clodsire", "tier": "C", "category": "Stall" },
-    { "pid": "cloyster", "tier": "D", "category": "Sweeper" },
-    { "pid": "coalossal", "tier": "B", "category": "Sweeper" },
-    { "pid": "cobalion", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "cofagrigus", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "comfey", "tier": "A", "category": "Utility" },
-    { "pid": "conkeldurr", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "copperajah", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "corsola", "tier": "D", "category": "Stall" },
-    { "pid": "corsolagalar", "tier": "C", "category": "Stall" },
-    { "pid": "corviknight", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "crabominable", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "cradily", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "cramorant", "tier": "D", "category": "Fast Offense" },
-    { "pid": "crawdaunt", "tier": "C", "category": "Sweeper" },
-    { "pid": "cresselia", "tier": "S", "category": "Utility" },
-    { "pid": "crobat", "tier": "S", "category": "Fast Offense" },
-    { "pid": "crustle", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "cryogonal", "tier": "C", "category": "Utility" },
-    { "pid": "cursola", "tier": "D", "category": "TR Sweeper" },
-    { "pid": "cyclizar", "tier": "B", "category": "Fast Offense" },
-    { "pid": "dachsbun", "tier": "B", "category": "Stall" },
-    { "pid": "darkrai", "tier": "S", "category": "Fast Offense" },
-    { "pid": "darmanitan", "tier": "B", "category": "Fast Offense" },
-    { "pid": "darmanitangalar", "tier": "A", "category": "Sweeper" },
-    { "pid": "decidueye", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "decidueyehisui", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "dedenne", "tier": "A", "category": "Fast Offense" },
-    { "pid": "delcatty", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "delibird", "tier": "D", "category": "Fast Offense" },
-    { "pid": "delphox", "tier": "C", "category": "Fast Offense" },
-    { "pid": "deoxys", "tier": "S", "category": "Fast Offense" },
-    { "pid": "deoxysattack", "tier": "S", "category": "Fast Offense" },
-    { "pid": "deoxysdefense", "tier": "A", "category": "Stall" },
-    { "pid": "deoxysspeed", "tier": "A", "category": "Fast Offense" },
-    { "pid": "dewgong", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "dhelmise", "tier": "D", "category": "TR Sweeper" },
-    { "pid": "dialga", "tier": "R", "category": "Restricted" },
-    { "pid": "dialgaorigin", "tier": "R", "category": "Restricted" },
-    { "pid": "diancie", "tier": "S", "category": "Fast Offense" },
-    { "pid": "diggersby", "tier": "C", "category": "Sweeper" },
-    { "pid": "dipplin", "tier": "D", "category": "Stall" },
-    { "pid": "ditto", "tier": "D", "category": "Utility" },
-    { "pid": "dodrio", "tier": "C", "category": "Fast Offense" },
-    { "pid": "dondozo", "tier": "B", "category": "Stall" },
-    { "pid": "donphan", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "dracovish", "tier": "A", "category": "Sweeper" },
-    { "pid": "dracozolt", "tier": "A", "category": "Sweeper" },
-    { "pid": "dragalge", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "dragapult", "tier": "S", "category": "Sweeper" },
-    { "pid": "dragonite", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "drampa", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "drapion", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "drednaw", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "drifblim", "tier": "B", "category": "Utility" },
-    { "pid": "druddigon", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "dubwool", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "dudunsparce", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "dugtrio", "tier": "C", "category": "Fast Offense" },
-    { "pid": "dugtrioalola", "tier": "C", "category": "Fast Offense" },
-    { "pid": "dunsparce", "tier": "C", "category": "Stall" },
-    { "pid": "duraludon", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "durant", "tier": "C", "category": "Fast Offense" },
-    { "pid": "dusclops", "tier": "A", "category": "Utility" },
-    { "pid": "dusknoir", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "dustox", "tier": "D", "category": "Stall" },
-    { "pid": "eelektross", "tier": "C", "category": "TR Sweeper" },
-    { "pid": "eiscue", "tier": "C", "category": "Stall" },
-    { "pid": "eldegoss", "tier": "D", "category": "Utility" },
-    { "pid": "electabuzz", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "electivire", "tier": "C", "category": "Sweeper" },
-    { "pid": "electrode", "tier": "C", "category": "Fast Offense" },
-    { "pid": "electrodehisui", "tier": "C", "category": "Fast Offense" },
-    { "pid": "emboar", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "emolga", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "empoleon", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "enamorus", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "enamorustherian", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "entei", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "escavalier", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "espathra", "tier": "B", "category": "Fast Offense" },
-    { "pid": "espeon", "tier": "B", "category": "Sweeper" },
-    { "pid": "eternatus", "tier": "R", "category": "Restricted" },
-    { "pid": "excadrill", "tier": "A", "category": "Sweeper" },
-    { "pid": "exeggutor", "tier": "B", "category": "Utility" },
-    { "pid": "exeggutoralola", "tier": "B", "category": "Utility" },
-    { "pid": "exploud", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "falinks", "tier": "C", "category": "Sweeper" },
-    { "pid": "farfetchd", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "farigiraf", "tier": "A", "category": "Utility" },
-    { "pid": "fearow", "tier": "D", "category": "Sweeper" },
-    { "pid": "feraligatr", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "ferrothorn", "tier": "A", "category": "Stall" },
-    { "pid": "fezandipiti", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "flamigo", "tier": "B", "category": "Sweeper" },
-    { "pid": "flapple", "tier": "C", "category": "Fast Offense" },
-    { "pid": "flareon", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "floatzel", "tier": "C", "category": "Fast Offense" },
-    { "pid": "florges", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "fluttermane", "tier": "A", "category": "Sweeper" },
-    { "pid": "flygon", "tier": "C", "category": "Fast Offense" },
-    { "pid": "forretress", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "froslass", "tier": "B", "category": "Utility" },
-    { "pid": "frosmoth", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "furfrou", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "furret", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "gallade", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "galvantula", "tier": "C", "category": "Utility" },
-    { "pid": "garbodor", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "garchomp", "tier": "A", "category": "Fast Offense" },
-    { "pid": "gardevoir", "tier": "A", "category": "Sweeper" },
-    { "pid": "garganacl", "tier": "A", "category": "Stall" },
-    { "pid": "gastrodon", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "genesect", "tier": "S", "category": "Fast Offense" },
-    { "pid": "gengar", "tier": "S", "category": "Sweeper" },
-    { "pid": "gholdengo", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "gigalith", "tier": "B", "category": "Field Manipulation" },
-    { "pid": "girafarig", "tier": "D", "category": "Utility" },
-    { "pid": "giratina", "tier": "R", "category": "Restricted" },
-    { "pid": "giratinaorigin", "tier": "R", "category": "Restricted" },
-    { "pid": "glaceon", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "glalie", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "glastrier", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "glimmora", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "gliscor", "tier": "C", "category": "Sweeper" },
-    { "pid": "gogoat", "tier": "B", "category": "Stall" },
-    { "pid": "golduck", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "golem", "tier": "D", "category": "TR Sweeper" },
-    { "pid": "golemalola", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "golisopod", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "golurk", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "goodra", "tier": "A", "category": "Stall" },
-    { "pid": "goodrahisui", "tier": "A", "category": "Stall" },
-    { "pid": "gorebyss", "tier": "C", "category": "Sweeper" },
-    { "pid": "gothitelle", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "gougingfire", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "gourgeist", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "grafaiai", "tier": "B", "category": "Utility" },
-    { "pid": "granbull", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "grapploct", "tier": "C", "category": "Fast Offense" },
-    { "pid": "greattusk", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "greedent", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "greninja", "tier": "A", "category": "Fast Offense" },
-    { "pid": "grimmsnarl", "tier": "S", "category": "Utility" },
-    { "pid": "grookey", "tier": "C", "category": "Field Manipulation" },
-    { "pid": "groudon", "tier": "R", "category": "Restricted" },
-    { "pid": "grumpig", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "gumshoos", "tier": "C", "category": "Fast Offense" },
-    { "pid": "guzzlord", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "gyarados", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "hariyama", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "hatterene", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "hawlucha", "tier": "B", "category": "Sweeper" },
-    { "pid": "haxorus", "tier": "A", "category": "Sweeper" },
-    { "pid": "heatmor", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "heatran", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "heliolisk", "tier": "C", "category": "Fast Offense" },
-    { "pid": "heracross", "tier": "B", "category": "Sweeper" },
-    { "pid": "hippopotas", "tier": "C", "category": "Field Manipulation" },
-    { "pid": "hippowdon", "tier": "B", "category": "Field Manipulation" },
-    { "pid": "hitmonchan", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "hitmonlee", "tier": "C", "category": "Sweeper" },
-    { "pid": "hitmontop", "tier": "B", "category": "Utility" },
-    { "pid": "honchkrow", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "hooh", "tier": "R", "category": "Restricted" },
-    { "pid": "hoopa", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "hoopaunbound", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "houndoom", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "houndstone", "tier": "A", "category": "Sweeper" },
-    { "pid": "huntail", "tier": "D", "category": "Sweeper" },
-    { "pid": "hydrapple", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "hydreigon", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "hypno", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "illumise", "tier": "A", "category": "Utility" },
-    { "pid": "incineroar", "tier": "S", "category": "Utility" },
-    { "pid": "indeedee", "tier": "A", "category": "Field Manipulation" },
-    { "pid": "indeedeef", "tier": "S", "category": "Field Manipulation" },
-    { "pid": "infernape", "tier": "B", "category": "Fast Offense" },
-    { "pid": "inteleon", "tier": "C", "category": "Fast Offense" },
-    { "pid": "ironboulder", "tier": "S", "category": "Sweeper" },
-    { "pid": "ironbundle", "tier": "S", "category": "Fast Offense" },
-    { "pid": "ironcrown", "tier": "S", "category": "Fast Offense" },
-    { "pid": "ironhands", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "ironjugulis", "tier": "A", "category": "Sweeper" },
-    { "pid": "ironleaves", "tier": "A", "category": "Sweeper" },
-    { "pid": "ironmoth", "tier": "A", "category": "Sweeper" },
-    { "pid": "ironthorns", "tier": "A", "category": "Sweeper" },
-    { "pid": "irontreads", "tier": "A", "category": "Sweeper" },
-    { "pid": "ironvaliant", "tier": "A", "category": "Fast Offense" },
-    { "pid": "jellicent", "tier": "C", "category": "Stall" },
-    { "pid": "jirachi", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "jolteon", "tier": "B", "category": "Sweeper" },
-    { "pid": "jumpluff", "tier": "B", "category": "Utility" },
-    { "pid": "jynx", "tier": "D", "category": "Utility" },
-    { "pid": "kabutops", "tier": "C", "category": "Sweeper" },
-    { "pid": "kangaskhan", "tier": "S", "category": "Fast Offense" },
-    { "pid": "kartana", "tier": "S", "category": "Sweeper" },
-    { "pid": "kecleon", "tier": "D", "category": "Utility" },
-    { "pid": "keldeo", "tier": "S", "category": "Sweeper" },
-    { "pid": "kilowattrel", "tier": "B", "category": "Fast Offense" },
-    { "pid": "kingambit", "tier": "A", "category": "Sweeper" },
-    { "pid": "kingdra", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "kingler", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "klawf", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "kleavor", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "klefki", "tier": "A", "category": "Utility" },
-    { "pid": "klinklang", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "koffing", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "komala", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "kommoo", "tier": "A", "category": "Sweeper" },
-    { "pid": "koraidon", "tier": "R", "category": "Restricted" },
-    { "pid": "kricketune", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "krookodile", "tier": "A", "category": "Sweeper" },
-    { "pid": "kyogre", "tier": "R", "category": "Restricted" },
-    { "pid": "kyurem", "tier": "R", "category": "Restricted" },
-    { "pid": "kyuremblack", "tier": "R", "category": "Restricted" },
-    { "pid": "kyuremwhite", "tier": "R", "category": "Restricted" },
-    { "pid": "landorus", "tier": "S", "category": "Sweeper" },
-    { "pid": "landorus", "tier": "S", "category": "Fast Offense" },
-    { "pid": "landorustherian", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "lanturn", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "lapras", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "latias", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "latios", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "leafeon", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "leavanny", "tier": "D", "category": "Fast Offense" },
-    { "pid": "ledian", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "lickilicky", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "liepard", "tier": "A", "category": "Utility" },
-    { "pid": "lilligant", "tier": "C", "category": "Stall" },
-    { "pid": "lilliganthisui", "tier": "A", "category": "Fast Offense" },
-    { "pid": "linoone", "tier": "C", "category": "Sweeper" },
-    { "pid": "lokix", "tier": "D", "category": "Fast Offense" },
-    { "pid": "lopunny", "tier": "B", "category": "Fast Offense" },
-    { "pid": "lucario", "tier": "S", "category": "Sweeper" },
-    { "pid": "ludicolo", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "lugia", "tier": "R", "category": "Restricted" },
-    { "pid": "lumineon", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "lunala", "tier": "R", "category": "Restricted" },
-    { "pid": "lunatone", "tier": "D", "category": "Utility" },
-    { "pid": "lurantis", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "luvdisc", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "luxray", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "lycanroc", "tier": "C", "category": "Fast Offense" },
-    { "pid": "lycanrocdusk", "tier": "C", "category": "Sweeper" },
-    { "pid": "lycanrocmidnight", "tier": "C", "category": "Sweeper" },
-    { "pid": "mabosstiff", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "machamp", "tier": "C", "category": "TR Sweeper" },
-    { "pid": "magcargo", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "magearna", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "magmar", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "magmortar", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "magneton", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "magnezone", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "malamar", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "mamoswine", "tier": "A", "category": "Sweeper" },
-    { "pid": "manaphy", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "mandibuzz", "tier": "B", "category": "Stall" },
-    { "pid": "manectric", "tier": "B", "category": "Sweeper" },
-    { "pid": "mantine", "tier": "D", "category": "Sweeper" },
-    { "pid": "maractus", "tier": "D", "category": "Utility" },
-    { "pid": "marowak", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "marowakalola", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "marshadow", "tier": "S", "category": "Sweeper" },
-    { "pid": "masquerain", "tier": "D", "category": "Utility" },
-    { "pid": "maushold", "tier": "A", "category": "Utility" },
-    { "pid": "mawile", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "medicham", "tier": "B", "category": "Sweeper" },
-    { "pid": "meganium", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "melmetal", "tier": "S", "category": "Sweeper" },
-    { "pid": "meloetta", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "meowscarada", "tier": "A", "category": "Fast Offense" },
-    { "pid": "meowstic", "tier": "A", "category": "Utility" },
-    { "pid": "meowsticf", "tier": "C", "category": "Fast Offense" },
-    { "pid": "meowthalola", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "mesprit", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "metagross", "tier": "S", "category": "Fast Offense" },
-    { "pid": "mew", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "mewtwo", "tier": "R", "category": "Restricted" },
-    { "pid": "mienshao", "tier": "A", "category": "Sweeper" },
-    { "pid": "mightyena", "tier": "C", "category": "Sweeper" },
-    { "pid": "milotic", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "miltank", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "mimikyu", "tier": "A", "category": "Utility" },
-    { "pid": "minior", "tier": "C", "category": "Fast Offense" },
-    { "pid": "minun", "tier": "D", "category": "Utility" },
-    { "pid": "miraidon", "tier": "R", "category": "Restricted" },
-    { "pid": "mismagius", "tier": "C", "category": "Fast Offense" },
-    { "pid": "moltres", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "moltresgalar", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "morpeko", "tier": "C", "category": "Fast Offense" },
-    { "pid": "mothim", "tier": "D", "category": "Stall" },
-    { "pid": "mrmime", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "mrmimegalar", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "mrrime", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "mudsdale", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "muk", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "mukalola", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "munkidori", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "murkrow", "tier": "A", "category": "Utility" },
-    { "pid": "musharna", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "naganadel", "tier": "A", "category": "Sweeper" },
-    { "pid": "necrozma", "tier": "R", "category": "Restricted" },
-    { "pid": "necrozmadawnwings", "tier": "R", "category": "Restricted" },
-    { "pid": "necrozmaduskmane", "tier": "R", "category": "Restricted" },
-    { "pid": "nidoking", "tier": "D", "category": "Fast Offense" },
-    { "pid": "nidoqueen", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "nihilego", "tier": "A", "category": "Sweeper" },
-    { "pid": "ninetales", "tier": "B", "category": "Field Manipulation" },
-    { "pid": "ninetalesalola", "tier": "A", "category": "Field Manipulation" },
-    { "pid": "ninjask", "tier": "C", "category": "Fast Offense" },
-    { "pid": "noctowl", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "noivern", "tier": "B", "category": "Sweeper" },
-    { "pid": "obstagoon", "tier": "C", "category": "Stall" },
-    { "pid": "octillery", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "ogerpon", "tier": "S", "category": "Fast Offense" },
-    { "pid": "ogerponcornerstone", "tier": "S", "category": "Fast Offense" },
-    { "pid": "ogerponhearthflame", "tier": "S", "category": "Fast Offense" },
-    { "pid": "ogerponwellspring", "tier": "S", "category": "Fast Offense" },
-    { "pid": "oinkologne", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "oinkolognef", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "okidogi", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "omastar", "tier": "D", "category": "Sweeper" },
-    { "pid": "onix", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "oranguru", "tier": "A", "category": "Utility" },
-    { "pid": "orbeetle", "tier": "D", "category": "TR Sweeper" },
-    { "pid": "oricorio", "tier": "C", "category": "Utility" },
-    { "pid": "orthworm", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "overqwil", "tier": "B", "category": "Sweeper" },
-    { "pid": "pachirisu", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "palafin", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "palkia", "tier": "R", "category": "Restricted" },
-    { "pid": "palkiaorigin", "tier": "R", "category": "Restricted" },
-    { "pid": "palossand", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "pangoro", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "parasect", "tier": "C", "category": "Stall" },
-    { "pid": "passimian", "tier": "C", "category": "Sweeper" },
-    { "pid": "pawmot", "tier": "B", "category": "Fast Offense" },
-    { "pid": "pecharunt", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "pelipper", "tier": "S", "category": "Field Manipulation" },
-    { "pid": "perrserker", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "persian", "tier": "C", "category": "Fast Offense" },
-    { "pid": "persianalola", "tier": "C", "category": "Fast Offense" },
-    { "pid": "pheromosa", "tier": "B", "category": "Fast Offense" },
-    { "pid": "phione", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "pidgeot", "tier": "C", "category": "Fast Offense" },
-    { "pid": "pikachu", "tier": "A", "category": "Fast Offense" },
-    { "pid": "pincurchin", "tier": "B", "category": "Field Manipulation" },
-    { "pid": "pinsir", "tier": "C", "category": "Sweeper" },
-    { "pid": "plusle", "tier": "D", "category": "Utility" },
-    { "pid": "politoed", "tier": "A", "category": "Field Manipulation" },
-    { "pid": "poliwrath", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "polteageist", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "porygon", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "porygon2", "tier": "S", "category": "Utility" },
-    { "pid": "porygonz", "tier": "A", "category": "Sweeper" },
-    { "pid": "primarina", "tier": "B", "category": "Sweeper" },
-    { "pid": "primeape", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "probopass", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "purugly", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "pyroar", "tier": "C", "category": "Fast Offense" },
-    { "pid": "pyukumuku", "tier": "D", "category": "Stall" },
-    { "pid": "quagsire", "tier": "C", "category": "Stall" },
-    { "pid": "quaquaval", "tier": "A", "category": "Fast Offense" },
-    { "pid": "qwilfish", "tier": "D", "category": "Sweeper" },
-    { "pid": "rabsca", "tier": "C", "category": "Utility" },
-    { "pid": "ragingbolt", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "raichu", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "raichualola", "tier": "B", "category": "Sweeper" },
-    { "pid": "raikou", "tier": "A", "category": "Sweeper" },
-    { "pid": "rampardos", "tier": "C", "category": "TR Sweeper" },
-    { "pid": "rapidash", "tier": "C", "category": "Fast Offense" },
-    { "pid": "rapidashgalar", "tier": "C", "category": "TR Sweeper" },
-    { "pid": "raticate", "tier": "D", "category": "Sweeper" },
-    { "pid": "raticatealola", "tier": "D", "category": "Sweeper" },
-    { "pid": "rayquaza", "tier": "R", "category": "Restricted" },
-    { "pid": "regice", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "regidrago", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "regieleki", "tier": "A", "category": "Fast Offense" },
-    { "pid": "regigigas", "tier": "A", "category": "Sweeper" },
-    { "pid": "regirock", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "registeel", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "relicanth", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "reshiram", "tier": "R", "category": "Restricted" },
-    { "pid": "reuniclus", "tier": "C", "category": "TR Sweeper" },
-    { "pid": "revavroom", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "rhydon", "tier": "D", "category": "TR Sweeper" },
-    { "pid": "rhyperior", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "ribombee", "tier": "B", "category": "Utility" },
-    { "pid": "rillaboom", "tier": "S", "category": "Field Manipulation" },
-    { "pid": "riolu", "tier": "C", "category": "Utility" },
-    { "pid": "roaringmoon", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "roserade", "tier": "C", "category": "Fast Offense" },
-    { "pid": "rotom", "tier": "D", "category": "Utility" },
-    { "pid": "rotomfan", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "rotomfrost", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "rotomheat", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "rotommow", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "rotomwash", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "runerigus", "tier": "B", "category": "Utility" },
-    { "pid": "sableye", "tier": "A", "category": "Utility" },
-    { "pid": "salamence", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "salazzle", "tier": "B", "category": "Fast Offense" },
-    { "pid": "samurott", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "samurotthisui", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "sandaconda", "tier": "C", "category": "Field Manipulation" },
-    { "pid": "sandslash", "tier": "D", "category": "Sweeper" },
-    { "pid": "sandslashalola", "tier": "D", "category": "Sweeper" },
-    { "pid": "sandyshocks", "tier": "A", "category": "Fast Offense" },
-    { "pid": "sawk", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "sawsbuck", "tier": "C", "category": "Fast Offense" },
-    { "pid": "sceptile", "tier": "B", "category": "Sweeper" },
-    { "pid": "scizor", "tier": "A", "category": "TR Sweeper" },
-    { "pid": "scolipede", "tier": "D", "category": "Fast Offense" },
-    { "pid": "scovillain", "tier": "C", "category": "Fast Offense" },
-    { "pid": "scrafty", "tier": "B", "category": "Utility" },
-    { "pid": "screamtail", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "scyther", "tier": "C", "category": "Sweeper" },
-    { "pid": "seaking", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "seismitoad", "tier": "C", "category": "Sweeper" },
-    { "pid": "serperior", "tier": "C", "category": "Fast Offense" },
-    { "pid": "seviper", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "sharpedo", "tier": "D", "category": "Fast Offense" },
-    { "pid": "shaymin", "tier": "S", "category": "Utility" },
-    { "pid": "shayminsky", "tier": "S", "category": "Sweeper" },
-    { "pid": "shedinja", "tier": "C", "category": "Stall" },
-    { "pid": "shiftry", "tier": "D", "category": "Sweeper" },
-    { "pid": "shiinotic", "tier": "C", "category": "Stall" },
-    { "pid": "shuckle", "tier": "D", "category": "Stall" },
-    { "pid": "sigilyph", "tier": "D", "category": "Utility" },
-    { "pid": "silvally", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "simipour", "tier": "B", "category": "Fast Offense" },
-    { "pid": "simisage", "tier": "B", "category": "Fast Offense" },
-    { "pid": "simisear", "tier": "B", "category": "Fast Offense" },
-    { "pid": "sinistcha", "tier": "A", "category": "Utility" },
-    { "pid": "sirfetchd", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "skarmory", "tier": "C", "category": "Stall" },
-    { "pid": "skeledirge", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "skuntank", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "slaking", "tier": "B", "category": "Sweeper" },
-    { "pid": "slitherwing", "tier": "A", "category": "Sweeper" },
-    { "pid": "slowbro", "tier": "B", "category": "Utility" },
-    { "pid": "slowbrogalar", "tier": "B", "category": "Utility" },
-    { "pid": "slowking", "tier": "A", "category": "Utility" },
-    { "pid": "slowkinggalar", "tier": "A", "category": "Utility" },
-    { "pid": "slowpoke", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "slowpokegalar", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "slurpuff", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "smeargle", "tier": "A", "category": "Stall" },
-    { "pid": "sneasel", "tier": "B", "category": "Sweeper" },
-    { "pid": "sneaselhisui", "tier": "C", "category": "Sweeper" },
-    { "pid": "sneasler", "tier": "A", "category": "Sweeper" },
-    { "pid": "snorlax", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "snover", "tier": "C", "category": "Field Manipulation" },
-    { "pid": "solgaleo", "tier": "R", "category": "Restricted" },
-    { "pid": "solrock", "tier": "D", "category": "Utility" },
-    { "pid": "spectrier", "tier": "S", "category": "Sweeper" },
-    { "pid": "spidops", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "spinda", "tier": "D", "category": "Sweeper" },
-    { "pid": "spiritomb", "tier": "B", "category": "Utility" },
-    { "pid": "squawkabilly", "tier": "C", "category": "Fast Offense" },
-    { "pid": "stakataka", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "stantler", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "staraptor", "tier": "B", "category": "Fast Offense" },
-    { "pid": "starmie", "tier": "D", "category": "Sweeper" },
-    { "pid": "steelix", "tier": "B", "category": "TR Sweeper" },
-    { "pid": "stonjourner", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "stoutland", "tier": "D", "category": "Fast Offense" },
-    { "pid": "stunfisk", "tier": "C", "category": "Stall" },
-    { "pid": "stunfiskgalar", "tier": "C", "category": "Stall" },
-    { "pid": "sudowoodo", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "suicune", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "sunflora", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "swalot", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "swampert", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "swanna", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "swellow", "tier": "D", "category": "Utility" },
-    { "pid": "swoobat", "tier": "D", "category": "Sweeper" },
-    { "pid": "sylveon", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "talonflame", "tier": "B", "category": "Utility" },
-    { "pid": "tangrowth", "tier": "C", "category": "Stall" },
-    { "pid": "tapubulu", "tier": "A", "category": "Field Manipulation" },
-    { "pid": "tapufini", "tier": "S", "category": "Field Manipulation" },
-    { "pid": "tapukoko", "tier": "S", "category": "Field Manipulation" },
-    { "pid": "tapulele", "tier": "S", "category": "Field Manipulation" },
-    { "pid": "tatsugiri", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "tauros", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "taurospaldeaaqua", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "taurospaldeablaze", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "taurospaldeacombat", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "tentacruel", "tier": "D", "category": "Stall" },
-    { "pid": "terapagos", "tier": "R", "category": "Restricted" },
-    { "pid": "terrakion", "tier": "A", "category": "Sweeper" },
-    { "pid": "thievul", "tier": "C", "category": "Utility" },
-    { "pid": "throh", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "thundurus", "tier": "S", "category": "Utility" },
-    { "pid": "thundurustherian", "tier": "A", "category": "Fast Offense" },
-    { "pid": "thwackey", "tier": "C", "category": "Field Manipulation" },
-    { "pid": "tinglu", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "tinkaton", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "toedscruel", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "togedemaru", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "togekiss", "tier": "S", "category": "Utility" },
-    { "pid": "togetic", "tier": "A", "category": "Utility" },
-    { "pid": "torkoal", "tier": "S", "category": "Field Manipulation" },
-    { "pid": "tornadus", "tier": "S", "category": "Utility" },
-    { "pid": "tornadustherian", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "torracat", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "torterra", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "toucannon", "tier": "C", "category": "Fast Offense" },
-    { "pid": "toxapex", "tier": "D", "category": "Stall" },
-    { "pid": "toxicroak", "tier": "C", "category": "Fast Offense" },
-    { "pid": "toxtricity", "tier": "C", "category": "Fast Offense" },
-    { "pid": "trevenant", "tier": "C", "category": "Utility" },
-    { "pid": "tropius", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "tsareena", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "turtonator", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "typhlosion", "tier": "B", "category": "Fast Offense" },
-    { "pid": "typhlosionhisui", "tier": "B", "category": "Fast Offense" },
-    { "pid": "tyranitar", "tier": "S", "category": "Field Manipulation" },
-    { "pid": "tyrantrum", "tier": "D", "category": "Bulk Offense" },
-    { "pid": "umbreon", "tier": "A", "category": "Bulky Defensive" },
-    { "pid": "unfezant", "tier": "D", "category": "Fast Offense" },
-    { "pid": "ursaluna", "tier": "A", "category": "Sweeper" },
-    { "pid": "ursalunabloodmoon", "tier": "S", "category": "Sweeper" },
-    { "pid": "ursaring", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "urshifu", "tier": "S", "category": "Sweeper" },
-    { "pid": "urshifurapidstrike", "tier": "S", "category": "Sweeper" },
-    { "pid": "uxie", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "vanilluxe", "tier": "B", "category": "Field Manipulation" },
-    { "pid": "vaporeon", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "veluza", "tier": "C", "category": "Sweeper" },
-    { "pid": "venomoth", "tier": "C", "category": "Stall" },
-    { "pid": "venusaur", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "vespiquen", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "victini", "tier": "S", "category": "Fast Offense" },
-    { "pid": "victreebel", "tier": "C", "category": "Bulk Offense" },
-    { "pid": "vigoroth", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "vikavolt", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "vileplume", "tier": "C", "category": "Stall" },
-    { "pid": "virizion", "tier": "B", "category": "Sweeper" },
-    { "pid": "vivillon", "tier": "B", "category": "Stall" },
-    { "pid": "volbeat", "tier": "A", "category": "Utility" },
-    { "pid": "volcanion", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "volcarona", "tier": "A", "category": "Bulk Offense" },
-    { "pid": "vulpix", "tier": "C", "category": "Field Manipulation" },
-    { "pid": "vulpixalola", "tier": "C", "category": "Field Manipulation" },
-    { "pid": "wailmer", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "wailord", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "walkingwake", "tier": "S", "category": "Fast Offense" },
-    { "pid": "walrein", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "wartortle", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "watchog", "tier": "D", "category": "Fast Offense" },
-    { "pid": "weavile", "tier": "B", "category": "Fast Offense" },
-    { "pid": "weezing", "tier": "B", "category": "Bulky Defensive" },
-    { "pid": "weezinggalar", "tier": "B", "category": "Field Manipulation" },
-    { "pid": "whimsicott", "tier": "S", "category": "Utility" },
-    { "pid": "whiscash", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "wigglytuff", "tier": "C", "category": "Bulky Defensive" },
-    { "pid": "wishiwashi", "tier": "D", "category": "TR Sweeper" },
-    { "pid": "wobbuffet", "tier": "D", "category": "Bulky Defensive" },
-    { "pid": "wochien", "tier": "A", "category": "Stall" },
-    { "pid": "wormadam", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "wormadamsandy", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "wormadamtrash", "tier": "B", "category": "Bulk Offense" },
-    { "pid": "wugtrio", "tier": "D", "category": "Sweeper" },
-    { "pid": "wyrdeer", "tier": "B", "category": "Utility" },
-    { "pid": "xatu", "tier": "D", "category": "TR Sweeper" },
-    { "pid": "xerneas", "tier": "R", "category": "Restricted" },
-    { "pid": "xurkitree", "tier": "A", "category": "Sweeper" },
-    { "pid": "yanmega", "tier": "C", "category": "Fast Offense" },
-    { "pid": "yveltal", "tier": "R", "category": "Restricted" },
-    { "pid": "zacian", "tier": "R", "category": "Restricted" },
-    { "pid": "zaciancrowned", "tier": "R", "category": "Restricted" },
-    { "pid": "zamazenta", "tier": "R", "category": "Restricted" },
-    { "pid": "zamazentacrowned", "tier": "R", "category": "Restricted" },
-    { "pid": "zangoose", "tier": "C", "category": "Sweeper" },
-    { "pid": "zapdos", "tier": "S", "category": "Bulk Offense" },
-    { "pid": "zapdosgalar", "tier": "S", "category": "Sweeper" },
-    { "pid": "zarude", "tier": "S", "category": "Fast Offense" },
-    { "pid": "zebstrika", "tier": "C", "category": "Fast Offense" },
-    { "pid": "zekrom", "tier": "R", "category": "Restricted" },
-    { "pid": "zeraora", "tier": "S", "category": "Sweeper" },
-    { "pid": "zoroark", "tier": "A", "category": "Sweeper" },
-    { "pid": "zoroarkhisui", "tier": "A", "category": "Fast Offense" },
-    { "pid": "zygarde", "tier": "R", "category": "Restricted" },
-    { "pid": "zygarde10", "tier": "B", "category": "Fast Offense" }
+    {
+      "pid": "abomasnow",
+      "tier": "B",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "absol",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "accelgor",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "aegislash",
+      "tier": "C",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "aerodactyl",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "aggron",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "alakazam",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "alcremie",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "alomomola",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "altaria",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "ambipom",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "amoonguss",
+      "tier": "A",
+      "category": "Stall"
+    },
+    {
+      "pid": "ampharos",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "annihilape",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "appletun",
+      "tier": "B",
+      "category": "Stall"
+    },
+    {
+      "pid": "araquanid",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "arbok",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "arboliva",
+      "tier": "B",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "arcanine",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "arcaninehisui",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "archaludon",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "archeops",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "arctovish",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "arctozolt",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "ariados",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "armaldo",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "armarouge",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "aromatisse",
+      "tier": "C",
+      "category": "Utility"
+    },
+    {
+      "pid": "articuno",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "articunogalar",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "audino",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "aurorus",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "avalugg",
+      "tier": "C",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "avalugghisui",
+      "tier": "C",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "azelf",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "azumarill",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "banette",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "barbaracle",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "barraskewda",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "basculegion",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "basculegionf",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "basculin",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "bastiodon",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "baxcalibur",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "beartic",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "beautifly",
+      "tier": "D",
+      "category": "Stall"
+    },
+    {
+      "pid": "beedrill",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "beheeyem",
+      "tier": "D",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "bellibolt",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "bellossom",
+      "tier": "D",
+      "category": "Stall"
+    },
+    {
+      "pid": "bewear",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "bibarel",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "blacephalon",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "blastoise",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "blaziken",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "blissey",
+      "tier": "B",
+      "category": "Stall"
+    },
+    {
+      "pid": "boltund",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "bombirdier",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "bouffalant",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "brambleghast",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "braviary",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "braviaryhisui",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "breloom",
+      "tier": "B",
+      "category": "Stall"
+    },
+    {
+      "pid": "bronzong",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "bronzor",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "brutebonnet",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "bruxish",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "butterfree",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "buzzwole",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "cacturne",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "calyrex",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "calyrexice",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "calyrexshadow",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "camerupt",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "carbink",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "carnivine",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "carracosta",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "castform",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "celebi",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "celesteela",
+      "tier": "A",
+      "category": "Stall"
+    },
+    {
+      "pid": "centiskorch",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "ceruledge",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "cetitan",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "chandelure",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "chansey",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "charizard",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "charjabug",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "chatot",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "cherrim",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "chesnaught",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "chienpao",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "chimecho",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "chiyu",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "cinccino",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "cinderace",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "clawitzer",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "claydol",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "clefable",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "clefairy",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "clodsire",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "cloyster",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "coalossal",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "cobalion",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "cofagrigus",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "comfey",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "conkeldurr",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "copperajah",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "corsola",
+      "tier": "D",
+      "category": "Stall"
+    },
+    {
+      "pid": "corsolagalar",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "corviknight",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "crabominable",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "cradily",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "cramorant",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "crawdaunt",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "cresselia",
+      "tier": "S",
+      "category": "Utility"
+    },
+    {
+      "pid": "crobat",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "crustle",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "cryogonal",
+      "tier": "C",
+      "category": "Utility"
+    },
+    {
+      "pid": "cursola",
+      "tier": "D",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "cyclizar",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "dachsbun",
+      "tier": "B",
+      "category": "Stall"
+    },
+    {
+      "pid": "darkrai",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "darmanitan",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "darmanitangalar",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "decidueye",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "decidueyehisui",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "dedenne",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "delcatty",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "delibird",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "delphox",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "deoxys",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "deoxysattack",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "deoxysdefense",
+      "tier": "A",
+      "category": "Stall"
+    },
+    {
+      "pid": "deoxysspeed",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "dewgong",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "dhelmise",
+      "tier": "D",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "dialga",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "dialgaorigin",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "diancie",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "diggersby",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "dipplin",
+      "tier": "D",
+      "category": "Stall"
+    },
+    {
+      "pid": "ditto",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "dodrio",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "dondozo",
+      "tier": "B",
+      "category": "Stall"
+    },
+    {
+      "pid": "donphan",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "dracovish",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "dracozolt",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "dragalge",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "dragapult",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "dragonite",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "drampa",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "drapion",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "drednaw",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "drifblim",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "druddigon",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "dubwool",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "dudunsparce",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "dugtrio",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "dugtrioalola",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "dunsparce",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "duraludon",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "durant",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "dusclops",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "dusknoir",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "dustox",
+      "tier": "D",
+      "category": "Stall"
+    },
+    {
+      "pid": "eelektross",
+      "tier": "C",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "eiscue",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "eldegoss",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "electabuzz",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "electivire",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "electrode",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "electrodehisui",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "emboar",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "emolga",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "empoleon",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "enamorus",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "enamorustherian",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "entei",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "escavalier",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "espathra",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "espeon",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "eternatus",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "excadrill",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "exeggutor",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "exeggutoralola",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "exploud",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "falinks",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "farfetchd",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "farigiraf",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "fearow",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "feraligatr",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "ferrothorn",
+      "tier": "A",
+      "category": "Stall"
+    },
+    {
+      "pid": "fezandipiti",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "flamigo",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "flapple",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "flareon",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "floatzel",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "florges",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "fluttermane",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "flygon",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "forretress",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "froslass",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "frosmoth",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "furfrou",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "furret",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "gallade",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "galvantula",
+      "tier": "C",
+      "category": "Utility"
+    },
+    {
+      "pid": "garbodor",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "garchomp",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "gardevoir",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "garganacl",
+      "tier": "A",
+      "category": "Stall"
+    },
+    {
+      "pid": "gastrodon",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "genesect",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "gengar",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "gholdengo",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "gigalith",
+      "tier": "B",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "girafarig",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "giratina",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "giratinaorigin",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "glaceon",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "glalie",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "glastrier",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "glimmora",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "gliscor",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "gogoat",
+      "tier": "B",
+      "category": "Stall"
+    },
+    {
+      "pid": "golduck",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "golem",
+      "tier": "D",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "golemalola",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "golisopod",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "golurk",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "goodra",
+      "tier": "A",
+      "category": "Stall"
+    },
+    {
+      "pid": "goodrahisui",
+      "tier": "A",
+      "category": "Stall"
+    },
+    {
+      "pid": "gorebyss",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "gothitelle",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "gougingfire",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "gourgeist",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "grafaiai",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "granbull",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "grapploct",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "greattusk",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "greedent",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "greninja",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "grimmsnarl",
+      "tier": "S",
+      "category": "Utility"
+    },
+    {
+      "pid": "grookey",
+      "tier": "C",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "groudon",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "grumpig",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "gumshoos",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "guzzlord",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "gyarados",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "hariyama",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "hatterene",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "hawlucha",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "haxorus",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "heatmor",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "heatran",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "heliolisk",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "heracross",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "hippopotas",
+      "tier": "C",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "hippowdon",
+      "tier": "B",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "hitmonchan",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "hitmonlee",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "hitmontop",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "honchkrow",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "hooh",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "hoopa",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "hoopaunbound",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "houndoom",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "houndstone",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "huntail",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "hydrapple",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "hydreigon",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "hypno",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "illumise",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "incineroar",
+      "tier": "S",
+      "category": "Utility"
+    },
+    {
+      "pid": "indeedee",
+      "tier": "A",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "indeedeef",
+      "tier": "S",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "infernape",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "inteleon",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "ironboulder",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "ironbundle",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "ironcrown",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "ironhands",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "ironjugulis",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "ironleaves",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "ironmoth",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "ironthorns",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "irontreads",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "ironvaliant",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "jellicent",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "jirachi",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "jolteon",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "jumpluff",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "jynx",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "kabutops",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "kangaskhan",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "kartana",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "kecleon",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "keldeo",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "kilowattrel",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "kingambit",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "kingdra",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "kingler",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "klawf",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "kleavor",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "klefki",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "klinklang",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "koffing",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "komala",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "kommoo",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "koraidon",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "kricketune",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "krookodile",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "kyogre",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "kyurem",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "kyuremblack",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "kyuremwhite",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "landorus",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "landorus",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "landorustherian",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "lanturn",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "lapras",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "latias",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "latios",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "leafeon",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "leavanny",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "ledian",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "lickilicky",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "liepard",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "lilligant",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "lilliganthisui",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "linoone",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "lokix",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "lopunny",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "lucario",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "ludicolo",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "lugia",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "lumineon",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "lunala",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "lunatone",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "lurantis",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "luvdisc",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "luxray",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "lycanroc",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "lycanrocdusk",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "lycanrocmidnight",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "mabosstiff",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "machamp",
+      "tier": "C",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "magcargo",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "magearna",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "magmar",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "magmortar",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "magneton",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "magnezone",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "malamar",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "mamoswine",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "manaphy",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "mandibuzz",
+      "tier": "B",
+      "category": "Stall"
+    },
+    {
+      "pid": "manectric",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "mantine",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "maractus",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "marowak",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "marowakalola",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "marshadow",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "masquerain",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "maushold",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "mawile",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "medicham",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "meganium",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "melmetal",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "meloetta",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "meowscarada",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "meowstic",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "meowsticf",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "meowthalola",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "mesprit",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "metagross",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "mew",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "mewtwo",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "mienshao",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "mightyena",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "milotic",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "miltank",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "mimikyu",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "minior",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "minun",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "miraidon",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "mismagius",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "moltres",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "moltresgalar",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "morpeko",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "mothim",
+      "tier": "D",
+      "category": "Stall"
+    },
+    {
+      "pid": "mrmime",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "mrmimegalar",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "mrrime",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "mudsdale",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "muk",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "mukalola",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "munkidori",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "murkrow",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "musharna",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "naganadel",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "necrozma",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "necrozmadawnwings",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "necrozmaduskmane",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "nidoking",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "nidoqueen",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "nihilego",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "ninetales",
+      "tier": "B",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "ninetalesalola",
+      "tier": "A",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "ninjask",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "noctowl",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "noivern",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "obstagoon",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "octillery",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "ogerpon",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "ogerponcornerstone",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "ogerponhearthflame",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "ogerponwellspring",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "oinkologne",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "oinkolognef",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "okidogi",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "omastar",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "onix",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "oranguru",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "orbeetle",
+      "tier": "D",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "oricorio",
+      "tier": "C",
+      "category": "Utility"
+    },
+    {
+      "pid": "orthworm",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "overqwil",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "pachirisu",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "palafin",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "palkia",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "palkiaorigin",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "palossand",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "pangoro",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "parasect",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "passimian",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "pawmot",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "pecharunt",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "pelipper",
+      "tier": "S",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "perrserker",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "persian",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "persianalola",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "pheromosa",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "phione",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "pidgeot",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "pikachu",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "pincurchin",
+      "tier": "B",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "pinsir",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "plusle",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "politoed",
+      "tier": "A",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "poliwrath",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "polteageist",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "porygon",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "porygon2",
+      "tier": "S",
+      "category": "Utility"
+    },
+    {
+      "pid": "porygonz",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "primarina",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "primeape",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "probopass",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "purugly",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "pyroar",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "pyukumuku",
+      "tier": "D",
+      "category": "Stall"
+    },
+    {
+      "pid": "quagsire",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "quaquaval",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "qwilfish",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "rabsca",
+      "tier": "C",
+      "category": "Utility"
+    },
+    {
+      "pid": "ragingbolt",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "raichu",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "raichualola",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "raikou",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "rampardos",
+      "tier": "C",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "rapidash",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "rapidashgalar",
+      "tier": "C",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "raticate",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "raticatealola",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "rayquaza",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "regice",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "regidrago",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "regieleki",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "regigigas",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "regirock",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "registeel",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "relicanth",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "reshiram",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "reuniclus",
+      "tier": "C",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "revavroom",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "rhydon",
+      "tier": "D",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "rhyperior",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "ribombee",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "rillaboom",
+      "tier": "S",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "riolu",
+      "tier": "C",
+      "category": "Utility"
+    },
+    {
+      "pid": "roaringmoon",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "roserade",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "rotom",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "rotomfan",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "rotomfrost",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "rotomheat",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "rotommow",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "rotomwash",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "runerigus",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "sableye",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "salamence",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "salazzle",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "samurott",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "samurotthisui",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "sandaconda",
+      "tier": "C",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "sandslash",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "sandslashalola",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "sandyshocks",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "sawk",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "sawsbuck",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "sceptile",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "scizor",
+      "tier": "A",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "scolipede",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "scovillain",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "scrafty",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "screamtail",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "scyther",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "seaking",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "seismitoad",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "serperior",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "seviper",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "sharpedo",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "shaymin",
+      "tier": "S",
+      "category": "Utility"
+    },
+    {
+      "pid": "shayminsky",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "shedinja",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "shiftry",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "shiinotic",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "shuckle",
+      "tier": "D",
+      "category": "Stall"
+    },
+    {
+      "pid": "sigilyph",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "silvally",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "simipour",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "simisage",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "simisear",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "sinistcha",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "sirfetchd",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "skarmory",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "skeledirge",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "skuntank",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "slaking",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "slitherwing",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "slowbro",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "slowbrogalar",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "slowking",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "slowkinggalar",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "slowpoke",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "slowpokegalar",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "slurpuff",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "smeargle",
+      "tier": "A",
+      "category": "Stall"
+    },
+    {
+      "pid": "sneasel",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "sneaselhisui",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "sneasler",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "snorlax",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "snover",
+      "tier": "C",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "solgaleo",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "solrock",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "spectrier",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "spidops",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "spinda",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "spiritomb",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "squawkabilly",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "stakataka",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "stantler",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "staraptor",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "starmie",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "steelix",
+      "tier": "B",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "stonjourner",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "stoutland",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "stunfisk",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "stunfiskgalar",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "sudowoodo",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "suicune",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "sunflora",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "swalot",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "swampert",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "swanna",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "swellow",
+      "tier": "D",
+      "category": "Utility"
+    },
+    {
+      "pid": "swoobat",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "sylveon",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "talonflame",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "tangrowth",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "tapubulu",
+      "tier": "A",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "tapufini",
+      "tier": "S",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "tapukoko",
+      "tier": "S",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "tapulele",
+      "tier": "S",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "tatsugiri",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "tauros",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "taurospaldeaaqua",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "taurospaldeablaze",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "taurospaldeacombat",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "tentacruel",
+      "tier": "D",
+      "category": "Stall"
+    },
+    {
+      "pid": "terapagos",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "terrakion",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "thievul",
+      "tier": "C",
+      "category": "Utility"
+    },
+    {
+      "pid": "throh",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "thundurus",
+      "tier": "S",
+      "category": "Utility"
+    },
+    {
+      "pid": "thundurustherian",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "thwackey",
+      "tier": "C",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "tinglu",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "tinkaton",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "toedscruel",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "togedemaru",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "togekiss",
+      "tier": "S",
+      "category": "Utility"
+    },
+    {
+      "pid": "togetic",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "torkoal",
+      "tier": "S",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "tornadus",
+      "tier": "S",
+      "category": "Utility"
+    },
+    {
+      "pid": "tornadustherian",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "torracat",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "torterra",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "toucannon",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "toxapex",
+      "tier": "D",
+      "category": "Stall"
+    },
+    {
+      "pid": "toxicroak",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "toxtricity",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "trevenant",
+      "tier": "C",
+      "category": "Utility"
+    },
+    {
+      "pid": "tropius",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "tsareena",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "turtonator",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "typhlosion",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "typhlosionhisui",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "tyranitar",
+      "tier": "S",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "tyrantrum",
+      "tier": "D",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "umbreon",
+      "tier": "A",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "unfezant",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "ursaluna",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "ursalunabloodmoon",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "ursaring",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "urshifu",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "urshifurapidstrike",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "uxie",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "vanilluxe",
+      "tier": "B",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "vaporeon",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "veluza",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "venomoth",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "venusaur",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "vespiquen",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "victini",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "victreebel",
+      "tier": "C",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "vigoroth",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "vikavolt",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "vileplume",
+      "tier": "C",
+      "category": "Stall"
+    },
+    {
+      "pid": "virizion",
+      "tier": "B",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "vivillon",
+      "tier": "B",
+      "category": "Stall"
+    },
+    {
+      "pid": "volbeat",
+      "tier": "A",
+      "category": "Utility"
+    },
+    {
+      "pid": "volcanion",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "volcarona",
+      "tier": "A",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "vulpix",
+      "tier": "C",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "vulpixalola",
+      "tier": "C",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "wailmer",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "wailord",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "walkingwake",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "walrein",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "wartortle",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "watchog",
+      "tier": "D",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "weavile",
+      "tier": "B",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "weezing",
+      "tier": "B",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "weezinggalar",
+      "tier": "B",
+      "category": "Field Manipulation"
+    },
+    {
+      "pid": "whimsicott",
+      "tier": "S",
+      "category": "Utility"
+    },
+    {
+      "pid": "whiscash",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "wigglytuff",
+      "tier": "C",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "wishiwashi",
+      "tier": "D",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "wobbuffet",
+      "tier": "D",
+      "category": "Bulky Defense"
+    },
+    {
+      "pid": "wochien",
+      "tier": "A",
+      "category": "Stall"
+    },
+    {
+      "pid": "wormadam",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "wormadamsandy",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "wormadamtrash",
+      "tier": "B",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "wugtrio",
+      "tier": "D",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "wyrdeer",
+      "tier": "B",
+      "category": "Utility"
+    },
+    {
+      "pid": "xatu",
+      "tier": "D",
+      "category": "TR Sweeper"
+    },
+    {
+      "pid": "xerneas",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "xurkitree",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "yanmega",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "yveltal",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "zacian",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "zaciancrowned",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "zamazenta",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "zamazentacrowned",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "zangoose",
+      "tier": "C",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "zapdos",
+      "tier": "S",
+      "category": "Bulky Offense"
+    },
+    {
+      "pid": "zapdosgalar",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "zarude",
+      "tier": "S",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "zebstrika",
+      "tier": "C",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "zekrom",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "zeraora",
+      "tier": "S",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "zoroark",
+      "tier": "A",
+      "category": "Sweeper"
+    },
+    {
+      "pid": "zoroarkhisui",
+      "tier": "A",
+      "category": "Fast Offense"
+    },
+    {
+      "pid": "zygarde",
+      "tier": "R",
+      "category": "Restricted"
+    },
+    {
+      "pid": "zygarde10",
+      "tier": "B",
+      "category": "Fast Offense"
+    }
   ]
 }

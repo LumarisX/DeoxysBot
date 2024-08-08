@@ -115,12 +115,12 @@ export function undoDraft(division: DivisionData) {
     coach.team.some((pick) => pick?.order === division.draftCount)
   );
   if (!coach) return;
+  division.draftCount--;
   for (let i in coach.team) {
     if (coach.team[i] && coach.team[i].order === division.draftCount) {
       coach.team[i] = null;
     }
   }
-  division.draftCount--;
   division.timer = undefined;
   writeDraft();
   return coach;
@@ -149,10 +149,10 @@ export function getUndrafted(
   let undraftedData = draftData.pokemon.filter(
     (pokemon) =>
       !isDrafted(pokemon.pid, division) &&
-      options.tier &&
-      pokemon.tier.toLowerCase() === options.tier.toLowerCase() &&
-      options.category &&
-      pokemon.category.toLowerCase() === options.category.toLowerCase()
+      (!options.tier ||
+        pokemon.tier.toLowerCase() === options.tier.toLowerCase()) &&
+      (!options.category ||
+        pokemon.category.toLowerCase() === options.category.toLowerCase())
   );
   return undraftedData;
 }
@@ -259,6 +259,7 @@ export function updateState(
     if (draftData.state === "") {
       draftData.state = "started";
       interaction.reply("The draft has been started!");
+      notifyNext(interaction);
     } else {
       interaction.reply("Draft has already been started.");
     }
@@ -326,36 +327,40 @@ export function notifyNext(interaction: BaseInteraction) {
     let nextUser = await interaction.client.users.fetch(
       getNextCoach(division).id
     );
-    if (!division.timer) {
-      division.timer = new Timer(
-        draftData.timerMinutes,
-        draftData.reminders,
-        (remainingMinutes: number) => {
-          interaction.channel?.send(
-            `${nextUser} ${remainingMinutes} minutes left!`
-          );
-        },
-        () => {
-          skipUser(interaction);
-        }
-      );
-      if (nextUser.username === "h8oj") {
-        division.timer.reminders = [
-          1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-          21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,
-          38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54,
-          55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71,
-          72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88,
-          89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
-          105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118,
-          119,
-        ];
-      }
-      division.timer.start();
-    }
+
     interaction.channel?.send(
-      `${nextUser} you're up next! You have ${division.timer.remainingMinutes} minutes to make your pick.`
+      `${nextUser} you're up next! You have ~ minutes to make your pick.`
     );
+    // if (!division.timer) {
+    //   division.timer = new Timer(
+    //     draftData.timerMinutes,
+    //     draftData.reminders,
+    //     (remainingMinutes: number) => {
+    //       interaction.channel?.send(
+    //         `${nextUser} ${remainingMinutes} minutes left!`
+    //       );
+    //     },
+    //     () => {
+    //       skipUser(interaction);
+    //     }
+    //   );
+    //   if (nextUser.username === "h8oj") {
+    //     division.timer.reminders = [
+    //       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    //       21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,
+    //       38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54,
+    //       55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71,
+    //       72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88,
+    //       89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
+    //       105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118,
+    //       119,
+    //     ];
+    //   }
+    //   division.timer.start();
+    // }
+    // interaction.channel?.send(
+    //   `${nextUser} you're up next! You have ${division.timer.remainingMinutes} minutes to make your pick.`
+    // );
   }, 1000);
 }
 

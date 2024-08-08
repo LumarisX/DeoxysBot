@@ -25,6 +25,8 @@ const client = new Client({
 
 client.once("ready", () => console.log("Deoxys has been summoned!"));
 
+deployGuildCommands({ guildId: `963884409252118609` });
+
 client.on("interactionCreate", async (interaction: Interaction) => {
   if (!interaction.isCommand()) return;
 
@@ -43,7 +45,8 @@ client.on("interactionCreate", async (interaction: Interaction) => {
 });
 
 client.on("messageCreate", async (message) => {
-  if (message.author.bot) return;
+  if (message.author.bot || message.mentions.everyone || message.mentions.roles)
+    return;
   if (
     message.content.toLowerCase().includes("deoxys") ||
     message.mentions.has(client.user!.id)
@@ -99,8 +102,6 @@ async function gptRespond(message: Message) {
     console.log("DeoxysGPT | DeoxysBot |", replyString);
 
     let emotionUrl: string = `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/0386/0001/Normal.png`;
-    replyString = `{Determined}: Ready for your final test, Lumaris! What do you need help with?`;
-
     if (replyString) {
       let replySplit = replyString.split(": ");
       let emotion: string | undefined;
