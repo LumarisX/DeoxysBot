@@ -98,12 +98,13 @@ export const DraftModPickCommand: Command = {
 
     draftRandom(division, user, tier, category, interaction, {
       validate: true,
+    }).then((drafted) => {
+      if (drafted) {
+        interaction.reply({
+          content: `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon for ${user}`,
+          ephemeral: true,
+        });
+      }
     });
-    if (!interaction.replied) {
-      interaction.reply({
-        content: `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon for ${user}`,
-        ephemeral: true,
-      });
-    }
   },
 };

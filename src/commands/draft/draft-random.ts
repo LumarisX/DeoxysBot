@@ -79,12 +79,13 @@ export const DraftRandomCommand: Command = {
     }
     draftRandom(division, interaction.user, tier, category, interaction, {
       validate: true,
+    }).then((drafted) => {
+      if (drafted) {
+        interaction.reply({
+          content: `Pokemon was sucessfully drafted.`,
+          ephemeral: true,
+        });
+      }
     });
-    if (!interaction.replied) {
-      interaction.reply({
-        content: `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon.`,
-        ephemeral: true,
-      });
-    }
   },
 };

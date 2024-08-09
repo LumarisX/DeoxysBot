@@ -119,7 +119,7 @@ export async function draftPokemon(
   advanceDraft(channel);
 }
 
-export function draftRandom(
+export async function draftRandom(
   division: DivisionData,
   user: User,
   tier: CommandInteractionOption,
@@ -134,6 +134,10 @@ export function draftRandom(
     interaction
   );
   if (!randomMon) return null;
+  let channel = await interaction.client.channels.fetch(division.channels[0]);
+  if (!channel?.isTextBased()) return null;
+  let baseString = `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon.`;
+  channel.send(baseString);
   return draftPokemon(division, user, randomMon, interaction, {
     validate: options.validate,
   });
@@ -292,48 +296,64 @@ export async function updateState(
   state: "start" | "end" | "pause" | "resume",
   interaction: CommandInteraction
 ) {
+  if (state === "start") {
+    if (draftData.state !== "")
+      return interaction.reply({
+        content: "Draft has already been started.",
+        ephemeral: true,
+      });
+    draftData.state = "started";
+  } else if (state === "end") {
+    if (draftData.state === "")
+      return interaction.reply({
+        content: "Draft has not been started.",
+        ephemeral: true,
+      });
+    if (draftData.state === "ended")
+      return interaction.reply({
+        content: "Draft already ended.",
+        ephemeral: true,
+      });
+    draftData.state = "ended";
+  } else if (state === "pause") {
+    if (draftData.state !== "started")
+      return interaction.reply({
+        content: "Draft can not be paused.",
+        ephemeral: true,
+      });
+    draftData.state = "paused";
+  } else if (state === "resume") {
+    if (draftData.state !== "paused") {
+      interaction.reply({
+        content: "Draft is not paused.",
+        ephemeral: true,
+      });
+      return null;
+    }
+    draftData.state = "started";
+  }
   for (let division of draftData.divisions) {
     let channel = await interaction.client.channels.fetch(division.channels[0]);
     if (!channel?.isTextBased()) return;
     if (state === "start") {
-      try {
-        if (draftData.state === "") {
-          draftData.state = "started";
-          channel.send("The draft has been started!");
-          notifyNext(channel);
-        } else {
-          interaction.reply({
-            content: "Draft has already been started.",
-            ephemeral: true,
-          });
-          return;
-        }
-      } catch (error) {
-        console.error(error);
-      }
+      channel.send("The draft has been started!");
+      notifyNext(channel);
     } else if (state === "end") {
-      draftData.state = "ended";
       channel.send("Draft has ended.");
     } else if (state === "pause") {
-      draftData.state = "paused";
       division.timer?.pause();
       channel.send("Draft has been paused.");
     } else if (state === "resume") {
-      if (draftData.state === "paused") {
-        draftData.state = "started";
-        channel.send("Draft has been resumed.");
-        notifyNext(channel);
-        division.timer?.start();
-      } else {
-        interaction.reply({
-          content: "Draft has already been resumed.",
-          ephemeral: true,
-        });
-        return;
-      }
+      channel.send("Draft has been resumed.");
+      notifyNext(channel);
+      division.timer?.start();
     }
   }
   writeDraft();
+  return interaction.reply({
+    content: `Draft state was changed to ${state}.`,
+    ephemeral: true,
+  });
 }
 
 export function getCoach(division: DivisionData, userId: string) {
@@ -376,59 +396,49 @@ export function validDraftPick(
 export function notifyNext(channel: TextBasedChannel | null) {
   if (!channel) return;
   setTimeout(async () => {
-    console.log("ere");
     let division = getDivisionByChannel(channel.id);
     if (!division) return;
     let nextUser = await channel.client.users.fetch(getNextCoach(division).id);
-    console.log("here");
+    if (!division.timer) {
+      division.timer = new Timer(
+        draftData.timerMinutes,
+        draftData.reminders,
+        (remainingMinutes: number) => {
+          channel.send(`${nextUser} ${remainingMinutes} minutes left!`);
+        },
+        () => {
+          skipUser(channel);
+        }
+      );
+      if (nextUser.username === "h8oj") {
+        division.timer.reminders = [
+          1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+          21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,
+          38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54,
+          55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71,
+          72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88,
+          89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
+          105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118,
+          119,
+        ];
+      }
+      division.timer.start();
+    }
     channel.send(
-      `${nextUser} you're up next! You have ~ minutes to make your pick.`
+      `${nextUser} you're up next! You have ${division.timer.remainingMinutes} minutes to make your pick.`
     );
-    // if (!division.timer) {
-    //   division.timer = new Timer(
-    //     draftData.timerMinutes,
-    //     draftData.reminders,
-    //     (remainingMinutes: number) => {
-    //       interaction.channel?.send(
-    //         `${nextUser} ${remainingMinutes} minutes left!`
-    //       );
-    //     },
-    //     () => {
-    //       skipUser(interaction);
-    //     }
-    //   );
-    //   if (nextUser.username === "h8oj") {
-    //     division.timer.reminders = [
-    //       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-    //       21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,
-    //       38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54,
-    //       55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71,
-    //       72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88,
-    //       89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
-    //       105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118,
-    //       119,
-    //     ];
-    //   }
-    //   division.timer.start();
-    // }
-    // interaction.channel?.send(
-    //   `${nextUser} you're up next! You have ${division.timer.remainingMinutes} minutes to make your pick.`
-    // );
   }, 1000);
 }
 
 export async function skipUser(
-  interaction: BaseInteraction,
+  channel: TextBasedChannel,
   division?: DivisionData
 ) {
-  if (!division) division = getDivisionByChannel(interaction.channelId);
+  if (!division) division = getDivisionByChannel(channel.id);
   if (!division) return;
-  let skippedUser = await interaction.client.users.fetch(
-    getNextCoach(division).id
-  );
-  interaction.channel?.send(`${skippedUser} was skipped.`);
-  if (!interaction.channel) return;
-  advanceDraft(interaction.channel);
+  let skippedUser = await channel.client.users.fetch(getNextCoach(division).id);
+  channel.send(`${skippedUser} was skipped.`);
+  advanceDraft(channel);
 }
 
 export function getDivisionByChannel(

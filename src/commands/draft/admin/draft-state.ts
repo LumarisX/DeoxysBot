@@ -38,10 +38,6 @@ export const DraftStateCommand: Command = {
     ) {
       updateState(state, interaction);
       if (!interaction.replied) {
-        interaction.reply({
-          content: `Draft state was changed to ${state}.`,
-          ephemeral: true,
-        });
       }
     } else {
       return interaction.reply({ content: "Unknown state.", ephemeral: true });

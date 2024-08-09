@@ -40,13 +40,24 @@
   "divisions": [
     {
       "name": "Test",
-      "channels": ["976230704767713282"],
+      "channels": [
+        "976230704767713282"
+      ],
       "coaches": [
         {
           "username": "lumaris",
           "id": "206144110275461121",
           "order": 0,
-          "team": [],
+          "team": [
+            {
+              "order": 0,
+              "pokemon": {
+                "pid": "urshifu",
+                "tier": "S",
+                "category": "Sweeper"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
@@ -74,9 +85,14 @@
       "draftCount": 0
     }
   ],
-  "state": "",
+  "state": "started",
   "timerMinutes": 5,
-  "reminders": [],
+  "reminders": [
+    4,
+    3,
+    2,
+    1
+  ],
   "pokemon": [
     {
       "pid": "abomasnow",

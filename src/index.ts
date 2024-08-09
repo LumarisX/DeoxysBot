@@ -49,8 +49,7 @@ client.on("interactionCreate", async (interaction: Interaction) => {
 });
 
 client.on("messageCreate", async (message) => {
-  if (message.author.bot || message.mentions.everyone || message.mentions.roles)
-    return;
+  if (message.author.bot || message.mentions.everyone) return;
   if (
     message.content.toLowerCase().includes("deoxys") ||
     message.mentions.has(client.user!.id)

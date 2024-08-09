@@ -31,6 +31,6 @@ export const DraftSkipCommand: Command = {
     let division = getDivisionByName(
       interaction.options.get("division")?.value as string
     );
-    skipUser(interaction, division);
+    skipUser(interaction.channel!, division);
   },
 };
