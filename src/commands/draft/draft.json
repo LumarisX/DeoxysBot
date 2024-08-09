@@ -40,9 +40,7 @@
   "divisions": [
     {
       "name": "Test",
-      "channels": [
-        "976230704767713282"
-      ],
+      "channels": ["976230704767713282"],
       "coaches": [
         {
           "username": "lumaris",
@@ -78,12 +76,7 @@
   ],
   "state": "started",
   "timerMinutes": 5,
-  "reminders": [
-    4,
-    3,
-    2,
-    1
-  ],
+  "reminders": [4, 3, 2, 1],
   "pokemon": [
     {
       "pid": "abomasnow",
@@ -1682,7 +1675,7 @@
     },
     {
       "pid": "fluttermane",
-      "tier": "A",
+      "tier": "S",
       "category": "Sweeper"
     },
     {
@@ -4302,7 +4295,7 @@
     },
     {
       "pid": "shaymin",
-      "tier": "S",
+      "tier": "C",
       "category": "Utility"
     },
     {

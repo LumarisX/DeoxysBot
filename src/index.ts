@@ -62,6 +62,10 @@ client.on("messageCreate", async (message) => {
     );
     gptRespond(message);
   }
+  let urlreg = /(https?\/\/)?(wwww\.)?replay\.pokemonshowdown\.com\/.+?\s/;
+  if (urlreg.test(message.content.toLowerCase())) {
+    console.log("Analyzer |", message.content);
+  }
 });
 
 client.on("guildCreate", async (guild) => {
