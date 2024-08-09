@@ -1,17 +1,10 @@
+import { CommandInteraction, SlashCommandBuilder } from "discord.js";
 import {
-  AttachmentBuilder,
-  CommandInteraction,
-  SlashCommandBuilder,
-} from "discord.js";
-import {
-  advanceDraft,
   canDraft,
   draftData,
-  draftPokemon,
   draftRandom,
   getDivisionByChannel,
   guildCheck,
-  isNextPick,
 } from ".";
 import { Command } from "..";
 

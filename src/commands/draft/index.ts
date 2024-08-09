@@ -1,17 +1,14 @@
 import {
   AttachmentBuilder,
-  BaseInteraction,
   CommandInteraction,
   CommandInteractionOption,
-  Interaction,
-  InteractionResponse,
   TextBasedChannel,
   User,
 } from "discord.js";
 import fs from "fs";
 import path from "path";
-import { Timer } from "./timer";
 import { DexData, getDexData } from "./data/draftdex";
+import { Timer } from "./timer";
 
 export const filePath = path.resolve(__dirname, "./draft.json");
 
@@ -117,6 +114,7 @@ export async function draftPokemon(
     files: [attachment],
   });
   advanceDraft(channel);
+  return pokemon;
 }
 
 export async function draftRandom(

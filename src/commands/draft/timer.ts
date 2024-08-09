@@ -27,7 +27,6 @@ export class Timer {
   start() {
     if (this.remainingSeconds <= 0) return;
     let next = this.nextReminder();
-    console.log(next);
     this.timeout = setTimeout(() => {
       if (next > 0) {
         this.remind(next);
@@ -49,6 +48,7 @@ export class Timer {
   }
 
   end() {
+    clearTimeout(this.timeout);
     this.timeout = undefined;
   }
 

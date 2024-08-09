@@ -48,16 +48,7 @@
           "username": "lumaris",
           "id": "206144110275461121",
           "order": 0,
-          "team": [
-            {
-              "order": 0,
-              "pokemon": {
-                "pid": "urshifu",
-                "tier": "S",
-                "category": "Sweeper"
-              }
-            }
-          ],
+          "team": [],
           "leftPicks": []
         },
         {
