@@ -1,4 +1,8 @@
-import { CommandInteraction, SlashCommandBuilder, User } from "discord.js";
+import {
+  ChatInputCommandInteraction,
+  SlashCommandBuilder,
+  User,
+} from "discord.js";
 import { draftData, getDivisionByName, getDrafted, guildCheck } from ".";
 import { Command } from "..";
 
@@ -24,7 +28,7 @@ export const DraftTeamCommand: Command = {
         .setDescription("The user's team. Yours by default.")
     ),
 
-  execute: (interaction: CommandInteraction) => {
+  execute: (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
       return interaction.reply({
         content: "Server does not have a registered draft.",

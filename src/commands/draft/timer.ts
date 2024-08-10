@@ -42,6 +42,7 @@ export class Timer {
   }
 
   pause() {
+    clearTimeout(this.timeout);
     this.timeout = undefined;
     let pauseTime = Date.now();
     this.remainingSeconds -= pauseTime - this.startTime;
@@ -49,6 +50,7 @@ export class Timer {
 
   end() {
     clearTimeout(this.timeout);
+    console.log("ended");
     this.timeout = undefined;
   }
 

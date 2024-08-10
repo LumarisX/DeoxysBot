@@ -39,44 +39,63 @@
   ],
   "divisions": [
     {
-      "name": "Test",
-      "channels": ["976230704767713282"],
+      "channels": [
+        "976230704767713282"
+      ],
       "coaches": [
         {
           "username": "lumaris",
           "id": "206144110275461121",
           "order": 0,
-          "team": [],
+          "team": [
+            {
+              "order": 0,
+              "pokemon": {
+                "pid": "chienpao",
+                "tier": "S",
+                "category": "Sweeper"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "DeoxysBot#5853.",
           "id": "1268950062629654708",
           "order": 1,
-          "team": [],
-          "leftPicks": []
-        },
-        {
-          "username": "dicy",
-          "id": "319165539849076737",
-          "order": 2,
-          "team": [],
-          "leftPicks": []
-        },
-        {
-          "username": "h8oj",
-          "id": "529522646195634176",
-          "order": 3,
-          "team": [],
+          "team": [
+            {
+              "order": 1,
+              "pokemon": {
+                "pid": "landorus",
+                "tier": "S",
+                "category": "Sweeper"
+              }
+            },
+            {
+              "order": 2,
+              "pokemon": {
+                "pid": "kartana",
+                "tier": "S",
+                "category": "Sweeper"
+              }
+            }
+          ],
           "leftPicks": []
         }
       ],
-      "draftCount": 0
+      "name": "Test",
+      "draftCount": 2
     }
   ],
   "state": "started",
   "timerMinutes": 5,
-  "reminders": [4, 3, 2, 1],
+  "reminders": [
+    4,
+    3,
+    2,
+    1
+  ],
   "pokemon": [
     {
       "pid": "abomasnow",

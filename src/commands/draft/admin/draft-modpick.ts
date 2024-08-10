@@ -1,21 +1,18 @@
 import {
-  AttachmentBuilder,
-  CommandInteraction,
+  ChatInputCommandInteraction,
   PermissionsBitField,
   SlashCommandBuilder,
   User,
 } from "discord.js";
 import {
-  advanceDraft,
   draftData,
   draftRandom,
   getDivisionByChannel,
   getDivisionByName,
   guildCheck,
-  isNextPick,
-  notifyNext,
 } from "..";
 import { Command } from "../..";
+import { sendError } from "../../..";
 
 export const DraftModPickCommand: Command = {
   data: new SlashCommandBuilder()
@@ -60,48 +57,29 @@ export const DraftModPickCommand: Command = {
           }))
         )
     ),
-  execute: async (interaction: CommandInteraction) => {
+  execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply({
-        content: "Server does not have a registered draft.",
-        ephemeral: true,
-      });
+      return sendError(interaction, "Server does not have a registered draft.");
     let division = getDivisionByName(
-      interaction.options.get("division")?.value as string
+      interaction.options.getString("division", true)
     );
     if (!division) {
       division = getDivisionByChannel(interaction.channelId);
       if (!division)
-        return interaction.reply({
-          content: "Division not selected and unknown channel.",
-          ephemeral: true,
-        });
+        return sendError(
+          interaction,
+          "Division not selected and unknown channel."
+        );
     }
-    const user: User | undefined = interaction.options.get("user")?.user;
-    if (!user)
-      return interaction.reply({
-        content: "User not found",
-        ephemeral: true,
-      });
-    const tier = interaction.options.get("tier");
-    if (!tier)
-      return interaction.reply({
-        content: "Tier not selected",
-        ephemeral: true,
-      });
-    const category = interaction.options.get("category");
-    if (!category)
-      return interaction.reply({
-        content: "Category not selected",
-        ephemeral: true,
-      });
-
+    const user = interaction.options.getUser("user", true);
+    const tier = interaction.options.getString("tier", true);
+    const category = interaction.options.getString("category", true);
     draftRandom(division, user, tier, category, interaction, {
       validate: true,
     }).then((drafted) => {
       if (drafted) {
         interaction.reply({
-          content: `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon for ${user}`,
+          content: `${interaction.user} has selected a ${tier}-tier ${category} pokemon for ${user}`,
           ephemeral: true,
         });
       }

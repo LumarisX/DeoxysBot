@@ -1,4 +1,4 @@
-import { CommandInteraction, SlashCommandBuilder } from "discord.js";
+import { ChatInputCommandInteraction, SlashCommandBuilder } from "discord.js";
 import {
   canDraft,
   draftData,
@@ -7,6 +7,7 @@ import {
   guildCheck,
 } from ".";
 import { Command } from "..";
+import { sendError } from "../..";
 
 export const DraftRandomCommand: Command = {
   data: new SlashCommandBuilder()
@@ -33,43 +34,21 @@ export const DraftRandomCommand: Command = {
           }))
         )
     ),
-  execute: (interaction: CommandInteraction) => {
+  execute: (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply({
-        content: "Server does not have a registered draft.",
-        ephemeral: true,
-      });
+      return sendError(interaction, "Server does not have a registered draft.");
     let division = getDivisionByChannel(interaction.channelId);
     if (!division)
-      return interaction.reply({
-        content: "Unknown channel. Please try again in your draft channel.",
-        ephemeral: true,
-      });
+      return sendError(
+        interaction,
+        "Unknown channel. Please try again in your draft channel."
+      );
     if (draftData.state != "started")
-      return interaction.reply({
-        content: "The draft has not started yet.",
-        ephemeral: true,
-      });
-    if (!canDraft(division, interaction.user.id)) {
-      return interaction.reply({
-        content: "Not allowed to draft.",
-        ephemeral: true,
-      });
-    }
-    const tier = interaction.options.get("tier");
-    const category = interaction.options.get("category");
-    if (!tier) {
-      return interaction.reply({
-        content: "Tier not selected",
-        ephemeral: true,
-      });
-    }
-    if (!category) {
-      return interaction.reply({
-        content: "Category not selected",
-        ephemeral: true,
-      });
-    }
+      return sendError(interaction, "The draft has not started yet.");
+    if (!canDraft(division, interaction.user.id))
+      return sendError(interaction, "Not allowed to draft.");
+    const tier = interaction.options.getString("tier", true);
+    const category = interaction.options.getString("category", true);
     draftRandom(division, interaction.user, tier, category, interaction, {
       validate: true,
     }).then((drafted) => {

@@ -2,7 +2,7 @@ import {
   ActionRowBuilder,
   ButtonBuilder,
   ButtonStyle,
-  CommandInteraction,
+  ChatInputCommandInteraction,
   ComponentType,
   SlashCommandBuilder,
 } from "discord.js";
@@ -54,7 +54,7 @@ export const DraftUndraftedCommand: Command = {
           }))
         )
     ),
-  execute: async (interaction: CommandInteraction) => {
+  execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
       return interaction.reply({
         content: "Server does not have a registered draft.",

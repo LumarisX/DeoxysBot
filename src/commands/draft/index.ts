@@ -1,7 +1,6 @@
 import {
   AttachmentBuilder,
-  CommandInteraction,
-  CommandInteractionOption,
+  ChatInputCommandInteraction,
   TextBasedChannel,
   User,
 } from "discord.js";
@@ -48,7 +47,7 @@ function getRandomPokemon(
   division: DivisionData,
   tier: string,
   category: string,
-  interaction: CommandInteraction
+  interaction: ChatInputCommandInteraction
 ) {
   let undrafted = getUndrafted(division, {
     tier: tier,
@@ -74,7 +73,7 @@ export async function draftPokemon(
   division: DivisionData,
   user: User,
   pokemon: PokemonData,
-  interaction: CommandInteraction,
+  interaction: ChatInputCommandInteraction,
   options: { validate?: true; order?: number } = {}
 ) {
   if (isDrafted(pokemon.pid, division)) {
@@ -96,6 +95,7 @@ export async function draftPokemon(
     });
     return null;
   }
+  division.timer?.end();
   division.timer = undefined;
   coach.team.push({
     order: options.order ? options.order : division.draftCount,
@@ -120,21 +120,21 @@ export async function draftPokemon(
 export async function draftRandom(
   division: DivisionData,
   user: User,
-  tier: CommandInteractionOption,
-  category: CommandInteractionOption,
-  interaction: CommandInteraction,
+  tier: string,
+  category: string,
+  interaction: ChatInputCommandInteraction,
   options: { validate?: true }
 ) {
   const randomMon = getRandomPokemon(
     division,
-    tier.value as string,
-    category.value as string,
+    tier as string,
+    category as string,
     interaction
   );
   if (!randomMon) return null;
   let channel = await interaction.client.channels.fetch(division.channels[0]);
   if (!channel?.isTextBased()) return null;
-  let baseString = `${interaction.user} has selected a ${tier.value}-tier ${category.value} pokemon.`;
+  let baseString = `${user} has selected a ${tier}-tier ${category} pokemon.`;
   channel.send(baseString);
   return draftPokemon(division, user, randomMon, interaction, {
     validate: options.validate,
@@ -152,6 +152,7 @@ export function undoDraft(division: DivisionData) {
     }
   }
   division.draftCount--;
+  division.timer?.end();
   division.timer = undefined;
   writeDraft();
   return coach;
@@ -232,7 +233,27 @@ export function resetDraft() {
 }
 
 function writeDraft() {
-  fs.writeFileSync(filePath, JSON.stringify(draftData, null, 2));
+  fs.writeFileSync(
+    filePath,
+    JSON.stringify(
+      {
+        categories: draftData.categories,
+        tiers: draftData.tiers,
+        divisions: draftData.divisions.map((division) => ({
+          channels: division.channels,
+          coaches: division.coaches,
+          name: division.name,
+          draftCount: division.draftCount,
+        })),
+        state: draftData.state,
+        timerMinutes: draftData.timerMinutes,
+        reminders: draftData.reminders,
+        pokemon: draftData.pokemon,
+      },
+      null,
+      2
+    )
+  );
 }
 
 export function getDraftData(query: string): PokemonData | undefined {
@@ -243,7 +264,7 @@ export function tradeRandom(
   division: DivisionData,
   oldPokemon: DexData,
   coach: CoachData,
-  interaction: CommandInteraction,
+  interaction: ChatInputCommandInteraction,
   options: { validate?: true }
 ) {
   let oldPokemonDraft = getDraftData(oldPokemon.pid);
@@ -292,7 +313,7 @@ export function trade(
 
 export async function updateState(
   state: "start" | "end" | "pause" | "resume",
-  interaction: CommandInteraction
+  interaction: ChatInputCommandInteraction
 ) {
   if (state === "start") {
     if (draftData.state !== "")
@@ -470,6 +491,7 @@ export function isNextPick(user: User, division: DivisionData): boolean {
 export function advanceDraft(channel: TextBasedChannel) {
   let division = getDivisionByChannel(channel.id);
   if (!division) return;
+  division.timer?.end();
   division.timer = undefined;
   division.draftCount++;
   notifyNext(channel);
@@ -485,4 +507,19 @@ export function addPicks(coach: CoachData, picks: string[]) {
     .filter((pid) => pid != undefined);
   writeDraft();
   return;
+}
+
+export function updateTime(time: number) {
+  draftData.timerMinutes = time;
+  writeDraft();
+}
+
+export function addReminder(time: number) {
+  draftData.reminders.push(time);
+  writeDraft();
+}
+
+export function removeReminder(time: number) {
+  draftData.reminders = draftData.reminders.filter((value) => value != time);
+  writeDraft();
 }

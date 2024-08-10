@@ -1,10 +1,10 @@
-import { SharedSlashCommand, CommandInteraction } from "discord.js";
-import { MiscRoute } from "./misc/misc.router";
+import { ChatInputCommandInteraction, SharedSlashCommand } from "discord.js";
 import { DraftRoute } from "./draft/draft.router";
+import { MiscRoute } from "./misc/misc.router";
 
 export type Command = {
   data: SharedSlashCommand;
-  execute: (interaction: CommandInteraction) => void;
+  execute: (interaction: ChatInputCommandInteraction) => void;
 };
 
 export type CommandRoute = {

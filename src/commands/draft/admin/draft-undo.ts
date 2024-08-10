@@ -1,5 +1,5 @@
 import {
-  CommandInteraction,
+  ChatInputCommandInteraction,
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
@@ -29,7 +29,7 @@ export const DraftUndoCommand: Command = {
           }))
         )
     ),
-  execute: (interaction: CommandInteraction) => {
+  execute: (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
       return interaction.reply({
         content: "Server does not have a registered draft.",

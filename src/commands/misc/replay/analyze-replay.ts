@@ -1,4 +1,4 @@
-import { CommandInteraction, SlashCommandBuilder } from "discord.js";
+import { ChatInputCommandInteraction, SlashCommandBuilder } from "discord.js";
 import { Command } from "../..";
 import { analyzeReplay } from ".";
 
@@ -12,7 +12,7 @@ export const AnalyzeReplayCommand: Command = {
         .setDescription("Replay Url")
         .setRequired(true)
     ),
-  execute: async (interaction: CommandInteraction) => {
+  execute: async (interaction: ChatInputCommandInteraction) => {
     const replayUrl: string = interaction.options.get("relay-url")
       ?.value as string;
     if (!replayUrl) return interaction.reply({content: "Url is not a valid replay.");

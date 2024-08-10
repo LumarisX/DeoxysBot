@@ -1,6 +1,6 @@
 import {
   AttachmentBuilder,
-  CommandInteraction,
+  ChatInputCommandInteraction,
   PermissionsBitField,
   SlashCommandBuilder,
   User,
@@ -53,7 +53,7 @@ export const DraftTradeRandomCommand: Command = {
           }))
         )
     ),
-  execute: async (interaction: CommandInteraction) => {
+  execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
       return interaction.reply({
         content: "Server does not have a registered draft.",

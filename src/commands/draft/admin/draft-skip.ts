@@ -1,10 +1,11 @@
 import {
-  CommandInteraction,
+  ChatInputCommandInteraction,
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
 import { draftData, getDivisionByName, guildCheck, skipUser } from "..";
 import { Command } from "../..";
+import { sendError } from "../../..";
 
 export const DraftSkipCommand: Command = {
   data: new SlashCommandBuilder()
@@ -22,15 +23,10 @@ export const DraftSkipCommand: Command = {
           }))
         )
     ),
-  execute: async (interaction: CommandInteraction) => {
+  execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply({
-        content: "Server does not have a registered draft.",
-        ephemeral: true,
-      });
-    let division = getDivisionByName(
-      interaction.options.get("division")?.value as string
-    );
+      return sendError(interaction, "Server does not have a registered draft.");
+    let division = getDivisionByName(interaction.options.getString("division"));
     skipUser(interaction.channel!, division);
   },
 };

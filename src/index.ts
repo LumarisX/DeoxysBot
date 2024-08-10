@@ -1,5 +1,7 @@
 import {
+  BaseInteraction,
   Client,
+  ChatInputCommandInteraction,
   EmbedBuilder,
   GatewayIntentBits,
   Interaction,
@@ -39,8 +41,16 @@ client.on("interactionCreate", async (interaction: Interaction) => {
         commandData.command.data.name.toLowerCase() ===
         interaction.commandName.toLowerCase()
     );
-  if (commandData) {
+  if (commandData && interaction.isChatInputCommand()) {
     try {
+      console.log(
+        interaction.user.displayName,
+        "|",
+        interaction.commandName,
+        interaction.options.data
+          .map((option) => `${option.name}: ${option.value}`)
+          .join(" ")
+      );
       commandData.command.execute(interaction);
     } catch (error) {
       interaction.reply({ content: `There was an error.` });
@@ -154,4 +164,15 @@ async function gptRespond(message: Message) {
   } catch (error) {
     console.error(error);
   }
+}
+
+export function sendError(
+  interaction: ChatInputCommandInteraction,
+  message: string
+) {
+  console.log(message);
+  return interaction.reply({
+    content: message,
+    ephemeral: true,
+  });
 }

@@ -1,10 +1,11 @@
 import {
-  CommandInteraction,
+  ChatInputCommandInteraction,
   PermissionsBitField,
   SlashCommandBuilder,
 } from "discord.js";
 import { guildCheck, updateState } from "..";
 import { Command } from "../..";
+import { sendError } from "../../..";
 
 export const DraftStateCommand: Command = {
   data: new SlashCommandBuilder()
@@ -23,12 +24,9 @@ export const DraftStateCommand: Command = {
           { name: "End", value: "end" }
         )
     ),
-  execute: async (interaction: CommandInteraction) => {
+  execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply({
-        content: "Server does not have a registered draft.",
-        ephemeral: true,
-      });
+      return sendError(interaction, "Server does not have a registered draft.");
     const state = interaction.options.get("state")?.value;
     if (
       state === "start" ||
@@ -37,10 +35,8 @@ export const DraftStateCommand: Command = {
       state === "resume"
     ) {
       updateState(state, interaction);
-      if (!interaction.replied) {
-      }
     } else {
-      return interaction.reply({ content: "Unknown state.", ephemeral: true });
+      return sendError(interaction, "Unknown state.");
     }
   },
 };

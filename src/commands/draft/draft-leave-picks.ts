@@ -1,4 +1,4 @@
-import { CommandInteraction, SlashCommandBuilder } from "discord.js";
+import { ChatInputCommandInteraction, SlashCommandBuilder } from "discord.js";
 import {
   addPicks,
   draftData,
@@ -44,7 +44,7 @@ export const DraftStateCommand: Command = {
     .addStringOption((option) =>
       option.setName("fifth-choice").setDescription("Fifth Choice")
     ),
-  execute: async (interaction: CommandInteraction) => {
+  execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
       return interaction.reply({
         content: "Server does not have a registered draft.",
