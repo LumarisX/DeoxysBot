@@ -154,7 +154,7 @@
         }
       ],
       "name": "West",
-      "draftCount": 2
+      "draftCount": 3
     },
     {
       "channels": [
@@ -181,89 +181,213 @@
           "username": "jabbalink",
           "id": "599419097934987294",
           "order": 1,
-          "team": [],
+          "team": [
+            {
+              "order": 1,
+              "pokemon": {
+                "pid": "gengar",
+                "tier": "S",
+                "category": "Sweeper"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "lumaris",
           "id": "206144110275461121",
           "order": 2,
-          "team": [],
+          "team": [
+            {
+              "order": 2,
+              "pokemon": {
+                "pid": "whimsicott",
+                "tier": "S",
+                "category": "Utility"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "aarontmarshall.",
           "id": "746000101889015819",
           "order": 3,
-          "team": [],
+          "team": [
+            {
+              "order": 3,
+              "pokemon": {
+                "pid": "incineroar",
+                "tier": "S",
+                "category": "Utility"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "sillywilly7528",
           "id": "308687852257017856",
           "order": 4,
-          "team": [],
+          "team": [
+            {
+              "order": 4,
+              "pokemon": {
+                "pid": "thundurus",
+                "tier": "S",
+                "category": "Utility"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "rainmaker7955",
           "id": "444955703623417881",
           "order": 5,
-          "team": [],
+          "team": [
+            {
+              "order": 5,
+              "pokemon": {
+                "pid": "grimmsnarl",
+                "tier": "S",
+                "category": "Utility"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "jarshall",
           "id": "991840326094438470",
           "order": 6,
-          "team": [],
+          "team": [
+            {
+              "order": 6,
+              "pokemon": {
+                "pid": "ironbundle",
+                "tier": "S",
+                "category": "Fast Offense"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "dogzie",
           "id": "561814232165777439",
           "order": 7,
-          "team": [],
+          "team": [
+            {
+              "order": 7,
+              "pokemon": {
+                "pid": "togekiss",
+                "tier": "S",
+                "category": "Utility"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "onlyembers",
           "id": "206864983227629568",
           "order": 8,
-          "team": [],
+          "team": [
+            {
+              "order": 8,
+              "pokemon": {
+                "pid": "urshifurapidstrike",
+                "tier": "S",
+                "category": "Sweeper"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "mawiiiii",
           "id": "715278760806449213",
           "order": 9,
-          "team": [],
+          "team": [
+            {
+              "order": 9,
+              "pokemon": {
+                "pid": "tornadus",
+                "tier": "S",
+                "category": "Utility"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "h8oj",
           "id": "529522646195634176",
           "order": 10,
-          "team": [],
+          "team": [
+            {
+              "order": 10,
+              "pokemon": {
+                "pid": "cresselia",
+                "tier": "S",
+                "category": "Utility"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "scottyw01",
           "id": "693156825171886180",
           "order": 11,
-          "team": [],
+          "team": [
+            {
+              "order": 11,
+              "pokemon": {
+                "pid": "chienpao",
+                "tier": "S",
+                "category": "Sweeper"
+              }
+            },
+            {
+              "order": 14,
+              "pokemon": {
+                "pid": "keldeo",
+                "tier": "S",
+                "category": "Sweeper"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
           "username": "rylekt",
           "id": "332238496238534657",
           "order": 12,
-          "team": [],
+          "team": [
+            {
+              "order": 12,
+              "pokemon": {
+                "pid": "kangaskhan",
+                "tier": "S",
+                "category": "Fast Offense"
+              }
+            },
+            {
+              "order": 13,
+              "pokemon": {
+                "pid": "archaludon",
+                "tier": "S",
+                "category": "Bulky Offense"
+              }
+            }
+          ],
           "leftPicks": []
         }
       ],
       "name": "East",
-      "draftCount": 1
+      "draftCount": 15
     }
   ],
   "state": "started",
