@@ -340,23 +340,23 @@ export function getCoach(division: DivisionData, userId: string) {
 }
 
 export function canDraft(division: DivisionData, userId: string): boolean {
-  let user = division.coaches.find((user) => user.id === userId);
-  if (!user) return false;
+  let user = getCoach(division, userId);
+  if (!user) throw new Error("User is not a coach in this division.");
   let userIndex = division.coaches.indexOf(user);
+  if (userIndex < 0) throw new Error("User is not a coach in this division.");
   let orderLength = division.coaches.length;
-  if (userIndex < 0) return false;
   let draftTotal = Math.floor(division.draftCount / orderLength);
   let reverse = draftTotal % 2;
+  console.log(orderLength, draftTotal, division.draftCount, userIndex, reverse);
   if (reverse) {
     if (userIndex <= orderLength - (division.draftCount % orderLength))
       return false;
   } else {
-    if (userIndex > division.draftCount % orderLength) return false;
+    if ((userIndex = division.draftCount % orderLength)) return false;
   }
   draftTotal++;
   return getDrafted(division, { user: user.username }).length < draftTotal;
 }
-
 export function validDraftPick(
   division: DivisionData,
   user: User,
@@ -452,6 +452,7 @@ export function advanceDraft(channel: TextBasedChannel) {
   division.timer?.end();
   division.timer = undefined;
   division.draftCount++;
+  writeDraft();
   notifyNext(channel);
 }
 

@@ -4,6 +4,7 @@ import {
   SlashCommandBuilder,
 } from "discord.js";
 import {
+  DivisionData,
   draftData,
   draftRandom,
   getDivisionByChannel,
@@ -58,11 +59,14 @@ export const DraftModPickCommand: Command = {
   execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
       throw new Error("Server does not have a registered draft.");
-    let division = getDivisionByName(
-      interaction.options.getString("division", true)
-    );
-    if (!division) {
+    let divisionString = interaction.options.getString("division");
+    let division: DivisionData | undefined;
+    if (!divisionString) {
       division = getDivisionByChannel(interaction.channelId);
+      if (!division)
+        throw new Error("Division not selected and unknown channel.");
+    } else {
+      division = getDivisionByName(divisionString);
       if (!division)
         throw new Error("Division not selected and unknown channel.");
     }

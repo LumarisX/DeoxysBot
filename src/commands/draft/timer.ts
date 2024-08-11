@@ -50,7 +50,6 @@ export class Timer {
 
   end() {
     clearTimeout(this.timeout);
-    console.log("ended");
     this.timeout = undefined;
     return this.timeout;
   }

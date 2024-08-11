@@ -1,5 +1,11 @@
 import { ChatInputCommandInteraction, SlashCommandBuilder } from "discord.js";
-import { draftData, draftRandom, getDivisionByChannel, guildCheck } from ".";
+import {
+  canDraft,
+  draftData,
+  draftRandom,
+  getDivisionByChannel,
+  guildCheck,
+} from ".";
 import { Command } from "..";
 
 export const DraftRandomCommand: Command = {
@@ -38,18 +44,16 @@ export const DraftRandomCommand: Command = {
     if (draftData.state != "started")
       throw new Error("The draft has not started yet.");
     // if (!canDraft(division, interaction.user.id))
-    //   throw new Error("Not allowed to draft.")
+    //   throw new Error("Not allowed to draft.");
     const tier = interaction.options.getString("tier", true);
     const category = interaction.options.getString("category", true);
     draftRandom(division, interaction.user, tier, category, interaction, {
       validate: true,
-    }).then((drafted) => {
-      if (drafted) {
-        interaction.reply({
-          content: `Pokemon was sucessfully drafted.`,
-          ephemeral: true,
-        });
-      }
+    }).then(() => {
+      interaction.reply({
+        content: `Pokemon was sucessfully drafted.`,
+        ephemeral: true,
+      });
     });
   },
 };
