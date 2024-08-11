@@ -61,18 +61,12 @@ export const DraftUndraftedCommand: Command = {
         ephemeral: true,
       });
     let division = getDivisionByName(
-      interaction.options.get("division")?.value as string
-    );
-    if (!division)
-      return interaction.reply({
-        content: "Division is invalid.",
-        ephemeral: true,
-      });
-    const tier = interaction.options.get("tier");
-    const category = interaction.options.get("category");
+      interaction.options.getString("division", true))
+    const tier = interaction.options.getString("tier");
+    const category = interaction.options.getString("category");
     let undraftedData = getUndrafted(division, {
-      tier: tier?.value as string | undefined,
-      category: category?.value as string | undefined,
+      tier: tier,
+      category: category,
     });
     let currentPage = 0;
     const pageSize = 25;

@@ -25,75 +25,49 @@ export const DraftTradeRandomCommand: Command = {
     )
     .addStringOption((option) =>
       option
-        .setName("category")
-        .setDescription("Category")
-        .setRequired(true)
-        .addChoices(
-          draftData.categories.map((choice) => ({
-            name: choice,
-            value: choice,
-          }))
-        )
+      .setName("category")
+      .setDescription("Category")
+      .setRequired(true)
+      .addChoices(
+        draftData.categories.map((choice) => ({
+          name: choice,
+          value: choice,
+        }))
+      )
     )
     .addUserOption((option) =>
       option
-        .setName("user")
-        .setDescription("The user to trade for.")
-        .setRequired(true)
+      .setName("user")
+      .setDescription("The user to trade for.")
+      .setRequired(true)
     )
     .addStringOption((option) =>
       option
-        .setName("division")
-        .setDescription("Division")
-        .setRequired(true)
-        .addChoices(
-          draftData.divisions.map((division) => ({
-            name: division.name,
-            value: division.name,
-          }))
-        )
+      .setName("division")
+      .setDescription("Division")
+      .setRequired(true)
+      .addChoices(
+        draftData.divisions.map((division) => ({
+          name: division.name,
+          value: division.name,
+        }))
+      )
     ),
   execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply({
-        content: "Server does not have a registered draft.",
-        ephemeral: true,
-      });
+      return sendError(interaction, "Server does not have a registered draft.");
     const division = getDivisionByName(
-      interaction.options.get("division")?.value as string
+      interaction.options.getString("division", true)
     );
-    if (!division)
-      return interaction.reply({
-        content: "Division not found.",
-        ephemeral: true,
-      });
-    const user: User | undefined = interaction.options.get("user")?.user;
-    if (!user)
-      return interaction.reply({ content: "User not found.", ephemeral: true });
+    const user = interaction.options.getUser("user");
     let coach = getCoach(division, user.id);
     if (!coach)
-      return interaction.reply({
-        content: `${user} is not a coach in this division.`,
-        ephemeral: true,
-      });
-    const category = interaction.options.get("category")?.value;
-    if (!category)
-      return interaction.reply({
-        content: "Category not found.",
-        ephemeral: true,
-      });
-    const oldPokemonString = interaction.options.get("pokemon");
-    if (!oldPokemonString?.value)
-      return interaction.reply({
-        content: "Pokemon not selected.",
-        ephemeral: true,
-      });
-    const oldPokemonDex = getDexData(oldPokemonString.value as string);
+      return sendError(interaction, `${user} is not a coach in this division.`)
+    const category = interaction.options.getString("category",true)
+    const oldPokemonDex= getDexData(interaction.options.getString("pokemon",true));
     if (!oldPokemonDex)
-      return interaction.reply({
-        content: "Pokemon does not exist.",
-        ephemeral: true,
-      });
+    return sendError(interaction,
+        "Pokemon does not exist.");
     tradeRandom(division, oldPokemonDex, coach, interaction, {
       validate: true,
     });

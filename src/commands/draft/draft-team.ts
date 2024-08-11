@@ -30,20 +30,12 @@ export const DraftTeamCommand: Command = {
 
   execute: (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return interaction.reply({
-        content: "Server does not have a registered draft.",
-        ephemeral: true,
-      });
+    return sendError(interaction, "Server does not have a registered draft.")
     let division = getDivisionByName(
-      interaction.options.get("division")?.value as string
+      interaction.options.getString("division")
     );
-    if (!division)
-      return interaction.reply({
-        content: "Division is invalid.",
-        ephemeral: true,
-      });
     const user: User =
-      interaction.options.get("user")?.user || interaction.user;
+      interaction.options.getUser("user") || interaction.user;
     const draftedList = getDrafted(division, { user: user.username })
       .splice(0, 25)
       .map(
