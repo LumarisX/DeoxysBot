@@ -15,14 +15,14 @@ export type PokemonData = {
   pid: string;
   tier: string;
   category: string;
-  note?: string;
+  note ? : string;
 };
 export type CoachData = {
   username: string;
   id: string;
   order: number;
   leftPicks: PokemonData[];
-  team: ({ pokemon: PokemonData; order: number } | null)[];
+  team: ({ pokemon: PokemonData;order: number } | null)[];
 };
 export type DivisionData = {
   channels: string[];
@@ -33,7 +33,7 @@ export type DivisionData = {
 };
 export type Draft = {
   categories: string[];
-  tiers: { name: string; max: number }[];
+  tiers: { name: string;max: number } [];
   divisions: DivisionData[];
   state: "" | "started" | "paused" | "ended";
   timerMinutes: number;
@@ -56,10 +56,7 @@ function getRandomPokemon(
   if (undrafted.length > 0) {
     return undrafted[Math.floor(Math.random() * undrafted.length)];
   }
-  interaction.reply({
-    content: `No pokemon are left! Please choose again.`,
-    ephemeral: true,
-  });
+  sendError(interaction, `No pokemon are left! Please choose again.`)
   return null;
 }
 
@@ -74,25 +71,19 @@ export async function draftPokemon(
   user: User,
   pokemon: PokemonData,
   interaction: ChatInputCommandInteraction,
-  options: { validate?: true; order?: number } = {}
+  options: { validate ? : true;order ? : number } = {}
 ) {
   if (isDrafted(pokemon.pid, division)) {
     interaction.reply({ content: "Already drafted.", ephemeral: true });
     return null;
   }
   if (options.validate && !validDraftPick(division, user, pokemon)) {
-    interaction.reply({
-      content: "Illegal pick. Please choose again.",
-      ephemeral: true,
-    });
+    sendError(interaction, "Illegal pick. Please choose again.")
     return null;
   }
-  let coach = division.coaches.find((coach) => coach.id === user.id);
+  let coach = getCoach(division)
   if (!coach) {
-    interaction.reply({
-      content: "You are not a coach in this division.",
-      ephemeral: true,
-    });
+    sendError(interaction, "You are not a coach in this division.")
     return null;
   }
   division.timer?.end();
@@ -104,10 +95,9 @@ export async function draftPokemon(
   writeDraft();
   let channel = await interaction.client.channels.fetch(division.channels[0]);
   if (!channel?.isTextBased()) return null;
-  let dex = getDexData(pokemon.pid)!;
+  let dex = getDexData(pokemon.pid) !;
   const attachment = new AttachmentBuilder(
-    `https://play.pokemonshowdown.com/sprites/gen5/${dex.png}.png`,
-    { name: `${dex.png}.png` }
+    `https://play.pokemonshowdown.com/sprites/gen5/${dex.png}.png`, { name: `${dex.png}.png` }
   );
   channel.send({
     content: `${dex.name} was drafted!`,
@@ -123,7 +113,7 @@ export async function draftRandom(
   tier: string,
   category: string,
   interaction: ChatInputCommandInteraction,
-  options: { validate?: true }
+  options: { validate ? : true }
 ) {
   const randomMon = getRandomPokemon(
     division,
@@ -163,8 +153,8 @@ export function getNextCoach(division: DivisionData): CoachData {
   if (reverse) {
     return division.coaches[
       division.coaches.length -
-        (division.draftCount % division.coaches.length) -
-        1
+      (division.draftCount % division.coaches.length) -
+      1
     ];
   }
   return division.coaches[division.draftCount % division.coaches.length];
@@ -176,22 +166,22 @@ export function readDraftData(): Draft {
 
 export function getUndrafted(
   division: DivisionData,
-  options: { tier?: string; category?: string } = {}
+  options: { tier ? : string;category ? : string } = {}
 ) {
   let undraftedData = draftData.pokemon.filter(
     (pokemon) =>
-      !isDrafted(pokemon.pid, division) &&
-      (!options.tier ||
-        pokemon.tier.toLowerCase() === options.tier.toLowerCase()) &&
-      (!options.category ||
-        pokemon.category.toLowerCase() === options.category.toLowerCase())
+    !isDrafted(pokemon.pid, division) &&
+    (!options.tier ||
+      pokemon.tier.toLowerCase() === options.tier.toLowerCase()) &&
+    (!options.category ||
+      pokemon.category.toLowerCase() === options.category.toLowerCase())
   );
   return undraftedData;
 }
 
 export function getDrafted(
   division: DivisionData,
-  options: { tier?: string; category?: string; user?: string } = {}
+  options: { tier ? : string;category ? : string;user ? : string } = {}
 ): (DexData & PokemonData)[] {
   let draftedData = division.coaches
     .filter((coach) => !options.user || options.user === coach.username)
@@ -211,7 +201,7 @@ export function getDrafted(
   }
 
   return draftedData.map((pokemon) => {
-    let dex = getDexData(pokemon.pid)!;
+    let dex = getDexData(pokemon.pid) !;
     return {
       pid: pokemon.pid,
       png: dex.png,
@@ -265,14 +255,11 @@ export function tradeRandom(
   oldPokemon: DexData,
   coach: CoachData,
   interaction: ChatInputCommandInteraction,
-  options: { validate?: true }
+  options: { validate ? : true }
 ) {
   let oldPokemonDraft = getDraftData(oldPokemon.pid);
   if (!oldPokemonDraft) {
-    interaction.reply({
-      content: `Unknown pokemon ${oldPokemon.pid}.`,
-      ephemeral: true,
-    });
+    sendError( `Unknown pokemon, ${oldPokemon.pid}.`)
     return null;
   }
   let newPokemon = getRandomPokemon(
@@ -292,7 +279,7 @@ export function trade(
   oldPokemonDex: DexData,
   newPokemon: PokemonData,
   coach: CoachData,
-  options: { validate?: true }
+  options: { validate ? : true }
 ): DexData | string {
   if (!oldPokemonDex || !newPokemon) return `Invalid Pokemon.`;
   let tradeIndex = coach.team.findIndex(
@@ -300,15 +287,16 @@ export function trade(
   );
   if (tradeIndex < 0)
     return `${coach.username} does not have ${oldPokemonDex.name} drafted.`;
-  if (isDrafted(newPokemon.pid, division)) return `Already drafted.`;
+  if (isDrafted(newPokemon.pid, division))
+  return `Already drafted.`;
   if (
     options.validate &&
-    newPokemon.tier !== coach.team[tradeIndex]!.pokemon.tier
+    newPokemon.tier !== coach.team[tradeIndex] !.pokemon.tier
   )
     return `Trades must be the same tier.`;
-  coach.team[tradeIndex]!.pokemon = newPokemon;
+  coach.team[tradeIndex] !.pokemon = newPokemon;
   writeDraft();
-  return getDexData(newPokemon.pid)!;
+  return getDexData(newPokemon.pid) !;
 }
 
 export async function updateState(
@@ -324,29 +312,17 @@ export async function updateState(
     draftData.state = "started";
   } else if (state === "end") {
     if (draftData.state === "")
-      return interaction.reply({
-        content: "Draft has not been started.",
-        ephemeral: true,
-      });
+    return sendError(interaction,"Draft has not been started.")
     if (draftData.state === "ended")
-      return interaction.reply({
-        content: "Draft already ended.",
-        ephemeral: true,
-      });
+    return sendError(interactio, "Draft already ended")
     draftData.state = "ended";
   } else if (state === "pause") {
     if (draftData.state !== "started")
-      return interaction.reply({
-        content: "Draft can not be paused.",
-        ephemeral: true,
-      });
+    return sendError(interaction,"Draft can not be paused.")
     draftData.state = "paused";
   } else if (state === "resume") {
     if (draftData.state !== "paused") {
-      interaction.reply({
-        content: "Draft is not paused.",
-        ephemeral: true,
-      });
+      return sendError(interaction, "Draft is not paused.")
       return null;
     }
     draftData.state = "started";
@@ -408,7 +384,7 @@ export function validDraftPick(
   if (!max) return false;
   return (
     getDrafted(division, { tier: pokemonData.tier, user: user.username })
-      .length < max
+    .length < max
   );
 }
 
@@ -451,7 +427,7 @@ export function notifyNext(channel: TextBasedChannel | null) {
 
 export async function skipUser(
   channel: TextBasedChannel,
-  division?: DivisionData
+  division ? : DivisionData
 ) {
   if (!division) division = getDivisionByChannel(channel.id);
   if (!division) return;
