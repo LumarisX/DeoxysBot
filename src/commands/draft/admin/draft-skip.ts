@@ -5,7 +5,6 @@ import {
 } from "discord.js";
 import { draftData, getDivisionByName, guildCheck, skipUser } from "..";
 import { Command } from "../..";
-import { sendError } from "../../..";
 
 export const DraftSkipCommand: Command = {
   data: new SlashCommandBuilder()
@@ -16,6 +15,7 @@ export const DraftSkipCommand: Command = {
       option
         .setName("division")
         .setDescription("Division")
+        .setRequired(true)
         .addChoices(
           draftData.divisions.map((division) => ({
             name: division.name,
@@ -25,8 +25,10 @@ export const DraftSkipCommand: Command = {
     ),
   execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return sendError(interaction, "Server does not have a registered draft.");
-    let division = getDivisionByName(interaction.options.getString("division"));
+      throw new Error("Server does not have a registered draft.");
+    let division = getDivisionByName(
+      interaction.options.getString("division", true)
+    );
     skipUser(interaction.channel!, division);
   },
 };

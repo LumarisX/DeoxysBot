@@ -30,12 +30,12 @@ export const DraftTeamCommand: Command = {
 
   execute: (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-    return sendError(interaction, "Server does not have a registered draft.")
+      throw new Error("Server does not have a registered draft.");
     let division = getDivisionByName(
-      interaction.options.getString("division")
+      interaction.options.getString("division", true)
     );
-    const user: User =
-      interaction.options.getUser("user") || interaction.user;
+    if (!division) throw new Error("Unknown division.");
+    const user: User = interaction.options.getUser("user") || interaction.user;
     const draftedList = getDrafted(division, { user: user.username })
       .splice(0, 25)
       .map(

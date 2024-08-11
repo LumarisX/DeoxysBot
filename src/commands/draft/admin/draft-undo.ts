@@ -5,10 +5,10 @@ import {
 } from "discord.js";
 import {
   draftData,
-  undoDraft,
   getDivisionByName,
-  notifyNext,
   guildCheck,
+  notifyNext,
+  undoDraft,
 } from "..";
 import { Command } from "../..";
 
@@ -31,15 +31,19 @@ export const DraftUndoCommand: Command = {
     ),
   execute: (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-    return sendError(interaction, "Server does not have a registered draft.");
+      throw new Error("Server does not have a registered draft.");
     let division = getDivisionByName(
       interaction.options.getString("division", true)
     );
+    if (!division)
+      throw new Error(
+        "Unknown channel. Please try again in your draft channel."
+      );
     if (undoDraft(division)) {
       interaction.reply({ content: "Draft pick undone.", ephemeral: true });
       notifyNext(interaction.channel);
     } else {
-      return sendError(interaction, "No draft picks to be undone.")
+      throw new Error("No draft picks to be undone.");
     }
   },
 };

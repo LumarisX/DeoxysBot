@@ -10,7 +10,6 @@ import {
 } from "discord.js";
 import { draftData, guildCheck, resetDraft } from "..";
 import { Command } from "../..";
-import { sendError } from "../../..";
 
 export const DraftResetCommand: Command = {
   data: new SlashCommandBuilder()
@@ -30,7 +29,7 @@ export const DraftResetCommand: Command = {
     ),
   execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      sendError(interaction, "Server does not have a registered draft.");
+      throw new Error("Server does not have a registered draft.");
     const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
       new ButtonBuilder()
         .setCustomId("confirm-reset")

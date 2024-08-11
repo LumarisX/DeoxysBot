@@ -61,7 +61,9 @@ export const DraftUndraftedCommand: Command = {
         ephemeral: true,
       });
     let division = getDivisionByName(
-      interaction.options.getString("division", true))
+      interaction.options.getString("division", true)
+    );
+    if (!division) throw new Error("Unknown division.");
     const tier = interaction.options.getString("tier");
     const category = interaction.options.getString("category");
     let undraftedData = getUndrafted(division, {
@@ -89,8 +91,8 @@ export const DraftUndraftedCommand: Command = {
       } else {
         return (
           `There are no remaining undrafted ` +
-          (tier ? `${tier?.value}-tier ` : "") +
-          (category ? `${category?.value} ` : "") +
+          (tier ? `${tier}-tier ` : "") +
+          (category ? `${category} ` : "") +
           `pokemon.`
         );
       }

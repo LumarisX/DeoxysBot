@@ -2,7 +2,6 @@ import {
   ChatInputCommandInteraction,
   PermissionsBitField,
   SlashCommandBuilder,
-  User,
 } from "discord.js";
 import {
   draftData,
@@ -12,7 +11,6 @@ import {
   guildCheck,
 } from "..";
 import { Command } from "../..";
-import { sendError } from "../../..";
 
 export const DraftModPickCommand: Command = {
   data: new SlashCommandBuilder()
@@ -59,17 +57,14 @@ export const DraftModPickCommand: Command = {
     ),
   execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return sendError(interaction, "Server does not have a registered draft.");
+      throw new Error("Server does not have a registered draft.");
     let division = getDivisionByName(
       interaction.options.getString("division", true)
     );
     if (!division) {
       division = getDivisionByChannel(interaction.channelId);
       if (!division)
-        return sendError(
-          interaction,
-          "Division not selected and unknown channel."
-        );
+        throw new Error("Division not selected and unknown channel.");
     }
     const user = interaction.options.getUser("user", true);
     const tier = interaction.options.getString("tier", true);

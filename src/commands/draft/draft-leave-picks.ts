@@ -16,21 +16,21 @@ export const DraftStateCommand: Command = {
     .setDescription("Leave pokemon for future picks.")
     .addStringOption((option) =>
       option
-      .setName("division")
-      .setDescription("Division")
-      .setRequired(true)
-      .addChoices(
-        draftData.divisions.map((division) => ({
-          name: division.name,
-          value: division.name,
-        }))
-      )
+        .setName("division")
+        .setDescription("Division")
+        .setRequired(true)
+        .addChoices(
+          draftData.divisions.map((division) => ({
+            name: division.name,
+            value: division.name,
+          }))
+        )
     )
     .addStringOption((option) =>
       option
-      .setName("first-choice")
-      .setDescription("First Choice")
-      .setRequired(true)
+        .setName("first-choice")
+        .setDescription("First Choice")
+        .setRequired(true)
     )
     .addStringOption((option) =>
       option.setName("second-choice").setDescription("Second Choice")
@@ -53,37 +53,38 @@ export const DraftStateCommand: Command = {
     let division = getDivisionByName(
       interaction.options.getString("division", true)
     );
+    if (!division)
+      throw new Error(
+        "Unknown channel. Please try again in your draft channel."
+      );
     let coach = getCoach(division, interaction.user.id);
-    if (!coach)
-      return sendError(interaction, `You are not a coach in this division.`)
+    if (!coach) throw new Error(`You are not a coach in this division.`);
     let picks: string[] = [];
     let checkChoice = (choiceString: string) => {
       let pokemonDex = getDexData(choiceString);
       if (!pokemonDex)
-        return sendError(interaction, `${choiceString} is an unknown pokemon.`);
+        throw new Error(`${choiceString} is an unknown pokemon.`);
       if (isDrafted(pokemonDex.pid, division))
-        return sendError(interaction,
-          `${pokemonDex.name} has already been drafted.`
-        );
+        throw new Error(`${pokemonDex.name} has already been drafted.`);
       picks.push(pokemonDex.pid);
     };
-    const firstChoiceString = interaction.options.getString("first-choice")
+    const firstChoiceString = interaction.options.getString("first-choice");
     if (firstChoiceString) {
       checkChoice(firstChoiceString);
     }
-    const secondChoiceString = interaction.options.getString("second-choice")
+    const secondChoiceString = interaction.options.getString("second-choice");
     if (secondChoiceString) {
       checkChoice(secondChoiceString);
     }
-    const thirdChoiceString = interaction.options.getString("third-choice")
+    const thirdChoiceString = interaction.options.getString("third-choice");
     if (thirdChoiceString) {
       checkChoice(thirdChoiceString);
     }
-    const fourthChoiceString = interaction.options.getString("fourth-choice")
+    const fourthChoiceString = interaction.options.getString("fourth-choice");
     if (fourthChoiceString) {
       checkChoice(fourthChoiceString);
     }
-    const fifthChoiceString = interaction.options.getString("fifth-choice")
+    const fifthChoiceString = interaction.options.getString("fifth-choice");
     if (fifthChoiceString) {
       checkChoice(fifthChoiceString);
     }

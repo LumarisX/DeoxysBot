@@ -18,10 +18,11 @@ export const DraftRoute: CommandRoute = {
     { command: DraftUndoCommand, enabled: true },
     { command: DraftUndraftedCommand, enabled: true },
     { command: DraftModPickCommand, enabled: true },
-    { command: DraftTradeRandomCommand, enabled: true },
+    { command: DraftTradeRandomCommand, enabled: false },
     { command: DraftStateCommand, enabled: true },
     { command: DraftSkipCommand, enabled: true },
     { command: DraftTimerCommand, enabled: true },
+    { command: DraftModPickCommand, enabled: false },
   ],
   enabled: true,
 };

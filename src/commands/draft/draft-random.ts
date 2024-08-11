@@ -1,13 +1,6 @@
 import { ChatInputCommandInteraction, SlashCommandBuilder } from "discord.js";
-import {
-  canDraft,
-  draftData,
-  draftRandom,
-  getDivisionByChannel,
-  guildCheck,
-} from ".";
+import { draftData, draftRandom, getDivisionByChannel, guildCheck } from ".";
 import { Command } from "..";
-import { sendError } from "../..";
 
 export const DraftRandomCommand: Command = {
   data: new SlashCommandBuilder()
@@ -36,17 +29,16 @@ export const DraftRandomCommand: Command = {
     ),
   execute: (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return sendError(interaction, "Server does not have a registered draft.");
+      throw new Error("Server does not have a registered draft.");
     let division = getDivisionByChannel(interaction.channelId);
     if (!division)
-      return sendError(
-        interaction,
+      throw new Error(
         "Unknown channel. Please try again in your draft channel."
       );
     if (draftData.state != "started")
-      return sendError(interaction, "The draft has not started yet.");
-    if (!canDraft(division, interaction.user.id))
-      return sendError(interaction, "Not allowed to draft.");
+      throw new Error("The draft has not started yet.");
+    // if (!canDraft(division, interaction.user.id))
+    //   throw new Error("Not allowed to draft.")
     const tier = interaction.options.getString("tier", true);
     const category = interaction.options.getString("category", true);
     draftRandom(division, interaction.user, tier, category, interaction, {

@@ -52,6 +52,7 @@ export class Timer {
     clearTimeout(this.timeout);
     console.log("ended");
     this.timeout = undefined;
+    return this.timeout;
   }
 
   private nextReminder(): number {

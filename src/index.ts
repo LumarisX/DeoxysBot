@@ -53,7 +53,17 @@ client.on("interactionCreate", async (interaction: Interaction) => {
       );
       commandData.command.execute(interaction);
     } catch (error) {
-      interaction.reply({ content: `There was an error.` });
+      if (error instanceof Error) {
+        console.log(error);
+        return interaction.reply({
+          content: error.message,
+          ephemeral: true,
+        });
+      }
+      return interaction.reply({
+        content: "There was an error.",
+        ephemeral: true,
+      });
     }
   }
 });
@@ -164,15 +174,4 @@ async function gptRespond(message: Message) {
   } catch (error) {
     console.error(error);
   }
-}
-
-export function sendError(
-  interaction: ChatInputCommandInteraction,
-  message: string
-) {
-  console.log(message);
-  return interaction.reply({
-    content: message,
-    ephemeral: true,
-  });
 }

@@ -1,9 +1,7 @@
 import {
-  AttachmentBuilder,
   ChatInputCommandInteraction,
   PermissionsBitField,
   SlashCommandBuilder,
-  User,
 } from "discord.js";
 import {
   draftData,
@@ -25,50 +23,50 @@ export const DraftTradeRandomCommand: Command = {
     )
     .addStringOption((option) =>
       option
-      .setName("category")
-      .setDescription("Category")
-      .setRequired(true)
-      .addChoices(
-        draftData.categories.map((choice) => ({
-          name: choice,
-          value: choice,
-        }))
-      )
+        .setName("category")
+        .setDescription("Category")
+        .setRequired(true)
+        .addChoices(
+          draftData.categories.map((choice) => ({
+            name: choice,
+            value: choice,
+          }))
+        )
     )
     .addUserOption((option) =>
       option
-      .setName("user")
-      .setDescription("The user to trade for.")
-      .setRequired(true)
+        .setName("user")
+        .setDescription("The user to trade for.")
+        .setRequired(true)
     )
     .addStringOption((option) =>
       option
-      .setName("division")
-      .setDescription("Division")
-      .setRequired(true)
-      .addChoices(
-        draftData.divisions.map((division) => ({
-          name: division.name,
-          value: division.name,
-        }))
-      )
+        .setName("division")
+        .setDescription("Division")
+        .setRequired(true)
+        .addChoices(
+          draftData.divisions.map((division) => ({
+            name: division.name,
+            value: division.name,
+          }))
+        )
     ),
   execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return sendError(interaction, "Server does not have a registered draft.");
+      throw new Error("Server does not have a registered draft.");
     const division = getDivisionByName(
       interaction.options.getString("division", true)
     );
-    const user = interaction.options.getUser("user");
+    if (!division) throw new Error("Unknown division.");
+    const user = interaction.options.getUser("user", true);
     let coach = getCoach(division, user.id);
-    if (!coach)
-      return sendError(interaction, `${user} is not a coach in this division.`)
-    const category = interaction.options.getString("category",true)
-    const oldPokemonDex= getDexData(interaction.options.getString("pokemon",true));
-    if (!oldPokemonDex)
-    return sendError(interaction,
-        "Pokemon does not exist.");
-    tradeRandom(division, oldPokemonDex, coach, interaction, {
+    if (!coach) throw new Error(`${user} is not a coach in this division.`);
+    const category = interaction.options.getString("category", true);
+    const oldPokemonDex = getDexData(
+      interaction.options.getString("pokemon", true)
+    );
+    if (!oldPokemonDex) throw new Error("Pokemon does not exist.");
+    tradeRandom(division, oldPokemonDex, coach, {
       validate: true,
     });
     interaction.reply({

@@ -5,7 +5,6 @@ import {
 } from "discord.js";
 import { guildCheck, updateState } from "..";
 import { Command } from "../..";
-import { sendError } from "../../..";
 
 export const DraftStateCommand: Command = {
   data: new SlashCommandBuilder()
@@ -26,7 +25,7 @@ export const DraftStateCommand: Command = {
     ),
   execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
-      return sendError(interaction, "Server does not have a registered draft.");
+      throw new Error("Server does not have a registered draft.");
     const state = interaction.options.get("state")?.value;
     if (
       state === "start" ||
@@ -36,7 +35,7 @@ export const DraftStateCommand: Command = {
     ) {
       updateState(state, interaction);
     } else {
-      return sendError(interaction, "Unknown state.");
+      throw new Error("Unknown state.");
     }
   },
 };
