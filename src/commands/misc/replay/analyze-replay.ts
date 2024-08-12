@@ -13,10 +13,8 @@ export const AnalyzeReplayCommand: Command = {
         .setRequired(true)
     ),
   execute: async (interaction: ChatInputCommandInteraction) => {
-    const replayUrl: string = interaction.options.get("relay-url")
-      ?.value as string;
-    if (!replayUrl) return interaction.reply({content: "Url is not a valid replay.");
+    const replayUrl = interaction.options.getString("relay-url", true);
     let replayData = await analyzeReplay(replayUrl);
-    console.log(replayData.stats.forEach((user) => user.username));
+    // console.log(replayData.stats.forEach((user) => user.username));
   },
 };

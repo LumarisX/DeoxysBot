@@ -10,6 +10,7 @@ import { ChatCompletionMessageParam } from "openai/resources/chat/completions";
 import { routes } from "./commands";
 import { config } from "./config";
 import { deployGuildCommands } from "./deploy-commands";
+import { analyzeReplay } from "./commands/misc/replay";
 
 const openai = new OpenAi({
   apiKey: config.OPENAI_API_KEY,
@@ -81,8 +82,10 @@ client.on("messageCreate", async (message) => {
     gptRespond(message);
   }
   let urlreg = /(https?\/\/)?(wwww\.)?replay\.pokemonshowdown\.com\/.+?\s/;
-  if (urlreg.test(message.content.toLowerCase())) {
+  let url = message.content.toLowerCase().match(urlreg);
+  if (url) {
     console.log("Analyzer |", message.content);
+    analyzeReplay(url[0]);
   }
 });
 

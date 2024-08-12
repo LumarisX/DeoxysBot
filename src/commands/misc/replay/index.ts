@@ -70,16 +70,19 @@ export type ReplayData = {
 };
 
 export async function analyzeReplay(url: string) {
-  const strippedUrl = url.replace(/([a-zA-Z0-9-]+-[a-zA-Z0-9]+).*$/, "$1");
   try {
-    const response = await fetch(
+    const strippedUrl = url.replace(/([a-zA-Z0-9-]+-[a-zA-Z0-9]+).*$/, "$1");
+    console.log(
       `https://api.pokemondraftzone.com/replay/analyze/${strippedUrl}`
     );
-    if (!response.ok) {
-      throw new Error("Failed to fetch the replay log");
-    }
-    const replayData: ReplayData = JSON.parse(await response.text());
-    return replayData;
+    // const response = await fetch(
+    //   `https://api.pokemondraftzone.com/replay/analyze/${strippedUrl}`
+    // );
+    // if (!response.ok) {
+    //   throw new Error("Failed to fetch the replay log.");
+    // }
+    // const replayData: ReplayData = JSON.parse(await response.text());
+    // return replayData;
   } catch (error) {
     console.error("Error fetching replay log:", error);
     throw error;
