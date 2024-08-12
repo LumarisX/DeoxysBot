@@ -54,8 +54,11 @@ function getRandomPokemon(
   });
   if (undrafted.length > 0) {
     return undrafted[Math.floor(Math.random() * undrafted.length)];
+  } else {
+    throw new Error(
+      `No Pokémon are left in tier: ${tier}, category: ${category}. Please choose again.`
+    );
   }
-  throw new Error(`No pokemon are left! Please choose again.`);
 }
 
 export function isDrafted(pid: string, division: DivisionData) {
@@ -401,10 +404,21 @@ export function notifyNext(channel: TextBasedChannel | null) {
           119,
         ];
       }
-      division.timer.start();
+      if (draftData.state == "started") {
+        division.timer.start();
+      }
     }
+    let hours = Math.floor(division.timer.remainingMinutes / 60);
+    let minutes = division.timer.remainingMinutes % 60;
     channel.send(
-      `${nextUser} you're up next! You have ${division.timer.remainingMinutes} minutes to make your pick.`
+      `${nextUser} you're up next! You have ` +
+        (hours > 1 ? `${hours} hours ` : "") +
+        (hours === 1 ? `${hours} hour ` : "") +
+        (hours > 0 && minutes > 0 ? `and ` : "") +
+        (minutes > 1 ? `${minutes} minutes ` : "") +
+        (minutes === 1 ? `${minutes} minute ` : "") +
+        (draftData.state === "paused" ? `(current paused) ` : "") +
+        `to make your pick.`
     );
   }, 1000);
 }

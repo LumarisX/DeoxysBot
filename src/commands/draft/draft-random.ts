@@ -33,7 +33,7 @@ export const DraftRandomCommand: Command = {
           }))
         )
     ),
-  execute: (interaction: ChatInputCommandInteraction) => {
+  execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
       throw new Error("Server does not have a registered draft.");
     let division = getDivisionByChannel(interaction.channelId);
@@ -41,13 +41,13 @@ export const DraftRandomCommand: Command = {
       throw new Error(
         "Unknown channel. Please try again in your draft channel."
       );
-    if (draftData.state != "started")
+    if (draftData.state != "started" && draftData.state != "paused")
       throw new Error("The draft has not started yet.");
     // if (!canDraft(division, interaction.user.id))
     //   throw new Error("Not allowed to draft.");
     const tier = interaction.options.getString("tier", true);
     const category = interaction.options.getString("category", true);
-    draftRandom(division, interaction.user, tier, category, interaction, {
+    await draftRandom(division, interaction.user, tier, category, interaction, {
       validate: true,
     }).then(() => {
       interaction.reply({

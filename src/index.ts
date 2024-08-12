@@ -1,7 +1,5 @@
 import {
-  BaseInteraction,
   Client,
-  ChatInputCommandInteraction,
   EmbedBuilder,
   GatewayIntentBits,
   Interaction,
@@ -48,10 +46,10 @@ client.on("interactionCreate", async (interaction: Interaction) => {
         "|",
         interaction.commandName,
         interaction.options.data
-          .map((option) => `${option.name}: ${option.value}`)
+          .map((option) => `${option.name}:${option.value}`)
           .join(" ")
       );
-      commandData.command.execute(interaction);
+      await commandData.command.execute(interaction);
     } catch (error) {
       if (error instanceof Error) {
         console.log(error);
@@ -80,7 +78,7 @@ client.on("messageCreate", async (message) => {
       "|",
       message.content
     );
-    // gptRespond(message);
+    gptRespond(message);
   }
   let urlreg = /(https?\/\/)?(wwww\.)?replay\.pokemonshowdown\.com\/.+?\s/;
   if (urlreg.test(message.content.toLowerCase())) {

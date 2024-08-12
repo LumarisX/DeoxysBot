@@ -73,15 +73,26 @@ export const DraftModPickCommand: Command = {
     const user = interaction.options.getUser("user", true);
     const tier = interaction.options.getString("tier", true);
     const category = interaction.options.getString("category", true);
-    draftRandom(division, user, tier, category, interaction, {
-      validate: true,
-    }).then((drafted) => {
-      if (drafted) {
-        interaction.reply({
-          content: `${interaction.user} has selected a ${tier}-tier ${category} pokemon for ${user}`,
+    try {
+      await draftRandom(division, user, tier, category, interaction, {
+        validate: true,
+      });
+      interaction.reply({
+        content: `${interaction.user} has selected a ${tier}-tier ${category} pokemon for ${user}`,
+        ephemeral: true,
+      });
+    } catch (error) {
+      if (error instanceof Error) {
+        console.log(error);
+        return interaction.reply({
+          content: error.message,
           ephemeral: true,
         });
       }
-    });
+      return interaction.reply({
+        content: "There was an error.",
+        ephemeral: true,
+      });
+    }
   },
 };
