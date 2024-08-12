@@ -39,9 +39,7 @@
   ],
   "divisions": [
     {
-      "channels": [
-        "1270098076261945465"
-      ],
+      "channels": ["1270098076261945465"],
       "coaches": [
         {
           "username": "mattmanectric",
@@ -383,9 +381,7 @@
       "draftCount": 32
     },
     {
-      "channels": [
-        "1267438975786942526"
-      ],
+      "channels": ["1267438975786942526"],
       "coaches": [
         {
           "username": "ianb1002",
@@ -882,11 +878,7 @@
   ],
   "state": "started",
   "timerMinutes": 60,
-  "reminders": [
-    60,
-    30,
-    5
-  ],
+  "reminders": [60, 30, 5],
   "pokemon": [
     {
       "pid": "abomasnow",
@@ -1091,7 +1083,7 @@
     {
       "pid": "aurorus",
       "tier": "C",
-      "category": "Bulky Defense"
+      "category": "Field Manipulation"
     },
     {
       "pid": "avalugg",
@@ -1150,7 +1142,7 @@
     },
     {
       "pid": "barraskewda",
-      "tier": "A",
+      "tier": "C",
       "category": "Fast Offense"
     },
     {
@@ -1425,7 +1417,7 @@
     },
     {
       "pid": "calyrex",
-      "tier": "B",
+      "tier": "D",
       "category": "Bulky Defense"
     },
     {
@@ -1450,7 +1442,7 @@
     },
     {
       "pid": "carbink",
-      "tier": "B",
+      "tier": "C",
       "category": "Bulky Defense"
     },
     {
@@ -1905,7 +1897,7 @@
     },
     {
       "pid": "dedenne",
-      "tier": "A",
+      "tier": "D",
       "category": "Fast Offense"
     },
     {
@@ -2280,7 +2272,7 @@
     },
     {
       "pid": "emolga",
-      "tier": "B",
+      "tier": "C",
       "category": "Bulky Defense"
     },
     {
@@ -5200,17 +5192,17 @@
     },
     {
       "pid": "simipour",
-      "tier": "B",
+      "tier": "C",
       "category": "Fast Offense"
     },
     {
       "pid": "simisage",
-      "tier": "B",
+      "tier": "C",
       "category": "Fast Offense"
     },
     {
       "pid": "simisear",
-      "tier": "B",
+      "tier": "C",
       "category": "Fast Offense"
     },
     {
@@ -6300,17 +6292,17 @@
     },
     {
       "pid": "wormadam",
-      "tier": "B",
+      "tier": "D",
       "category": "Bulky Offense"
     },
     {
       "pid": "wormadamsandy",
-      "tier": "B",
+      "tier": "D",
       "category": "Bulky Offense"
     },
     {
       "pid": "wormadamtrash",
-      "tier": "B",
+      "tier": "D",
       "category": "Bulky Offense"
     },
     {
