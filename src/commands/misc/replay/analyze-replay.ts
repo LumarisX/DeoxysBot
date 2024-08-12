@@ -14,7 +14,6 @@ export const AnalyzeReplayCommand: Command = {
     ),
   execute: async (interaction: ChatInputCommandInteraction) => {
     const replayUrl = interaction.options.getString("relay-url", true);
-    let replayData = await analyzeReplay(replayUrl);
-    // console.log(replayData.stats.forEach((user) => user.username));
+    await analyzeReplay(replayUrl, interaction);
   },
 };

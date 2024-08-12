@@ -1,9 +1,16 @@
 import {
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonInteraction,
+  ButtonStyle,
   Client,
+  CommandInteraction,
+  ComponentType,
   EmbedBuilder,
   GatewayIntentBits,
   Interaction,
   Message,
+  MessageComponentInteraction,
 } from "discord.js";
 import OpenAi from "openai";
 import { ChatCompletionMessageParam } from "openai/resources/chat/completions";
@@ -85,10 +92,46 @@ client.on("messageCreate", async (message) => {
   let url = message.content.toLowerCase().match(urlreg);
   if (url) {
     console.log("Analyzer |", message.content);
-    analyzeReplay(url[0]);
+
+    const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
+      new ButtonBuilder()
+        .setCustomId("analyze")
+        .setLabel("Analyze Replay")
+        .setStyle(ButtonStyle.Primary)
+    );
+
+    const confirmMessage = await message.reply({
+      content: "Do you want me to analyze this replay?",
+      components: [row],
+      allowedMentions: { repliedUser: false },
+    });
+
+    const filter = (interaction: ButtonInteraction) =>
+      interaction.customId === "analyze" &&
+      interaction.user.id === message.author.id;
+
+    const collector = confirmMessage.createMessageComponentCollector({
+      filter,
+      time: 30000,
+      componentType: ComponentType.Button,
+    });
+
+    collector.on("collect", async (interaction: ButtonInteraction) => {
+      await interaction.update({
+        content: "Analyzing...",
+        components: [],
+        allowedMentions: { repliedUser: false },
+      });
+      analyzeReplay(url[0], interaction);
+    });
+
+    collector.on("end", (collected) => {
+      if (collected.size === 0) {
+        confirmMessage.delete();
+      }
+    });
   }
 });
-
 client.on("guildCreate", async (guild) => {
   await deployGuildCommands({ guildId: guild.id });
 });

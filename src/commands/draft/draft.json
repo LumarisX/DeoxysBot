@@ -623,6 +623,14 @@
                 "tier": "S",
                 "category": "Field Manipulation"
               }
+            },
+            {
+              "order": 36,
+              "pokemon": {
+                "pid": "snorlax",
+                "tier": "B",
+                "category": "TR Sweeper"
+              }
             }
           ],
           "leftPicks": []
@@ -677,7 +685,7 @@
         }
       ],
       "name": "East",
-      "draftCount": 36
+      "draftCount": 37
     }
   ],
   "state": "paused",

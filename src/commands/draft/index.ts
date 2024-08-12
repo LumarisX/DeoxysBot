@@ -417,7 +417,7 @@ export function notifyNext(channel: TextBasedChannel | null) {
         (hours > 0 && minutes > 0 ? `and ` : "") +
         (minutes > 1 ? `${minutes} minutes ` : "") +
         (minutes === 1 ? `${minutes} minute ` : "") +
-        (draftData.state === "paused" ? `(current paused) ` : "") +
+        (draftData.state === "paused" ? `(currently paused) ` : "") +
         `to make your pick.`
     );
   }, 1000);
