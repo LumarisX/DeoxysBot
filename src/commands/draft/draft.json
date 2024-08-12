@@ -39,9 +39,7 @@
   ],
   "divisions": [
     {
-      "channels": [
-        "1270098076261945465"
-      ],
+      "channels": ["1270098076261945465"],
       "coaches": [
         {
           "username": "mattmanectric",
@@ -279,9 +277,7 @@
       "draftCount": 17
     },
     {
-      "channels": [
-        "1267438975786942526"
-      ],
+      "channels": ["1267438975786942526"],
       "coaches": [
         {
           "username": "ianb1002",
@@ -689,12 +685,8 @@
     }
   ],
   "state": "paused",
-  "timerMinutes": 120,
-  "reminders": [
-    60,
-    30,
-    5
-  ],
+  "timerMinutes": 60,
+  "reminders": [60, 30, 5],
   "pokemon": [
     {
       "pid": "abomasnow",
