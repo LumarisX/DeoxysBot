@@ -39,9 +39,7 @@
   ],
   "divisions": [
     {
-      "channels": [
-        "1270098076261945465"
-      ],
+      "channels": ["1270098076261945465"],
       "coaches": [
         {
           "username": "mattmanectric",
@@ -992,9 +990,7 @@
       "draftCount": 119
     },
     {
-      "channels": [
-        "1267438975786942526"
-      ],
+      "channels": ["1267438975786942526"],
       "coaches": [
         {
           "username": "ianb1002",
@@ -1843,11 +1839,7 @@
   ],
   "state": "started",
   "timerMinutes": 30,
-  "reminders": [
-    20,
-    10,
-    5
-  ],
+  "reminders": [20, 10, 5],
   "pokemon": [
     {
       "pid": "abomasnow",
@@ -1973,6 +1965,11 @@
       "pid": "arcaninehisui",
       "tier": "A",
       "category": "Fast Offense"
+    },
+    {
+      "pid": "arceus",
+      "tier": "D",
+      "category": "NFE"
     },
     {
       "pid": "archaludon",
