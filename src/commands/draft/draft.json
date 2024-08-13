@@ -39,7 +39,9 @@
   ],
   "divisions": [
     {
-      "channels": ["1270098076261945465"],
+      "channels": [
+        "1270098076261945465"
+      ],
       "coaches": [
         {
           "username": "mattmanectric",
@@ -116,6 +118,22 @@
                 "pid": "archeops",
                 "tier": "D",
                 "category": "Fast Offense"
+              }
+            },
+            {
+              "order": 129,
+              "pokemon": {
+                "pid": "sandile",
+                "tier": "D",
+                "category": "NFE"
+              }
+            },
+            {
+              "order": 141,
+              "pokemon": {
+                "pid": "zekrom",
+                "tier": "R",
+                "category": "Restricted"
               }
             }
           ],
@@ -197,6 +215,22 @@
                 "tier": "D",
                 "category": "Bulky Offense"
               }
+            },
+            {
+              "order": 128,
+              "pokemon": {
+                "pid": "toxapex",
+                "tier": "D",
+                "category": "Stall"
+              }
+            },
+            {
+              "order": 140,
+              "pokemon": {
+                "pid": "zacian",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -205,7 +239,96 @@
           "username": "omalight",
           "id": "279369135102623754",
           "order": 2,
-          "team": [],
+          "team": [
+            {
+              "order": 151,
+              "pokemon": {
+                "pid": "ninetalesalola",
+                "tier": "A",
+                "category": "Field Manipulation"
+              }
+            },
+            {
+              "order": 152,
+              "pokemon": {
+                "pid": "talonflame",
+                "tier": "B",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 153,
+              "pokemon": {
+                "pid": "deoxysdefense",
+                "tier": "A",
+                "category": "Stall"
+              }
+            },
+            {
+              "order": 154,
+              "pokemon": {
+                "pid": "marshadow",
+                "tier": "S",
+                "category": "Sweeper"
+              }
+            },
+            {
+              "order": 155,
+              "pokemon": {
+                "pid": "alcremie",
+                "tier": "B",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 156,
+              "pokemon": {
+                "pid": "hoopaunbound",
+                "tier": "S",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 157,
+              "pokemon": {
+                "pid": "wigglytuff",
+                "tier": "C",
+                "category": "Bulky Defense"
+              }
+            },
+            {
+              "order": 158,
+              "pokemon": {
+                "pid": "pyroar",
+                "tier": "C",
+                "category": "Fast Offense"
+              }
+            },
+            {
+              "order": 159,
+              "pokemon": {
+                "pid": "plusle",
+                "tier": "D",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 160,
+              "pokemon": {
+                "pid": "sandslash",
+                "tier": "D",
+                "category": "Sweeper"
+              }
+            },
+            {
+              "order": 161,
+              "pokemon": {
+                "pid": "necrozma",
+                "tier": "R",
+                "category": "Restricted"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
@@ -284,6 +407,22 @@
                 "tier": "D",
                 "category": "Sweeper"
               }
+            },
+            {
+              "order": 126,
+              "pokemon": {
+                "pid": "wormadamsandy",
+                "tier": "D",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 139,
+              "pokemon": {
+                "pid": "giratina",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -349,6 +488,38 @@
                 "tier": "C",
                 "category": "Bulky Defense"
               }
+            },
+            {
+              "order": 138,
+              "pokemon": {
+                "pid": "zamazentacrowned",
+                "tier": "R",
+                "category": "Restricted"
+              }
+            },
+            {
+              "order": 144,
+              "pokemon": {
+                "pid": "goodra",
+                "tier": "A",
+                "category": "Stall"
+              }
+            },
+            {
+              "order": 145,
+              "pokemon": {
+                "pid": "incineroar",
+                "tier": "S",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 146,
+              "pokemon": {
+                "pid": "blaziken",
+                "tier": "S",
+                "category": "Sweeper"
+              }
             }
           ],
           "leftPicks": []
@@ -411,6 +582,38 @@
               "pokemon": {
                 "pid": "beedrill",
                 "tier": "C",
+                "category": "Fast Offense"
+              }
+            },
+            {
+              "order": 137,
+              "pokemon": {
+                "pid": "kyuremblack",
+                "tier": "R",
+                "category": "Restricted"
+              }
+            },
+            {
+              "order": 148,
+              "pokemon": {
+                "pid": "tangrowth",
+                "tier": "C",
+                "category": "Stall"
+              }
+            },
+            {
+              "order": 149,
+              "pokemon": {
+                "pid": "mamoswine",
+                "tier": "A",
+                "category": "Sweeper"
+              }
+            },
+            {
+              "order": 150,
+              "pokemon": {
+                "pid": "infernape",
+                "tier": "B",
                 "category": "Fast Offense"
               }
             }
@@ -493,6 +696,22 @@
                 "tier": "C",
                 "category": "Bulky Offense"
               }
+            },
+            {
+              "order": 123,
+              "pokemon": {
+                "pid": "sharpedo",
+                "tier": "D",
+                "category": "Fast Offense"
+              }
+            },
+            {
+              "order": 136,
+              "pokemon": {
+                "pid": "dialga",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -573,6 +792,22 @@
                 "tier": "D",
                 "category": "Bulky Offense"
               }
+            },
+            {
+              "order": 122,
+              "pokemon": {
+                "pid": "unfezant",
+                "tier": "D",
+                "category": "Fast Offense"
+              }
+            },
+            {
+              "order": 135,
+              "pokemon": {
+                "pid": "groudon",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -644,6 +879,30 @@
                 "pid": "avalugg",
                 "tier": "C",
                 "category": "TR Sweeper"
+              }
+            },
+            {
+              "order": 134,
+              "pokemon": {
+                "pid": "palkiaorigin",
+                "tier": "R",
+                "category": "Restricted"
+              }
+            },
+            {
+              "order": 142,
+              "pokemon": {
+                "pid": "bellossom",
+                "tier": "D",
+                "category": "Stall"
+              }
+            },
+            {
+              "order": 143,
+              "pokemon": {
+                "pid": "fidough",
+                "tier": "D",
+                "category": "NFE"
               }
             }
           ],
@@ -725,6 +984,22 @@
                 "tier": "D",
                 "category": "Bulky Defense"
               }
+            },
+            {
+              "order": 120,
+              "pokemon": {
+                "pid": "watchog",
+                "tier": "D",
+                "category": "Fast Offense"
+              }
+            },
+            {
+              "order": 133,
+              "pokemon": {
+                "pid": "giratinaorigin",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -804,6 +1079,22 @@
                 "pid": "clamperl",
                 "tier": "D",
                 "category": "NFE"
+              }
+            },
+            {
+              "order": 119,
+              "pokemon": {
+                "pid": "swoobat",
+                "tier": "D",
+                "category": "Sweeper"
+              }
+            },
+            {
+              "order": 132,
+              "pokemon": {
+                "pid": "zygarde",
+                "tier": "R",
+                "category": "Restricted"
               }
             }
           ],
@@ -893,6 +1184,14 @@
                 "tier": "D",
                 "category": "TR Sweeper"
               }
+            },
+            {
+              "order": 131,
+              "pokemon": {
+                "pid": "calyrexice",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -981,16 +1280,26 @@
                 "tier": "C",
                 "category": "Sweeper"
               }
+            },
+            {
+              "order": 130,
+              "pokemon": {
+                "pid": "rayquaza",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
         }
       ],
       "name": "West",
-      "draftCount": 119
+      "draftCount": 162
     },
     {
-      "channels": ["1267438975786942526"],
+      "channels": [
+        "1267438975786942526"
+      ],
       "coaches": [
         {
           "username": "ianb1002",
@@ -1052,6 +1361,38 @@
                 "tier": "D",
                 "category": "Utility"
               }
+            },
+            {
+              "order": 103,
+              "pokemon": {
+                "pid": "tyrantrum",
+                "tier": "D",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 104,
+              "pokemon": {
+                "pid": "venomoth",
+                "tier": "C",
+                "category": "Stall"
+              }
+            },
+            {
+              "order": 129,
+              "pokemon": {
+                "pid": "beartic",
+                "tier": "C",
+                "category": "Bulky Defense"
+              }
+            },
+            {
+              "order": 142,
+              "pokemon": {
+                "pid": "solgaleo",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -1107,6 +1448,46 @@
                 "pid": "tauros",
                 "tier": "C",
                 "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 102,
+              "pokemon": {
+                "pid": "bronzor",
+                "tier": "D",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 105,
+              "pokemon": {
+                "pid": "ironhands",
+                "tier": "A",
+                "category": "TR Sweeper"
+              }
+            },
+            {
+              "order": 128,
+              "pokemon": {
+                "pid": "machamp",
+                "tier": "C",
+                "category": "TR Sweeper"
+              }
+            },
+            {
+              "order": 130,
+              "pokemon": {
+                "pid": "meditite",
+                "tier": "D",
+                "category": "NFE"
+              }
+            },
+            {
+              "order": 141,
+              "pokemon": {
+                "pid": "kyogre",
+                "tier": "R",
+                "category": "Restricted"
               }
             }
           ],
@@ -1172,6 +1553,38 @@
                 "tier": "C",
                 "category": "TR Sweeper"
               }
+            },
+            {
+              "order": 101,
+              "pokemon": {
+                "pid": "golisopod",
+                "tier": "B",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 106,
+              "pokemon": {
+                "pid": "okidogi",
+                "tier": "B",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 127,
+              "pokemon": {
+                "pid": "ironmoth",
+                "tier": "A",
+                "category": "Sweeper"
+              }
+            },
+            {
+              "order": 140,
+              "pokemon": {
+                "pid": "zamazentacrowned",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -1236,6 +1649,38 @@
                 "tier": "C",
                 "category": "Sweeper"
               }
+            },
+            {
+              "order": 100,
+              "pokemon": {
+                "pid": "eldegoss",
+                "tier": "D",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 107,
+              "pokemon": {
+                "pid": "masquerain",
+                "tier": "D",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 126,
+              "pokemon": {
+                "pid": "centiskorch",
+                "tier": "C",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 139,
+              "pokemon": {
+                "pid": "eternatus",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -1283,6 +1728,54 @@
                 "pid": "arboliva",
                 "tier": "B",
                 "category": "Field Manipulation"
+              }
+            },
+            {
+              "order": 143,
+              "pokemon": {
+                "pid": "mamoswine",
+                "tier": "A",
+                "category": "Sweeper"
+              }
+            },
+            {
+              "order": 144,
+              "pokemon": {
+                "pid": "glaceon",
+                "tier": "C",
+                "category": "Bulky Defense"
+              }
+            },
+            {
+              "order": 145,
+              "pokemon": {
+                "pid": "swellow",
+                "tier": "D",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 146,
+              "pokemon": {
+                "pid": "sigilyph",
+                "tier": "D",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 147,
+              "pokemon": {
+                "pid": "avalugg",
+                "tier": "C",
+                "category": "TR Sweeper"
+              }
+            },
+            {
+              "order": 148,
+              "pokemon": {
+                "pid": "calyrexice",
+                "tier": "R",
+                "category": "Restricted"
               }
             }
           ],
@@ -1348,6 +1841,38 @@
                 "tier": "A",
                 "category": "Fast Offense"
               }
+            },
+            {
+              "order": 98,
+              "pokemon": {
+                "pid": "houndoom",
+                "tier": "C",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 109,
+              "pokemon": {
+                "pid": "trevenant",
+                "tier": "C",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 124,
+              "pokemon": {
+                "pid": "delibird",
+                "tier": "D",
+                "category": "Fast Offense"
+              }
+            },
+            {
+              "order": 138,
+              "pokemon": {
+                "pid": "giratinaorigin",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -1411,6 +1936,38 @@
                 "pid": "samurotthisui",
                 "tier": "B",
                 "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 97,
+              "pokemon": {
+                "pid": "scolipede",
+                "tier": "D",
+                "category": "Fast Offense"
+              }
+            },
+            {
+              "order": 110,
+              "pokemon": {
+                "pid": "skarmory",
+                "tier": "C",
+                "category": "Stall"
+              }
+            },
+            {
+              "order": 123,
+              "pokemon": {
+                "pid": "mrmimegalar",
+                "tier": "C",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 137,
+              "pokemon": {
+                "pid": "zaciancrowned",
+                "tier": "R",
+                "category": "Restricted"
               }
             }
           ],
@@ -1476,6 +2033,38 @@
                 "tier": "C",
                 "category": "TR Sweeper"
               }
+            },
+            {
+              "order": 96,
+              "pokemon": {
+                "pid": "kleavor",
+                "tier": "C",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 111,
+              "pokemon": {
+                "pid": "plusle",
+                "tier": "D",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 122,
+              "pokemon": {
+                "pid": "jynx",
+                "tier": "D",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 136,
+              "pokemon": {
+                "pid": "miraidon",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -1539,6 +2128,38 @@
                 "pid": "furret",
                 "tier": "C",
                 "category": "Bulky Defense"
+              }
+            },
+            {
+              "order": 95,
+              "pokemon": {
+                "pid": "dunsparce",
+                "tier": "C",
+                "category": "Stall"
+              }
+            },
+            {
+              "order": 112,
+              "pokemon": {
+                "pid": "mothim",
+                "tier": "D",
+                "category": "Stall"
+              }
+            },
+            {
+              "order": 121,
+              "pokemon": {
+                "pid": "dhelmise",
+                "tier": "D",
+                "category": "TR Sweeper"
+              }
+            },
+            {
+              "order": 135,
+              "pokemon": {
+                "pid": "necrozmadawnwings",
+                "tier": "R",
+                "category": "Restricted"
               }
             }
           ],
@@ -1612,6 +2233,30 @@
                 "tier": "D",
                 "category": "Utility"
               }
+            },
+            {
+              "order": 113,
+              "pokemon": {
+                "pid": "kecleon",
+                "tier": "D",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 120,
+              "pokemon": {
+                "pid": "feraligatr",
+                "tier": "C",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 134,
+              "pokemon": {
+                "pid": "zacian",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -1683,6 +2328,30 @@
                 "pid": "farfetchd",
                 "tier": "D",
                 "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 114,
+              "pokemon": {
+                "pid": "moltresgalar",
+                "tier": "B",
+                "category": "Bulky Defense"
+              }
+            },
+            {
+              "order": 119,
+              "pokemon": {
+                "pid": "honchkrow",
+                "tier": "C",
+                "category": "Bulky Offense"
+              }
+            },
+            {
+              "order": 133,
+              "pokemon": {
+                "pid": "mewtwo",
+                "tier": "R",
+                "category": "Restricted"
               }
             }
           ],
@@ -1756,6 +2425,30 @@
                 "tier": "C",
                 "category": "Utility"
               }
+            },
+            {
+              "order": 115,
+              "pokemon": {
+                "pid": "watchog",
+                "tier": "D",
+                "category": "Fast Offense"
+              }
+            },
+            {
+              "order": 118,
+              "pokemon": {
+                "pid": "girafarig",
+                "tier": "D",
+                "category": "Utility"
+              }
+            },
+            {
+              "order": 132,
+              "pokemon": {
+                "pid": "groudon",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
@@ -1828,18 +2521,46 @@
                 "tier": "C",
                 "category": "Fast Offense"
               }
+            },
+            {
+              "order": 116,
+              "pokemon": {
+                "pid": "dipplin",
+                "tier": "D",
+                "category": "Stall"
+              }
+            },
+            {
+              "order": 117,
+              "pokemon": {
+                "pid": "lumineon",
+                "tier": "C",
+                "category": "Bulky Defense"
+              }
+            },
+            {
+              "order": 131,
+              "pokemon": {
+                "pid": "giratina",
+                "tier": "R",
+                "category": "Restricted"
+              }
             }
           ],
           "leftPicks": []
         }
       ],
       "name": "East",
-      "draftCount": 95
+      "draftCount": 149
     }
   ],
-  "state": "started",
+  "state": "paused",
   "timerMinutes": 30,
-  "reminders": [20, 10, 5],
+  "reminders": [
+    20,
+    10,
+    5
+  ],
   "pokemon": [
     {
       "pid": "abomasnow",
@@ -2214,7 +2935,7 @@
     {
       "pid": "bisharp",
       "tier": "D",
-      "category": "NFE"
+      "category": "Bulky Offense"
     },
     {
       "pid": "blacephalon",
