@@ -153,7 +153,7 @@ async function gptRespond(message: Message) {
           role: referencedMessage.author === client.user ? "assistant" : "user",
           content:
             referencedMessage.author === client.user
-              ? referencedMessage.content
+              ? `${referencedMessage.embeds[0].description}`
               : `${referencedMessage.author.displayName}: ${referencedMessage.content}`,
         },
         ...conversationHistory,
@@ -165,7 +165,7 @@ async function gptRespond(message: Message) {
       }
     }
     const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
+      model: "gpt-4o",
       messages: [basePrompt, ...conversationHistory],
     });
 
