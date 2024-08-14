@@ -1,6 +1,7 @@
 import {
   AttachmentBuilder,
   ChatInputCommandInteraction,
+  Interaction,
   TextBasedChannel,
   User,
 } from "discord.js";
@@ -21,8 +22,9 @@ export type CoachData = {
   username: string;
   id: string;
   order: number;
-  leftPicks: PokemonData[];
+  tradesLeft: number;
   team: ({ pokemon: PokemonData; order: number } | null)[];
+  leftPicks: PokemonData[];
 };
 export type DivisionData = {
   channels: string[];
@@ -91,7 +93,7 @@ export async function draftPokemon(
   });
   writeDraft();
   let channel = await interaction.client.channels.fetch(division.channels[0]);
-  if (!channel?.isTextBased()) return null;
+  if (!channel?.isTextBased()) throw new Error("Channel error.");
   let dex = getDexData(pokemon.pid)!;
   const attachment = new AttachmentBuilder(
     `https://play.pokemonshowdown.com/sprites/gen5/${dex.png}.png`,
@@ -250,31 +252,35 @@ export function getDraftData(query: string): PokemonData | undefined {
 export function tradeRandom(
   division: DivisionData,
   oldPokemon: DexData,
+  category: string,
   coach: CoachData,
-  options: { validate?: true }
+  user: User,
+  channel: TextBasedChannel,
+  options: { validate?: boolean }
 ) {
   let oldPokemonDraft = getDraftData(oldPokemon.pid);
   if (!oldPokemonDraft) {
     throw new Error(`Unknown pokemon, ${oldPokemon.pid}.`);
   }
-  let newPokemon = getRandomPokemon(
-    division,
-    oldPokemonDraft.tier,
-    oldPokemonDraft.category
-  );
+  let newPokemon = getRandomPokemon(division, oldPokemonDraft.tier, category);
   if (!newPokemon) return null;
-  return trade(division, oldPokemon, newPokemon, coach, {
+  channel.send({
+    content: `${user} rerolled for a new ${oldPokemonDraft.tier}-tier ${category} pokemon!`,
+  });
+  return trade(division, oldPokemon, newPokemon, coach, user, channel, {
     validate: options.validate,
   });
 }
 
-export function trade(
+export async function trade(
   division: DivisionData,
   oldPokemonDex: DexData,
   newPokemon: PokemonData,
   coach: CoachData,
-  options: { validate?: true }
-): DexData | string {
+  user: User,
+  channel: TextBasedChannel,
+  options: { validate?: boolean }
+): Promise<DexData | string> {
   if (!oldPokemonDex || !newPokemon) return `Invalid Pokemon.`;
   let tradeIndex = coach.team.findIndex(
     (pick) => pick && pick.pokemon.pid === oldPokemonDex.pid
@@ -287,9 +293,22 @@ export function trade(
     newPokemon.tier !== coach.team[tradeIndex]!.pokemon.tier
   )
     return `Trades must be the same tier.`;
+  let newPokemonDex = getDexData(newPokemon.pid)!;
+  const attachment = new AttachmentBuilder(
+    `https://play.pokemonshowdown.com/sprites/gen5/${newPokemonDex.png}.png`,
+    { name: `${newPokemonDex.png}.png` }
+  );
+
+  if (coach.tradesLeft <= 0) throw new Error("No trades are left.");
+  coach.tradesLeft--;
+  if (coach)
+    channel.send({
+      content: `${user} traded ${oldPokemonDex.name} for ${newPokemonDex.name}! (${coach.tradesLeft} remaining)`,
+      files: [attachment],
+    });
   coach.team[tradeIndex]!.pokemon = newPokemon;
   writeDraft();
-  return getDexData(newPokemon.pid)!;
+  return newPokemonDex;
 }
 
 export async function updateState(

@@ -6,9 +6,9 @@ import { DraftStateCommand } from "./admin/draft-state";
 import { DraftTimerCommand } from "./admin/draft-timer";
 import { DraftUndoCommand } from "./admin/draft-undo";
 import { DraftRandomCommand } from "./draft-random";
+import { DraftRerollCommand } from "./draft-reroll";
 import { DraftTeamCommand } from "./draft-team";
 import { DraftUndraftedCommand } from "./draft-undrafted";
-import { DraftTradeRandomCommand } from "./trade-random";
 
 export const DraftRoute: CommandRoute = {
   commands: [
@@ -18,7 +18,7 @@ export const DraftRoute: CommandRoute = {
     { command: DraftUndoCommand, enabled: true },
     { command: DraftUndraftedCommand, enabled: true },
     { command: DraftModPickCommand, enabled: true },
-    { command: DraftTradeRandomCommand, enabled: false },
+    { command: DraftRerollCommand, enabled: true },
     { command: DraftStateCommand, enabled: true },
     { command: DraftSkipCommand, enabled: true },
     { command: DraftTimerCommand, enabled: true },

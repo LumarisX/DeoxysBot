@@ -6,6 +6,7 @@ import {
 import {
   draftData,
   getCoach,
+  getDivisionByChannel,
   getDivisionByName,
   guildCheck,
   tradeRandom,
@@ -13,10 +14,10 @@ import {
 import { Command } from "..";
 import { getDexData } from "./data/draftdex";
 
-export const DraftTradeRandomCommand: Command = {
+export const DraftRerollCommand: Command = {
   data: new SlashCommandBuilder()
-    .setName("trade-random")
-    .setDescription("Admin only: Trade for a new random pokemon.")
+    .setName("draft-reroll")
+    .setDescription("Reroll for a new pokemon.")
     .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator)
     .addStringOption((option) =>
       option.setName("pokemon").setDescription("pokemon").setRequired(true)
@@ -24,7 +25,7 @@ export const DraftTradeRandomCommand: Command = {
     .addStringOption((option) =>
       option
         .setName("category")
-        .setDescription("Category")
+        .setDescription("Category for new pokemon.")
         .setRequired(true)
         .addChoices(
           draftData.categories.map((choice) => ({
@@ -32,12 +33,6 @@ export const DraftTradeRandomCommand: Command = {
             value: choice,
           }))
         )
-    )
-    .addUserOption((option) =>
-      option
-        .setName("user")
-        .setDescription("The user to trade for.")
-        .setRequired(true)
     )
     .addStringOption((option) =>
       option
@@ -54,24 +49,38 @@ export const DraftTradeRandomCommand: Command = {
   execute: async (interaction: ChatInputCommandInteraction) => {
     if (!guildCheck(interaction.guildId))
       throw new Error("Server does not have a registered draft.");
-    const division = getDivisionByName(
-      interaction.options.getString("division", true)
-    );
-    if (!division) throw new Error("Unknown division.");
-    const user = interaction.options.getUser("user", true);
+    let division = getDivisionByChannel(interaction.channelId);
+    if (!division) {
+      division = getDivisionByName(
+        interaction.options.getString("division", true)
+      );
+      if (!division) throw new Error("Unknown division.");
+    }
+    const user = interaction.user;
     let coach = getCoach(division, user.id);
-    if (!coach) throw new Error(`${user} is not a coach in this division.`);
+    if (!coach)
+      throw new Error(`${user.displayName} is not a coach in this division.`);
     const category = interaction.options.getString("category", true);
-    const oldPokemonDex = getDexData(
-      interaction.options.getString("pokemon", true)
+    let oldPokemonString = interaction.options.getString("pokemon", true);
+    const oldPokemonDex = getDexData(oldPokemonString);
+    if (!oldPokemonDex) throw new Error(`${oldPokemonString} does not exist.`);
+    let channel = await interaction.client.channels.fetch(division.channels[0]);
+    if (!channel?.isTextBased()) throw new Error("Channel error.");
+    tradeRandom(
+      division,
+      oldPokemonDex,
+      category,
+      coach,
+      interaction.user,
+      channel,
+      {
+        validate: false,
+      }
     );
-    if (!oldPokemonDex) throw new Error("Pokemon does not exist.");
-    tradeRandom(division, oldPokemonDex, coach, {
-      validate: true,
-    });
     interaction.reply({
-      content: `${interaction.user}'s ${oldPokemonDex.name} has been traded away.`,
+      content: `Trade was completed successfully.`,
       ephemeral: true,
+      allowedMentions: { repliedUser: false },
     });
   },
 };

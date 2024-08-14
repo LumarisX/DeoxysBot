@@ -78,8 +78,7 @@ export const DraftModPickCommand: Command = {
         validate: true,
       });
       interaction.reply({
-        content: `${interaction.user} has selected a ${tier}-tier ${category} pokemon for ${user}`,
-        ephemeral: true,
+        content: `${interaction.user} has selected a ${tier}-tier ${category} pokemon for ${user}.`,
       });
     } catch (error) {
       if (error instanceof Error) {

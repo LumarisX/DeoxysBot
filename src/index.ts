@@ -4,20 +4,18 @@ import {
   ButtonInteraction,
   ButtonStyle,
   Client,
-  CommandInteraction,
   ComponentType,
   EmbedBuilder,
   GatewayIntentBits,
   Interaction,
   Message,
-  MessageComponentInteraction,
 } from "discord.js";
 import OpenAi from "openai";
 import { ChatCompletionMessageParam } from "openai/resources/chat/completions";
 import { routes } from "./commands";
+import { analyzeReplay } from "./commands/misc/replay";
 import { config } from "./config";
 import { deployGuildCommands } from "./deploy-commands";
-import { analyzeReplay } from "./commands/misc/replay";
 
 const openai = new OpenAi({
   apiKey: config.OPENAI_API_KEY,
