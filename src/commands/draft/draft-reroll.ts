@@ -18,7 +18,6 @@ export const DraftRerollCommand: Command = {
   data: new SlashCommandBuilder()
     .setName("draft-reroll")
     .setDescription("Reroll for a new pokemon.")
-    .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator)
     .addStringOption((option) =>
       option.setName("pokemon").setDescription("pokemon").setRequired(true)
     )

@@ -31,7 +31,7 @@ const client = new Client({
 
 client.once("ready", () => console.log("Deoxys has been summoned!"));
 
-deployGuildCommands({ guildId: `963884409252118609` });
+deployGuildCommands({ guildId: `917801941034229800` });
 
 client.on("interactionCreate", async (interaction: Interaction) => {
   if (!interaction.isCommand()) return;
@@ -75,6 +75,13 @@ client.on("interactionCreate", async (interaction: Interaction) => {
 client.on("messageCreate", async (message) => {
   if (message.author.bot || message.mentions.everyone) return;
   if (
+       message.channelId === "1273381639707299995"
+  ) {
+    message.channel.send(message.content);
+    message.delete();
+    return;
+  }
+  if (
     message.content.toLowerCase().includes("deoxys") ||
     message.mentions.has(client.user!.id)
   ) {
@@ -85,7 +92,9 @@ client.on("messageCreate", async (message) => {
       message.content
     );
     gptRespond(message);
+    return;
   }
+
   let urlreg = /(https?\/\/)?(wwww\.)?replay\.pokemonshowdown\.com\/.+?\s/;
   let url = message.content.toLowerCase().match(urlreg);
   if (url) {

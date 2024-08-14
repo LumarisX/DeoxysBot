@@ -262,6 +262,7 @@ export function tradeRandom(
   if (!oldPokemonDraft) {
     throw new Error(`Unknown pokemon, ${oldPokemon.pid}.`);
   }
+  if(oldPokemonDraft.tier==='R') throw new Error(`Can not trade your restricted`);
   let newPokemon = getRandomPokemon(division, oldPokemonDraft.tier, category);
   if (!newPokemon) return null;
   channel.send({
