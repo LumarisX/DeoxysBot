@@ -82,18 +82,19 @@ export async function analyzeReplay(
 ) {
   try {
     const strippedUrl = url.replace(/([a-zA-Z0-9-]+-[a-zA-Z0-9]+).*$/, "$1");
-    let pdzUrl = `https://api.pokemondraftzone.com/replay/analyze/${encodeURIComponent(
-      strippedUrl
-    )}`;
-    console.log(pdzUrl);
-    const response = await fetch(pdzUrl);
+    let encoded = encodeURIComponent(strippedUrl);
+    const response = await fetch(
+      `https://api.pokemondraftzone.com/replay/analyze/${encoded}`
+    );
     if (!response.ok) {
       throw new Error("Failed to fetch the replay log.");
     }
     const replayData: ReplayData = JSON.parse(await response.text());
     const embed = new EmbedBuilder()
       .setTitle("Pokémon DraftZone Replay Analysis")
-      // .setURL(pdzUrl)
+      .setURL(
+        `https://pokemondraftzone.com/tools/replay-analyzer?replay=${encoded}`
+      )
       .setDescription(`Game Type: ${replayData.gametype || "Unknown"}`)
       .addFields(
         {
