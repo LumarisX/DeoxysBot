@@ -435,7 +435,7 @@
           "username": "crizzlex",
           "id": "779499856296149002",
           "order": 4,
-          "tradesLeft": 1,
+          "tradesLeft": 0,
           "team": [
             {
               "order": 4,
@@ -489,9 +489,9 @@
             {
               "order": 82,
               "pokemon": {
-                "pid": "beartic",
+                "pid": "klawf",
                 "tier": "C",
-                "category": "Bulky Defense"
+                "category": "Bulky Offense"
               }
             },
             {
@@ -533,7 +533,7 @@
           "username": "dr.daveh",
           "id": "626186372838981642",
           "order": 5,
-          "tradesLeft": 5,
+          "tradesLeft": 0,
           "team": [
             {
               "order": 5,
@@ -546,7 +546,7 @@
             {
               "order": 20,
               "pokemon": {
-                "pid": "volcanion",
+                "pid": "archaludon",
                 "tier": "S",
                 "category": "Bulky Offense"
               }
@@ -578,9 +578,9 @@
             {
               "order": 72,
               "pokemon": {
-                "pid": "claydol",
+                "pid": "rhydon",
                 "tier": "D",
-                "category": "Utility"
+                "category": "TR Sweeper"
               }
             },
             {
@@ -618,7 +618,7 @@
             {
               "order": 150,
               "pokemon": {
-                "pid": "infernape",
+                "pid": "pawmot",
                 "tier": "B",
                 "category": "Fast Offense"
               }
@@ -1115,7 +1115,7 @@
           "username": "sirfishwastaken",
           "id": "452848609076183040",
           "order": 11,
-          "tradesLeft": 2,
+          "tradesLeft": 0,
           "team": [
             {
               "order": 11,
@@ -1152,9 +1152,9 @@
             {
               "order": 63,
               "pokemon": {
-                "pid": "cofagrigus",
+                "pid": "gallade",
                 "tier": "B",
-                "category": "TR Sweeper"
+                "category": "Bulky Offense"
               }
             },
             {
@@ -1168,9 +1168,9 @@
             {
               "order": 89,
               "pokemon": {
-                "pid": "roserade",
+                "pid": "lurantis",
                 "tier": "C",
-                "category": "Fast Offense"
+                "category": "Bulky Offense"
               }
             },
             {
@@ -1706,7 +1706,7 @@
           "username": "sillywilly7528",
           "id": "308687852257017856",
           "order": 4,
-          "tradesLeft": 5,
+          "tradesLeft": 4,
           "team": [
             {
               "order": 4,
@@ -1759,7 +1759,7 @@
             {
               "order": 144,
               "pokemon": {
-                "pid": "glaceon",
+                "pid": "oinkologne",
                 "tier": "C",
                 "category": "Bulky Defense"
               }
@@ -1900,7 +1900,7 @@
           "username": "jarshall",
           "id": "991840326094438470",
           "order": 6,
-          "tradesLeft": 5,
+          "tradesLeft": 0,
           "team": [
             {
               "order": 6,
@@ -1921,17 +1921,17 @@
             {
               "order": 32,
               "pokemon": {
-                "pid": "deoxysdefense",
+                "pid": "enamorus",
                 "tier": "A",
-                "category": "Stall"
+                "category": "Bulky Offense"
               }
             },
             {
               "order": 45,
               "pokemon": {
-                "pid": "mudsdale",
+                "pid": "darmanitan",
                 "tier": "B",
-                "category": "TR Sweeper"
+                "category": "Fast Offense"
               }
             },
             {
@@ -1977,9 +1977,9 @@
             {
               "order": 123,
               "pokemon": {
-                "pid": "mrmimegalar",
+                "pid": "eelektross",
                 "tier": "C",
-                "category": "Bulky Offense"
+                "category": "TR Sweeper"
               }
             },
             {
@@ -2288,7 +2288,7 @@
           "username": "h8oj",
           "id": "529522646195634176",
           "order": 10,
-          "tradesLeft": 4,
+          "tradesLeft": 0,
           "team": [
             {
               "order": 10,
@@ -2309,7 +2309,7 @@
             {
               "order": 36,
               "pokemon": {
-                "pid": "snorlax",
+                "pid": "gourgeist",
                 "tier": "B",
                 "category": "TR Sweeper"
               }
@@ -2349,7 +2349,7 @@
             {
               "order": 93,
               "pokemon": {
-                "pid": "farfetchd",
+                "pid": "stantler",
                 "tier": "D",
                 "category": "Bulky Offense"
               }

@@ -95,7 +95,7 @@ client.on("messageCreate", async (message) => {
     return;
   }
 
-  let urlreg = /(https?\/\/)?(wwww\.)?replay\.pokemonshowdown\.com\/.+?\s/;
+  let urlreg = /(https?:\/\/)?(wwww\.)?replay\.pokemonshowdown\.com\/.+?(\s|$)/;
   let url = message.content.toLowerCase().match(urlreg);
   if (url) {
     console.log("Analyzer |", message.content);
