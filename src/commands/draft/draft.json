@@ -39,15 +39,16 @@
   ],
   "divisions": [
     {
-      "channels": [
-        "1270098076261945465"
-      ],
+      "channels": ["1270098076261945465"],
       "coaches": [
         {
           "username": "mattmanectric",
           "id": "198196087989731328",
           "order": 0,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 0,
@@ -144,7 +145,10 @@
           "username": "mattstar",
           "id": "217028876516327424",
           "order": 1,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 1,
@@ -241,7 +245,10 @@
           "username": "omalight",
           "id": "279369135102623754",
           "order": 2,
-          "tradesLeft": 2,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 151,
@@ -338,7 +345,10 @@
           "username": "mrnealio",
           "id": "137157466981924864",
           "order": 3,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 3,
@@ -435,7 +445,10 @@
           "username": "crizzlex",
           "id": "779499856296149002",
           "order": 4,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 4,
@@ -533,7 +546,10 @@
           "username": "dr.daveh",
           "id": "626186372838981642",
           "order": 5,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 5,
@@ -630,7 +646,10 @@
           "username": "memebasedgod",
           "id": "335826375770505216",
           "order": 6,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 6,
@@ -727,7 +746,10 @@
           "username": "ted2best",
           "id": "878624846681088072",
           "order": 7,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 7,
@@ -824,7 +846,10 @@
           "username": "ciqarettan",
           "id": "550026458626785290",
           "order": 8,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 8,
@@ -921,7 +946,10 @@
           "username": "cammyrupt",
           "id": "671732222776311820",
           "order": 9,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 9,
@@ -1018,7 +1046,10 @@
           "username": "speedyzoid",
           "id": "692128172929581179",
           "order": 10,
-          "tradesLeft": 1,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 10,
@@ -1115,7 +1146,10 @@
           "username": "sirfishwastaken",
           "id": "452848609076183040",
           "order": 11,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 11,
@@ -1212,7 +1246,10 @@
           "username": "k3y5.",
           "id": "188023567550513153",
           "order": 12,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 12,
@@ -1310,15 +1347,16 @@
       "draftCount": 162
     },
     {
-      "channels": [
-        "1267438975786942526"
-      ],
+      "channels": ["1267438975786942526"],
       "coaches": [
         {
           "username": "ianb1002",
           "id": "422843761765122071",
           "order": 0,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 0,
@@ -1415,7 +1453,10 @@
           "username": "jabbalink",
           "id": "599419097934987294",
           "order": 1,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 1,
@@ -1512,7 +1553,10 @@
           "username": "lumaris",
           "id": "206144110275461121",
           "order": 2,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 2,
@@ -1609,7 +1653,10 @@
           "username": "aarontmarshall.",
           "id": "746000101889015819",
           "order": 3,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 3,
@@ -1706,7 +1753,10 @@
           "username": "sillywilly7528",
           "id": "308687852257017856",
           "order": 4,
-          "tradesLeft": 4,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 4,
@@ -1803,7 +1853,10 @@
           "username": "rainmaker7955",
           "id": "444955703623417881",
           "order": 5,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 5,
@@ -1900,7 +1953,10 @@
           "username": "jarshall",
           "id": "991840326094438470",
           "order": 6,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 6,
@@ -1997,7 +2053,10 @@
           "username": "dogzie",
           "id": "561814232165777439",
           "order": 7,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 7,
@@ -2094,7 +2153,10 @@
           "username": "onlyembers",
           "id": "206864983227629568",
           "order": 8,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 8,
@@ -2191,7 +2253,10 @@
           "username": "mawiiiii",
           "id": "715278760806449213",
           "order": 9,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 9,
@@ -2288,7 +2353,10 @@
           "username": "h8oj",
           "id": "529522646195634176",
           "order": 10,
-          "tradesLeft": 0,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 10,
@@ -2385,7 +2453,10 @@
           "username": "scottyw01",
           "id": "693156825171886180",
           "order": 11,
-          "tradesLeft": 1,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 11,
@@ -2482,7 +2553,10 @@
           "username": "rylekt",
           "id": "332238496238534657",
           "order": 12,
-          "tradesLeft": 1,
+          "tradesLeft": [
+            [["R"], 1],
+            [["S", "A", "B", "C", "D"], 5]
+          ],
           "team": [
             {
               "order": 12,
@@ -2582,11 +2656,7 @@
   ],
   "state": "paused",
   "timerMinutes": 30,
-  "reminders": [
-    20,
-    10,
-    5
-  ],
+  "reminders": [20, 10, 5],
   "pokemon": [
     {
       "pid": "abomasnow",

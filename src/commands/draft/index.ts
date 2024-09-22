@@ -1,7 +1,6 @@
 import {
   AttachmentBuilder,
   ChatInputCommandInteraction,
-  Interaction,
   TextBasedChannel,
   User,
 } from "discord.js";
@@ -22,7 +21,7 @@ export type CoachData = {
   username: string;
   id: string;
   order: number;
-  tradesLeft: number;
+  tradesLeft: [string[], number][];
   team: ({ pokemon: PokemonData; order: number } | null)[];
   leftPicks: PokemonData[];
 };
@@ -262,15 +261,12 @@ export function tradeRandom(
   if (!oldPokemonDraft) {
     throw new Error(`Unknown pokemon, ${oldPokemon.pid}.`);
   }
-  if(oldPokemonDraft.tier==='R') throw new Error(`Can not trade your restricted`);
   let newPokemon = getRandomPokemon(division, oldPokemonDraft.tier, category);
   if (!newPokemon) return null;
   channel.send({
     content: `${user} rerolled for a new ${oldPokemonDraft.tier}-tier ${category} pokemon!`,
   });
-  return trade(division, oldPokemon, newPokemon, coach, user, channel, {
-    validate: options.validate,
-  });
+  trade(division, oldPokemon, newPokemon, coach, user, channel, options);
 }
 
 export async function trade(
@@ -299,12 +295,14 @@ export async function trade(
     `https://play.pokemonshowdown.com/sprites/gen5/${newPokemonDex.png}.png`,
     { name: `${newPokemonDex.png}.png` }
   );
-
-  if (coach.tradesLeft <= 0) throw new Error("No trades are left.");
-  coach.tradesLeft--;
+  const tradeArray = coach.tradesLeft.find((value) =>
+    value[0].includes(newPokemon.tier)
+  );
+  if (!tradeArray || tradeArray[1] <= 0) throw new Error("No trades are left.");
+  tradeArray[1]--;
   if (coach)
     channel.send({
-      content: `${user} traded ${oldPokemonDex.name} for ${newPokemonDex.name}! (${coach.tradesLeft} remaining)`,
+      content: `${user} traded ${oldPokemonDex.name} for ${newPokemonDex.name}! (${tradeArray[1]} remaining)`,
       files: [attachment],
     });
   coach.team[tradeIndex]!.pokemon = newPokemon;
