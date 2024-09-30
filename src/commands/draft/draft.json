@@ -39,15 +39,31 @@
   ],
   "divisions": [
     {
-      "channels": ["1270098076261945465"],
+      "channels": [
+        "1270098076261945465"
+      ],
       "coaches": [
         {
           "username": "mattmanectric",
           "id": "198196087989731328",
           "order": 0,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              2
+            ]
           ],
           "team": [
             {
@@ -93,7 +109,7 @@
             {
               "order": 77,
               "pokemon": {
-                "pid": "minior",
+                "pid": "pikachu",
                 "tier": "C",
                 "category": "Fast Offense"
               }
@@ -101,7 +117,7 @@
             {
               "order": 78,
               "pokemon": {
-                "pid": "gardevoir",
+                "pid": "kingambit",
                 "tier": "A",
                 "category": "Sweeper"
               }
@@ -125,15 +141,15 @@
             {
               "order": 129,
               "pokemon": {
-                "pid": "sandile",
+                "pid": "swellow",
                 "tier": "D",
-                "category": "NFE"
+                "category": "Utility"
               }
             },
             {
               "order": 141,
               "pokemon": {
-                "pid": "zekrom",
+                "pid": "mewtwo",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -146,14 +162,28 @@
           "id": "217028876516327424",
           "order": 1,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
               "order": 1,
               "pokemon": {
-                "pid": "greattusk",
+                "pid": "roaringmoon",
                 "tier": "S",
                 "category": "Bulky Offense"
               }
@@ -177,9 +207,9 @@
             {
               "order": 50,
               "pokemon": {
-                "pid": "kommoo",
+                "pid": "wochien",
                 "tier": "A",
-                "category": "Sweeper"
+                "category": "Stall"
               }
             },
             {
@@ -246,8 +276,22 @@
           "id": "279369135102623754",
           "order": 2,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              5
+            ]
           ],
           "team": [
             {
@@ -333,7 +377,7 @@
             {
               "order": 161,
               "pokemon": {
-                "pid": "necrozma",
+                "pid": "koraidon",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -346,8 +390,22 @@
           "id": "137157466981924864",
           "order": 3,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              5
+            ]
           ],
           "team": [
             {
@@ -433,7 +491,7 @@
             {
               "order": 139,
               "pokemon": {
-                "pid": "giratina",
+                "pid": "solgaleo",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -446,8 +504,22 @@
           "id": "779499856296149002",
           "order": 4,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              1
+            ]
           ],
           "team": [
             {
@@ -518,7 +590,7 @@
             {
               "order": 144,
               "pokemon": {
-                "pid": "goodra",
+                "pid": "celesteela",
                 "tier": "A",
                 "category": "Stall"
               }
@@ -534,7 +606,7 @@
             {
               "order": 146,
               "pokemon": {
-                "pid": "latios",
+                "pid": "gougingfire",
                 "tier": "S",
                 "category": "Bulky Offense"
               }
@@ -547,8 +619,22 @@
           "id": "626186372838981642",
           "order": 5,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              2
+            ]
           ],
           "team": [
             {
@@ -594,7 +680,7 @@
             {
               "order": 72,
               "pokemon": {
-                "pid": "rhydon",
+                "pid": "cursola",
                 "tier": "D",
                 "category": "TR Sweeper"
               }
@@ -610,7 +696,7 @@
             {
               "order": 137,
               "pokemon": {
-                "pid": "kyuremblack",
+                "pid": "hooh",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -618,7 +704,7 @@
             {
               "order": 148,
               "pokemon": {
-                "pid": "tangrowth",
+                "pid": "clodsire",
                 "tier": "C",
                 "category": "Stall"
               }
@@ -626,7 +712,7 @@
             {
               "order": 149,
               "pokemon": {
-                "pid": "mamoswine",
+                "pid": "kommoo",
                 "tier": "A",
                 "category": "Sweeper"
               }
@@ -647,8 +733,22 @@
           "id": "335826375770505216",
           "order": 6,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
@@ -662,9 +762,9 @@
             {
               "order": 19,
               "pokemon": {
-                "pid": "glastrier",
+                "pid": "aerodactyl",
                 "tier": "A",
-                "category": "TR Sweeper"
+                "category": "Fast Offense"
               }
             },
             {
@@ -686,9 +786,9 @@
             {
               "order": 58,
               "pokemon": {
-                "pid": "dragalge",
+                "pid": "lopunny",
                 "tier": "B",
-                "category": "Bulky Offense"
+                "category": "Fast Offense"
               }
             },
             {
@@ -734,7 +834,7 @@
             {
               "order": 136,
               "pokemon": {
-                "pid": "dialga",
+                "pid": "necrozmadawnwings",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -747,8 +847,22 @@
           "id": "878624846681088072",
           "order": 7,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
@@ -786,9 +900,9 @@
             {
               "order": 59,
               "pokemon": {
-                "pid": "bastiodon",
+                "pid": "fezandipiti",
                 "tier": "B",
-                "category": "Bulky Defense"
+                "category": "Bulky Offense"
               }
             },
             {
@@ -802,9 +916,9 @@
             {
               "order": 85,
               "pokemon": {
-                "pid": "rapidashgalar",
+                "pid": "cradily",
                 "tier": "C",
-                "category": "TR Sweeper"
+                "category": "Bulky Offense"
               }
             },
             {
@@ -826,9 +940,9 @@
             {
               "order": 122,
               "pokemon": {
-                "pid": "delibird",
+                "pid": "muk",
                 "tier": "D",
-                "category": "Fast Offense"
+                "category": "Bulky Defense"
               }
             },
             {
@@ -847,8 +961,22 @@
           "id": "550026458626785290",
           "order": 8,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              5
+            ]
           ],
           "team": [
             {
@@ -947,8 +1075,22 @@
           "id": "671732222776311820",
           "order": 9,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
@@ -962,9 +1104,9 @@
             {
               "order": 16,
               "pokemon": {
-                "pid": "zeraora",
+                "pid": "ogerponcornerstone",
                 "tier": "S",
-                "category": "Sweeper"
+                "category": "Fast Offense"
               }
             },
             {
@@ -978,17 +1120,17 @@
             {
               "order": 42,
               "pokemon": {
-                "pid": "gothitelle",
+                "pid": "entei",
                 "tier": "A",
-                "category": "Bulky Defense"
+                "category": "Bulky Offense"
               }
             },
             {
               "order": 61,
               "pokemon": {
-                "pid": "perrserker",
+                "pid": "infernape",
                 "tier": "B",
-                "category": "TR Sweeper"
+                "category": "Fast Offense"
               }
             },
             {
@@ -1002,9 +1144,9 @@
             {
               "order": 87,
               "pokemon": {
-                "pid": "tatsugiri",
+                "pid": "falinks",
                 "tier": "C",
-                "category": "Bulky Offense"
+                "category": "Sweeper"
               }
             },
             {
@@ -1018,9 +1160,9 @@
             {
               "order": 113,
               "pokemon": {
-                "pid": "walrein",
+                "pid": "inkay",
                 "tier": "D",
-                "category": "Bulky Defense"
+                "category": "NFE"
               }
             },
             {
@@ -1034,7 +1176,7 @@
             {
               "order": 133,
               "pokemon": {
-                "pid": "giratinaorigin",
+                "pid": "zamazenta",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -1047,14 +1189,28 @@
           "id": "692128172929581179",
           "order": 10,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
               "order": 10,
               "pokemon": {
-                "pid": "darkrai",
+                "pid": "chiyu",
                 "tier": "S",
                 "category": "Fast Offense"
               }
@@ -1078,9 +1234,9 @@
             {
               "order": 41,
               "pokemon": {
-                "pid": "rotomfan",
+                "pid": "copperajah",
                 "tier": "B",
-                "category": "Bulky Offense"
+                "category": "TR Sweeper"
               }
             },
             {
@@ -1110,9 +1266,9 @@
             {
               "order": 93,
               "pokemon": {
-                "pid": "golemalola",
+                "pid": "eelektross",
                 "tier": "C",
-                "category": "Bulky Offense"
+                "category": "TR Sweeper"
               }
             },
             {
@@ -1147,8 +1303,22 @@
           "id": "452848609076183040",
           "order": 11,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
@@ -1178,9 +1348,9 @@
             {
               "order": 40,
               "pokemon": {
-                "pid": "tapukoko",
+                "pid": "zapdos",
                 "tier": "S",
-                "category": "Field Manipulation"
+                "category": "Bulky Offense"
               }
             },
             {
@@ -1194,9 +1364,9 @@
             {
               "order": 66,
               "pokemon": {
-                "pid": "mandibuzz",
+                "pid": "conkeldurr",
                 "tier": "B",
-                "category": "Stall"
+                "category": "TR Sweeper"
               }
             },
             {
@@ -1210,15 +1380,15 @@
             {
               "order": 92,
               "pokemon": {
-                "pid": "trevenant",
+                "pid": "kleavor",
                 "tier": "C",
-                "category": "Utility"
+                "category": "Bulky Offense"
               }
             },
             {
               "order": 115,
               "pokemon": {
-                "pid": "magneton",
+                "pid": "farfetchd",
                 "tier": "D",
                 "category": "Bulky Offense"
               }
@@ -1247,16 +1417,30 @@
           "id": "188023567550513153",
           "order": 12,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
               "order": 12,
               "pokemon": {
-                "pid": "kartana",
+                "pid": "dragonite",
                 "tier": "S",
-                "category": "Sweeper"
+                "category": "Bulky Offense"
               }
             },
             {
@@ -1270,7 +1454,7 @@
             {
               "order": 38,
               "pokemon": {
-                "pid": "cresselia",
+                "pid": "tornadus",
                 "tier": "S",
                 "category": "Utility"
               }
@@ -1347,21 +1531,37 @@
       "draftCount": 162
     },
     {
-      "channels": ["1267438975786942526"],
+      "channels": [
+        "1267438975786942526"
+      ],
       "coaches": [
         {
           "username": "ianb1002",
           "id": "422843761765122071",
           "order": 0,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
               "order": 0,
               "pokemon": {
-                "pid": "keldeo",
+                "pid": "charizard",
                 "tier": "S",
                 "category": "Sweeper"
               }
@@ -1369,9 +1569,9 @@
             {
               "order": 25,
               "pokemon": {
-                "pid": "hariyama",
+                "pid": "jirachi",
                 "tier": "A",
-                "category": "TR Sweeper"
+                "category": "Bulky Defense"
               }
             },
             {
@@ -1393,9 +1593,9 @@
             {
               "order": 52,
               "pokemon": {
-                "pid": "deoxysattack",
+                "pid": "hydreigon",
                 "tier": "S",
-                "category": "Fast Offense"
+                "category": "Bulky Offense"
               }
             },
             {
@@ -1441,7 +1641,7 @@
             {
               "order": 142,
               "pokemon": {
-                "pid": "solgaleo",
+                "pid": "reshiram",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -1454,8 +1654,22 @@
           "id": "599419097934987294",
           "order": 1,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
@@ -1485,25 +1699,25 @@
             {
               "order": 50,
               "pokemon": {
-                "pid": "vanilluxe",
+                "pid": "empoleon",
                 "tier": "B",
-                "category": "Field Manipulation"
+                "category": "Bulky Defense"
               }
             },
             {
               "order": 53,
               "pokemon": {
-                "pid": "ogerponwellspring",
+                "pid": "tyranitar",
                 "tier": "S",
-                "category": "Fast Offense"
+                "category": "Field Manipulation"
               }
             },
             {
               "order": 76,
               "pokemon": {
-                "pid": "tauros",
+                "pid": "aegislash",
                 "tier": "C",
-                "category": "Bulky Offense"
+                "category": "TR Sweeper"
               }
             },
             {
@@ -1525,9 +1739,9 @@
             {
               "order": 128,
               "pokemon": {
-                "pid": "machamp",
+                "pid": "florges",
                 "tier": "C",
-                "category": "TR Sweeper"
+                "category": "Bulky Defense"
               }
             },
             {
@@ -1541,7 +1755,7 @@
             {
               "order": 141,
               "pokemon": {
-                "pid": "kyogre",
+                "pid": "kyuremblack",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -1554,8 +1768,22 @@
           "id": "206144110275461121",
           "order": 2,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
@@ -1577,9 +1805,9 @@
             {
               "order": 28,
               "pokemon": {
-                "pid": "naganadel",
+                "pid": "entei",
                 "tier": "A",
-                "category": "Sweeper"
+                "category": "Bulky Offense"
               }
             },
             {
@@ -1609,7 +1837,7 @@
             {
               "order": 80,
               "pokemon": {
-                "pid": "electrodehisui",
+                "pid": "yanmega",
                 "tier": "C",
                 "category": "Fast Offense"
               }
@@ -1617,9 +1845,9 @@
             {
               "order": 101,
               "pokemon": {
-                "pid": "golisopod",
+                "pid": "audino",
                 "tier": "B",
-                "category": "Bulky Offense"
+                "category": "Bulky Defense"
               }
             },
             {
@@ -1641,7 +1869,7 @@
             {
               "order": 140,
               "pokemon": {
-                "pid": "zamazentacrowned",
+                "pid": "lugia",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -1654,8 +1882,22 @@
           "id": "746000101889015819",
           "order": 3,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
@@ -1677,7 +1919,7 @@
             {
               "order": 29,
               "pokemon": {
-                "pid": "slowking",
+                "pid": "illumise",
                 "tier": "A",
                 "category": "Utility"
               }
@@ -1725,23 +1967,23 @@
             {
               "order": 107,
               "pokemon": {
-                "pid": "ditto",
+                "pid": "sirfetchd",
                 "tier": "D",
-                "category": "Utility"
+                "category": "Bulky Offense"
               }
             },
             {
               "order": 126,
               "pokemon": {
-                "pid": "passimian",
+                "pid": "tauros",
                 "tier": "C",
-                "category": "Sweeper"
+                "category": "Bulky Offense"
               }
             },
             {
               "order": 139,
               "pokemon": {
-                "pid": "eternatus",
+                "pid": "kyurem",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -1754,8 +1996,22 @@
           "id": "308687852257017856",
           "order": 4,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              1
+            ]
           ],
           "team": [
             {
@@ -1777,7 +2033,7 @@
             {
               "order": 30,
               "pokemon": {
-                "pid": "irontreads",
+                "pid": "blacephalon",
                 "tier": "A",
                 "category": "Sweeper"
               }
@@ -1809,17 +2065,17 @@
             {
               "order": 144,
               "pokemon": {
-                "pid": "oinkologne",
+                "pid": "houndoom",
                 "tier": "C",
-                "category": "Bulky Defense"
+                "category": "Bulky Offense"
               }
             },
             {
               "order": 145,
               "pokemon": {
-                "pid": "swellow",
+                "pid": "tentacruel",
                 "tier": "D",
-                "category": "Utility"
+                "category": "Stall"
               }
             },
             {
@@ -1833,7 +2089,7 @@
             {
               "order": 147,
               "pokemon": {
-                "pid": "avalugg",
+                "pid": "reuniclus",
                 "tier": "C",
                 "category": "TR Sweeper"
               }
@@ -1854,8 +2110,22 @@
           "id": "444955703623417881",
           "order": 5,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
@@ -1877,7 +2147,7 @@
             {
               "order": 31,
               "pokemon": {
-                "pid": "arctovish",
+                "pid": "azumarill",
                 "tier": "B",
                 "category": "Bulky Offense"
               }
@@ -1933,7 +2203,7 @@
             {
               "order": 124,
               "pokemon": {
-                "pid": "archeops",
+                "pid": "barbaracle",
                 "tier": "D",
                 "category": "Fast Offense"
               }
@@ -1954,14 +2224,28 @@
           "id": "991840326094438470",
           "order": 6,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              2
+            ]
           ],
           "team": [
             {
               "order": 6,
               "pokemon": {
-                "pid": "ironbundle",
+                "pid": "chiyu",
                 "tier": "S",
                 "category": "Fast Offense"
               }
@@ -1977,7 +2261,7 @@
             {
               "order": 32,
               "pokemon": {
-                "pid": "enamorus",
+                "pid": "articunogalar",
                 "tier": "A",
                 "category": "Bulky Offense"
               }
@@ -2054,8 +2338,22 @@
           "id": "561814232165777439",
           "order": 7,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              3
+            ]
           ],
           "team": [
             {
@@ -2125,9 +2423,9 @@
             {
               "order": 111,
               "pokemon": {
-                "pid": "crustle",
+                "pid": "ditto",
                 "tier": "D",
-                "category": "Bulky Defense"
+                "category": "Utility"
               }
             },
             {
@@ -2154,8 +2452,22 @@
           "id": "206864983227629568",
           "order": 8,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
@@ -2177,7 +2489,7 @@
             {
               "order": 34,
               "pokemon": {
-                "pid": "blacephalon",
+                "pid": "mienshao",
                 "tier": "A",
                 "category": "Sweeper"
               }
@@ -2241,7 +2553,7 @@
             {
               "order": 135,
               "pokemon": {
-                "pid": "necrozmadawnwings",
+                "pid": "zamazentacrowned",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -2254,8 +2566,22 @@
           "id": "715278760806449213",
           "order": 9,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
@@ -2285,7 +2611,7 @@
             {
               "order": 42,
               "pokemon": {
-                "pid": "ninetalesalola",
+                "pid": "indeedee",
                 "tier": "A",
                 "category": "Field Manipulation"
               }
@@ -2293,7 +2619,7 @@
             {
               "order": 61,
               "pokemon": {
-                "pid": "rotomfrost",
+                "pid": "ceruledge",
                 "tier": "B",
                 "category": "Bulky Offense"
               }
@@ -2325,9 +2651,9 @@
             {
               "order": 113,
               "pokemon": {
-                "pid": "kecleon",
+                "pid": "pikipek",
                 "tier": "D",
-                "category": "Utility"
+                "category": "NFE"
               }
             },
             {
@@ -2354,16 +2680,30 @@
           "id": "529522646195634176",
           "order": 10,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              0
+            ]
           ],
           "team": [
             {
               "order": 10,
               "pokemon": {
-                "pid": "cresselia",
+                "pid": "gougingfire",
                 "tier": "S",
-                "category": "Utility"
+                "category": "Bulky Offense"
               }
             },
             {
@@ -2377,9 +2717,9 @@
             {
               "order": 36,
               "pokemon": {
-                "pid": "gourgeist",
+                "pid": "mukalola",
                 "tier": "B",
-                "category": "TR Sweeper"
+                "category": "Bulky Defense"
               }
             },
             {
@@ -2393,9 +2733,9 @@
             {
               "order": 62,
               "pokemon": {
-                "pid": "regirock",
+                "pid": "klefki",
                 "tier": "A",
-                "category": "Bulky Defense"
+                "category": "Utility"
               }
             },
             {
@@ -2441,7 +2781,7 @@
             {
               "order": 133,
               "pokemon": {
-                "pid": "mewtwo",
+                "pid": "calyrexshadow",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -2454,8 +2794,22 @@
           "id": "693156825171886180",
           "order": 11,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              1
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              5
+            ]
           ],
           "team": [
             {
@@ -2554,8 +2908,22 @@
           "id": "332238496238534657",
           "order": 12,
           "tradesLeft": [
-            [["R"], 1],
-            [["S", "A", "B", "C", "D"], 5]
+            [
+              [
+                "R"
+              ],
+              0
+            ],
+            [
+              [
+                "S",
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              5
+            ]
           ],
           "team": [
             {
@@ -2641,7 +3009,7 @@
             {
               "order": 131,
               "pokemon": {
-                "pid": "giratina",
+                "pid": "zamazenta",
                 "tier": "R",
                 "category": "Restricted"
               }
@@ -2656,7 +3024,11 @@
   ],
   "state": "paused",
   "timerMinutes": 30,
-  "reminders": [20, 10, 5],
+  "reminders": [
+    20,
+    10,
+    5
+  ],
   "pokemon": [
     {
       "pid": "abomasnow",
