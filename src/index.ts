@@ -74,26 +74,24 @@ client.on("interactionCreate", async (interaction: Interaction) => {
 
 client.on("messageCreate", async (message) => {
   if (message.author.bot || message.mentions.everyone) return;
-  if (
-       message.channelId === "1273381639707299995"
-  ) {
+  if (message.channelId === "1273381639707299995") {
     message.channel.send(message.content);
     message.delete();
     return;
   }
-  if (
-    message.content.toLowerCase().includes("deoxys") ||
-    message.mentions.has(client.user!.id)
-  ) {
-    console.log(
-      "DeoxysGPT |",
-      message.author.displayName,
-      "|",
-      message.content
-    );
-    gptRespond(message);
-    return;
-  }
+  // if (
+  //   message.content.toLowerCase().includes("deoxys") ||
+  //   message.mentions.has(client.user!.id)
+  // ) {
+  //   console.log(
+  //     "DeoxysGPT |",
+  //     message.author.displayName,
+  //     "|",
+  //     message.content
+  //   );
+  //   gptRespond(message);
+  //   return;
+  // }
 
   let urlreg = /(https?:\/\/)?(wwww\.)?replay\.pokemonshowdown\.com\/.+?(\s|$)/;
   let url = message.content.toLowerCase().match(urlreg);
