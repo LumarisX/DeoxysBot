@@ -176,7 +176,7 @@
                 "C",
                 "D"
               ],
-              5
+              0
             ]
           ],
           "team": [
@@ -191,9 +191,9 @@
             {
               "order": 24,
               "pokemon": {
-                "pid": "porygon2",
+                "pid": "rillaboom",
                 "tier": "S",
-                "category": "Utility"
+                "category": "Field Manipulation"
               }
             },
             {
@@ -207,9 +207,9 @@
             {
               "order": 50,
               "pokemon": {
-                "pid": "wochien",
+                "pid": "meloetta",
                 "tier": "A",
-                "category": "Stall"
+                "category": "Bulky Defense"
               }
             },
             {
@@ -231,7 +231,7 @@
             {
               "order": 79,
               "pokemon": {
-                "pid": "veluza",
+                "pid": "sneaselhisui",
                 "tier": "C",
                 "category": "Sweeper"
               }
@@ -956,7 +956,7 @@
                 "C",
                 "D"
               ],
-              3
+              0
             ]
           ],
           "team": [
@@ -987,15 +987,15 @@
             {
               "order": 50,
               "pokemon": {
-                "pid": "empoleon",
+                "pid": "zygarde10",
                 "tier": "B",
-                "category": "Bulky Defense"
+                "category": "Fast Offense"
               }
             },
             {
               "order": 53,
               "pokemon": {
-                "pid": "pelipper",
+                "pid": "tapulele",
                 "tier": "S",
                 "category": "Field Manipulation"
               }
@@ -1035,9 +1035,9 @@
             {
               "order": 130,
               "pokemon": {
-                "pid": "herdier",
+                "pid": "dustox",
                 "tier": "D",
-                "category": "NFE"
+                "category": "Stall"
               }
             },
             {
@@ -1070,10 +1070,19 @@
                 "C",
                 "D"
               ],
-              5
+              49
             ]
           ],
-          "team": [],
+          "team": [
+            {
+              "order": 2,
+              "pokemon": {
+                "pid": "feebas",
+                "tier": "D",
+                "category": "NFE"
+              }
+            }
+          ],
           "leftPicks": []
         },
         {
@@ -1095,7 +1104,7 @@
                 "C",
                 "D"
               ],
-              5
+              0
             ]
           ],
           "team": [
@@ -1126,9 +1135,9 @@
             {
               "order": 48,
               "pokemon": {
-                "pid": "stakataka",
+                "pid": "staraptor",
                 "tier": "B",
-                "category": "TR Sweeper"
+                "category": "Fast Offense"
               }
             },
             {
@@ -1142,9 +1151,9 @@
             {
               "order": 74,
               "pokemon": {
-                "pid": "pachirisu",
+                "pid": "musharna",
                 "tier": "B",
-                "category": "Bulky Defense"
+                "category": "TR Sweeper"
               }
             },
             {
@@ -1166,17 +1175,17 @@
             {
               "order": 107,
               "pokemon": {
-                "pid": "sirfetchd",
+                "pid": "starmie",
                 "tier": "D",
-                "category": "Bulky Offense"
+                "category": "Sweeper"
               }
             },
             {
               "order": 126,
               "pokemon": {
-                "pid": "tauros",
+                "pid": "scyther",
                 "tier": "C",
-                "category": "Bulky Offense"
+                "category": "Sweeper"
               }
             },
             {
@@ -1512,7 +1521,7 @@
                 "C",
                 "D"
               ],
-              5
+              0
             ]
           ],
           "team": [
@@ -1559,9 +1568,9 @@
             {
               "order": 68,
               "pokemon": {
-                "pid": "basculegion",
+                "pid": "wartortle",
                 "tier": "B",
-                "category": "Fast Offense"
+                "category": "Bulky Defense"
               }
             },
             {
@@ -1591,7 +1600,7 @@
             {
               "order": 120,
               "pokemon": {
-                "pid": "feraligatr",
+                "pid": "primeape",
                 "tier": "C",
                 "category": "Bulky Offense"
               }
@@ -1626,7 +1635,7 @@
                 "C",
                 "D"
               ],
-              3
+              2
             ]
           ],
           "team": [
@@ -1657,9 +1666,9 @@
             {
               "order": 41,
               "pokemon": {
-                "pid": "vaporeon",
+                "pid": "bewear",
                 "tier": "C",
-                "category": "Bulky Defense"
+                "category": "Bulky Offense"
               }
             },
             {
